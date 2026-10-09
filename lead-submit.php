@@ -41,8 +41,12 @@ $source   = preg_replace('/[^a-z0-9_-]/i', '', $_POST['source'] ?? 'landing');
 $budget   = trim($_POST['budget'] ?? '');
 $timeline = trim($_POST['timeline'] ?? '');
 
-if ($name === '' || $phone === '') {
+$flexibleContact = ($_POST['form_version'] ?? '') === 'city-service-v3';
+if ($name === '' || (!$flexibleContact && $phone === '')) {
     lead_response(['success' => false, 'error' => 'Please enter your name and phone number.'], 422);
+}
+if ($flexibleContact && $phone === '' && $email === '') {
+    lead_response(['success' => false, 'error' => 'Please enter an email address or phone number.'], 422);
 }
 if (($_POST['form_version'] ?? '') === 'city-project-v2' && $business === '') {
     lead_response(['success' => false, 'error' => 'Please enter your business or company name.'], 422);
@@ -52,10 +56,10 @@ if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 $phoneDigits = preg_replace('/\D/', '', $phone);
 if (str_starts_with($phone, '00')) $phoneDigits = substr($phoneDigits, 2);
-if (strlen($phoneDigits) < 7 || strlen($phoneDigits) > 15) {
+if ($phone !== '' && (strlen($phoneDigits) < 7 || strlen($phoneDigits) > 15)) {
     lead_response(['success' => false, 'error' => 'Please enter a valid phone number with its country code.'], 422);
 }
-if (!preg_match('/^\+?[0-9\s().-]+$/', $phone)) {
+if ($phone !== '' && !preg_match('/^\+?[0-9\s().-]+$/', $phone)) {
     lead_response(['success' => false, 'error' => 'Please use digits and a country code for your phone number.'], 422);
 }
 

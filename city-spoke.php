@@ -22,6 +22,7 @@ $page = $data['page'];
 $city = $data['city'];
 $country = $data['country'];
 $content = $data['content'];
+$isSeattleSpoke = $city['slug'] === 'seattle' && in_array($page['slug'], ['ecommerce-development', 'small-business-web-design', 'wordpress-developer', 'contractor-web-design'], true);
 $proof = $data['proof'];
 $faqs = $data['faqs'];
 
@@ -180,7 +181,7 @@ $_geo_meta = [
 require __DIR__ . '/includes/header.php';
 ?>
 
-<div class="cbd-spoke-page">
+<div class="cbd-spoke-page<?= $isSeattleSpoke ? ' cbd-seattle-spoke' : '' ?>">
     <section class="cbd-spoke-hero">
         <div class="cbd-spoke-container">
             <nav class="cbd-spoke-breadcrumb" aria-label="Breadcrumb">
@@ -207,6 +208,7 @@ require __DIR__ . '/includes/header.php';
                     </ul>
                 </div>
 
+                <?php if ($isSeattleSpoke): require __DIR__ . '/includes/seattle-spoke-enquiry.php'; else: ?>
                 <aside class="cbd-spoke-hero-card" aria-label="<?= $escape($heroCard['aria_label'] ?? 'Project planning checklist') ?>">
                     <span class="cbd-spoke-card-kicker"><?= $escape($heroCard['kicker'] ?? 'Before choosing a platform') ?></span>
                     <h2><?= $escape($heroCard['title'] ?? 'Define the store behind the storefront.') ?></h2>
@@ -217,6 +219,7 @@ require __DIR__ . '/includes/header.php';
                         <?php endforeach; ?>
                     </ul>
                 </aside>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -405,7 +408,7 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="cbd-spoke-cta" id="project-enquiry">
+    <section class="cbd-spoke-cta" id="<?= $isSeattleSpoke ? 'project-discussion' : 'project-enquiry' ?>">
         <div class="cbd-spoke-container cbd-spoke-cta-grid">
             <div class="cbd-spoke-cta-copy">
                 <span class="cbd-spoke-eyebrow"><i class="bi bi-chat-square-text" aria-hidden="true"></i> <?= $escape($contentText('form_eyebrow', $page['breadcrumb_label'] . ' enquiry')) ?></span>
@@ -417,6 +420,15 @@ require __DIR__ . '/includes/header.php';
                     <?php endforeach; ?>
                 </ul>
             </div>
+            <?php if ($isSeattleSpoke): ?>
+            <div class="cbd-seattle-contact-options">
+                <h3>Discuss your website requirements</h3>
+                <p>Send your current website, goals and required features. We will confirm the scope before quoting.</p>
+                <a class="cbd-spoke-btn cbd-spoke-btn-primary" href="#project-enquiry">Get a Project Quote</a>
+                <a href="mailto:info@chulbuldesign.com">Email info@chulbuldesign.com</a>
+                <a href="tel:+919990548795">Call +91 9990 548 795</a>
+            </div>
+            <?php else: ?>
             <form id="cbdSpokeQuoteForm" class="cbd-spoke-form" action="<?= $base ?>/lead-submit.php" method="post">
                 <input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" class="cbd-spoke-honeypot" aria-hidden="true">
                 <input type="hidden" name="source" value="<?= $escape($formSource) ?>">
@@ -434,6 +446,7 @@ require __DIR__ . '/includes/header.php';
                 <button id="cbdSpokeQuoteSubmit" class="cbd-spoke-btn cbd-spoke-btn-primary" type="submit"><i class="bi bi-send-fill" aria-hidden="true"></i> <?= $escape($contentText('form_button', 'Request a Consultation')) ?></button>
                 <div id="cbdSpokeQuoteMessage" class="cbd-spoke-form-message" role="status" aria-live="polite" hidden></div>
             </form>
+            <?php endif; ?>
         </div>
     </section>
 </div>
@@ -446,8 +459,15 @@ require __DIR__ . '/includes/header.php';
     const status = document.getElementById('cbdSpokeQuoteMessage');
     const originalButton = button.innerHTML;
 
+    const flexibleContact = form.elements.form_version.value === 'city-service-v3';
+    if (flexibleContact) {
+        ['email', 'phone'].forEach(name => form.elements[name].addEventListener('input', () => form.elements.email.setCustomValidity('')));
+    }
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
+        if (flexibleContact) {
+            form.elements.email.setCustomValidity(form.elements.email.value.trim() || form.elements.phone.value.trim() ? '' : 'Please enter an email address or phone number.');
+        }
         if (!form.reportValidity()) return;
         button.disabled = true;
         button.innerHTML = '<i class="bi bi-arrow-repeat" aria-hidden="true"></i> Sending…';
@@ -477,7 +497,9 @@ require __DIR__ . '/includes/header.php';
             form.reset();
         } catch (error) {
             status.className = 'cbd-spoke-form-message is-error';
-            status.textContent = 'Your request could not be sent. Please try again or contact us on WhatsApp.';
+            status.textContent = !(error instanceof SyntaxError) && !(error instanceof TypeError) && error.message && error.message !== 'Submission failed'
+                ? error.message
+                : 'Your request could not be sent. Please try again or use the WhatsApp link below.';
             status.hidden = false;
         } finally {
             button.disabled = false;

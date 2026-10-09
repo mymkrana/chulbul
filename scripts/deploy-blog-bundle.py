@@ -13,14 +13,18 @@ import urllib.request
 
 
 def main():
-    city_mode = bool(os.environ.get('CITY_BUNDLE'))
-    bundle = os.environ['CITY_BUNDLE'] if city_mode else os.environ['BLOG_BUNDLE']
-    if not (bundle == 'seo_city_seattle_2026_10_09.json' if city_mode else re.fullmatch(r'blogs_[a-z0-9_]+\.json', bundle)):
+    spoke_mode = bool(os.environ.get('SPOKE_BUNDLE'))
+    city_mode = bool(os.environ.get('CITY_BUNDLE')) and not spoke_mode
+    bundle = os.environ['SPOKE_BUNDLE'] if spoke_mode else (os.environ['CITY_BUNDLE'] if city_mode else os.environ['BLOG_BUNDLE'])
+    valid = bundle == 'seo_spokes_seattle_2026_10_09.json' if spoke_mode else (bundle == 'seo_city_seattle_2026_10_09.json' if city_mode else re.fullmatch(r'blogs_[a-z0-9_]+\.json', bundle))
+    if not valid:
         raise ValueError('Invalid bundle filename')
     bundle_bytes = (Path(__file__).parent / bundle).read_bytes()
     posts = json.loads(bundle_bytes)
     if city_mode and posts.get('city_slug') != 'seattle':
         raise ValueError('Invalid city bundle')
+    if spoke_mode and [p['slug'] for p in posts] != ['contractor-web-design', 'ecommerce-development', 'small-business-web-design', 'wordpress-developer']:
+        raise ValueError('Invalid Seattle service scope')
     if not city_mode and len(posts) != 4:
         raise ValueError('Expected four articles')
     token = secrets.token_hex(32)
@@ -50,6 +54,8 @@ try {
     echo json_encode(['success' => false, 'error' => 'Editorial publish failed; review server logs.']);
 }
 '''.replace('EXPIRY', str(int(time.time()) + 600)).replace('TOKEN_HASH', hashlib.sha256(token.encode()).hexdigest()).replace('BUNDLE_HASH', hashlib.sha256(bundle_bytes).hexdigest()).replace('BUNDLE', bundle)
+    if spoke_mode:
+        source = source.replace('publish-blog-bundle.php', 'publish-seattle-spokes.php').replace('cbd_publish_blog_bundle', 'cbd_publish_seattle_spokes')
     if city_mode:
         source = source.replace('publish-blog-bundle.php', 'publish-city-seo.php').replace('cbd_publish_blog_bundle', 'cbd_publish_city_seo')
     def connect_ftp():
@@ -81,7 +87,10 @@ try {
             except (http.client.RemoteDisconnected, TimeoutError):
                 if attempt == 2:
                     raise
-        if city_mode:
+        if spoke_mode:
+            if not result.get('success') or result.get('city_slug') != 'seattle' or result.get('slugs') != [p['slug'] for p in posts]:
+                raise RuntimeError('Publication response did not confirm four Seattle services')
+        elif city_mode:
             if not result.get('success') or result.get('city_slug') != 'seattle' or result.get('faq_count') != 7:
                 raise RuntimeError('Publication response did not confirm Seattle update')
         else:
@@ -96,6 +105,17 @@ try {
     # Confirm each live article, its canonical URL and sitemap inclusion.
     sitemap_request = urllib.request.Request('https://www.chulbuldesign.com/sitemap.xml', headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
     sitemap = opener.open(sitemap_request, timeout=30).read().decode()
+    if spoke_mode:
+        import html
+        for post in posts:
+            url = 'https://www.chulbuldesign.com/city/seattle/' + post['slug']
+            request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
+            with opener.open(request, timeout=60) as response:
+                markup = response.read().decode()
+            if html.escape(post['after']['meta_title']) not in markup or post['after']['heading_html'] not in markup or 'city-service-v3' not in markup or url not in markup or url not in sitemap:
+                raise RuntimeError('Live service verification failed: ' + post['slug'])
+            print('Verified live Seattle service, enquiry form and sitemap: ' + url, flush=True)
+        return
     if city_mode:
         import html
         checks = [('https://www.chulbuldesign.com/city/seattle', [html.escape(posts['city']['after']['meta_title']), 'What Your Seattle Web Design &amp; Development Project Includes'])]

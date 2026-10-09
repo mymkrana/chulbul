@@ -3166,3 +3166,34 @@ html { scroll-behavior: smooth; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Seattle service pages: concise headings and an accessible first-screen enquiry. */
+.cbd-seattle-spoke .cbd-spoke-hero h1 {
+  max-width: 22ch;
+  font-size: clamp(1.9rem, 3.8vw, 3.25rem);
+  letter-spacing: -0.035em;
+  line-height: 1.14;
+}
+.cbd-seattle-spoke .cbd-spoke-hero-grid { align-items: start; }
+.cbd-seattle-enquiry {
+  padding: 24px;
+  border-radius: 20px;
+  background: #fff;
+  color: #202040;
+  scroll-margin-top: 90px;
+}
+.cbd-seattle-enquiry h2 { margin: 12px 0 8px; font-size: 1.6rem; line-height: 1.2; }
+.cbd-seattle-enquiry > p { color: #53536b; font-size: .9rem; line-height: 1.5; }
+.cbd-seattle-enquiry .cbd-spoke-form { padding: 0; margin-top: 16px; box-shadow: none; border: 0; gap: 12px; }
+.cbd-seattle-enquiry .cbd-spoke-form label { font-size: .8rem; }
+.cbd-seattle-enquiry .cbd-spoke-form input { padding: 10px 12px; }
+.cbd-seattle-contact-help { margin: 0; font-size: .75rem; line-height: 1.5; color: #53536b; }
+.cbd-seattle-project-details summary { cursor: pointer; font-size: .85rem; font-weight: 600; }
+.cbd-seattle-project-details label { margin-top: 12px; }
+.cbd-seattle-contact-link { display: block; margin-top: 16px; color: #353577; font-size: .85rem; font-weight: 600; }
+.cbd-seattle-contact-options { display: grid; gap: 18px; align-content: start; }
+.cbd-seattle-contact-options > a:not(.cbd-spoke-btn) { color: #fff; text-decoration: underline; }
+@media (max-width: 639px) {
+  .cbd-seattle-spoke .cbd-spoke-breadcrumb { margin-bottom: 24px; }
+  .cbd-seattle-spoke .cbd-spoke-hero-actions { margin-top: 22px; }
+}
