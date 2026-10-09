@@ -41,4 +41,8 @@ jobs:
             **/.env.*
             **/error_log
             **/*.sql
+            **/*.zip
+            **/*.log
+            **/.ftp-deploy-sync-state.json
+            **/.ftpquota
             README.md

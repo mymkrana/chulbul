@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+Disallow: /analytics-collect.php
+Disallow: /lander
+Disallow: /lander/
+
+Sitemap: https://www.chulbuldesign.com/sitemap.xml

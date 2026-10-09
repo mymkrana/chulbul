@@ -1,0 +1,18 @@
+Options -MultiViews -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+
+# Route clean URLs relative to this project directory on local and live hosts.
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+RewriteRule ^city/([a-z0-9-]+)/([a-z0-9-]+)/?$ city-spoke.php?city=$1&service=$2 [L,QSA]
+RewriteRule ^city/([a-z0-9-]+)/?$ city.php?slug=$1 [L,QSA]
+RewriteRule ^industry/([a-z0-9-]+)/?$ industry.php?slug=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteCond %{REQUEST_FILENAME} ^(.+?)/?$
+RewriteCond %1.php -f
+RewriteRule ^([a-z0-9-]+)/?$ $1.php [L,QSA]
+RewriteRule ^([a-z0-9-]+)/?$ service.php?slug=$1 [L,QSA]

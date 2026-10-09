@@ -1,0 +1,12 @@
+# Environment secrets, database dumps, archives and runtime logs
+.env
+.env.*
+*.sql
+*.zip
+*.log
+error_log
+
+# FTP metadata and macOS files
+.ftp-deploy-sync-state.json
+.ftpquota
+.DS_Store

@@ -1,0 +1,88 @@
+Options +FollowSymLinks -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+
+# Phase 1 SEO consolidation: redirect the older duplicate comparison before
+# the generic clean-URL rule below sends it to post.php.
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^shopify-vs-woocommerce/?$ /chulbul/blog/shopify-vs-woocommerce-2026-comparison [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^shopify-vs-woocommerce/?$ /blog/shopify-vs-woocommerce-2026-comparison [R=301,L,NE,QSD]
+
+# Phase 2 city intent consolidation. These exact broad service guides compete
+# with the city landing pages; retain the travel-specific Seattle guide.
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^web-development-seattle/?$ /chulbul/city/seattle [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:web-design-leeds|the-ultimate-guide-to-web-design-in-leeds-649-speed-local-seo)/?$ /chulbul/city/leeds [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^web-development-seattle/?$ /city/seattle [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:web-design-leeds|the-ultimate-guide-to-web-design-in-leeds-649-speed-local-seo)/?$ /city/leeds [R=301,L,NE,QSD]
+
+# Phase 3 content-cluster consolidation. These are exact duplicate-intent URLs;
+# distinct event, timeline, cost and implementation guides remain published.
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:latest-figma-updates|figma-new-features-may-2026)/?$ /chulbul/blog/figma-updates-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:figma-updates-explained|figma-june-2026-updates)/?$ /chulbul/blog/figma-updates-june-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^travel-website-development/?$ /chulbul/industry/travel [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:latest-figma-updates|figma-new-features-may-2026)/?$ /blog/figma-updates-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^(?:figma-updates-explained|figma-june-2026-updates)/?$ /blog/figma-updates-june-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^travel-website-development/?$ /industry/travel [R=301,L,NE,QSD]
+
+# GSC 404 recovery redirects for ranking historical posts
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^figma-latest-updates-august-2026/?$ /chulbul/blog/figma-updates-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^figma-latest-updates-august-2026/?$ /blog/figma-updates-2026 [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^how-to-create-an-ecommerce-website/?$ /chulbul/ecommerce-website-development [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^how-to-create-an-ecommerce-website/?$ /ecommerce-website-development [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^best-web-design-development-company-india/?$ /chulbul/ [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^best-web-design-development-company-india/?$ / [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^website-development-cost-in-india/?$ /chulbul/business-starter [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^website-development-cost-in-india/?$ /business-starter [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^website-redesign-checklist-2026/?$ /chulbul/website-redesign [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^website-redesign-checklist-2026/?$ /website-redesign [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^business-website-features-2026/?$ /chulbul/web-development [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^business-website-features-2026/?$ /web-development [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^how-to-rank-in-google-ai-overviews-amp-ai-mode-in-2026-a-practical-guide-for-small-businesses/?$ /chulbul/seo-services [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^how-to-rank-in-google-ai-overviews-amp-ai-mode-in-2026-a-practical-guide-for-small-businesses/?$ /seo-services [R=301,L,NE,QSD]
+
+# Shared data loader is an include, not a public page.
+<Files "data.php">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+# Blog post clean URLs: /blog/slug → post.php?slug=slug
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
