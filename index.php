@@ -12,7 +12,7 @@ try {
     foreach ($_hp_latest_posts as &$_hp_p) {
         $_hp_p['thumb'] = '';
         if (preg_match('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', $_hp_p['content'] ?? '', $_hp_m)) {
-            $_hp_p['thumb'] = $_hp_m[1];
+            $_hp_p['thumb'] = cbd_asset_url($_hp_m[1]);
         }
     }
     unset($_hp_p);

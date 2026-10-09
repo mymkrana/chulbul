@@ -22,7 +22,7 @@ if (!$_blog_pdo) {
 foreach ($blog_posts as &$_bp_idx) {
     $_bp_idx['thumb'] = '';
     if (!empty($_bp_idx['content']) && preg_match('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', $_bp_idx['content'], $_bm)) {
-        $_bp_idx['thumb'] = $_bm[1];
+        $_bp_idx['thumb'] = cbd_asset_url($_bm[1]);
     }
 }
 unset($_bp_idx);

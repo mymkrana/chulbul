@@ -54,6 +54,12 @@ function cbd_site_base_url(): string
     return ($https ? 'https://' : 'http://') . $host . cbd_base_path();
 }
 
+/** Resolve stored project asset paths for both subdirectory and live installs. */
+function cbd_asset_url(string $value): string
+{
+    return preg_replace('#^(?:\.\./|\./)*/?assets/#', cbd_base_path() . '/assets/', $value) ?? $value;
+}
+
 function cbd_database(): ?PDO
 {
     static $attempted = false;
