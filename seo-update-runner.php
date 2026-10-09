@@ -2,27 +2,25 @@
 declare(strict_types=1);
 
 /**
- * Striking Distance SEO Migration Endpoint
- * Safely updates Perth, Montreal, and Toronto SEO metadata in the production database.
+ * Striking Distance SEO Migration Runner
+ * Updates Perth, Montreal, and Toronto SEO metadata in the production database.
  */
 
 const CBD_SEO_PUBLISH_SECRET = 'cbd_seo_live_2026_9b8c71';
 
-if (PHP_SAPI !== 'cli') {
-    $token = (string)($_GET['token'] ?? $_POST['token'] ?? $_SERVER['HTTP_X_CBD_PUBLISH_TOKEN'] ?? '');
-    if (!hash_equals(CBD_SEO_PUBLISH_SECRET, $token)) {
-        http_response_code(403);
-        header('Content-Type: application/json');
-        echo json_encode(['error' => 'Access denied'], JSON_THROW_ON_ERROR);
-        exit;
-    }
+$token = (string)($_GET['token'] ?? $_POST['token'] ?? $_SERVER['HTTP_X_CBD_PUBLISH_TOKEN'] ?? '');
+if (PHP_SAPI !== 'cli' && !hash_equals(CBD_SEO_PUBLISH_SECRET, $token)) {
+    http_response_code(403);
+    header('Content-Type: application/json');
+    echo json_encode(['error' => 'Access denied'], JSON_THROW_ON_ERROR);
+    exit;
 }
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
 header('X-Robots-Tag: noindex, nofollow');
 
-require_once dirname(__DIR__) . '/includes/database.php';
+require_once __DIR__ . '/includes/database.php';
 
 $pdo = cbd_database();
 if (!$pdo) {
@@ -119,7 +117,7 @@ try {
 
     echo json_encode([
         'success' => true,
-        'message' => 'Striking distance SEO updates applied successfully',
+        'message' => 'Production striking distance SEO updates applied successfully',
         'details' => $updates,
         'timestamp' => date('c'),
     ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
