@@ -5,6 +5,7 @@
 *.zip
 *.log
 error_log
+scripts/seo_backup_*.json
 
 # FTP metadata and macOS files
 .ftp-deploy-sync-state.json
