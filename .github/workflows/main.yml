@@ -1,0 +1,44 @@
+name: Deploy Chulbul Design to cPanel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy Website
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+
+          local-dir: ./
+          server-dir: ./
+
+          dangerous-clean-slate: false
+
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.DS_Store
+            **/.env
+            **/.env.*
+            **/error_log
+            **/*.sql
+            README.md
