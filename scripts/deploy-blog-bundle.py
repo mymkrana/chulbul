@@ -25,8 +25,8 @@ def main():
         raise ValueError('Invalid city bundle')
     if spoke_mode and [p['slug'] for p in posts] != ['contractor-web-design', 'ecommerce-development', 'small-business-web-design', 'wordpress-developer']:
         raise ValueError('Invalid Seattle service scope')
-    if not city_mode and len(posts) != 4:
-        raise ValueError('Expected four articles')
+    if not city_mode and not spoke_mode and len(posts) not in (2, 4):
+        raise ValueError('Expected two or four articles')
     token = secrets.token_hex(32)
     filename = 'cbd-publish-' + secrets.token_hex(16) + '.php'
     # Never place the bearer secret in a URL, repository, or log.
@@ -95,8 +95,8 @@ try {
                 raise RuntimeError('Publication response did not confirm Seattle update')
         else:
             expected = [post['slug'] for post in posts]
-            if not result.get('success') or result.get('slugs') != expected or result.get('inserted', 0) + result.get('unchanged', 0) != 4:
-                raise RuntimeError('Publication response did not confirm four articles')
+            if not result.get('success') or result.get('slugs') != expected or result.get('inserted', 0) + result.get('unchanged', 0) != len(posts):
+                raise RuntimeError('Publication response did not confirm the reviewed articles')
         print(json.dumps(result), flush=True)
     finally:
         with connect_ftp() as ftp:

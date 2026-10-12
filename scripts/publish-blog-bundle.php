@@ -14,8 +14,8 @@ function cbd_publish_blog_bundle(string $filename): array
         throw new RuntimeException('Invalid editorial bundle name.');
     }
     $posts = json_decode((string)file_get_contents(__DIR__ . '/' . $filename), true, 512, JSON_THROW_ON_ERROR);
-    if (!is_array($posts) || count($posts) !== 4) {
-        throw new RuntimeException('Expected exactly four reviewed articles.');
+    if (!is_array($posts) || !in_array(count($posts), [2, 4], true)) {
+        throw new RuntimeException('Expected two or four reviewed articles.');
     }
     $slugs = [];
     foreach ($posts as $post) {

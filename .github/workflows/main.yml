@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       blog_bundle:
-        description: 'Optional reviewed four-article bundle filename to publish after deployment'
+        description: 'Optional reviewed two- or four-article bundle filename to publish after deployment'
         required: false
         default: ''
         type: string
