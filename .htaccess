@@ -2,6 +2,59 @@ Options -MultiViews -Indexes
 DirectoryIndex index.php
 RewriteEngine On
 
+# ── 1. Security Headers ───────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+    # Prevent browsers from MIME-sniffing a response away from declared content-type
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Protect against clickjacking by only allowing framing on the same origin
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Send origin, path, and query on same-origin; send only origin on cross-origin HTTPS
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Restrict unneeded browser features
+    Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+
+    # Enforce HTTPS on modern browsers for live domain
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# ── 2. Sensitive Files Protection ─────────────────────────────────────────────
+# Block access to hidden files and directories (e.g. .git, .env), allowing .well-known for SSL
+<FilesMatch "^\.(?!well-known)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Block access to backup and sensitive data files
+<FilesMatch "\.(?:sql|bak|backup|config|ini|log|sh|env)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ── 3. Canonical HTTPS & www Redirection (Production Only) ────────────────────
+# Redirect non-www to www (https://chulbuldesign.com/* -> https://www.chulbuldesign.com/*)
+RewriteCond %{HTTP_HOST} ^chulbuldesign\.com$ [NC]
+RewriteRule ^(.*)$ https://www.chulbuldesign.com/$1 [R=301,L]
+
+# Redirect plain HTTP to HTTPS for live domain
+RewriteCond %{HTTP_HOST} ^(www\.)?chulbuldesign\.com$ [NC]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://www.chulbuldesign.com/$1 [R=301,L]
+
+# ── 4. Routing Rules ──────────────────────────────────────────────────────────
 # Route clean URLs relative to this project directory on local and live hosts.
 RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
 RewriteRule ^city/([a-z0-9-]+)/([a-z0-9-]+)/?$ city-spoke.php?city=$1&service=$2 [L,QSA]
@@ -16,3 +69,4 @@ RewriteCond %{REQUEST_FILENAME} ^(.+?)/?$
 RewriteCond %1.php -f
 RewriteRule ^([a-z0-9-]+)/?$ $1.php [L,QSA]
 RewriteRule ^([a-z0-9-]+)/?$ service.php?slug=$1 [L,QSA]
+
