@@ -8,6 +8,8 @@ import os
 from pathlib import Path
 import re
 import secrets
+import socket
+import urllib.error
 import time
 import urllib.request
 
@@ -79,14 +81,20 @@ try {
             def redirect_request(self, req, fp, code, msg, headers, newurl):
                 return None
         opener = urllib.request.build_opener(NoRedirect())
-        for attempt in range(3):
-            try:
-                with opener.open(request, timeout=30) as response:
-                    result = json.load(response)
-                break
-            except (http.client.RemoteDisconnected, TimeoutError):
-                if attempt == 2:
-                    raise
+        def open_with_retry(request, timeout=30):
+            for attempt in range(3):
+                try:
+                    return opener.open(request, timeout=timeout)
+                except urllib.error.URLError as error:
+                    # Retry transport/DNS errors, never certificate or HTTP errors.
+                    if not isinstance(error.reason, (socket.gaierror, TimeoutError, ConnectionError)) or attempt == 2:
+                        raise
+                except (http.client.RemoteDisconnected, TimeoutError):
+                    if attempt == 2:
+                        raise
+                time.sleep(2 ** (attempt + 1))
+        with open_with_retry(request, timeout=30) as response:
+            result = json.load(response)
         if spoke_mode:
             if not result.get('success') or result.get('city_slug') != 'seattle' or result.get('slugs') != [p['slug'] for p in posts]:
                 raise RuntimeError('Publication response did not confirm four Seattle services')
@@ -104,13 +112,14 @@ try {
             print('Temporary publication runner removed.', flush=True)
     # Confirm each live article, its canonical URL and sitemap inclusion.
     sitemap_request = urllib.request.Request('https://www.chulbuldesign.com/sitemap.xml', headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
-    sitemap = opener.open(sitemap_request, timeout=30).read().decode()
+    with open_with_retry(sitemap_request, timeout=30) as response:
+        sitemap = response.read().decode()
     if spoke_mode:
         import html
         for post in posts:
             url = 'https://www.chulbuldesign.com/city/seattle/' + post['slug']
             request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
-            with opener.open(request, timeout=60) as response:
+            with open_with_retry(request, timeout=60) as response:
                 markup = response.read().decode()
             if html.escape(post['after']['meta_title']) not in markup or post['after']['heading_html'] not in markup or 'city-service-v3' not in markup or url not in markup or url not in sitemap:
                 raise RuntimeError('Live service verification failed: ' + post['slug'])
@@ -122,7 +131,7 @@ try {
         checks += [('https://www.chulbuldesign.com/blog/' + post['slug'], ['Seattle web design and development services']) for post in posts['blogs']]
         for url, phrases in checks:
             request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
-            with opener.open(request, timeout=60) as response:
+            with open_with_retry(request, timeout=60) as response:
                 markup = response.read().decode()
             if any(phrase not in markup for phrase in phrases) or url not in markup or url not in sitemap:
                 raise RuntimeError('Live Seattle verification failed: ' + url)
@@ -131,7 +140,7 @@ try {
     for post in posts:
         url = 'https://www.chulbuldesign.com/blog/' + post['slug']
         request = urllib.request.Request(url, headers={'User-Agent': 'ChulbulDeployMonitor/1.0'})
-        with opener.open(request, timeout=60) as response:
+        with open_with_retry(request, timeout=60) as response:
             markup = response.read().decode()
         if post['title'] not in markup or url not in markup or url not in sitemap:
             raise RuntimeError('Live article verification failed: ' + post['slug'])
