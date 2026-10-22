@@ -57,7 +57,14 @@ function cbd_site_base_url(): string
 /** Resolve stored project asset paths for both subdirectory and live installs. */
 function cbd_asset_url(string $value): string
 {
-    return preg_replace('#^(?:\.\./|\./)*/?assets/#', cbd_base_path() . '/assets/', $value) ?? $value;
+    $url = preg_replace('#^(?:\.\./|\./)*/?assets/#', cbd_base_path() . '/assets/', $value) ?? $value;
+    // Version local image URLs so a replaced thumbnail bypasses the static cache.
+    $prefix = cbd_base_path() . '/assets/';
+    if (!str_starts_with($url, $prefix) || strpbrk($url, '?#') !== false
+        || str_contains($url, '..') || !preg_match('/\.(?:jpe?g|png|webp|gif|avif)$/i', $url)) return $url;
+    $file = dirname(__DIR__) . substr($url, strlen(cbd_base_path()));
+    $modified = is_file($file) ? filemtime($file) : false;
+    return $modified !== false ? $url . '?v=' . $modified : $url;
 }
 
 function cbd_database(): ?PDO

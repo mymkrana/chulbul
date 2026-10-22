@@ -101,7 +101,7 @@ $modified_at = (string)(($post['updated_at'] ?? '') ?: $published_at);
 $post['content'] = (string)cbd_normalize_schema_urls((string)$post['content']);
 $schema_img = cbd_public_url('', '/assets/images/Fb_chulbuldesign.jpg');
 if (preg_match('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', $post['content'], $img_m)) {
-    $schema_img = cbd_public_url($img_m[1], '/assets/images/Fb_chulbuldesign.jpg');
+    $schema_img = cbd_public_url(cbd_asset_url($img_m[1]), '/assets/images/Fb_chulbuldesign.jpg');
 }
 ?>
 <!DOCTYPE html>
@@ -240,6 +240,14 @@ $post_content = preg_replace_callback(
     static fn(array $match): string => $match[1] . '=' . $match[2] . $base . '/' . $match[3] . $match[2],
     $post['content']
 ) ?: $post['content'];
+// Apply the same image version to the article hero and listing thumbnail.
+$post_content = preg_replace_callback(
+    '/\bsrc=(["\'])([^"\']+)\1/i',
+    static fn(array $match): string => 'src=' . $match[1]
+        . htmlspecialchars(cbd_asset_url(html_entity_decode($match[2], ENT_QUOTES | ENT_HTML5, 'UTF-8')), ENT_QUOTES, 'UTF-8')
+        . $match[1],
+    $post_content
+) ?: $post_content;
 ?>
                 <?= $post_content ?>
             </div>
