@@ -36,9 +36,11 @@ function cbd_publish_blog_bundle(string $filename): array
 
     $inserted = 0;
     $unchanged = 0;
+    $updated = 0;
     $pdo->beginTransaction();
     try {
         $check = $pdo->prepare('SELECT id, content, status, deleted_at FROM posts WHERE slug = ? FOR UPDATE');
+        $updateThumbnail = $pdo->prepare('UPDATE posts SET content = ? WHERE id = ?');
         $category = $pdo->prepare('SELECT id FROM blog_categories WHERE name = ? LIMIT 1');
         $insert = $pdo->prepare("INSERT INTO posts (slug, title, meta_title, meta_desc, category, blog_category_id, date, read_time, excerpt, content, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'published')");
         $findTag = $pdo->prepare('SELECT id FROM tags WHERE slug = ?');
@@ -48,6 +50,27 @@ function cbd_publish_blog_bundle(string $filename): array
             $check->execute([$post['slug']]);
             $existing = $check->fetch();
             if ($existing) {
+                // Reviewed thumbnail replacements may change only the first image source.
+                if (isset($post['thumbnail_previous_content_sha256']) && $existing['content'] !== $post['content']) {
+                    $hash = $post['thumbnail_previous_content_sha256'];
+                    if (!is_string($hash) || !preg_match('/^[a-f0-9]{64}$/', $hash)
+                        || !hash_equals($hash, hash('sha256', $existing['content']))
+                        || $existing['status'] !== 'published' || $existing['deleted_at'] !== null
+                        || !preg_match('/<img\b[^>]*\bsrc=(["\x27])([^"\x27]+)\1/i', $post['content'], $image)
+                        || !preg_match('~^/assets/images/uploads/[a-z0-9-]+\.jpg$~', $image[2])
+                        || !is_file(dirname(__DIR__) . $image[2])) {
+                        throw new RuntimeException('Thumbnail baseline or asset conflict: ' . $post['slug']);
+                    }
+                    $expected = preg_replace_callback('/(<img\b[^>]*\bsrc=)(["\x27])([^"\x27]+)\2/i',
+                        static fn(array $match): string => $match[1] . $match[2] . $image[2] . $match[2],
+                        $existing['content'], 1, $replacements);
+                    if ($replacements !== 1 || $expected !== $post['content']) {
+                        throw new RuntimeException('Thumbnail update would change article body: ' . $post['slug']);
+                    }
+                    $updateThumbnail->execute([$post['content'], $existing['id']]);
+                    $updated++;
+                    continue;
+                }
                 if ($existing['content'] !== $post['content'] || $existing['status'] !== 'published' || $existing['deleted_at'] !== null) {
                     throw new RuntimeException('Existing article conflict: ' . $post['slug']);
                 }
@@ -76,7 +99,7 @@ function cbd_publish_blog_bundle(string $filename): array
         if ($pdo->inTransaction()) $pdo->rollBack();
         throw $error;
     }
-    return ['success' => true, 'inserted' => $inserted, 'unchanged' => $unchanged, 'slugs' => $slugs];
+    return ['success' => true, 'inserted' => $inserted, 'unchanged' => $unchanged, 'updated' => $updated, 'slugs' => $slugs];
 }
 
 if (PHP_SAPI === 'cli' && realpath((string)($_SERVER['SCRIPT_FILENAME'] ?? '')) === __FILE__) {
