@@ -103,7 +103,7 @@ try {
                 raise RuntimeError('Publication response did not confirm Seattle update')
         else:
             expected = [post['slug'] for post in posts]
-            if not result.get('success') or result.get('slugs') != expected or result.get('inserted', 0) + result.get('unchanged', 0) != len(posts):
+            if not result.get('success') or result.get('slugs') != expected or result.get('inserted', 0) + result.get('unchanged', 0) + result.get('updated', 0) != len(posts):
                 raise RuntimeError('Publication response did not confirm the reviewed articles')
         print(json.dumps(result), flush=True)
     finally:
