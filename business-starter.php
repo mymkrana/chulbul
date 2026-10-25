@@ -30,15 +30,15 @@ $faqs = [
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GMB, Social Media &amp; Website Setup — Gurugram, Delhi NCR, Noida | Chulbul Design</title>
-<meta name="description" content="Google Business Profile + Facebook + Instagram + 1-page Website setup for local businesses in Gurugram, Delhi, Noida, Ghaziabad &amp; Faridabad — ready in 7 days. Free consultation, ₹22,000 all-inclusive.">
+<title>Business Website, Google Profile &amp; Social Media Setup</title>
+<meta name="description" content="Google Business Profile, social media and a one-page website for Delhi NCR businesses. Explore the setup package and request a free consultation.">
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="GMB setup Gurugram, Google Business Profile Delhi NCR, social media setup Noida, business website Ghaziabad, online setup Faridabad, local business digital setup">
 <link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
 <meta name="geo.region" content="IN-HR">
 <meta name="geo.placename" content="Gurugram, Delhi NCR">
-<meta property="og:title" content="Apna Business Online Laao — 7 Din Me | GMB + Social + Website">
-<meta property="og:description" content="Google + Instagram + Website — sab ready in 7 days. Gurugram, Delhi NCR. Free consultation.">
+<meta property="og:title" content="Business Website, Google Profile &amp; Social Media Setup">
+<meta property="og:description" content="Google Business Profile, social media and a one-page website for Delhi NCR businesses. Explore the setup package and request a free consultation.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($canonical) ?>">
 <meta property="og:image" content="<?= CBD_CANONICAL_ORIGIN ?>/assets/images/Fb_chulbuldesign.jpg">

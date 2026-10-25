@@ -3,7 +3,7 @@ require_once dirname(__DIR__) . '/includes/http.php';
 
 // A direct /blog/index.php request is a duplicate of the canonical /blog URL.
 if (cbd_is_direct_script_request('index.php')) {
-    $target = cbd_base_path() . '/blog';
+    $target = cbd_base_path() . '/blog/';
     $requestedTag = trim((string)($_GET['tag'] ?? ''));
     if ($requestedTag !== '' && preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $requestedTag)) {
         $target .= '?tag=' . rawurlencode($requestedTag);
@@ -48,7 +48,7 @@ if ($filter_tag) {
 
 $page_title       = $filter_name
     ? "#{$filter_name} Posts — Chulbul Design Blog"
-    : 'Blog — Web Design, SEO & Digital Marketing Tips | Chulbul Design';
+    : 'Web Design, SEO & Development Blog | Chulbul Design';
 $page_description = 'Read the latest insights on web design, SEO, e-commerce, WordPress, and digital marketing from the Chulbul Design team. Tips and guides for Indian businesses.';
 $page_canonical   = 'https://www.chulbuldesign.com/blog/';
 $page_robots      = $filter_tag ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
@@ -113,7 +113,7 @@ $page_robots      = $filter_tag ? 'noindex, follow' : 'index, follow, max-snippe
                 <i class="bi bi-hash"></i><?= htmlspecialchars($filter_name) ?>
                 <span class="text-[#49499A]/60"><?= count($display_posts) ?> posts</span>
             </span>
-            <a href="<?= $base ?>/blog" class="text-sm text-gray-400 hover:text-[#EE483D] transition flex items-center gap-1">
+            <a href="<?= $base ?>/blog/" class="text-sm text-gray-400 hover:text-[#EE483D] transition flex items-center gap-1">
                 <i class="bi bi-x-circle"></i> Clear filter
             </a>
         </div>
@@ -123,7 +123,7 @@ $page_robots      = $filter_tag ? 'noindex, follow' : 'index, follow, max-snippe
         <div style="text-align:center;padding:80px 0;color:#9ca3af;">
             <i class="bi bi-journal-x" style="font-size:3rem;display:block;margin-bottom:16px;"></i>
             <p style="font-size:1.1rem;font-weight:600;">No posts found for <strong>#<?= htmlspecialchars($filter_name) ?></strong></p>
-            <a href="<?= $base ?>/blog" style="margin-top:16px;display:inline-block;color:#49499A;font-weight:600;">← View all posts</a>
+            <a href="<?= $base ?>/blog/" style="margin-top:16px;display:inline-block;color:#49499A;font-weight:600;">← View all posts</a>
         </div>
         <?php else: ?>
 
@@ -161,7 +161,7 @@ $page_robots      = $filter_tag ? 'noindex, follow' : 'index, follow, max-snippe
                     <?php if (!empty($post_tags)): ?>
                     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;">
                         <?php foreach ($post_tags as $tag): ?>
-                        <span onclick="event.preventDefault();event.stopPropagation();window.location='<?= $base ?>/blog?tag=<?= urlencode($tag['slug']) ?>'"
+                        <span onclick="event.preventDefault();event.stopPropagation();window.location='<?= $base ?>/blog/?tag=<?= urlencode($tag['slug']) ?>'"
                               style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:#f0f0ff;color:#49499A;cursor:pointer;">
                             #<?= htmlspecialchars($tag['name']) ?>
                         </span>

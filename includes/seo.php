@@ -3,6 +3,15 @@ require_once __DIR__ . '/database.php';
 
 const CBD_CANONICAL_ORIGIN = 'https://www.chulbuldesign.com';
 
+/** Resolve known historical editorial links without touching other sites or slug prefixes. */
+function cbd_editorial_links(string $html): string
+{
+    $html = preg_replace('~(\bhref=["\x27])(?:https?://(?:www\.)?chulbuldesign\.com)?/ecommerce-website-design/?(?=["\x27?#])~i',
+        '$1/ecommerce-website-development', $html) ?? $html;
+    return preg_replace('~(\bhref=["\x27])(?:https?://(?:www\.)?chulbuldesign\.com)?/blog(?=["\x27?])~i',
+        '$1/blog/', $html) ?? $html;
+}
+
 function cbd_canonical_url(string $path = '/'): string
 {
     $path = '/' . ltrim($path, '/');

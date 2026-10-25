@@ -15,10 +15,11 @@ import urllib.request
 
 
 def main():
+    metadata_mode = bool(os.environ.get('METADATA_BUNDLE'))
     spoke_mode = bool(os.environ.get('SPOKE_BUNDLE'))
     city_mode = bool(os.environ.get('CITY_BUNDLE')) and not spoke_mode
-    bundle = os.environ['SPOKE_BUNDLE'] if spoke_mode else (os.environ['CITY_BUNDLE'] if city_mode else os.environ['BLOG_BUNDLE'])
-    valid = bundle == 'seo_spokes_seattle_2026_10_09.json' if spoke_mode else (bundle == 'seo_city_seattle_2026_10_09.json' if city_mode else re.fullmatch(r'blogs_[a-z0-9_]+\.json', bundle))
+    bundle = os.environ['METADATA_BUNDLE'] if metadata_mode else (os.environ['SPOKE_BUNDLE'] if spoke_mode else (os.environ['CITY_BUNDLE'] if city_mode else os.environ['BLOG_BUNDLE']))
+    valid = bundle == 'seo_metadata_2026_10_25.json' if metadata_mode else (bundle == 'seo_spokes_seattle_2026_10_09.json' if spoke_mode else (bundle == 'seo_city_seattle_2026_10_09.json' if city_mode else re.fullmatch(r'blogs_[a-z0-9_]+\.json', bundle)))
     if not valid:
         raise ValueError('Invalid bundle filename')
     bundle_bytes = (Path(__file__).parent / bundle).read_bytes()
@@ -27,7 +28,7 @@ def main():
         raise ValueError('Invalid city bundle')
     if spoke_mode and [p['slug'] for p in posts] != ['contractor-web-design', 'ecommerce-development', 'small-business-web-design', 'wordpress-developer']:
         raise ValueError('Invalid Seattle service scope')
-    if not city_mode and not spoke_mode and len(posts) not in (2, 4):
+    if not metadata_mode and not city_mode and not spoke_mode and len(posts) not in (2, 4):
         raise ValueError('Expected two or four articles')
     token = secrets.token_hex(32)
     filename = 'cbd-publish-' + secrets.token_hex(16) + '.php'
@@ -60,6 +61,8 @@ try {
         source = source.replace('publish-blog-bundle.php', 'publish-seattle-spokes.php').replace('cbd_publish_blog_bundle', 'cbd_publish_seattle_spokes')
     if city_mode:
         source = source.replace('publish-blog-bundle.php', 'publish-city-seo.php').replace('cbd_publish_blog_bundle', 'cbd_publish_city_seo')
+    if metadata_mode:
+        source = source.replace('publish-blog-bundle.php', 'publish-metadata.php').replace('cbd_publish_blog_bundle', 'cbd_publish_metadata')
     def connect_ftp():
         ftp = ftplib.FTP(timeout=30)
         ftp.connect(os.environ['FTP_SERVER'], 21)
@@ -95,7 +98,10 @@ try {
                 time.sleep(2 ** (attempt + 1))
         with open_with_retry(request, timeout=30) as response:
             result = json.load(response)
-        if spoke_mode:
+        if metadata_mode:
+            if not result.get('success') or result.get('paths') != [post['path'] for post in posts] or result.get('missing_local') or result.get('updated', 0) + result.get('unchanged', 0) != len(posts):
+                raise RuntimeError('Publication response did not confirm reviewed metadata')
+        elif spoke_mode:
             if not result.get('success') or result.get('city_slug') != 'seattle' or result.get('slugs') != [p['slug'] for p in posts]:
                 raise RuntimeError('Publication response did not confirm four Seattle services')
         elif city_mode:
@@ -114,6 +120,19 @@ try {
     sitemap_request = urllib.request.Request('https://www.chulbuldesign.com/sitemap.xml', headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
     with open_with_retry(sitemap_request, timeout=30) as response:
         sitemap = response.read().decode()
+    if metadata_mode:
+        import html
+        # Spot-check each repository type here; the full live crawl is reviewed separately.
+        for path in ['/city/noida', '/city/pune/ecommerce-development', '/blog/wordpress-vs-shopify', '/api-integration', '/nextjs-development']:
+            post = next(post for post in posts if post['path'] == path)
+            url = 'https://www.chulbuldesign.com' + path
+            request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; ChulbulDeployMonitor/1.0)'})
+            with open_with_retry(request, timeout=60) as response:
+                markup = response.read().decode()
+            if any(html.escape(value, quote=False) not in markup for value in post['after'].values()) or url not in sitemap:
+                raise RuntimeError('Live metadata verification failed: ' + path)
+            print('Verified live metadata: ' + url, flush=True)
+        return
     if spoke_mode:
         import html
         for post in posts:

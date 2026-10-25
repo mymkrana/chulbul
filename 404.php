@@ -65,7 +65,7 @@ $requestedUrl = htmlspecialchars((string)($_SERVER['REQUEST_URI'] ?? ''), ENT_QU
         <?php
         $popularPages = [
             ['bi-globe2', 'Web Design', '/web-design', 'Custom websites that convert'],
-            ['bi-cart4', 'E-Commerce Design', '/ecommerce-website-design', 'Online stores built for growth'],
+            ['bi-cart4', 'E-Commerce Design', '/ecommerce-website-development', 'Online stores built for growth'],
             ['bi-phone', 'App Development', '/android-app-development', 'Mobile app development'],
             ['bi-graph-up-arrow', 'SEO Services', '/local-seo-services', 'Improve visibility on Google'],
             ['bi-vector-pen', 'UI/UX Design', '/ui-ux-branding', 'Clear and engaging experiences'],

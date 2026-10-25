@@ -403,7 +403,7 @@ $schema = [
             <div class="wd-related-grid">
                 <a class="wd-related-card wd-reveal" href="<?= $base ?>/web-design"><i class="bi bi-palette2"></i><span><strong>Web Design</strong>User journeys and visual interfaces for your build.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a>
                 <a class="wd-related-card wd-reveal" href="<?= $base ?>/cms-development"><i class="bi bi-layout-text-window"></i><span><strong>CMS Development</strong>Structured content management for editorial teams.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a>
-                <a class="wd-related-card wd-reveal" href="<?= $base ?>/ecommerce-website-design"><i class="bi bi-cart3"></i><span><strong>Ecommerce Development</strong>Product, checkout and order experiences for online selling.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a>
+                <a class="wd-related-card wd-reveal" href="<?= $base ?>/ecommerce-website-development"><i class="bi bi-cart3"></i><span><strong>Ecommerce Development</strong>Product, checkout and order experiences for online selling.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a>
                 <a class="wd-related-card wd-reveal" href="<?= $base ?>/website-maintenance"><i class="bi bi-tools"></i><span><strong>Website Maintenance</strong>Planned updates, checks and technical support after launch.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a>
             </div>
         </div>

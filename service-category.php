@@ -177,7 +177,7 @@ $pages = [
             ['icon'=>'bi-wordpress',      'color'=>'#49499A','title'=>'WooCommerce Development',  'href'=>'/woocommerce-development',  'desc'=>'Full-control WooCommerce stores with custom product logic, fast hosting setup and payment gateway integration.'],
             ['icon'=>'bi-bag-fill',       'color'=>'#16a34a','title'=>'Magento Development',      'href'=>'/magento-development',      'desc'=>'Enterprise-grade Magento stores for large catalogues and complex B2B pricing rules.'],
             ['icon'=>'bi-people-fill',    'color'=>'#7c3aed','title'=>'Multi-Vendor Marketplace', 'href'=>'/multi-vendor-marketplace', 'desc'=>'Amazon or Flipkart-style marketplaces where multiple sellers list and sell — with separate dashboards and payouts.'],
-            ['icon'=>'bi-cart-check-fill','color'=>'#ea580c','title'=>'Custom Online Store',      'href'=>'/ecommerce-website-design', 'desc'=>'Fully custom-built ecommerce stores when your product rules or business model doesn\'t fit any off-the-shelf platform.'],
+            ['icon'=>'bi-cart-check-fill','color'=>'#ea580c','title'=>'Custom Online Store',      'href'=>'/ecommerce-website-development', 'desc'=>'Fully custom-built ecommerce stores when your product rules or business model doesn\'t fit any off-the-shelf platform.'],
             ['icon'=>'bi-headset',        'color'=>'#0ea5e9','title'=>'Ecommerce Support',        'href'=>'/website-maintenance',      'desc'=>'Monthly maintenance for your store — security updates, speed checks, product uploads and WhatsApp support.'],
         ],
         'process_heading' => 'How We Build Every Store',

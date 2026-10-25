@@ -55,7 +55,7 @@ if (!$post) {
             <i class="bi bi-file-earmark-x text-6xl text-gray-300 block mb-6"></i>
             <h1 class="text-3xl font-extrabold text-[#1e1e5c] mb-4">Post Not Found</h1>
             <p class="text-gray-500 mb-8">The blog post you are looking for does not exist or may have been moved.</p>
-            <a href="<?= $base ?>/blog" class="inline-flex items-center gap-2 bg-[#EE483D] text-white px-6 py-3 rounded-xl font-bold hover:bg-red-600 transition">
+            <a href="<?= $base ?>/blog/" class="inline-flex items-center gap-2 bg-[#EE483D] text-white px-6 py-3 rounded-xl font-bold hover:bg-red-600 transition">
                 <i class="bi bi-arrow-left"></i> Back to Blog
             </a>
         </div>
@@ -98,7 +98,7 @@ if (count($related) < 3) {
 $date_fmt = date('d M Y, h:i A', strtotime($post['created_at'] ?? $post['date']));
 $published_at = (string)($post['date'] ?: ($post['created_at'] ?? ''));
 $modified_at = (string)(($post['updated_at'] ?? '') ?: $published_at);
-$post['content'] = (string)cbd_normalize_schema_urls((string)$post['content']);
+$post['content'] = cbd_editorial_links((string)cbd_normalize_schema_urls((string)$post['content']));
 $schema_img = cbd_public_url('', '/assets/images/Fb_chulbuldesign.jpg');
 if (preg_match('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', $post['content'], $img_m)) {
     $schema_img = cbd_public_url(cbd_asset_url($img_m[1]), '/assets/images/Fb_chulbuldesign.jpg');
@@ -153,7 +153,7 @@ $breadcrumb_schema = [
     '@type'           => 'BreadcrumbList',
     'itemListElement' => [
         ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => 'https://www.chulbuldesign.com'],
-        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Blog', 'item' => 'https://www.chulbuldesign.com/blog'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Blog', 'item' => 'https://www.chulbuldesign.com/blog/'],
         ['@type' => 'ListItem', 'position' => 3, 'name' => $post['title'], 'item' => 'https://www.chulbuldesign.com/blog/' . $post['slug']],
     ],
 ];
@@ -189,7 +189,7 @@ foreach ($faq_matches as $faq) {
         <ol class="flex flex-wrap items-center gap-1.5 text-sm text-gray-500">
             <li><a href="<?= $base ?>/" class="hover:text-[#EE483D] transition">Home</a></li>
             <li><i class="bi bi-chevron-right text-xs"></i></li>
-            <li><a href="<?= $base ?>/blog" class="hover:text-[#EE483D] transition">Blog</a></li>
+            <li><a href="<?= $base ?>/blog/" class="hover:text-[#EE483D] transition">Blog</a></li>
             <li><i class="bi bi-chevron-right text-xs"></i></li>
             <li class="text-[#49499A] font-medium truncate max-w-[200px] sm:max-w-none" aria-current="page">
                 <?= htmlspecialchars($post['title']) ?>
@@ -219,7 +219,7 @@ foreach ($faq_matches as $faq) {
             <?php if (!empty($post_tags)): ?>
             <div class="flex flex-wrap gap-2 mb-5">
                 <?php foreach ($post_tags as $tag): ?>
-                <a href="<?= $base ?>/blog?tag=<?= urlencode($tag['slug']) ?>"
+                <a href="<?= $base ?>/blog/?tag=<?= urlencode($tag['slug']) ?>"
                    class="inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full bg-[#f0f0ff] text-[#49499A] border border-[#49499A]/20 hover:bg-[#49499A] hover:text-white transition">
                     <i class="bi bi-hash" style="font-size:10px"></i><?= htmlspecialchars($tag['name']) ?>
                 </a>
@@ -256,7 +256,7 @@ $post_content = preg_replace_callback(
             <div class="mt-10 pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
                 <div class="flex flex-wrap items-center gap-1.5">
                     <?php foreach ($post_tags as $tag): ?>
-                    <a href="<?= $base ?>/blog?tag=<?= urlencode($tag['slug']) ?>"
+                    <a href="<?= $base ?>/blog/?tag=<?= urlencode($tag['slug']) ?>"
                        class="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-[#f0f0ff] text-[#49499A] border border-[#49499A]/20 hover:bg-[#49499A] hover:text-white transition">
                         <i class="bi bi-hash" style="font-size:9px"></i><?= htmlspecialchars($tag['name']) ?>
                     </a>

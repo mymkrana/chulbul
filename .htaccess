@@ -55,6 +55,9 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://www.chulbuldesign.com/$1 [R=301,L]
 
 # ── 4. Routing Rules ──────────────────────────────────────────────────────────
+RewriteCond %{REQUEST_URI} ^(.*/)ecommerce-website-design(?:\.php)?/?$
+RewriteRule ^ecommerce-website-design(?:\.php)?/?$ %1ecommerce-website-development [R=301,L,NE]
+
 # Route clean URLs relative to this project directory on local and live hosts.
 RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
 RewriteRule ^city/([a-z0-9-]+)/([a-z0-9-]+)/?$ city-spoke.php?city=$1&service=$2 [L,QSA]

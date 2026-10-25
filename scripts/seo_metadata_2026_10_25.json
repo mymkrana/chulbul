@@ -1,0 +1,2073 @@
+[
+  {
+    "path": "/ai-content-solutions",
+    "before": {
+      "meta_title": "AI Content Solutions India | AI-Powered Blog Writing, Product Descriptions & SEO Content – Chulbul Design",
+      "meta_description": "AI content solutions for Indian businesses — AI-assisted SEO blog writing, bulk product descriptions, multilingual content, social media content and AI image generation. Call +91 9990548795."
+    },
+    "after": {
+      "meta_title": "AI Content Services in India | Chulbul Design",
+      "meta_description": "AI-assisted content for blog posts, product descriptions and multilingual website copy. Plan your content and review workflow with Chulbul Design."
+    },
+    "kind": "service",
+    "key": "ai-content-solutions"
+  },
+  {
+    "path": "/api-integration",
+    "before": {
+      "meta_title": "API Integration Services India | Connect Any Two Systems – Chulbul Design",
+      "meta_description": "Professional API integration services in India. We connect your website, CRM, ERP, payment gateway and third-party apps so your data flows automatically. Free consultation — call +91 9990548795."
+    },
+    "after": {
+      "meta_title": "API Integration Services in India | Chulbul Design",
+      "meta_description": "Connect your website, CRM, ERP and payment systems with scoped API integrations. Plan data mapping, error handling and reliable handoffs with Chulbul Design."
+    },
+    "kind": "service",
+    "key": "api-integration"
+  },
+  {
+    "path": "/blog/b2b-corporate-website-design-gurgaon",
+    "before": {
+      "meta_title": "B2B Tech & Corporate Website Design in Gurgaon (2026): Cyber City Guide"
+    },
+    "after": {
+      "meta_title": "B2B Website Design in Gurgaon: Corporate Website Guide"
+    },
+    "kind": "post",
+    "key": "b2b-corporate-website-design-gurgaon"
+  },
+  {
+    "path": "/blog/birmingham-web-design-jewellery-quarter-guide-2026",
+    "before": {
+      "meta_title": "Birmingham Web Design & Jewellery Quarter Guide 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Birmingham Web Design & Jewellery Quarter Guide"
+    },
+    "kind": "post",
+    "key": "birmingham-web-design-jewellery-quarter-guide-2026"
+  },
+  {
+    "path": "/blog/custom-website-vs-template",
+    "before": {
+      "meta_description": "Discover the difference between custom web design and cheap templates. Learn why custom websites outperform templates in conversion rates, SEO, and brand identity. Get a free consultation to boost your online presence."
+    },
+    "after": {
+      "meta_description": "Compare custom websites and templates by scope, editing, maintenance and business needs. Understand the trade-offs before choosing your next website approach."
+    },
+    "kind": "post",
+    "key": "custom-website-vs-template"
+  },
+  {
+    "path": "/blog/digital-marketing-strategy-india",
+    "before": {
+      "meta_title": "Digital Marketing Strategy for Indian Small Businesses in 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Digital Marketing for Indian Small Businesses: 2026 Guide"
+    },
+    "kind": "post",
+    "key": "digital-marketing-strategy-india"
+  },
+  {
+    "path": "/blog/ecommerce-website-design-best-practices",
+    "before": {
+      "meta_title": "E-Commerce Website Design: Best Practices for 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Ecommerce Website Design: Best Practices for 2026"
+    },
+    "kind": "post",
+    "key": "ecommerce-website-design-best-practices"
+  },
+  {
+    "path": "/blog/figma-ai-image-editing",
+    "before": {
+      "meta_description": "Discover how Figma AI enhances image editing with features like making images, editing, isolating objects, removing backgrounds, expanding, and boosting resolution. Learn more and try now"
+    },
+    "after": {
+      "meta_description": "Explore Figma AI image editing workflows, from creating images and removing backgrounds to refining assets. Review the tools before choosing your workflow."
+    },
+    "kind": "post",
+    "key": "figma-ai-image-editing"
+  },
+  {
+    "path": "/blog/figma-design-guide",
+    "before": {
+      "meta_title": "Figma Design: The Complete Guide to Professional UI/UX Design for Websites & Apps"
+    },
+    "after": {
+      "meta_title": "Figma Design Guide: Website & App UI/UX Workflows"
+    },
+    "kind": "post",
+    "key": "figma-design-guide"
+  },
+  {
+    "path": "/blog/framer-vs-figma-ecommerce",
+    "before": {
+      "meta_title": "Framer vs Figma for Ecommerce: Which Design Tool Reigns Supreme?"
+    },
+    "after": {
+      "meta_title": "Framer vs Figma for Ecommerce: Design & Build Compared"
+    },
+    "kind": "post",
+    "key": "framer-vs-figma-ecommerce"
+  },
+  {
+    "path": "/blog/healthcare-clinic-website-design-delhi",
+    "before": {
+      "meta_title": "Healthcare & Clinic Website Design in Delhi (2026): NABH & Patient UX"
+    },
+    "after": {
+      "meta_title": "Delhi Clinic Websites: Patient Booking & Design Guide"
+    },
+    "kind": "post",
+    "key": "healthcare-clinic-website-design-delhi"
+  },
+  {
+    "path": "/blog/how-to-choose-web-design-company-india",
+    "before": {
+      "meta_title": "How to Choose the Right Web Design Company in India | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "How to Choose the Right Web Design Company in India"
+    },
+    "kind": "post",
+    "key": "how-to-choose-web-design-company-india"
+  },
+  {
+    "path": "/blog/how-to-improve-website-speed",
+    "before": {
+      "meta_title": "How to Improve Your Website Speed and Core Web Vitals | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "How to Improve Your Website Speed and Core Web Vitals"
+    },
+    "kind": "post",
+    "key": "how-to-improve-website-speed"
+  },
+  {
+    "path": "/blog/local-seo-google-maps-ranking",
+    "before": {
+      "meta_title": "Local SEO: How to Rank Your Business on Google Maps | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Local SEO: How to Rank Your Business on Google Maps"
+    },
+    "kind": "post",
+    "key": "local-seo-google-maps-ranking"
+  },
+  {
+    "path": "/blog/luxury-ecommerce-website-design-mumbai",
+    "before": {
+      "meta_title": "Luxury E-Commerce Website Design in Mumbai (2026): D2C & Jewelry Guide"
+    },
+    "after": {
+      "meta_title": "Luxury Ecommerce Website Design in Mumbai: D2C Guide"
+    },
+    "kind": "post",
+    "key": "luxury-ecommerce-website-design-mumbai"
+  },
+  {
+    "path": "/blog/saas-startup-website-development-bangalore",
+    "before": {
+      "meta_title": "SaaS & AI Startup Website Development in Bangalore (2026): Silicon Valley Guide"
+    },
+    "after": {
+      "meta_title": "Bangalore SaaS & Startup Websites: Development Guide"
+    },
+    "kind": "post",
+    "key": "saas-startup-website-development-bangalore"
+  },
+  {
+    "path": "/blog/seo-tips-small-business-2026",
+    "before": {
+      "meta_title": "Top 10 SEO Tips for Small Businesses in 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Top 10 SEO Tips for Small Businesses in 2026"
+    },
+    "kind": "post",
+    "key": "seo-tips-small-business-2026"
+  },
+  {
+    "path": "/blog/the-power-of-branding-definition-importance-and-best-practices",
+    "before": {
+      "meta_title": "The Power of Branding: Definition, Importance, and Best Practices"
+    },
+    "after": {
+      "meta_title": "Branding Basics: Definition, Benefits & Best Practices"
+    },
+    "kind": "post",
+    "key": "the-power-of-branding-definition-importance-and-best-practices"
+  },
+  {
+    "path": "/blog/travel-agency-website-cost",
+    "before": {
+      "meta_title": "Travel Agency & Tour Operator Website Cost 2026 (Pricing Guide)"
+    },
+    "after": {
+      "meta_title": "Travel Agency Website Cost: Features & Budget Guide"
+    },
+    "kind": "post",
+    "key": "travel-agency-website-cost"
+  },
+  {
+    "path": "/blog/web-design-abu-dhabi-ecommerce-guide-2026",
+    "before": {
+      "meta_title": "Web Design in Abu Dhabi 2026: Costs (AED) & Agency Guide | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Abu Dhabi Web Design: Costs & Bilingual Website Guide"
+    },
+    "kind": "post",
+    "key": "web-design-abu-dhabi-ecommerce-guide-2026"
+  },
+  {
+    "path": "/blog/web-design-bristol-costs-agencies-guide-2026",
+    "before": {
+      "meta_title": "Web Design in Bristol (2026): Costs & Agency Guide | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Bristol Web Design: Website Costs & Agency Guide"
+    },
+    "kind": "post",
+    "key": "web-design-bristol-costs-agencies-guide-2026"
+  },
+  {
+    "path": "/blog/website-cost-india-2026",
+    "before": {
+      "meta_title": "How Much Does a Website Cost in India in 2026? | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "How Much Does a Website Cost in India in 2026?"
+    },
+    "kind": "post",
+    "key": "website-cost-india-2026"
+  },
+  {
+    "path": "/blog/what-is-shopify",
+    "before": {
+      "meta_title": "What is Shopify and How Can It Help Your Business Grow? | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "What Is Shopify? Features & Business Website Guide"
+    },
+    "kind": "post",
+    "key": "what-is-shopify"
+  },
+  {
+    "path": "/blog/what-is-uiux-design",
+    "before": {
+      "meta_title": "What is UI/UX Design and Why Does It Matter for Your Business? | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "What Is UI/UX Design? A Guide for Business Owners"
+    },
+    "kind": "post",
+    "key": "what-is-uiux-design"
+  },
+  {
+    "path": "/blog/what-is-web-development",
+    "before": {
+      "meta_title": "What is Web Development? A Complete Guide for Business Owners | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "What Is Web Development? A Business Owner's Guide"
+    },
+    "kind": "post",
+    "key": "what-is-web-development"
+  },
+  {
+    "path": "/blog/why-delhi-business-needs-website",
+    "before": {
+      "meta_title": "Why Every Delhi Business Needs a Professional Website | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Why Delhi Businesses Need a Professional Website"
+    },
+    "kind": "post",
+    "key": "why-delhi-business-needs-website"
+  },
+  {
+    "path": "/blog/why-mobile-friendly-website",
+    "before": {
+      "meta_title": "Why Your Business Needs a Mobile-Friendly Website in 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Mobile-Friendly Websites: Benefits & Planning Guide"
+    },
+    "kind": "post",
+    "key": "why-mobile-friendly-website"
+  },
+  {
+    "path": "/blog/wordpress-complete-guide",
+    "before": {
+      "meta_title": "WordPress Website: A Complete Beginner's Guide for 2026 | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "WordPress Websites: A Beginner's Guide for 2026"
+    },
+    "kind": "post",
+    "key": "wordpress-complete-guide"
+  },
+  {
+    "path": "/blog/wordpress-vs-shopify",
+    "before": {
+      "meta_title": "WordPress vs Shopify: Which is Better for Your Business in 2026? | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "WordPress vs Shopify: Costs, SEO & Business Fit"
+    },
+    "kind": "post",
+    "key": "wordpress-vs-shopify"
+  },
+  {
+    "path": "/city/abu-dhabi/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Abu Dhabi | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Abu Dhabi, United Arab Emirates. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from AED 2,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Abu Dhabi | Chulbul Design",
+      "meta_description": "Small business web design for Abu Dhabi. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/abu-dhabi/small-business-web-design"
+  },
+  {
+    "path": "/city/adelaide",
+    "before": {
+      "meta_title": "Web Design Agency in Adelaide | Affordable Websites & SEO | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Adelaide businesses. Custom websites from A$699. Serving CBD, North Adelaide, Norwood & all of South Australia. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Adelaide | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Adelaide. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "adelaide"
+  },
+  {
+    "path": "/city/adelaide/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Adelaide | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Adelaide, Australia. High-converting Shopify and WooCommerce stores with Stripe Australia, Afterpay, Zip, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Adelaide | Chulbul Design",
+      "meta_description": "Ecommerce development for Adelaide businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/adelaide/ecommerce-development"
+  },
+  {
+    "path": "/city/adelaide/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Adelaide | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Adelaide, Australia. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from A$699."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Adelaide | Chulbul Design",
+      "meta_description": "Small business web design for Adelaide. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/adelaide/small-business-web-design"
+  },
+  {
+    "path": "/city/ahmedabad",
+    "before": {
+      "meta_title": "Web Design Company in Ahmedabad | Gujarat's Top Digital Agency – Chulbul Design",
+      "meta_description": "Best web design company in Ahmedabad. Custom websites, e-commerce & SEO for textile, diamond & SME businesses — SG Road, GIFT City, Navrangpura. Free consultation: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Ahmedabad | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Ahmedabad. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "ahmedabad"
+  },
+  {
+    "path": "/city/ahmedabad/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Ahmedabad | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Ahmedabad, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Ahmedabad | Chulbul Design",
+      "meta_description": "Ecommerce development for Ahmedabad businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/ahmedabad/ecommerce-development"
+  },
+  {
+    "path": "/city/ahmedabad/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Ahmedabad | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Ahmedabad, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Ahmedabad | Chulbul Design",
+      "meta_description": "Small business web design for Ahmedabad. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/ahmedabad/small-business-web-design"
+  },
+  {
+    "path": "/city/amritsar",
+    "before": {
+      "meta_title": "Web Design Company in Amritsar | Hotel, Tourism & Business Websites – Chulbul Design",
+      "meta_description": "Top web design company in Amritsar. Custom websites for hotels, restaurants, textile & export businesses — Hall Bazaar, Ranjit Avenue, GT Road. Free quote: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Amritsar | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Amritsar. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "amritsar"
+  },
+  {
+    "path": "/city/amritsar/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Amritsar | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Amritsar | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/amritsar/small-business-web-design"
+  },
+  {
+    "path": "/city/atlanta",
+    "before": {
+      "meta_title": "Web Design Agency in Atlanta, GA | Custom Websites & SEO | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Atlanta businesses. Custom websites from $799. Serving Midtown, Buckhead, Sandy Springs & all Metro Atlanta. Get a free quote today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Atlanta | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Atlanta. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "atlanta"
+  },
+  {
+    "path": "/city/atlanta/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Atlanta | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Atlanta, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Atlanta | Chulbul Design",
+      "meta_description": "Ecommerce development for Atlanta businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/atlanta/ecommerce-development"
+  },
+  {
+    "path": "/city/atlanta/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Atlanta | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Atlanta | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/atlanta/small-business-web-design"
+  },
+  {
+    "path": "/city/bangalore",
+    "before": {
+      "meta_title": "Web Design Company in Bangalore | SaaS, Startup & Enterprise Websites – Chulbul Design",
+      "meta_description": "Top web design company in Bangalore. We build world-class websites & apps for SaaS startups, IT companies & enterprises — Koramangala, Whitefield, Indiranagar. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Bangalore | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Bangalore. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "bangalore"
+  },
+  {
+    "path": "/city/bangalore/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Bangalore | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Bangalore, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Bangalore | Chulbul Design",
+      "meta_description": "Ecommerce development for Bangalore businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/bangalore/ecommerce-development"
+  },
+  {
+    "path": "/city/bangalore/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Bangalore | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Bangalore, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Bangalore | Chulbul Design",
+      "meta_description": "Small business web design for Bangalore. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/bangalore/small-business-web-design"
+  },
+  {
+    "path": "/city/bhubaneswar",
+    "before": {
+      "meta_title": "Web Design Company in Bhubaneswar | IT & Tourism Websites – Chulbul Design",
+      "meta_description": "Best web design company in Bhubaneswar. Custom websites, SEO & digital marketing for IT, tourism & education businesses — Infocity, Saheed Nagar, Patia. Call: +91 9990548795!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Bhubaneswar | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Bhubaneswar. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "bhubaneswar"
+  },
+  {
+    "path": "/city/bhubaneswar/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Bhubaneswar | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Bhubaneswar, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Bhubaneswar | Chulbul Design",
+      "meta_description": "Small business web design for Bhubaneswar. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/bhubaneswar/small-business-web-design"
+  },
+  {
+    "path": "/city/birmingham/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Birmingham | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Birmingham. We build fast, mobile-first Shopify and WooCommerce online stores with UK payment gateways and transparent £ pricing."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Birmingham | Chulbul Design",
+      "meta_description": "Ecommerce development for Birmingham businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/birmingham/ecommerce-development"
+  },
+  {
+    "path": "/city/birmingham/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Birmingham | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Birmingham, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Birmingham | Chulbul Design",
+      "meta_description": "Small business web design for Birmingham. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/birmingham/small-business-web-design"
+  },
+  {
+    "path": "/city/boston",
+    "before": {
+      "meta_title": "Web Design Agency in Boston, MA | BioTech & Finance Websites | Chulbul Design",
+      "meta_description": "Professional web design & development for Boston businesses. Custom websites from $799. Serving Back Bay, Cambridge, Kendall Square & all of Greater Boston. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Boston | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Boston. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "boston"
+  },
+  {
+    "path": "/city/boston/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Boston | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Boston, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Boston | Chulbul Design",
+      "meta_description": "Ecommerce development for Boston businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/boston/ecommerce-development"
+  },
+  {
+    "path": "/city/boston/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Boston | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Boston, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Boston | Chulbul Design",
+      "meta_description": "Small business web design for Boston. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/boston/small-business-web-design"
+  },
+  {
+    "path": "/city/brisbane",
+    "before": {
+      "meta_title": "Web Design Agency in Brisbane | Fast & SEO-Optimised | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Brisbane businesses. Custom websites from A$699. Serving CBD, South Bank, Fortitude Valley & all of South-East Queensland. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Brisbane | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Brisbane. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "brisbane"
+  },
+  {
+    "path": "/city/brisbane/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Brisbane | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Brisbane, Australia. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from A$699."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Brisbane | Chulbul Design",
+      "meta_description": "Small business web design for Brisbane. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/brisbane/small-business-web-design"
+  },
+  {
+    "path": "/city/bristol",
+    "before": {
+      "meta_title": "Web Design Agency Bristol | Custom Websites & WordPress – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Bristol | Chulbul Design"
+    },
+    "kind": "city",
+    "key": "bristol"
+  },
+  {
+    "path": "/city/bristol/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Bristol | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Bristol, United Kingdom. High-converting Shopify and WooCommerce stores with Stripe UK, PayPal, Apple Pay, and Klarna and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Bristol | Chulbul Design",
+      "meta_description": "Ecommerce development for Bristol businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/bristol/ecommerce-development"
+  },
+  {
+    "path": "/city/bristol/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Web Design Bristol | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Bristol | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/bristol/small-business-web-design"
+  },
+  {
+    "path": "/city/calgary",
+    "before": {
+      "meta_title": "Web Design Agency in Calgary | Energy & Tech Websites | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Calgary businesses. Custom websites from C$699. Serving Downtown, Beltline, NW Calgary & all of Southern Alberta. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Calgary | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Calgary. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "calgary"
+  },
+  {
+    "path": "/city/calgary/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Calgary | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Calgary | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/calgary/small-business-web-design"
+  },
+  {
+    "path": "/city/cape-town",
+    "before": {
+      "meta_title": "Web Design Agency in Cape Town | Tourism & Tech Websites | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Cape Town businesses. Custom websites from R4,999. Serving City Bowl, Waterfront, Stellenbosch & all of the Western Cape. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Cape Town | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Cape Town. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "cape-town"
+  },
+  {
+    "path": "/city/cape-town/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Cape Town | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Cape Town, South Africa. High-converting Shopify and WooCommerce stores with PayFast, Ozow Instant EFT, Peach Payments, and SnapScan and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Cape Town | Chulbul Design",
+      "meta_description": "Ecommerce development for Cape Town businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/cape-town/ecommerce-development"
+  },
+  {
+    "path": "/city/cape-town/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Cape Town | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Cape Town, South Africa. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from R4,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Cape Town | Chulbul Design",
+      "meta_description": "Small business web design for Cape Town. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/cape-town/small-business-web-design"
+  },
+  {
+    "path": "/city/chandigarh",
+    "before": {
+      "meta_title": "Web Design Company in Chandigarh | Tricity's Top Agency – Chulbul Design",
+      "meta_description": "Best web design company in Chandigarh. Custom websites, WordPress & SEO for businesses across Chandigarh Tricity — Sector 17, 22, 34, Mohali & Panchkula. Free consultation available!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Chandigarh | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Chandigarh. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "chandigarh"
+  },
+  {
+    "path": "/city/chandigarh/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Chandigarh | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Chandigarh, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Chandigarh | Chulbul Design",
+      "meta_description": "Small business web design for Chandigarh. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/chandigarh/small-business-web-design"
+  },
+  {
+    "path": "/city/chennai",
+    "before": {
+      "meta_title": "Web Design Company in Chennai | Manufacturing & IT Websites – Chulbul Design",
+      "meta_description": "Best web design company in Chennai. Custom websites, SEO & digital marketing for automobile, IT & retail businesses — Anna Nagar, T Nagar, OMR. Call +91 9990548795 today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Chennai | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Chennai. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "chennai"
+  },
+  {
+    "path": "/city/chennai/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Chennai | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Chennai, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Chennai | Chulbul Design",
+      "meta_description": "Ecommerce development for Chennai businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/chennai/ecommerce-development"
+  },
+  {
+    "path": "/city/chennai/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Chennai | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Chennai | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/chennai/small-business-web-design"
+  },
+  {
+    "path": "/city/chicago",
+    "before": {
+      "meta_title": "Web Design Agency in Chicago | Fast & SEO-Ready | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Chicago businesses. Custom websites from $799. Serving The Loop, River North, Wicker Park & all Chicagoland. Free consultation — get started today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Chicago | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Chicago. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "chicago"
+  },
+  {
+    "path": "/city/chicago/ecommerce-development",
+    "before": {
+      "meta_title": "Chicago Ecommerce Web Design & Development | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Top ecommerce web design in Chicago. We build scalable Shopify, WooCommerce, and custom stores for Chicago retailers and B2B distributors with 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Chicago | Chulbul Design",
+      "meta_description": "Ecommerce development for Chicago businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/chicago/ecommerce-development"
+  },
+  {
+    "path": "/city/chicago/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Chicago | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Chicago, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Chicago | Chulbul Design",
+      "meta_description": "Small business web design for Chicago. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/chicago/small-business-web-design"
+  },
+  {
+    "path": "/city/coimbatore",
+    "before": {
+      "meta_title": "Web Design Company in Coimbatore | Textile & B2B Websites – Chulbul Design",
+      "meta_description": "Top web design company in Coimbatore. Custom B2B websites, SEO & e-commerce for textile, engineering & IT businesses — RS Puram, Gandhipuram, Peelamedu. Call now!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Coimbatore | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Coimbatore. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "coimbatore"
+  },
+  {
+    "path": "/city/coimbatore/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Coimbatore | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Coimbatore, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Coimbatore | Chulbul Design",
+      "meta_description": "Small business web design for Coimbatore. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/coimbatore/small-business-web-design"
+  },
+  {
+    "path": "/city/dallas",
+    "before": {
+      "meta_title": "Web Design Agency in Dallas, TX | Custom Websites & SEO | Chulbul Design",
+      "meta_description": "Professional web design & SEO agency for Dallas businesses. Custom websites from $799. Serving Uptown, Deep Ellum, Plano, Frisco & all DFW Metroplex. Get a free quote today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Dallas | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Dallas. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "dallas"
+  },
+  {
+    "path": "/city/dallas/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Dallas | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Dallas, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Dallas | Chulbul Design",
+      "meta_description": "Ecommerce development for Dallas businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/dallas/ecommerce-development"
+  },
+  {
+    "path": "/city/dallas/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Dallas | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Dallas, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Dallas | Chulbul Design",
+      "meta_description": "Small business web design for Dallas. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/dallas/small-business-web-design"
+  },
+  {
+    "path": "/city/delhi",
+    "before": {
+      "meta_title": "Web Design Company in Delhi | Best Website Design Agency – Chulbul Design",
+      "meta_description": "Best web design company in Delhi. Custom, SEO-friendly websites for Delhi businesses — from Connaught Place to South Delhi. 500+ projects delivered. Free quote: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Delhi | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Delhi. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "delhi"
+  },
+  {
+    "path": "/city/delhi/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Delhi | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Delhi, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Delhi | Chulbul Design",
+      "meta_description": "Ecommerce development for Delhi businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/delhi/ecommerce-development"
+  },
+  {
+    "path": "/city/delhi/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Delhi | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Delhi | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/delhi/small-business-web-design"
+  },
+  {
+    "path": "/city/dubai/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Dubai | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Dubai, United Arab Emirates. High-converting Shopify and WooCommerce stores with Telr, PayTabs, Network International, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Dubai | Chulbul Design",
+      "meta_description": "Ecommerce development for Dubai businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/dubai/ecommerce-development"
+  },
+  {
+    "path": "/city/dubai/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Dubai | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Dubai, United Arab Emirates. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from AED 2,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Dubai | Chulbul Design",
+      "meta_description": "Small business web design for Dubai. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/dubai/small-business-web-design"
+  },
+  {
+    "path": "/city/durban",
+    "before": {
+      "meta_title": "Web Design Agency in Durban | Port, Trade & Tourism Websites | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Durban businesses. Custom websites from R4,999. Serving Umhlanga, CBD, Ballito & all of KwaZulu-Natal. WhatsApp available. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Durban | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Durban. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "durban"
+  },
+  {
+    "path": "/city/durban/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Durban | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Durban, South Africa. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from R4,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Durban | Chulbul Design",
+      "meta_description": "Small business web design for Durban. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/durban/small-business-web-design"
+  },
+  {
+    "path": "/city/edinburgh",
+    "before": {
+      "meta_title": "Web Design Agency in Edinburgh | Tourism & Finance Websites | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Edinburgh businesses. Custom websites from £649. Serving Old Town, New Town, Leith & all of Edinburgh. GDPR-compliant. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Edinburgh | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Edinburgh. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "edinburgh"
+  },
+  {
+    "path": "/city/edinburgh/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Edinburgh | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Edinburgh, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Edinburgh | Chulbul Design",
+      "meta_description": "Small business web design for Edinburgh. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/edinburgh/small-business-web-design"
+  },
+  {
+    "path": "/city/glasgow",
+    "before": {
+      "meta_title": "Web Design Agency in Glasgow | Professional Websites & SEO | Chulbul Design",
+      "meta_description": "Top web design & digital marketing agency in Glasgow. Custom websites from £649. Serving City Centre, West End, Merchant City & all of Greater Glasgow. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Glasgow | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Glasgow. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "glasgow"
+  },
+  {
+    "path": "/city/glasgow/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Glasgow | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Glasgow, United Kingdom. High-converting Shopify and WooCommerce stores with Stripe UK, PayPal, Apple Pay, and Klarna and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Glasgow | Chulbul Design",
+      "meta_description": "Ecommerce development for Glasgow businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/glasgow/ecommerce-development"
+  },
+  {
+    "path": "/city/glasgow/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Glasgow | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Glasgow, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Glasgow | Chulbul Design",
+      "meta_description": "Small business web design for Glasgow. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/glasgow/small-business-web-design"
+  },
+  {
+    "path": "/city/gurgaon",
+    "before": {
+      "meta_title": "Web Design Company in Gurgaon | Top Rated Agency – Chulbul Design",
+      "meta_description": "Top web design company in Gurgaon (Gurugram). We build world-class websites for startups, MNCs & enterprises in Cyber City, MG Road & DLF. Free consultation: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Gurgaon | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Gurgaon. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "gurgaon"
+  },
+  {
+    "path": "/city/gurgaon/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Gurgaon | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Gurgaon, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Gurgaon | Chulbul Design",
+      "meta_description": "Ecommerce development for Gurgaon businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/gurgaon/ecommerce-development"
+  },
+  {
+    "path": "/city/gurgaon/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Gurgaon | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Gurgaon | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/gurgaon/small-business-web-design"
+  },
+  {
+    "path": "/city/houston",
+    "before": {
+      "meta_title": "Web Design Agency in Houston, TX | Professional Websites | Chulbul Design",
+      "meta_description": "Top web design & digital marketing for Houston businesses. Custom websites from $799. Serving Downtown Houston, The Woodlands, Sugar Land & all of Texas. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Houston | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Houston. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "houston"
+  },
+  {
+    "path": "/city/houston/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Houston | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Houston, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Houston | Chulbul Design",
+      "meta_description": "Ecommerce development for Houston businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/houston/ecommerce-development"
+  },
+  {
+    "path": "/city/houston/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Houston | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Houston, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Houston | Chulbul Design",
+      "meta_description": "Small business web design for Houston. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/houston/small-business-web-design"
+  },
+  {
+    "path": "/city/hyderabad",
+    "before": {
+      "meta_title": "Web Design Company in Hyderabad | IT & Enterprise Websites – Chulbul Design",
+      "meta_description": "Top web design company in Hyderabad. Custom websites, SEO & app development for IT, pharma & retail businesses — HITEC City, Gachibowli, Banjara Hills. Free consultation: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Hyderabad | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Hyderabad. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "hyderabad"
+  },
+  {
+    "path": "/city/hyderabad/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Hyderabad | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Hyderabad, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Hyderabad | Chulbul Design",
+      "meta_description": "Ecommerce development for Hyderabad businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/hyderabad/ecommerce-development"
+  },
+  {
+    "path": "/city/hyderabad/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Hyderabad | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Hyderabad, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Hyderabad | Chulbul Design",
+      "meta_description": "Small business web design for Hyderabad. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/hyderabad/small-business-web-design"
+  },
+  {
+    "path": "/city/jaipur",
+    "before": {
+      "meta_title": "Web Design Company in Jaipur | Tourism & Business Websites – Chulbul Design",
+      "meta_description": "Top web design company in Jaipur. Custom websites, SEO & e-commerce for hotels, handicraft exporters & IT businesses — C-Scheme, Malviya Nagar, Vaishali Nagar. Call now!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Jaipur | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Jaipur. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "jaipur"
+  },
+  {
+    "path": "/city/jaipur/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Jaipur | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Jaipur | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/jaipur/small-business-web-design"
+  },
+  {
+    "path": "/city/johannesburg",
+    "before": {
+      "meta_title": "Web Design Agency in Johannesburg | Affordable & Professional | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Johannesburg businesses. Custom websites from R4,999. Serving Sandton, Rosebank, Midrand & all of Gauteng. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Johannesburg | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Johannesburg. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "johannesburg"
+  },
+  {
+    "path": "/city/johannesburg/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Johannesburg | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Johannesburg, South Africa. High-converting Shopify and WooCommerce stores with PayFast, Ozow Instant EFT, Peach Payments, and SnapScan and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Johannesburg | Chulbul Design",
+      "meta_description": "Ecommerce development for Johannesburg businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/johannesburg/ecommerce-development"
+  },
+  {
+    "path": "/city/johannesburg/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Johannesburg | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Johannesburg, South Africa. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from R4,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Johannesburg | Chulbul Design",
+      "meta_description": "Small business web design for Johannesburg. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/johannesburg/small-business-web-design"
+  },
+  {
+    "path": "/city/kolkata",
+    "before": {
+      "meta_title": "Web Design Company in Kolkata | Eastern India's Top Agency – Chulbul Design",
+      "meta_description": "Best web design company in Kolkata. Custom websites, SEO & e-commerce for trade, education & retail businesses — Salt Lake City, Park Street, Rajarhat. Free quote: +91 9990548795!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Kolkata | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Kolkata. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "kolkata"
+  },
+  {
+    "path": "/city/kolkata/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Kolkata | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Kolkata, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Kolkata | Chulbul Design",
+      "meta_description": "Ecommerce development for Kolkata businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/kolkata/ecommerce-development"
+  },
+  {
+    "path": "/city/kolkata/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Kolkata | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Kolkata | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/kolkata/small-business-web-design"
+  },
+  {
+    "path": "/city/leeds/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Leeds | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Leeds, United Kingdom. High-converting Shopify and WooCommerce stores with Stripe UK, PayPal, Apple Pay, and Klarna and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Leeds | Chulbul Design",
+      "meta_description": "Ecommerce development for Leeds businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/leeds/ecommerce-development"
+  },
+  {
+    "path": "/city/leeds/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Leeds | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Leeds, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Leeds | Chulbul Design",
+      "meta_description": "Small business web design for Leeds. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/leeds/small-business-web-design"
+  },
+  {
+    "path": "/city/london",
+    "before": {
+      "meta_title": "Web Design Agency in London | Professional & Affordable | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for London businesses. Custom websites from £649. Serving City of London, Shoreditch, Canary Wharf & all of Greater London. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in London | Chulbul Design",
+      "meta_description": "Web design and development for businesses in London. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "london"
+  },
+  {
+    "path": "/city/london/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design London | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in London, United Kingdom. High-converting Shopify and WooCommerce stores with Stripe UK, PayPal, Apple Pay, and Klarna and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in London | Chulbul Design",
+      "meta_description": "Ecommerce development for London businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/london/ecommerce-development"
+  },
+  {
+    "path": "/city/london/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design London | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in London, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in London | Chulbul Design",
+      "meta_description": "Small business web design for London. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/london/small-business-web-design"
+  },
+  {
+    "path": "/city/los-angeles",
+    "before": {
+      "meta_title": "Web Design Agency in Los Angeles | Creative & Affordable | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Los Angeles businesses. Premium websites from $799. Serving Hollywood, Santa Monica, Downtown LA & all of SoCal. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Los Angeles | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Los Angeles. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "los-angeles"
+  },
+  {
+    "path": "/city/los-angeles/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Los Angeles | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Los Angeles, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Los Angeles | Chulbul Design",
+      "meta_description": "Ecommerce development for Los Angeles businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/los-angeles/ecommerce-development"
+  },
+  {
+    "path": "/city/los-angeles/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Los Angeles | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Los Angeles, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Los Angeles | Chulbul Design",
+      "meta_description": "Small business web design for Los Angeles. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/los-angeles/small-business-web-design"
+  },
+  {
+    "path": "/city/manchester",
+    "before": {
+      "meta_title": "Web Design Agency in Manchester | Custom Websites & SEO | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Manchester businesses. Custom websites from £649. Serving City Centre, Spinningfields, Salford & all Greater Manchester. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Manchester | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Manchester. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "manchester"
+  },
+  {
+    "path": "/city/manchester/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Manchester | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Manchester, United Kingdom. High-converting Shopify and WooCommerce stores with Stripe UK, PayPal, Apple Pay, and Klarna and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Manchester | Chulbul Design",
+      "meta_description": "Ecommerce development for Manchester businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/manchester/ecommerce-development"
+  },
+  {
+    "path": "/city/manchester/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Manchester | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Manchester, United Kingdom. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from £999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Manchester | Chulbul Design",
+      "meta_description": "Small business web design for Manchester. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/manchester/small-business-web-design"
+  },
+  {
+    "path": "/city/meerut",
+    "before": {
+      "meta_title": "Web Design Company in Meerut | Sports & Manufacturing Websites – Chulbul Design",
+      "meta_description": "Best web design company in Meerut. Custom websites, SEO & e-commerce for sports goods, coaching & manufacturing businesses — Garh Road, Shastri Nagar. Free quote: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Meerut | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Meerut. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "meerut"
+  },
+  {
+    "path": "/city/meerut/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Meerut | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Meerut | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/meerut/small-business-web-design"
+  },
+  {
+    "path": "/city/melbourne",
+    "before": {
+      "meta_title": "Web Design Agency in Melbourne | Creative & SEO-Ready | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Melbourne businesses. Custom websites from A$699. Serving CBD, Fitzroy, St Kilda & all of Greater Melbourne. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Melbourne | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Melbourne. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "melbourne"
+  },
+  {
+    "path": "/city/melbourne/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Melbourne | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Melbourne, Australia. High-converting Shopify and WooCommerce stores with Stripe Australia, Afterpay, Zip, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Melbourne | Chulbul Design",
+      "meta_description": "Ecommerce development for Melbourne businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/melbourne/ecommerce-development"
+  },
+  {
+    "path": "/city/melbourne/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Melbourne | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Melbourne, Australia. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from A$699."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Melbourne | Chulbul Design",
+      "meta_description": "Small business web design for Melbourne. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/melbourne/small-business-web-design"
+  },
+  {
+    "path": "/city/miami/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Miami | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Miami, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Miami | Chulbul Design",
+      "meta_description": "Ecommerce development for Miami businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/miami/ecommerce-development"
+  },
+  {
+    "path": "/city/miami/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Miami | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Miami, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Miami | Chulbul Design",
+      "meta_description": "Small business web design for Miami. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/miami/small-business-web-design"
+  },
+  {
+    "path": "/city/mohali",
+    "before": {
+      "meta_title": "Web Design Company in Mohali | IT & Startup Websites – Chulbul Design",
+      "meta_description": "Top web design company in Mohali. Custom websites, SEO & app development for IT, pharma & startup businesses — Phase 7, 8, 9, Aerocity & IT City. Free consultation: +91 9990548795!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Mohali | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Mohali. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "mohali"
+  },
+  {
+    "path": "/city/mohali/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Mohali | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Mohali | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/mohali/small-business-web-design"
+  },
+  {
+    "path": "/city/montreal",
+    "before": {
+      "meta_title": "Bilingual Web Design Montreal | English & French Websites – Chulbul Design",
+      "meta_description": "Expert bilingual web design in Montreal, Quebec. Bill 96 compliant, fast English & French websites from C$699. Serving Downtown, Plateau & Greater Montreal. Free quote!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Montreal | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Montreal. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "montreal"
+  },
+  {
+    "path": "/city/montreal/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Montreal | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Montreal, Canada. High-converting Shopify and WooCommerce stores with Stripe Canada, Moneris, Interac Online, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Montreal | Chulbul Design",
+      "meta_description": "Ecommerce development for Montreal businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/montreal/ecommerce-development"
+  },
+  {
+    "path": "/city/montreal/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Web Design Montreal | Bilingual Websites from C$699 – Chulbul Design",
+      "meta_description": "Affordable small business web design in Montreal, Quebec. Bill 96 compliant bilingual websites with fast 2-4 week delivery, local SEO, and fixed pricing from C$699."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Montreal | Chulbul Design",
+      "meta_description": "Small business web design for Montreal. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/montreal/small-business-web-design"
+  },
+  {
+    "path": "/city/mumbai/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Mumbai | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Mumbai, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Mumbai | Chulbul Design",
+      "meta_description": "Ecommerce development for Mumbai businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/mumbai/ecommerce-development"
+  },
+  {
+    "path": "/city/mumbai/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Mumbai | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Mumbai | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/mumbai/small-business-web-design"
+  },
+  {
+    "path": "/city/new-york",
+    "before": {
+      "meta_title": "Web Design Agency in New York | Affordable & Professional | Chulbul Design",
+      "meta_description": "Professional web design & development for New York businesses. Fast, SEO-optimized websites starting from $799. Serving Manhattan, Brooklyn, Queens & all NYC. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in New York | Chulbul Design",
+      "meta_description": "Web design and development for businesses in New York. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "new-york"
+  },
+  {
+    "path": "/city/new-york/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design New York | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in New York, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in New York | Chulbul Design",
+      "meta_description": "Ecommerce development for New York businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/new-york/ecommerce-development"
+  },
+  {
+    "path": "/city/new-york/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design New York | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in New York, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in New York | Chulbul Design",
+      "meta_description": "Small business web design for New York. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/new-york/small-business-web-design"
+  },
+  {
+    "path": "/city/noida",
+    "before": {
+      "meta_title": "Web Design Company in Noida | Website Development Agency – Chulbul Design",
+      "meta_description": "Best web design & website development company in Noida. Custom websites, e-commerce & SEO for IT, retail & manufacturing businesses. Sector 62, 63, 18 & Greater Noida. Call now!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Noida | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Noida. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "noida"
+  },
+  {
+    "path": "/city/noida/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Noida | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Noida, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Noida | Chulbul Design",
+      "meta_description": "Ecommerce development for Noida businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/noida/ecommerce-development"
+  },
+  {
+    "path": "/city/noida/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Noida | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Noida | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/noida/small-business-web-design"
+  },
+  {
+    "path": "/city/ottawa",
+    "before": {
+      "meta_title": "Web Design Agency in Ottawa | Government & Tech Websites | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Ottawa businesses. Custom websites from C$699. Serving Downtown, Kanata, Gatineau & all of the National Capital Region. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Ottawa | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Ottawa. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "ottawa"
+  },
+  {
+    "path": "/city/ottawa/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Ottawa | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Ottawa | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/ottawa/small-business-web-design"
+  },
+  {
+    "path": "/city/perth",
+    "before": {
+      "meta_title": "Web Design Agency Perth | Small Business Websites from A$699 – Chulbul Design",
+      "meta_description": "Top web design agency in Perth. Affordable, custom & mobile-first websites for small businesses from A$699. Serving Perth CBD, Fremantle & WA. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Perth | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Perth. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "perth"
+  },
+  {
+    "path": "/city/perth/ecommerce-development",
+    "before": {
+      "meta_title": "Shopify Developer Perth | WooCommerce & Ecommerce Experts – Chulbul Design",
+      "meta_description": "Hire expert Shopify & WooCommerce developers in Perth. High-converting online stores with Afterpay, Zip & Stripe integration. Fast 2-4 week delivery from A$1,299."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Perth | Chulbul Design",
+      "meta_description": "Ecommerce development for Perth businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/perth/ecommerce-development"
+  },
+  {
+    "path": "/city/perth/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Perth | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Perth | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/perth/small-business-web-design"
+  },
+  {
+    "path": "/city/pune",
+    "before": {
+      "meta_title": "Web Design Company in Pune | IT, Startup & Education Websites – Chulbul Design",
+      "meta_description": "Top web design company in Pune. Custom websites, WordPress & e-commerce for IT, automotive & education businesses — Hinjewadi, Baner, Kothrud. Free consultation: +91 9990548795!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Pune | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Pune. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "pune"
+  },
+  {
+    "path": "/city/pune/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Pune | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Pune, India. High-converting Shopify and WooCommerce stores with Razorpay, PhonePe, Paytm, and UPI QR codes and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Pune | Chulbul Design",
+      "meta_description": "Ecommerce development for Pune businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/pune/ecommerce-development"
+  },
+  {
+    "path": "/city/pune/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Pune | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Pune | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/pune/small-business-web-design"
+  },
+  {
+    "path": "/city/saharanpur",
+    "before": {
+      "meta_title": "Web Design Company in Saharanpur | Woodcraft & Export Websites – Chulbul Design",
+      "meta_description": "Best web design company in Saharanpur. Export websites, e-commerce & SEO for woodcraft, furniture & manufacturing businesses — Civil Lines, Court Road. Free quote: +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Saharanpur | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Saharanpur. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "saharanpur"
+  },
+  {
+    "path": "/city/saharanpur/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Saharanpur | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Saharanpur, India. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from ₹18,000."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Saharanpur | Chulbul Design",
+      "meta_description": "Small business web design for Saharanpur. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/saharanpur/small-business-web-design"
+  },
+  {
+    "path": "/city/san-francisco",
+    "before": {
+      "meta_title": "Web Design Agency in San Francisco | Startup & SaaS Websites | Chulbul Design",
+      "meta_description": "Web design & app development for San Francisco startups and businesses. Premium websites from $799. Serving SoMa, Mission District, Financial District & all Bay Area. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in San Francisco | Chulbul Design",
+      "meta_description": "Web design and development for businesses in San Francisco. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "san-francisco"
+  },
+  {
+    "path": "/city/san-francisco/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design San Francisco | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in San Francisco, United States. High-converting Shopify and WooCommerce stores with Stripe, Apple Pay, Google Pay, and PayPal Commerce and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in San Francisco | Chulbul Design",
+      "meta_description": "Ecommerce development for San Francisco businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/san-francisco/ecommerce-development"
+  },
+  {
+    "path": "/city/san-francisco/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design San Francisco | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in San Francisco, United States. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from $799."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in San Francisco | Chulbul Design",
+      "meta_description": "Small business web design for San Francisco. Present your services, create clear contact routes and manage content with a website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/san-francisco/small-business-web-design"
+  },
+  {
+    "path": "/city/sharjah",
+    "before": {
+      "meta_title": "Web Design Agency in Sharjah | Affordable & Bilingual Websites | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Sharjah businesses. Custom websites from AED 2,499. Serving Sharjah City, Sharjah Publishing City & all Sharjah Emirates. Free consultation!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Sharjah | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Sharjah. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "sharjah"
+  },
+  {
+    "path": "/city/sharjah/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Sharjah | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Sharjah, United Arab Emirates. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from AED 2,999."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Sharjah | Chulbul Design",
+      "meta_description": "Small business web design for Sharjah. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/sharjah/small-business-web-design"
+  },
+  {
+    "path": "/city/singapore",
+    "before": {
+      "meta_title": "Web Design Agency in Singapore | Professional Websites & SEO | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Singapore businesses. Custom websites from S$899. Serving CBD, Tanjong Pagar, Orchard & all Singapore. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Singapore | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Singapore. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "singapore"
+  },
+  {
+    "path": "/city/singapore/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Singapore | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Singapore, Singapore. High-converting Shopify and WooCommerce stores with Stripe Singapore, PayNow, GrabPay, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Singapore | Chulbul Design",
+      "meta_description": "Ecommerce development for Singapore businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/singapore/ecommerce-development"
+  },
+  {
+    "path": "/city/singapore/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Singapore | Custom & Affordable – Chulbul Design",
+      "meta_description": "Custom small business web design in Singapore, Singapore. Fast 2-4 week delivery, local SEO setup, mobile responsiveness, and transparent fixed pricing from S$899."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Singapore | Chulbul Design",
+      "meta_description": "Small business web design for Singapore. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/singapore/small-business-web-design"
+  },
+  {
+    "path": "/city/sydney",
+    "before": {
+      "meta_title": "Web Design Agency in Sydney | Affordable & Professional | Chulbul Design",
+      "meta_description": "Professional web design & digital marketing for Sydney businesses. Custom websites from A$699. Serving CBD, Surry Hills, North Sydney & all of Greater Sydney. Free consultation today!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Sydney | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Sydney. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "sydney"
+  },
+  {
+    "path": "/city/sydney/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Sydney | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Sydney, Australia. High-converting Shopify and WooCommerce stores with Stripe Australia, Afterpay, Zip, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Sydney | Chulbul Design",
+      "meta_description": "Ecommerce development for Sydney businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/sydney/ecommerce-development"
+  },
+  {
+    "path": "/city/sydney/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Sydney | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Sydney | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/sydney/small-business-web-design"
+  },
+  {
+    "path": "/city/toronto",
+    "before": {
+      "meta_title": "Top Web Design Agency Toronto | Web Agency from C$699 – Chulbul Design",
+      "meta_description": "Looking for a top web design agency in Toronto? Custom websites, WordPress & ecommerce platforms for GTA businesses from C$699. 2-4 week delivery. Get a free proposal!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Toronto | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Toronto. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "toronto"
+  },
+  {
+    "path": "/city/toronto/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Toronto | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Toronto, Canada. High-converting Shopify and WooCommerce stores with Stripe Canada, Moneris, Interac Online, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Toronto | Chulbul Design",
+      "meta_description": "Ecommerce development for Toronto businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/toronto/ecommerce-development"
+  },
+  {
+    "path": "/city/toronto/small-business-web-design",
+    "before": {
+      "meta_title": "Toronto Web Design Agency for Small Business | Custom Websites – Chulbul Design",
+      "meta_description": "Top small business web design agency in Toronto. High-converting custom websites from C$699 with fast 2-4 week delivery, local SEO setup & full mobile responsiveness."
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Toronto | Chulbul Design",
+      "meta_description": "Small business web design for Toronto. Present your services, create clear contact routes and manage content with a responsive website from Chulbul Design."
+    },
+    "kind": "spoke",
+    "key": "/city/toronto/small-business-web-design"
+  },
+  {
+    "path": "/city/vancouver",
+    "before": {
+      "meta_title": "Web Design Agency in Vancouver | Tech & Tourism Websites | Chulbul Design",
+      "meta_description": "Professional web design & SEO for Vancouver businesses. Custom websites from C$699. Serving Downtown, Gastown, Yaletown & all of Metro Vancouver. Free consultation available!"
+    },
+    "after": {
+      "meta_title": "Web Design & Development in Vancouver | Chulbul Design",
+      "meta_description": "Web design and development for businesses in Vancouver. Plan your services, content, mobile experience and enquiry forms with Chulbul Design."
+    },
+    "kind": "city",
+    "key": "vancouver"
+  },
+  {
+    "path": "/city/vancouver/ecommerce-development",
+    "before": {
+      "meta_title": "Ecommerce Website Design Vancouver | Shopify & WooCommerce – Chulbul Design",
+      "meta_description": "Professional ecommerce website design in Vancouver, Canada. High-converting Shopify and WooCommerce stores with Stripe Canada, Moneris, Interac Online, and Apple Pay and fast 2-4 week delivery."
+    },
+    "after": {
+      "meta_title": "Ecommerce Development in Vancouver | Chulbul Design",
+      "meta_description": "Ecommerce development for Vancouver businesses. Plan product pages, payments, shipping and mobile checkout for Shopify, WooCommerce or a custom store."
+    },
+    "kind": "spoke",
+    "key": "/city/vancouver/ecommerce-development"
+  },
+  {
+    "path": "/city/vancouver/small-business-web-design",
+    "before": {
+      "meta_title": "Small Business Website Design Vancouver | Custom & Affordable – Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Small Business Web Design in Vancouver | Chulbul Design"
+    },
+    "kind": "spoke",
+    "key": "/city/vancouver/small-business-web-design"
+  },
+  {
+    "path": "/conversion-rate-optimization",
+    "before": {
+      "meta_title": "Conversion Rate Optimisation India | CRO Services – Chulbul Design",
+      "meta_description": "Conversion rate optimisation (CRO) services in India. More leads and sales from your existing traffic — heatmaps, A/B testing, landing page CRO and checkout optimisation. Call +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Conversion Rate Optimisation Services | Chulbul Design",
+      "meta_description": "Review landing pages, forms and checkout journeys with CRO services. Plan useful experiments and conversion measurement for your business with Chulbul Design."
+    },
+    "kind": "service",
+    "key": "conversion-rate-optimization"
+  },
+  {
+    "path": "/google-maps-ranking",
+    "before": {
+      "meta_title": "Google Maps Ranking India | Rank in Google Maps 3-Pack – Chulbul Design",
+      "meta_description": "Google Maps ranking services in India. Get your business into the Google Maps 3-pack for your city and service keywords. GBP optimisation, local citations and review strategy. Call +91 9990548795."
+    },
+    "after": {
+      "meta_title": "Google Maps & Business Profile SEO | Chulbul Design",
+      "meta_description": "Google Business Profile and local SEO support for Indian businesses. Review profile details, citations and customer review workflows with Chulbul Design."
+    },
+    "kind": "service",
+    "key": "google-maps-ranking"
+  },
+  {
+    "path": "/nextjs-development",
+    "before": {
+      "meta_title": "Next.js Development Company | Websites & Apps | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Next.js Development: Websites & Apps | Chulbul Design"
+    },
+    "kind": "service",
+    "key": "nextjs-development"
+  },
+  {
+    "path": "/nodejs-development",
+    "before": {
+      "meta_title": "Node.js Development Company | APIs & Backends | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "Node.js Development: APIs & Backends | Chulbul Design"
+    },
+    "kind": "service",
+    "key": "nodejs-development"
+  },
+  {
+    "path": "/php-development",
+    "before": {
+      "meta_title": "PHP Development Company | Custom Web Solutions | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "PHP Development: Custom Websites | Chulbul Design"
+    },
+    "kind": "service",
+    "key": "php-development"
+  },
+  {
+    "path": "/reactjs-development",
+    "before": {
+      "meta_title": "React JS Development Company | UI & Web Apps | Chulbul Design"
+    },
+    "after": {
+      "meta_title": "React Development: UI & Web Apps | Chulbul Design"
+    },
+    "kind": "service",
+    "key": "reactjs-development"
+  }
+]
