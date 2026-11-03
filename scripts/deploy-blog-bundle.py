@@ -65,8 +65,11 @@ try {
         source = source.replace('publish-blog-bundle.php', 'publish-metadata.php').replace('cbd_publish_blog_bundle', 'cbd_publish_metadata')
     def connect_ftp():
         ftp = ftplib.FTP(timeout=60)
+        print('Connecting to FTP server port 21...', flush=True)
         ftp.connect(os.environ['FTP_SERVER'], 21)
+        print('Connected. Sending FTP login...', flush=True)
         ftp.login(os.environ['FTP_USERNAME'], os.environ['FTP_PASSWORD'])
+        print('FTP login succeeded.', flush=True)
         ftp.cwd('./')
         return ftp
 
