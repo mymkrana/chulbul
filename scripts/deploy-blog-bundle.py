@@ -64,15 +64,29 @@ try {
     if metadata_mode:
         source = source.replace('publish-blog-bundle.php', 'publish-metadata.php').replace('cbd_publish_blog_bundle', 'cbd_publish_metadata')
     def connect_ftp():
-        ftp = ftplib.FTP(timeout=30)
-        ftp.connect(os.environ['FTP_SERVER'], 21)
-        ftp.login(os.environ['FTP_USERNAME'], os.environ['FTP_PASSWORD'])
-        ftp.cwd('./')
-        return ftp
+        last_err = None
+        for host in (os.environ['FTP_SERVER'], '65.21.215.40'):
+            for _ in range(2):
+                try:
+                    ftp = ftplib.FTP(timeout=30)
+                    ftp.connect(host, 21)
+                    ftp.login(os.environ['FTP_USERNAME'], os.environ['FTP_PASSWORD'])
+                    ftp.cwd('./')
+                    return ftp
+                except Exception as err:
+                    last_err = err
+                    time.sleep(2)
+        raise last_err
 
     # Use separate FTP sessions so an HTTPS request cannot leave cleanup using
     # an idle control connection. Remove only this publisher's temporary files.
     with connect_ftp() as ftp:
+        ftp.storbinary('STOR scripts/' + bundle, io.BytesIO(bundle_bytes))
+        repo_root = Path(__file__).resolve().parent.parent
+        for img_rel in sorted(set(re.findall(r'assets/images/uploads/[a-z0-9._-]+\.(?:jpg|jpeg|png|webp)', bundle_bytes.decode('utf-8', errors='ignore')))):
+            img_path = repo_root / img_rel
+            if img_path.is_file():
+                ftp.storbinary('STOR ' + img_rel, io.BytesIO(img_path.read_bytes()))
         for old_name in ftp.nlst():
             if re.fullmatch(r'cbd-publish-[a-f0-9]{32}\.php', old_name):
                 ftp.delete(old_name)

@@ -40,20 +40,25 @@ permissions:
 jobs:
   deploy:
     name: Deploy Website
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Deploy to cPanel via FTP
+        id: ftp_deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
+          timeout: 60000
 
           local-dir: ./
           server-dir: ./
