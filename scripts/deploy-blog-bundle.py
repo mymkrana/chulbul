@@ -65,17 +65,20 @@ try {
         source = source.replace('publish-blog-bundle.php', 'publish-metadata.php').replace('cbd_publish_blog_bundle', 'cbd_publish_metadata')
     def connect_ftp():
         last_err = None
-        for host in (os.environ['FTP_SERVER'], '65.21.215.40'):
-            for _ in range(2):
-                try:
-                    ftp = ftplib.FTP(timeout=30)
-                    ftp.connect(host, 21)
-                    ftp.login(os.environ['FTP_USERNAME'], os.environ['FTP_PASSWORD'])
-                    ftp.cwd('./')
-                    return ftp
-                except Exception as err:
-                    last_err = err
-                    time.sleep(2)
+        for use_tls in (True, False):
+            try:
+                ftp = ftplib.FTP_TLS(timeout=180) if use_tls else ftplib.FTP(timeout=180)
+                ftp.connect(os.environ['FTP_SERVER'], 21)
+                if use_tls:
+                    ftp.auth()
+                ftp.login(os.environ['FTP_USERNAME'], os.environ['FTP_PASSWORD'])
+                if use_tls:
+                    ftp.prot_p()
+                ftp.cwd('./')
+                return ftp
+            except Exception as err:
+                last_err = err
+                print(f'FTP attempt (tls={use_tls}) failed: {type(err).__name__}: {err}', flush=True)
         raise last_err
 
     # Use separate FTP sessions so an HTTPS request cannot leave cleanup using

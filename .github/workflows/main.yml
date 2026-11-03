@@ -50,6 +50,7 @@ jobs:
 
       - name: Deploy to cPanel via FTP
         id: ftp_deploy
+        if: github.event_name != 'workflow_dispatch' || inputs.blog_bundle == ''
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         continue-on-error: true
         with:
@@ -58,7 +59,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          timeout: 60000
+          timeout: 180000
 
           local-dir: ./
           server-dir: ./
