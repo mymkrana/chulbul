@@ -404,8 +404,10 @@ function cbd_social_image(string $content): string {
     return $fallback;
 }
 
-function cbd_trigger_make_webhook(string $title, string $excerpt, string $url, string $image, string $hashtags): void {
-    if (!MAKE_WEBHOOK_URL) return;
+function cbd_trigger_make_webhook(string $title, string $excerpt, string $url, string $image, string $hashtags): array {
+    if (!MAKE_WEBHOOK_URL) {
+        return ['ok' => false, 'error' => 'MAKE_WEBHOOK_URL is not configured in .env'];
+    }
     $data = json_encode(['title' => $title, 'excerpt' => $excerpt, 'url' => $url, 'image' => $image, 'hashtags' => $hashtags]);
     $ch = curl_init(MAKE_WEBHOOK_URL);
     curl_setopt_array($ch, [
@@ -422,7 +424,10 @@ function cbd_trigger_make_webhook(string $title, string $excerpt, string $url, s
     $status = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $error = curl_error($ch);
     curl_close($ch);
-    cbd_social_log('make', $result !== false && $error === '' && $status >= 200 && $status < 300, $error ?: ('HTTP ' . $status));
+    $ok = $result !== false && $error === '' && $status >= 200 && $status < 300;
+    $detail = $error ?: ('HTTP ' . $status);
+    cbd_social_log('make', $ok, $detail);
+    return ['ok' => $ok, 'detail' => $detail, 'status' => $status];
 }
 
 /**
@@ -495,15 +500,23 @@ function cbd_wait_for_instagram_container(string $container_id, string $page_tok
     ];
 }
 
-function trigger_social_post(string $title, string $excerpt, string $slug, string $content = '', array $tag_names = []): void {
+function trigger_social_post(string $title, string $excerpt, string $slug, string $content = '', array $tag_names = []): array {
     $url = 'https://www.chulbuldesign.com/blog/' . rawurlencode($slug);
     $image = cbd_social_image($content);
     $hashtags = cbd_social_hashtags($tag_names);
+    $report = [
+        'slug' => $slug,
+        'url' => $url,
+        'image' => $image,
+        'facebook' => null,
+        'instagram' => null,
+        'make' => null,
+    ];
 
     // Safe migration fallback: until a Meta token is configured, keep the old Make flow.
     if (META_SYSTEM_USER_TOKEN === '' || META_PAGE_ID === '') {
-        cbd_trigger_make_webhook($title, $excerpt, $url, $image, $hashtags);
-        return;
+        $report['make'] = cbd_trigger_make_webhook($title, $excerpt, $url, $image, $hashtags);
+        return $report;
     }
 
     $identity = cbd_meta_request(
@@ -513,8 +526,15 @@ function trigger_social_post(string $title, string $excerpt, string $slug, strin
         false
     );
     if (!$identity['ok']) {
-        cbd_social_log('meta-auth', false, (string)$identity['error']);
-        return;
+        $err = (string)$identity['error'];
+        cbd_social_log('meta-auth', false, $err);
+        $report['facebook'] = ['ok' => false, 'error' => 'Meta Auth: ' . $err];
+        $report['instagram'] = ['ok' => false, 'error' => 'Meta Auth: ' . $err];
+        // Automatic fallback to Make.com webhook if Meta API access is blocked or token expired
+        if (MAKE_WEBHOOK_URL !== '') {
+            $report['make'] = cbd_trigger_make_webhook($title, $excerpt, $url, $image, $hashtags);
+        }
+        return $report;
     }
 
     $identity_data = $identity['data'];
@@ -528,15 +548,14 @@ function trigger_social_post(string $title, string $excerpt, string $slug, strin
     $message_parts = [trim($title), trim($excerpt), trim($hashtags)];
     $message = implode("\n\n", array_values(array_filter($message_parts, static fn($value) => $value !== '')));
     $facebook = cbd_meta_request(META_PAGE_ID . '/feed', ['message' => $message, 'link' => $url], $page_token);
-    cbd_social_log(
-        'facebook',
-        (bool)$facebook['ok'],
-        $facebook['ok'] ? ('Post ID ' . ($facebook['data']['id'] ?? 'created')) : (string)$facebook['error']
-    );
+    $fb_detail = $facebook['ok'] ? ('Post ID ' . ($facebook['data']['id'] ?? 'created')) : (string)$facebook['error'];
+    cbd_social_log('facebook', (bool)$facebook['ok'], $fb_detail);
+    $report['facebook'] = ['ok' => (bool)$facebook['ok'], 'detail' => $fb_detail];
 
     if ($instagram_id === '') {
         cbd_social_log('instagram', false, 'No connected Instagram business account ID configured.');
-        return;
+        $report['instagram'] = ['ok' => false, 'error' => 'No connected Instagram business account ID configured.'];
+        return $report;
     }
 
     $caption_parts = [trim($title), trim($excerpt), 'Read more: ' . $url, trim($hashtags)];
@@ -552,22 +571,25 @@ function trigger_social_post(string $title, string $excerpt, string $slug, strin
         'caption' => $caption,
     ], $page_token);
     if (!$container['ok'] || empty($container['data']['id'])) {
-        cbd_social_log('instagram', false, (string)($container['error'] ?? 'Media container was not created.'));
-        return;
+        $ig_err = (string)($container['error'] ?? 'Media container was not created.');
+        cbd_social_log('instagram', false, $ig_err);
+        $report['instagram'] = ['ok' => false, 'error' => $ig_err];
+        return $report;
     }
 
     $container_ready = cbd_wait_for_instagram_container((string)$container['data']['id'], $page_token);
     if (!$container_ready['ok']) {
-        cbd_social_log('instagram', false, (string)$container_ready['error']);
-        return;
+        $ig_err = (string)$container_ready['error'];
+        cbd_social_log('instagram', false, $ig_err);
+        $report['instagram'] = ['ok' => false, 'error' => $ig_err];
+        return $report;
     }
 
     $published = cbd_meta_request($instagram_id . '/media_publish', [
         'creation_id' => (string)$container['data']['id'],
     ], $page_token);
-    cbd_social_log(
-        'instagram',
-        (bool)$published['ok'],
-        $published['ok'] ? ('Media ID ' . ($published['data']['id'] ?? 'created')) : (string)$published['error']
-    );
+    $ig_detail = $published['ok'] ? ('Media ID ' . ($published['data']['id'] ?? 'created')) : (string)$published['error'];
+    cbd_social_log('instagram', (bool)$published['ok'], $ig_detail);
+    $report['instagram'] = ['ok' => (bool)$published['ok'], 'detail' => $ig_detail];
+    return $report;
 }

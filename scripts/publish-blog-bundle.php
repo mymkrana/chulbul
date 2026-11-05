@@ -6,9 +6,9 @@ if (PHP_SAPI !== 'cli' && !defined('CBD_DEPLOY_BLOG_AUTHORIZED')) {
     http_response_code(404);
     exit;
 }
-require_once dirname(__DIR__) . '/includes/database.php';
+require_once dirname(__DIR__) . '/admin/config.php';
 
-function cbd_publish_blog_bundle(string $filename): array
+function cbd_publish_blog_bundle(string $filename, bool $forceSocial = false): array
 {
     if (!preg_match('/^blogs_[a-z0-9_]+\.json$/', $filename)) {
         throw new RuntimeException('Invalid editorial bundle name.');
@@ -37,6 +37,7 @@ function cbd_publish_blog_bundle(string $filename): array
     $inserted = 0;
     $unchanged = 0;
     $updated = 0;
+    $socialQueue = [];
     $pdo->beginTransaction();
     try {
         $check = $pdo->prepare('SELECT id, content, status, deleted_at FROM posts WHERE slug = ? FOR UPDATE');
@@ -47,6 +48,7 @@ function cbd_publish_blog_bundle(string $filename): array
         $newTag = $pdo->prepare('INSERT INTO tags (name, slug) VALUES (?, ?)');
         $linkTag = $pdo->prepare('INSERT IGNORE INTO post_tags (post_id, tag_id) VALUES (?, ?)');
         foreach ($posts as $post) {
+            $tagNames = array_map(static fn(string $t): string => ucwords(str_replace('-', ' ', $t)), $post['tags'] ?? []);
             $check->execute([$post['slug']]);
             $existing = $check->fetch();
             if ($existing) {
@@ -69,12 +71,18 @@ function cbd_publish_blog_bundle(string $filename): array
                     }
                     $updateThumbnail->execute([$post['content'], $existing['id']]);
                     $updated++;
+                    if ($forceSocial) {
+                        $socialQueue[] = ['title' => $post['title'], 'excerpt' => $post['excerpt'], 'slug' => $post['slug'], 'content' => $post['content'], 'tags' => $tagNames];
+                    }
                     continue;
                 }
                 if ($existing['content'] !== $post['content'] || $existing['status'] !== 'published' || $existing['deleted_at'] !== null) {
                     throw new RuntimeException('Existing article conflict: ' . $post['slug']);
                 }
                 $unchanged++;
+                if ($forceSocial) {
+                    $socialQueue[] = ['title' => $post['title'], 'excerpt' => $post['excerpt'], 'slug' => $post['slug'], 'content' => $post['content'], 'tags' => $tagNames];
+                }
                 continue;
             }
             $category->execute([$post['category']]);
@@ -93,13 +101,34 @@ function cbd_publish_blog_bundle(string $filename): array
                 $linkTag->execute([$postId, $tagId]);
             }
             $inserted++;
+            $socialQueue[] = ['title' => $post['title'], 'excerpt' => $post['excerpt'], 'slug' => $post['slug'], 'content' => $post['content'], 'tags' => $tagNames];
         }
         $pdo->commit();
     } catch (Throwable $error) {
         if ($pdo->inTransaction()) $pdo->rollBack();
         throw $error;
     }
-    return ['success' => true, 'inserted' => $inserted, 'unchanged' => $unchanged, 'updated' => $updated, 'slugs' => $slugs];
+
+    // Trigger automatic social media publishing (Facebook, Instagram, Make.com fallback) after DB commit
+    $socialResults = [];
+    if (function_exists('trigger_social_post')) {
+        foreach ($socialQueue as $item) {
+            try {
+                $socialResults[] = trigger_social_post($item['title'], $item['excerpt'], $item['slug'], $item['content'], $item['tags']);
+            } catch (Throwable $e) {
+                $socialResults[] = ['slug' => $item['slug'], 'error' => $e->getMessage()];
+            }
+        }
+    }
+
+    return [
+        'success' => true,
+        'inserted' => $inserted,
+        'unchanged' => $unchanged,
+        'updated' => $updated,
+        'slugs' => $slugs,
+        'social' => $socialResults,
+    ];
 }
 
 if (PHP_SAPI === 'cli' && realpath((string)($_SERVER['SCRIPT_FILENAME'] ?? '')) === __FILE__) {
