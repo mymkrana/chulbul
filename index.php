@@ -134,7 +134,7 @@ $homeFaqs = [
     justify-content: center;
     gap: 0.85rem;
     max-width: 46rem;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 2rem;
     padding: 0.9rem 1.5rem;
     border-radius: 1rem;
     background: linear-gradient(90deg, rgba(120, 53, 15, 0.78) 0%, rgba(153, 27, 27, 0.82) 50%, rgba(120, 53, 15, 0.78) 100%);
@@ -264,7 +264,7 @@ $homeFaqs = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="position:relative;z-index:10;">
 
         <!-- Top Festive Badge -->
-        <div class="flex justify-center mb-6">
+        <div class="flex justify-center" style="margin-bottom:1.5rem;">
             <span class="diwali-top-pill">
                 <span class="diwali-pulse-dot"></span>
                 <i class="bi bi-stars" style="color:#fde047;"></i>
@@ -289,7 +289,7 @@ $homeFaqs = [
         </div>
 
         <!-- Service Pills -->
-        <div class="flex flex-wrap justify-center gap-2 mb-9">
+        <div class="flex flex-wrap justify-center" style="gap:0.6rem;margin-bottom:2.25rem;">
             <a href="<?= $base ?>/web-design" class="diwali-service-pill"><i class="bi bi-laptop"></i><span>Web Design</span></a>
             <a href="<?= $base ?>/web-development" class="diwali-service-pill"><i class="bi bi-code-slash"></i><span>Web Development</span></a>
             <a href="<?= $base ?>/ecommerce-website-development" class="diwali-service-pill"><i class="bi bi-cart4"></i><span>E-Commerce Website</span></a>
@@ -299,7 +299,7 @@ $homeFaqs = [
         </div>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <div class="flex flex-wrap justify-center" style="gap:1rem;margin-bottom:3rem;">
             <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design!%20I%20would%20like%20to%20claim%20the%20Diwali%20Up%20to%2030%25%20OFF%20offer%20for%20my%20website%20project." target="_blank"
                class="diwali-cta-primary">
                 <i class="bi bi-whatsapp"></i> Claim Up to 30% Diwali Offer
