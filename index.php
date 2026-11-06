@@ -74,69 +74,82 @@ $homeFaqs = [
     <?php require __DIR__ . '/includes/header.php'; ?>
 
 <!-- ============================================================
-     HERO SECTION
+     HERO SECTION — DIWALI FESTIVE EDITION (UP TO 30% OFF)
 ============================================================ -->
-<section class="bg-white pt-16 pb-0">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="relative overflow-hidden bg-[#0c0d24] pt-14 pb-28 sm:pt-20 sm:pb-36"
+         style="background-image: linear-gradient(180deg, rgba(10,12,34,0.58) 0%, rgba(12,13,36,0.42) 55%, rgba(12,13,36,0.25) 100%), url('<?= $base ?>/assets/images/diwali-hero-bg-2026.jpg'); background-size: cover; background-position: center bottom; background-repeat: no-repeat;">
 
-        <!-- Top label -->
-        <div class="flex justify-center mb-8">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold text-[#EE483D] bg-red-50 border border-red-100 px-4 py-2 rounded-full">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#EE483D]"></span>
-                Web Design &amp; Development · Serving Businesses Worldwide
+    <!-- Subtle golden ambient glow in center behind text -->
+    <div class="pointer-events-none absolute inset-0"
+         style="background: radial-gradient(circle at 50% 34%, rgba(251,191,36,0.14) 0%, rgba(238,72,61,0.08) 35%, transparent 70%);"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Top Festive Badge -->
+        <div class="flex justify-center mb-6">
+            <span class="inline-flex items-center gap-2.5 text-xs sm:text-sm font-bold text-amber-200 bg-amber-500/15 border border-amber-400/40 backdrop-blur-md px-5 py-2 rounded-full shadow-lg shadow-amber-500/10">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                <i class="bi bi-stars text-amber-300"></i>
+                Shubh Deepawali Special · Web Design &amp; Development Worldwide
             </span>
         </div>
 
         <!-- Headline -->
-        <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight max-w-4xl mx-auto mb-6">
+        <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight max-w-4xl mx-auto mb-5 drop-shadow-md">
             Custom Web Design &amp; Development<br>
-            <span class="text-[#49499A]">for Businesses Worldwide</span>
+            <span class="bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">for Businesses Worldwide</span>
         </h1>
 
+        <!-- Diwali Up to 30% Discount Highlight Pill Box -->
+        <div class="max-w-2xl mx-auto mb-6">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 bg-gradient-to-r from-amber-500/20 via-[#EE483D]/25 to-amber-500/20 border border-amber-300/50 backdrop-blur-md rounded-2xl px-6 py-3.5 text-center shadow-xl">
+                <span class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 text-xs sm:text-sm font-black uppercase tracking-wider px-3.5 py-1 rounded-full shadow">
+                    <i class="bi bi-fire"></i> Diwali Offer: Up to 30% OFF
+                </span>
+                <span class="text-amber-100 text-sm sm:text-base font-semibold">
+                    On Custom Websites, E-Commerce Stores, Redesigns &amp; Mobile Apps!
+                </span>
+            </div>
+        </div>
+
         <!-- Subtext -->
-        <p class="text-center text-gray-500 text-lg max-w-2xl mx-auto mb-5 leading-relaxed">
-            Build a website that reflects your brand and makes it easier for customers to take the next step.
-            We design and develop business websites, ecommerce stores and web applications around your goals.
+        <p class="text-center text-slate-200 text-base sm:text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
+            Celebrate this festival of lights by upgrading your digital presence. We design and develop high-converting business websites, ecommerce stores and web applications around your goals.
         </p>
-        <p class="text-center text-gray-500 text-sm mb-5">Based in Gurugram, India. Working with businesses worldwide.</p>
+        <p class="text-center text-amber-200/80 text-xs sm:text-sm mb-7 font-medium">
+            Based in Gurugram, India · Serving Clients Across USA, UK, Australia, UAE &amp; Worldwide
+        </p>
+
         <!-- Service Pills -->
-        <div class="flex flex-wrap justify-center gap-2 mb-10">
-            <a href="<?= $base ?>/web-design" class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-blue-100 hover:border-blue-300 transition"><i class="bi bi-laptop"></i><span>Web Design</span></a>
-            <a href="<?= $base ?>/web-development" class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 border border-indigo-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-indigo-100 hover:border-indigo-300 transition"><i class="bi bi-code-slash"></i><span>Web Development</span></a>
-            <a href="<?= $base ?>/ecommerce-website-development" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-emerald-100 hover:border-emerald-300 transition"><i class="bi bi-cart4"></i><span>E-Commerce Website</span></a>
-            <a href="<?= $base ?>/wordpress-development" class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 border border-sky-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-sky-100 hover:border-sky-300 transition"><i class="bi bi-wordpress"></i><span>WordPress Development</span></a>
-            <a href="<?= $base ?>/android-app-development" class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 border border-orange-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-orange-100 hover:border-orange-300 transition"><i class="bi bi-phone"></i><span>Mobile App Development</span></a>
-            <a href="<?= $base ?>/local-seo-services" class="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-red-100 hover:border-red-300 transition"><i class="bi bi-graph-up-arrow"></i><span>Online Marketing</span></a>
+        <div class="flex flex-wrap justify-center gap-2.5 mb-9">
+            <a href="<?= $base ?>/web-design" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-laptop text-amber-300"></i><span>Web Design</span></a>
+            <a href="<?= $base ?>/web-development" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-code-slash text-amber-300"></i><span>Web Development</span></a>
+            <a href="<?= $base ?>/ecommerce-website-development" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-cart4 text-amber-300"></i><span>E-Commerce Website</span></a>
+            <a href="<?= $base ?>/wordpress-development" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-wordpress text-amber-300"></i><span>WordPress Development</span></a>
+            <a href="<?= $base ?>/android-app-development" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-phone text-amber-300"></i><span>Mobile App Development</span></a>
+            <a href="<?= $base ?>/local-seo-services" class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-amber-400/25 hover:border-amber-300 transition"><i class="bi bi-graph-up-arrow text-amber-300"></i><span>Online Marketing</span></a>
         </div>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap justify-center gap-4 mb-14">
-            <a href="https://wa.me/919990548795" target="_blank"
-               class="inline-flex items-center gap-2 bg-[#EE483D] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-red-600 transition-all shadow-lg shadow-red-200">
-                <i class="bi bi-whatsapp"></i> Discuss Your Project
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design!%20I%20would%20like%20to%20claim%20the%20Diwali%20Up%20to%2030%25%20OFF%20offer%20for%20my%20website%20project." target="_blank"
+               class="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#EE483D] via-red-500 to-amber-500 text-white px-8 py-4 rounded-xl font-extrabold hover:brightness-110 transition-all shadow-xl shadow-red-900/40 border border-amber-300/40">
+                <i class="bi bi-whatsapp text-lg"></i> Claim Up to 30% Diwali Offer
             </a>
             <a href="#portfolio"
-               class="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-3.5 rounded-xl font-bold hover:border-[#49499A] hover:text-[#49499A] transition-all">
-                <i class="bi bi-briefcase"></i> Explore Our Work
+               class="inline-flex items-center gap-2 bg-white/10 border-2 border-amber-300/40 text-white backdrop-blur-md px-8 py-4 rounded-xl font-bold hover:bg-white/20 hover:border-amber-300 transition-all">
+                <i class="bi bi-briefcase text-amber-300"></i> Explore Our Work
             </a>
         </div>
 
-        <!-- Stats row -->
-        <div class="flex flex-wrap justify-center gap-10 mb-14">
+        <!-- Stats row inside subtle glass bar -->
+        <div class="max-w-3xl mx-auto bg-slate-950/55 border border-amber-300/25 backdrop-blur-md rounded-2xl px-6 py-5 flex flex-wrap justify-center gap-8 sm:gap-12 shadow-2xl">
             <?php foreach([['500+','Projects Delivered'],['10+','Years Experience'],['200+','Happy Clients'],['15+','Technologies']] as $s): ?>
             <div class="text-center">
-                <div class="text-3xl font-extrabold text-[#49499A]"><?= $s[0] ?></div>
-                <div class="text-gray-400 text-sm mt-1"><?= $s[1] ?></div>
+                <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent"><?= $s[0] ?></div>
+                <div class="text-slate-300 text-xs sm:text-sm mt-0.5 font-medium"><?= $s[1] ?></div>
             </div>
             <?php endforeach; ?>
-        </div>
-
-        <!-- Hero Image -->
-        <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#49499A] to-[#2d2d70]">
-            <!-- Dot pattern overlay -->
-            <div class="absolute inset-0 opacity-10"
-                 style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:24px 24px"></div>
-
         </div>
 
     </div>
