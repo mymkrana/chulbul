@@ -275,14 +275,6 @@ $homeFaqs = [
             </span>
         </div>
 
-        <!-- Subtext -->
-        <p class="diwali-subtext text-center text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
-            Celebrate this festival of lights by upgrading your digital presence. We design and develop high-converting business websites, ecommerce stores and web applications around your goals.
-        </p>
-        <p class="diwali-loc-text text-center text-sm mb-7">
-            Based in Gurugram, India · Serving Clients Across USA, UK, Australia, UAE &amp; Worldwide
-        </p>
-
         <!-- Service Pills -->
         <div class="flex flex-wrap justify-center gap-2 mb-9">
             <a href="<?= $base ?>/web-design" class="diwali-service-pill"><i class="bi bi-laptop"></i><span>Web Design</span></a>
