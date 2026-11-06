@@ -114,6 +114,19 @@ $homeFaqs = [
     color: #fcd34d !important;
     text-shadow: 0 2px 18px rgba(251, 191, 36, 0.35);
 }
+.diwali-hero-h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+    font-size: clamp(1.85rem, 4.2vw, 3.4rem);
+    line-height: 1.18;
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+}
+@media (min-width: 768px) {
+    .diwali-h1-line1 {
+        white-space: nowrap;
+    }
+}
 .diwali-offer-banner {
     display: flex;
     flex-wrap: wrap;
@@ -260,8 +273,8 @@ $homeFaqs = [
         </div>
 
         <!-- Headline -->
-        <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight max-w-4xl mx-auto mb-6" style="color:#ffffff;text-shadow:0 4px 18px rgba(0,0,0,0.65);">
-            Custom Web Design &amp; Development<br>
+        <h1 class="diwali-hero-h1 text-center font-extrabold">
+            <span class="diwali-h1-line1">Custom Web Design &amp; Development</span><br>
             <span class="diwali-gold-text">for Businesses Worldwide</span>
         </h1>
 
