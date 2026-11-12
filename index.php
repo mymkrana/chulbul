@@ -74,250 +74,69 @@ $homeFaqs = [
     <?php require __DIR__ . '/includes/header.php'; ?>
 
 <!-- ============================================================
-     HERO SECTION — DIWALI FESTIVE EDITION (UP TO 30% OFF)
+     HERO SECTION
 ============================================================ -->
-<style>
-.diwali-hero-sec {
-    position: relative;
-    overflow: hidden;
-    background-color: #0c0d24;
-    background-image:
-        linear-gradient(180deg, rgba(8, 10, 28, 0.72) 0%, rgba(12, 13, 36, 0.62) 55%, rgba(10, 10, 28, 0.78) 100%),
-        url('<?= $base ?>/assets/images/diwali-hero-bg-2026.jpg');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    padding: 3.5rem 0 6.5rem;
-}
-.diwali-top-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #fde68a !important;
-    background: rgba(245, 158, 11, 0.18);
-    border: 1px solid rgba(251, 191, 36, 0.55);
-    backdrop-filter: blur(8px);
-    padding: 0.55rem 1.25rem;
-    border-radius: 9999px;
-    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.2);
-}
-.diwali-pulse-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 9999px;
-    background-color: #fbbf24;
-    box-shadow: 0 0 10px #fbbf24;
-}
-.diwali-gold-text {
-    color: #fcd34d !important;
-    text-shadow: 0 2px 18px rgba(251, 191, 36, 0.35);
-}
-.diwali-hero-h1 {
-    color: #ffffff !important;
-    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
-    font-size: clamp(1.85rem, 4.2vw, 3.4rem);
-    line-height: 1.18;
-    max-width: 100%;
-    margin: 0 auto 1.5rem;
-}
-@media (min-width: 768px) {
-    .diwali-h1-line1 {
-        white-space: nowrap;
-    }
-}
-.diwali-offer-banner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.85rem;
-    max-width: 46rem;
-    margin: 0 auto 2rem;
-    padding: 0.9rem 1.5rem;
-    border-radius: 1rem;
-    background: linear-gradient(90deg, rgba(120, 53, 15, 0.78) 0%, rgba(153, 27, 27, 0.82) 50%, rgba(120, 53, 15, 0.78) 100%);
-    border: 1.5px solid #fbbf24;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 25px rgba(251, 191, 36, 0.22);
-    backdrop-filter: blur(10px);
-}
-.diwali-offer-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: linear-gradient(90deg, #fbbf24 0%, #fde047 100%);
-    color: #0f172a !important;
-    font-size: 0.85rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 0.38rem 0.95rem;
-    border-radius: 9999px;
-    box-shadow: 0 2px 10px rgba(251, 191, 36, 0.4);
-}
-.diwali-offer-desc {
-    color: #ffffff !important;
-    font-size: 0.98rem;
-    font-weight: 700;
-}
-.diwali-subtext {
-    color: #f1f5f9 !important;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
-}
-.diwali-loc-text {
-    color: #fde68a !important;
-    font-weight: 600;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
-}
-.diwali-service-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(15, 23, 42, 0.72);
-    color: #ffffff !important;
-    border: 1px solid rgba(251, 191, 36, 0.45);
-    backdrop-filter: blur(8px);
-    padding: 0.45rem 1.05rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-.diwali-service-pill i {
-    color: #fbbf24 !important;
-}
-.diwali-service-pill:hover {
-    background: rgba(245, 158, 11, 0.28);
-    border-color: #fde047;
-    transform: translateY(-1px);
-}
-.diwali-cta-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    background: linear-gradient(90deg, #ee483d 0%, #f59e0b 100%);
-    color: #ffffff !important;
-    padding: 0.95rem 2rem;
-    border-radius: 0.85rem;
-    font-weight: 800;
-    font-size: 1rem;
-    border: 1.5px solid #fde68a;
-    box-shadow: 0 10px 25px rgba(238, 72, 61, 0.45);
-    transition: all 0.2s ease;
-}
-.diwali-cta-primary:hover {
-    filter: brightness(1.1);
-    transform: translateY(-2px);
-}
-.diwali-cta-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    background: rgba(15, 23, 42, 0.75);
-    color: #ffffff !important;
-    padding: 0.95rem 2rem;
-    border-radius: 0.85rem;
-    font-weight: 700;
-    font-size: 1rem;
-    border: 1.5px solid rgba(251, 191, 36, 0.6);
-    backdrop-filter: blur(8px);
-    transition: all 0.2s ease;
-}
-.diwali-cta-secondary i {
-    color: #fbbf24 !important;
-}
-.diwali-cta-secondary:hover {
-    background: rgba(255, 255, 255, 0.16);
-    border-color: #fde047;
-}
-.diwali-stats-bar {
-    max-width: 48rem;
-    margin: 0 auto;
-    background: rgba(10, 14, 34, 0.82);
-    border: 1.5px solid rgba(251, 191, 36, 0.45);
-    backdrop-filter: blur(12px);
-    border-radius: 1.25rem;
-    padding: 1.25rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
-}
-.diwali-stat-num {
-    font-size: 1.95rem;
-    line-height: 1.1;
-    font-weight: 900;
-    color: #fbbf24 !important;
-    text-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
-}
-.diwali-stat-label {
-    color: #f8fafc !important;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 0.25rem;
-}
-</style>
+<section class="bg-white pt-16 pb-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<section class="diwali-hero-sec">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="position:relative;z-index:10;">
-
-        <!-- Top Festive Badge -->
-        <div class="flex justify-center" style="margin-bottom:1.5rem;">
-            <span class="diwali-top-pill">
-                <span class="diwali-pulse-dot"></span>
-                <i class="bi bi-stars" style="color:#fde047;"></i>
-                Shubh Deepawali Special · Web Design &amp; Development Worldwide
+        <!-- Top label -->
+        <div class="flex justify-center mb-8">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold text-[#EE483D] bg-red-50 border border-red-100 px-4 py-2 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#EE483D]"></span>
+                Web Design &amp; Development · Serving Businesses Worldwide
             </span>
         </div>
 
         <!-- Headline -->
-        <h1 class="diwali-hero-h1 text-center font-extrabold">
-            <span class="diwali-h1-line1">Custom Web Design &amp; Development</span><br>
-            <span class="diwali-gold-text">for Businesses Worldwide</span>
+        <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight max-w-4xl mx-auto mb-6">
+            Custom Web Design &amp; Development<br>
+            <span class="text-[#49499A]">for Businesses Worldwide</span>
         </h1>
 
-        <!-- Diwali Up to 30% Discount Highlight Pill Box -->
-        <div class="diwali-offer-banner">
-            <span class="diwali-offer-tag">
-                <i class="bi bi-fire"></i> Diwali Offer: Up to 30% OFF
-            </span>
-            <span class="diwali-offer-desc">
-                On Custom Websites, E-Commerce Stores, Redesigns &amp; Mobile Apps!
-            </span>
-        </div>
-
+        <!-- Subtext -->
+        <p class="text-center text-gray-500 text-lg max-w-2xl mx-auto mb-5 leading-relaxed">
+            Build a website that reflects your brand and makes it easier for customers to take the next step.
+            We design and develop business websites, ecommerce stores and web applications around your goals.
+        </p>
+        <p class="text-center text-gray-500 text-sm mb-5">Based in Gurugram, India. Working with businesses worldwide.</p>
         <!-- Service Pills -->
-        <div class="flex flex-wrap justify-center" style="gap:0.6rem;margin-bottom:2.25rem;">
-            <a href="<?= $base ?>/web-design" class="diwali-service-pill"><i class="bi bi-laptop"></i><span>Web Design</span></a>
-            <a href="<?= $base ?>/web-development" class="diwali-service-pill"><i class="bi bi-code-slash"></i><span>Web Development</span></a>
-            <a href="<?= $base ?>/ecommerce-website-development" class="diwali-service-pill"><i class="bi bi-cart4"></i><span>E-Commerce Website</span></a>
-            <a href="<?= $base ?>/wordpress-development" class="diwali-service-pill"><i class="bi bi-wordpress"></i><span>WordPress Development</span></a>
-            <a href="<?= $base ?>/android-app-development" class="diwali-service-pill"><i class="bi bi-phone"></i><span>Mobile App Development</span></a>
-            <a href="<?= $base ?>/local-seo-services" class="diwali-service-pill"><i class="bi bi-graph-up-arrow"></i><span>Online Marketing</span></a>
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+            <a href="<?= $base ?>/web-design" class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-blue-100 hover:border-blue-300 transition"><i class="bi bi-laptop"></i><span>Web Design</span></a>
+            <a href="<?= $base ?>/web-development" class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 border border-indigo-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-indigo-100 hover:border-indigo-300 transition"><i class="bi bi-code-slash"></i><span>Web Development</span></a>
+            <a href="<?= $base ?>/ecommerce-website-development" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-emerald-100 hover:border-emerald-300 transition"><i class="bi bi-cart4"></i><span>E-Commerce Website</span></a>
+            <a href="<?= $base ?>/wordpress-development" class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 border border-sky-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-sky-100 hover:border-sky-300 transition"><i class="bi bi-wordpress"></i><span>WordPress Development</span></a>
+            <a href="<?= $base ?>/android-app-development" class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 border border-orange-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-orange-100 hover:border-orange-300 transition"><i class="bi bi-phone"></i><span>Mobile App Development</span></a>
+            <a href="<?= $base ?>/local-seo-services" class="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-100 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-red-100 hover:border-red-300 transition"><i class="bi bi-graph-up-arrow"></i><span>Online Marketing</span></a>
         </div>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap justify-center" style="gap:1rem;margin-bottom:3rem;">
-            <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design!%20I%20would%20like%20to%20claim%20the%20Diwali%20Up%20to%2030%25%20OFF%20offer%20for%20my%20website%20project." target="_blank"
-               class="diwali-cta-primary">
-                <i class="bi bi-whatsapp"></i> Claim Up to 30% Diwali Offer
+        <div class="flex flex-wrap justify-center gap-4 mb-14">
+            <a href="https://wa.me/919990548795" target="_blank"
+               class="inline-flex items-center gap-2 bg-[#EE483D] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-red-600 transition-all shadow-lg shadow-red-200">
+                <i class="bi bi-whatsapp"></i> Discuss Your Project
             </a>
             <a href="#portfolio"
-               class="diwali-cta-secondary">
+               class="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-3.5 rounded-xl font-bold hover:border-[#49499A] hover:text-[#49499A] transition-all">
                 <i class="bi bi-briefcase"></i> Explore Our Work
             </a>
         </div>
 
-        <!-- Stats row inside high-contrast glass bar -->
-        <div class="diwali-stats-bar">
+        <!-- Stats row -->
+        <div class="flex flex-wrap justify-center gap-10 mb-14">
             <?php foreach([['500+','Projects Delivered'],['10+','Years Experience'],['200+','Happy Clients'],['15+','Technologies']] as $s): ?>
             <div class="text-center">
-                <div class="diwali-stat-num"><?= $s[0] ?></div>
-                <div class="diwali-stat-label"><?= $s[1] ?></div>
+                <div class="text-3xl font-extrabold text-[#49499A]"><?= $s[0] ?></div>
+                <div class="text-gray-400 text-sm mt-1"><?= $s[1] ?></div>
             </div>
             <?php endforeach; ?>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#49499A] to-[#2d2d70]">
+            <!-- Dot pattern overlay -->
+            <div class="absolute inset-0 opacity-10"
+                 style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:24px 24px"></div>
+
         </div>
 
     </div>
