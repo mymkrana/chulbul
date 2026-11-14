@@ -40,6 +40,451 @@ function cbd_location_country_key(string $isoCode): string
     ][$isoCode] ?? strtolower($isoCode);
 }
 
+function cbd_location_city_blog_map(): array
+{
+    return [
+        'chicago' => [
+            'chicago-web-design-costs-b2b-financial-guide-2026',
+            'financial-services-web-design-chicago-guide',
+            'b2b-lead-generation-website-design-architecture',
+            'website-development-cost-2026',
+        ],
+        'seattle' => [
+            'web-design-kirkland-bellevue-wa-small-business-guide-2026',
+            'seattle-ecommerce-inventory-shipping-accounting-integrations',
+            'seattle-ecommerce-website-brief-checklist',
+            'seattle-contractor-website-lead-audit',
+            'web-development-seattle',
+            'travel-web-development-seattle-guide',
+        ],
+        'bristol' => [
+            'web-design-bristol-costs-agencies-guide-2026',
+            'uk-ecommerce-platforms-comparison-guide',
+            'shopify-vs-woocommerce-2026-comparison',
+            'website-redesign-seo-checklist-migration-guide',
+        ],
+        'atlanta' => [
+            'small-business-web-design-atlanta-dacula-ga-guide-2026',
+            'google-local-pack-maps-ranking-local-seo-2026',
+            'shopify-vs-woocommerce-2026-comparison',
+            'website-development-cost-2026',
+        ],
+        'dallas' => [
+            'b2b-website-design-dallas-custom-web-development-pricing-guide-2026',
+            'dallas-b2b-website-brief-sales-handover',
+            'b2b-lead-generation-website-design-architecture',
+            'website-development-cost-2026',
+        ],
+        'abu-dhabi' => [
+            'web-design-abu-dhabi-ecommerce-guide-2026',
+            'abu-dhabi-arabic-english-website-design-guide',
+            'shopify-vs-custom-ecommerce-scalability-guide',
+            'website-development-cost-2026',
+        ],
+        'dubai' => [
+            'web-design-abu-dhabi-ecommerce-guide-2026',
+            'abu-dhabi-arabic-english-website-design-guide',
+            'shopify-vs-woocommerce-2026-comparison',
+            'website-development-cost-2026',
+        ],
+        'sharjah' => [
+            'web-design-abu-dhabi-ecommerce-guide-2026',
+            'abu-dhabi-arabic-english-website-design-guide',
+            'website-development-cost-2026',
+            'google-local-pack-maps-ranking-local-seo-2026',
+        ],
+        'leeds' => [
+            'leeds-ecommerce-web-design-website-redesign-guide-2026',
+            'web-design-leeds',
+            'the-ultimate-guide-to-web-design-in-leeds-649-speed-local-seo',
+            'uk-ecommerce-platforms-comparison-guide',
+            'website-redesign-seo-checklist-migration-guide',
+        ],
+        'glasgow' => [
+            'web-design-glasgow-small-business-redesign-guide-2026',
+            'website-redesign-seo-checklist-migration-guide',
+            'uk-ecommerce-platforms-comparison-guide',
+            'google-local-pack-maps-ranking-local-seo-2026',
+        ],
+        'birmingham' => [
+            'birmingham-web-design-jewellery-quarter-guide-2026',
+            'ecommerce-website-design-birmingham-jewellery-quarter-agency-guide-2026',
+            'birmingham-jewellery-website-design-guide',
+            'bespoke-jewellery-website-quote-design-approval-workflow',
+            'uk-ecommerce-platforms-comparison-guide',
+        ],
+        'london' => [
+            'uk-ecommerce-platforms-comparison-guide',
+            'b2b-lead-generation-website-design-architecture',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'manchester' => [
+            'uk-ecommerce-platforms-comparison-guide',
+            'website-redesign-seo-checklist-migration-guide',
+            'shopify-vs-woocommerce-2026-comparison',
+            'website-development-cost-2026',
+        ],
+        'edinburgh' => [
+            'uk-ecommerce-platforms-comparison-guide',
+            'tour-operator-website-cost-booking-budget',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'adelaide' => [
+            'web-design-adelaide-affordable-small-business-ecommerce-guide-2026',
+            'shopify-vs-woocommerce-2026-comparison',
+            'google-local-pack-maps-ranking-local-seo-2026',
+            'website-development-cost-2026',
+        ],
+        'perth' => [
+            'small-business-web-design-perth-trades-ecommerce-guide-2026',
+            'shopify-vs-woocommerce-2026-comparison',
+            'google-local-pack-maps-ranking-local-seo-2026',
+            'website-development-cost-2026',
+        ],
+        'sydney' => [
+            'shopify-vs-woocommerce-2026-comparison',
+            'b2b-lead-generation-website-design-architecture',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'melbourne' => [
+            'shopify-vs-woocommerce-2026-comparison',
+            'ecommerce-conversion-rate-optimization-guide',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'brisbane' => [
+            'shopify-vs-woocommerce-2026-comparison',
+            'google-local-pack-maps-ranking-local-seo-2026',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'san-francisco' => [
+            'web-design-san-francisco-wordpress-startup-pricing-guide-2026',
+            'saas-landing-page-design-high-converting-guide',
+            'headless-wordpress-nextjs-architecture-guide',
+            'b2b-lead-generation-website-design-architecture',
+        ],
+        'miami' => [
+            'website-design-miami-beach-ecommerce-agency-guide-2026',
+            'shopify-vs-woocommerce-2026-comparison',
+            'ecommerce-conversion-rate-optimization-guide',
+            'website-development-cost-2026',
+        ],
+        'toronto' => [
+            'toronto-website-redesign-rfp-agency-quote-template',
+            'b2b-lead-generation-website-design-architecture',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'montreal' => [
+            'bilingual-website-montreal-planning-guide',
+            'shopify-vs-woocommerce-2026-comparison',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'boston' => [
+            'biotech-website-design-pipeline-research-partnership-pages',
+            'b2b-lead-generation-website-design-architecture',
+            'website-redesign-seo-checklist-migration-guide',
+            'website-development-cost-2026',
+        ],
+        'houston' => [
+            'manufacturing-website-design-rfq-guide',
+            'b2b-lead-generation-website-design-architecture',
+            'google-local-pack-maps-ranking-local-seo-2026',
+            'website-development-cost-2026',
+        ],
+        'delhi' => [
+            'healthcare-clinic-website-design-delhi',
+            'why-delhi-business-needs-website',
+            'website-development-gurgaon-delhi',
+            'website-cost-india-2026',
+        ],
+        'gurgaon' => [
+            'b2b-corporate-website-design-gurgaon',
+            'website-development-companies-in-gurgaon',
+            'website-development-gurgaon-delhi',
+            'website-cost-india-2026',
+        ],
+        'bangalore' => [
+            'saas-startup-website-development-bangalore',
+            'saas-landing-page-design-high-converting-guide',
+            'headless-wordpress-nextjs-architecture-guide',
+            'website-cost-india-2026',
+        ],
+        'mumbai' => [
+            'luxury-ecommerce-website-design-mumbai',
+            'ecommerce-conversion-rate-optimization-guide',
+            'shopify-vs-custom-ecommerce-scalability-guide',
+            'website-cost-india-2026',
+        ],
+        'noida' => [
+            'noida-manufacturing-website-rfq-drawing-upload-workflow',
+            'manufacturing-website-design-rfq-guide',
+            'website-cost-india-2026',
+            'digital-marketing-strategy-india',
+        ],
+        'jaipur' => [
+            'jaipur-jewellery-ecommerce-wholesale-retail-orders',
+            'bespoke-jewellery-website-quote-design-approval-workflow',
+            'tour-operator-website-cost-booking-budget',
+            'website-cost-india-2026',
+        ],
+        'pune' => [
+            'pune-b2b-website-case-study-evidence-service-pages',
+            'b2b-lead-generation-website-design-architecture',
+            'website-cost-india-2026',
+            'how-to-choose-web-design-company-india',
+        ],
+        'ahmedabad' => [
+            'ahmedabad-textile-ecommerce-fabric-samples-bulk-orders',
+            'manufacturing-website-design-rfq-guide',
+            'website-cost-india-2026',
+            'shopify-vs-woocommerce-2026-comparison',
+        ],
+        '__default_india__' => [
+            'website-cost-india-2026',
+            'how-to-choose-web-design-company-india',
+            'digital-marketing-strategy-india',
+            'shopify-vs-woocommerce-2026-comparison',
+        ],
+        '__default_global__' => [
+            'website-development-cost-2026',
+            'website-redesign-seo-checklist-migration-guide',
+            'shopify-vs-woocommerce-2026-comparison',
+            'b2b-lead-generation-website-design-architecture',
+            'google-local-pack-maps-ranking-local-seo-2026',
+        ],
+    ];
+}
+
+function cbd_location_fetch_city_spokes(PDO $pdo, int $cityId, string $citySlug, string $cityName): array
+{
+    try {
+        $rows = cbd_location_fetch_all(
+            $pdo,
+            "SELECT slug, breadcrumb_label, eyebrow, meta_title, meta_description, schema_service_name
+             FROM city_spokes
+             WHERE city_id = ? AND status = 'published'
+             ORDER BY sort_order, id",
+            [$cityId]
+        );
+    } catch (Throwable $e) {
+        error_log('City spokes lookup failed for ' . $citySlug . ': ' . $e->getMessage());
+        return [];
+    }
+
+    return array_map(
+        static fn(array $row): array => [
+            'slug' => (string)$row['slug'],
+            'label' => trim((string)$row['breadcrumb_label']) ?: ($cityName . ' ' . ucwords(str_replace('-', ' ', (string)$row['slug']))),
+            'service_name' => trim((string)$row['schema_service_name']) ?: ($cityName . ' ' . trim((string)$row['breadcrumb_label'])),
+            'eyebrow' => (string)($row['eyebrow'] ?? ''),
+            'meta_title' => (string)($row['meta_title'] ?? ''),
+            'description' => (string)($row['meta_description'] ?? ''),
+            'href' => '/city/' . rawurlencode($citySlug) . '/' . rawurlencode((string)$row['slug']),
+        ],
+        $rows
+    );
+}
+
+function cbd_location_fetch_city_blogs(PDO $pdo, string $citySlug, string $cityName, string $countryKey = ''): array
+{
+    $map = cbd_location_city_blog_map();
+    $primarySlugs = $map[$citySlug] ?? [];
+    $fallbackKey = $countryKey === 'india' ? '__default_india__' : '__default_global__';
+    $candidateSlugs = array_values(array_unique(array_merge($primarySlugs, $map[$fallbackKey] ?? [])));
+
+    $collected = [];
+    $seenSlugs = [];
+
+    $appendPost = static function (array $row, bool $isCityMatch) use (&$collected, &$seenSlugs): void {
+        $slug = (string)($row['slug'] ?? '');
+        if ($slug === '' || isset($seenSlugs[$slug])) {
+            return;
+        }
+        $seenSlugs[$slug] = true;
+        $desc = trim((string)($row['excerpt'] ?? ''));
+        if ($desc === '') {
+            $desc = trim((string)($row['meta_desc'] ?? ''));
+        }
+        if (mb_strlen($desc, 'UTF-8') > 165) {
+            $desc = rtrim(mb_substr($desc, 0, 162, 'UTF-8')) . '...';
+        }
+        $collected[] = [
+            'slug' => $slug,
+            'title' => (string)($row['title'] ?? ''),
+            'category' => (string)($row['category'] ?? 'Guide'),
+            'read_time' => (string)($row['read_time'] ?? ''),
+            'excerpt' => $desc,
+            'href' => '/blog/' . rawurlencode($slug),
+            'is_city_match' => $isCityMatch,
+        ];
+    };
+
+    try {
+        if ($candidateSlugs) {
+            $placeholders = implode(',', array_fill(0, count($candidateSlugs), '?'));
+            $stmt = $pdo->prepare(
+                "SELECT slug, title, meta_desc, excerpt, category, read_time
+                 FROM posts
+                 WHERE slug IN ($placeholders) AND status = 'published' AND deleted_at IS NULL"
+            );
+            $stmt->execute($candidateSlugs);
+            $bySlug = [];
+            foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row) {
+                $bySlug[(string)$row['slug']] = $row;
+            }
+            $primaryLookup = array_flip($primarySlugs);
+            foreach ($candidateSlugs as $s) {
+                if (isset($bySlug[$s])) {
+                    $appendPost($bySlug[$s], isset($primaryLookup[$s]));
+                    if (count($collected) >= 4) {
+                        return $collected;
+                    }
+                }
+            }
+        }
+
+        // Also match any published post referencing the city in its slug or title.
+        $likeSlug = '%' . $citySlug . '%';
+        $likeName = '%' . $cityName . '%';
+        $stmtMatch = $pdo->prepare(
+            "SELECT slug, title, meta_desc, excerpt, category, read_time
+             FROM posts
+             WHERE status = 'published' AND deleted_at IS NULL
+               AND (slug LIKE ? OR title LIKE ?)
+             ORDER BY date DESC, id DESC
+             LIMIT 4"
+        );
+        $stmtMatch->execute([$likeSlug, $likeName]);
+        foreach ($stmtMatch->fetchAll(PDO::FETCH_ASSOC) as $row) {
+            $appendPost($row, true);
+            if (count($collected) >= 4) {
+                break;
+            }
+        }
+    } catch (Throwable $e) {
+        // Fallback query if table predates deleted_at or read_time columns.
+        try {
+            if ($candidateSlugs) {
+                $placeholders = implode(',', array_fill(0, count($candidateSlugs), '?'));
+                $stmt = $pdo->prepare(
+                    "SELECT slug, title, meta_desc, excerpt, category
+                     FROM posts
+                     WHERE slug IN ($placeholders) AND status = 'published'"
+                );
+                $stmt->execute($candidateSlugs);
+                $bySlug = [];
+                foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row) {
+                    $bySlug[(string)$row['slug']] = $row;
+                }
+                $primaryLookup = array_flip($primarySlugs);
+                foreach ($candidateSlugs as $s) {
+                    if (isset($bySlug[$s])) {
+                        $appendPost($bySlug[$s], isset($primaryLookup[$s]));
+                        if (count($collected) >= 4) {
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (Throwable $fallbackError) {
+            error_log('City blog guide lookup failed for ' . $citySlug . ': ' . $fallbackError->getMessage());
+        }
+    }
+
+    return array_slice($collected, 0, 4);
+}
+
+function cbd_location_match_city_for_blog(string $postSlug, string $postTitle = ''): ?array
+{
+    $pdo = cbd_location_database();
+    if (!$pdo) {
+        return null;
+    }
+
+    $normalizedSlug = strtolower(trim($postSlug));
+    $normalizedTitle = strtolower(trim($postTitle));
+    $matchedCitySlug = null;
+
+    // Only match non-ambiguous suburb/cluster aliases or city slugs/names so global pillar articles are not forced to one city.
+    $suburbAliases = [
+        'kirkland' => 'seattle',
+        'bellevue' => 'seattle',
+        'redmond' => 'seattle',
+        'dacula' => 'atlanta',
+        'gwinnett' => 'atlanta',
+        'jewellery-quarter' => 'birmingham',
+        'jewellery quarter' => 'birmingham',
+        'miami-beach' => 'miami',
+        'miami beach' => 'miami',
+        'gurugram' => 'gurgaon',
+    ];
+    foreach ($suburbAliases as $alias => $targetCity) {
+        if (str_contains($normalizedSlug, $alias) || str_contains($normalizedTitle, $alias)) {
+            $matchedCitySlug = $targetCity;
+            break;
+        }
+    }
+
+    try {
+        if ($matchedCitySlug === null) {
+            $cities = cbd_location_fetch_all(
+                $pdo,
+                "SELECT id, slug, name, state_region FROM cities WHERE status = 'published' ORDER BY LENGTH(slug) DESC"
+            );
+            foreach ($cities as $ci) {
+                $cSlug = strtolower((string)$ci['slug']);
+                $cName = strtolower((string)$ci['name']);
+                if (preg_match('/(?:^|-)' . preg_quote($cSlug, '/') . '(?:-|$)/', $normalizedSlug)
+                    || ($cName !== '' && preg_match('/\b' . preg_quote($cName, '/') . '\b/i', $normalizedTitle))) {
+                    $matchedCitySlug = $cSlug;
+                    break;
+                }
+            }
+        }
+
+        if ($matchedCitySlug === null) {
+            return null;
+        }
+
+        $cityRows = cbd_location_fetch_all(
+            $pdo,
+            "SELECT id, slug, name, state_region, tagline FROM cities WHERE slug = ? AND status = 'published' LIMIT 1",
+            [$matchedCitySlug]
+        );
+        if (!$cityRows) {
+            return null;
+        }
+        $cityRow = $cityRows[0];
+        $spokes = cbd_location_fetch_city_spokes(
+            $pdo,
+            (int)$cityRow['id'],
+            (string)$cityRow['slug'],
+            (string)$cityRow['name']
+        );
+
+        return [
+            'city' => [
+                'id' => (int)$cityRow['id'],
+                'slug' => (string)$cityRow['slug'],
+                'name' => (string)$cityRow['name'],
+                'state' => (string)($cityRow['state_region'] ?? ''),
+                'tagline' => (string)($cityRow['tagline'] ?? ''),
+                'href' => '/city/' . rawurlencode((string)$cityRow['slug']),
+            ],
+            'spokes' => $spokes,
+        ];
+    } catch (Throwable $e) {
+        error_log('Blog-to-city match failed for ' . $postSlug . ': ' . $e->getMessage());
+        return null;
+    }
+}
+
 function cbd_location_fetch_all(PDO $pdo, string $sql, array $params = []): array
 {
     $statement = $pdo->prepare($sql);
@@ -398,6 +843,9 @@ function cbd_location_page(string $slug): array
             $related[$relatedCity['name']] = $relatedCity['slug'];
         }
 
+        $citySpokes = cbd_location_fetch_city_spokes($pdo, $cityId, (string)$row['slug'], (string)$row['name']);
+        $cityBlogs = cbd_location_fetch_city_blogs($pdo, (string)$row['slug'], (string)$row['name'], $countryKey);
+
         return $cache[$slug] = [
             'status' => 'ok',
             'source' => 'database',
@@ -409,6 +857,8 @@ function cbd_location_page(string $slug): array
                 'services' => $services,
                 'testimonials' => $testimonials,
                 'related' => $related,
+                'spokes' => $citySpokes,
+                'blogs' => $cityBlogs,
                 'pricing_plans' => $plans,
                 'market_insight' => $row['market_insight'],
                 'query_sections' => $querySections,
@@ -509,6 +959,11 @@ function cbd_location_spoke_page(string $citySlug, string $spokeSlug): array
             throw new RuntimeException('Incomplete content for city spoke ' . $cacheKey);
         }
 
+        $cityIdInt = (int)$row['city_id'];
+        $countryKeyForSpoke = cbd_location_country_key((string)$row['iso_code']);
+        $citySpokes = cbd_location_fetch_city_spokes($pdo, $cityIdInt, (string)$row['city_slug'], (string)$row['city_name']);
+        $cityBlogs = cbd_location_fetch_city_blogs($pdo, (string)$row['city_slug'], (string)$row['city_name'], $countryKeyForSpoke);
+
         return $cache[$cacheKey] = [
             'status' => 'ok',
             'source' => 'database',
@@ -531,7 +986,7 @@ function cbd_location_spoke_page(string $citySlug, string $spokeSlug): array
                     'updated_at' => (string)$row['updated_at'],
                 ],
                 'city' => [
-                    'id' => (int)$row['city_id'],
+                    'id' => $cityIdInt,
                     'slug' => (string)$row['city_slug'],
                     'name' => (string)$row['city_name'],
                     'display_name' => (string)$row['city_display_name'],
@@ -551,6 +1006,8 @@ function cbd_location_spoke_page(string $citySlug, string $spokeSlug): array
                 'content' => $content,
                 'proof' => $proof,
                 'faqs' => array_values($faqs),
+                'spokes' => $citySpokes,
+                'blogs' => $cityBlogs,
             ],
         ];
     } catch (Throwable $e) {

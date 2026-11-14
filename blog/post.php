@@ -1,6 +1,7 @@
 <?php
 require_once dirname(__DIR__) . '/includes/http.php';
 require_once dirname(__DIR__) . '/includes/seo.php';
+require_once dirname(__DIR__) . '/includes/location-repository.php';
 
 $slug = trim(strtolower((string)($_GET['slug'] ?? '')));
 if (cbd_is_direct_script_request('post.php')
@@ -74,6 +75,63 @@ $page_styles[]    = '/assets/css/blog-sidebar.css';
 // Post tags
 $post_tags      = $post['tags'] ?? [];
 $post_tag_slugs = array_column($post_tags, 'slug');
+
+// Local city hub & spoke internal links for city-targeted blog posts
+$matched_city_context = cbd_location_match_city_for_blog((string)$post['slug'], (string)$post['title']);
+$matched_city_info = $matched_city_context['city'] ?? null;
+$matched_city_links = [];
+if ($matched_city_info) {
+    $mcName = (string)$matched_city_info['name'];
+    $matched_city_links[] = [
+        'href' => (string)$matched_city_info['href'],
+        'icon' => 'bi-geo-alt-fill',
+        'label' => $mcName . ' Web Design & Development Agency — Packages & Portfolio',
+        'short_label' => $mcName . ' Web Design Agency',
+        'desc' => 'Packages, starter pricing & local SEO in ' . $mcName,
+    ];
+    foreach ($matched_city_context['spokes'] ?? [] as $sp) {
+        $spSlug = (string)($sp['slug'] ?? '');
+        [$spIcon, $spLabel, $spShort, $spDesc] = match ($spSlug) {
+            'small-business-web-design' => [
+                'bi-briefcase',
+                'Small Business Website Design in ' . $mcName,
+                $mcName . ' Small Business Web Design',
+                'Custom sites, mobile UX & local SEO',
+            ],
+            'ecommerce-development' => [
+                'bi-cart-check',
+                'Ecommerce Website Design & Shopify/WooCommerce in ' . $mcName,
+                $mcName . ' Ecommerce Development',
+                'Shopify, WooCommerce & custom stores',
+            ],
+            'wordpress-developer' => [
+                'bi-wordpress',
+                'WordPress Web Design & Development in ' . $mcName,
+                $mcName . ' WordPress Web Design',
+                'Fast, editable CMS & SEO setup',
+            ],
+            'contractor-web-design' => [
+                'bi-tools',
+                'Contractor & Home Services Website Design in ' . $mcName,
+                $mcName . ' Contractor Web Design',
+                'Service-area pages & quote forms',
+            ],
+            default => [
+                'bi-window-desktop',
+                (string)$sp['label'] . ' in ' . $mcName,
+                $mcName . ' ' . (string)$sp['label'],
+                'Scoped web solutions for ' . $mcName,
+            ],
+        };
+        $matched_city_links[] = [
+            'href' => (string)$sp['href'],
+            'icon' => $spIcon,
+            'label' => $spLabel,
+            'short_label' => $spShort,
+            'desc' => $spDesc,
+        ];
+    }
+}
 
 // Related posts — same tag first, then any
 $related        = [];
@@ -252,6 +310,33 @@ $post_content = preg_replace_callback(
                 <?= $post_content ?>
             </div>
 
+            <?php if ($matched_city_info && !empty($matched_city_links)): ?>
+            <!-- Local City Service Internal Linking Hub -->
+            <section class="mt-10 bg-gray-50 border border-gray-200 rounded-2xl p-6" aria-labelledby="local-city-services-heading">
+                <div class="mb-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#EE483D]"><?= htmlspecialchars((string)$matched_city_info['name']) ?> Web Design Services</span>
+                    <h2 id="local-city-services-heading" class="text-xl font-extrabold text-[#1e1e5c] mt-1">
+                        Explore Our <?= htmlspecialchars((string)$matched_city_info['name']) ?> Web Design &amp; Development Services
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Compare scoped website packages, ecommerce builds, and transparent pricing for <?= htmlspecialchars((string)$matched_city_info['name']) ?> businesses.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <?php foreach ($matched_city_links as $mcl): ?>
+                    <a href="<?= $base . htmlspecialchars($mcl['href']) ?>"
+                       class="block bg-white hover:bg-[#F4F4FF] border border-gray-100 hover:border-[#49499A]/20 rounded-xl p-4 transition">
+                        <span class="text-sm font-bold text-[#1e1e5c] flex items-center gap-2">
+                            <i class="bi <?= htmlspecialchars($mcl['icon']) ?> text-[#EE483D]" aria-hidden="true"></i>
+                            <?= htmlspecialchars($mcl['label']) ?>
+                        </span>
+                        <span class="block text-xs text-gray-500 mt-1"><?= htmlspecialchars($mcl['desc']) ?></span>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+            <?php endif; ?>
+
             <!-- Tags / Share Row -->
             <div class="mt-10 pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
                 <div class="flex flex-wrap items-center gap-1.5">
@@ -336,6 +421,18 @@ $post_content = preg_replace_callback(
                     <p>Websites, apps &amp; digital marketing.</p>
                 </div>
                 <ul class="blog-services-list">
+                    <?php foreach ($matched_city_links as $mcl): ?>
+                    <li>
+                        <a class="blog-service-link" href="<?= $base . htmlspecialchars($mcl['href']) ?>">
+                            <span class="blog-service-icon" aria-hidden="true"><i class="bi <?= htmlspecialchars($mcl['icon']) ?>"></i></span>
+                            <span class="blog-service-copy">
+                                <span class="blog-service-name"><?= htmlspecialchars($mcl['short_label']) ?></span>
+                                <span class="blog-service-description"><?= htmlspecialchars($mcl['desc']) ?></span>
+                            </span>
+                            <i class="bi bi-arrow-right blog-service-arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <?php endforeach; ?>
                     <?php
                     $sidebar_services = [
                         ['web-design', 'bi-palette', 'Web Design', 'Custom, responsive websites'],

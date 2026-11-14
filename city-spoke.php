@@ -25,6 +25,8 @@ $content = $data['content'];
 $isSeattleSpoke = $city['slug'] === 'seattle' && in_array($page['slug'], ['ecommerce-development', 'small-business-web-design', 'wordpress-developer', 'contractor-web-design'], true);
 $proof = $data['proof'];
 $faqs = $data['faqs'];
+$siblingSpokes = $data['spokes'] ?? [];
+$cityBlogs = $data['blogs'] ?? [];
 
 if (cbd_is_direct_script_request('city-spoke.php')) {
     cbd_redirect_path('/city/' . rawurlencode($city['slug']) . '/' . rawurlencode($page['slug']));
@@ -372,18 +374,75 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="cbd-spoke-section cbd-spoke-section-alt">
+<?php
+    $mergedRelatedLinks = [];
+    $seenRelatedHrefs = [];
+    $appendRelatedLink = static function (string $href, string $label, string $description) use (&$mergedRelatedLinks, &$seenRelatedHrefs): void {
+        $normalized = '/' . ltrim(trim($href), '/');
+        if ($normalized === '/' || isset($seenRelatedHrefs[$normalized]) || trim($label) === '') {
+            return;
+        }
+        $seenRelatedHrefs[$normalized] = true;
+        $mergedRelatedLinks[] = [
+            'href' => $normalized,
+            'label' => trim($label),
+            'description' => trim($description),
+        ];
+    };
+
+    $appendRelatedLink(
+        '/city/' . rawurlencode($city['slug']),
+        $city['name'] . ' Web Design & Development Agency',
+        'View full website packages, starter pricing, industries served, and consultation options in ' . $city['name'] . '.'
+    );
+
+    foreach ($siblingSpokes as $siblingSpoke) {
+        $sibSlug = (string)($siblingSpoke['slug'] ?? '');
+        if ($sibSlug === '' || $sibSlug === $page['slug']) {
+            continue;
+        }
+        $sibTitle = match ($sibSlug) {
+            'small-business-web-design' => 'Small Business Web Design in ' . $city['name'],
+            'ecommerce-development' => 'Ecommerce Website Design in ' . $city['name'],
+            'wordpress-developer' => 'WordPress Web Design in ' . $city['name'],
+            'contractor-web-design' => 'Contractor Website Design in ' . $city['name'],
+            default => (string)($siblingSpoke['label'] ?? '') . ' in ' . $city['name'],
+        };
+        $appendRelatedLink(
+            (string)($siblingSpoke['href'] ?? ''),
+            $sibTitle,
+            (string)($siblingSpoke['description'] ?? 'Dedicated website design scope for ' . $city['name'] . ' businesses.')
+        );
+    }
+
+    foreach ($content['related_links'] ?? [] as $link) {
+        $appendRelatedLink(
+            (string)($link['href'] ?? ''),
+            (string)($link['label'] ?? ''),
+            (string)($link['description'] ?? '')
+        );
+    }
+
+    foreach ($cityBlogs as $guide) {
+        $appendRelatedLink(
+            (string)($guide['href'] ?? ''),
+            (string)($guide['title'] ?? ''),
+            (string)($guide['excerpt'] ?: ('Local 2026 pricing, agency planning, and conversion checklist for ' . $city['name'] . '.'))
+        );
+    }
+    ?>
+    <section class="cbd-spoke-section cbd-spoke-section-alt" id="related">
         <div class="cbd-spoke-container">
             <div class="cbd-spoke-section-heading">
                 <span class="cbd-spoke-section-label"><?= $escape($contentText('related_label', 'Related planning resources')) ?></span>
-                <h2><?= $escape($contentText('related_title', 'Continue planning your project')) ?></h2>
-                <p><?= $escape($content['related_intro'] ?? '') ?></p>
+                <h2>More <?= $escape($city['name']) ?> Web Design Services &amp; Local Pricing Guides</h2>
+                <p><?= $escape($content['related_intro'] ?: ('Compare specialized services, pricing guides, and planning checklists tailored for ' . $city['name'] . ' businesses.')) ?></p>
             </div>
             <div class="cbd-spoke-related-grid">
-                <?php foreach ($content['related_links'] ?? [] as $link): ?>
-                <a href="<?= $base . $escape($link['href'] ?? '/') ?>">
-                    <span><?= $escape($link['label'] ?? '') ?></span>
-                    <small><?= $escape($link['description'] ?? '') ?></small>
+                <?php foreach ($mergedRelatedLinks as $link): ?>
+                <a href="<?= $base . $escape($link['href']) ?>">
+                    <span><?= $escape($link['label']) ?></span>
+                    <small><?= $escape($link['description']) ?></small>
                     <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                 </a>
                 <?php endforeach; ?>

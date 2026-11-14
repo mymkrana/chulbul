@@ -53,6 +53,11 @@ $og_locale = $db_location_data['og_locale'];
 $hreflang = $db_location_data['hreflang'];
 $delivered_text = $db_location_data['delivery_label'];
 $query_sections = $db_location_data['query_sections'] ?? [];
+$city_spokes = $db_location_data['spokes'] ?? [];
+$city_blogs = $db_location_data['blogs'] ?? [];
+$city_location_heading = ($c['state'] !== '' && strcasecmp((string)$c['state'], (string)$c['name']) !== 0)
+    ? $c['name'] . ', ' . $c['state']
+    : $c['name'];
 $industries_for_display = $c['industries'];
 if ($slug === 'seattle') {
     $industries_for_display = array_map(
@@ -194,21 +199,9 @@ if ($slug === 'seattle' && count($specialized_query_sections) === 6) {
     );
 } else {
     // Dynamic spoke overlay: if this city has dedicated service spokes, link directly to them
-    $_loc_pdo = cbd_location_database();
     $city_spoke_map = [];
-    if ($_loc_pdo) {
-        try {
-            $stmt = $_loc_pdo->prepare(
-                "SELECT sp.slug, sp.breadcrumb_label 
-                 FROM city_spokes sp
-                 INNER JOIN cities ci ON ci.id = sp.city_id
-                 WHERE ci.slug = ? AND sp.status = 'published'"
-            );
-            $stmt->execute([$slug]);
-            while ($spRow = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $city_spoke_map[$spRow['slug']] = $spRow;
-            }
-        } catch (Throwable) {}
+    foreach ($city_spokes as $spRow) {
+        $city_spoke_map[$spRow['slug']] = $spRow;
     }
 
     if (!empty($city_spoke_map)) {
@@ -220,6 +213,9 @@ if ($slug === 'seattle' && count($specialized_query_sections) === 6) {
                 } elseif ($svc['href'] === '/web-design-development' && isset($city_spoke_map['small-business-web-design'])) {
                     $svc['href'] = '/city/' . rawurlencode($slug) . '/small-business-web-design';
                     $svc['link_label'] = 'Small Business Web Design in ' . $c['name'];
+                } elseif ($svc['href'] === '/wordpress-development' && isset($city_spoke_map['wordpress-developer'])) {
+                    $svc['href'] = '/city/' . rawurlencode($slug) . '/wordpress-developer';
+                    $svc['link_label'] = 'WordPress Web Design in ' . $c['name'];
                 }
                 return $svc;
             },
@@ -691,7 +687,7 @@ if ($country === 'india') {
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-5">
-            Web Design &amp; Development Services for <span class="text-[#EE483D]"><?= htmlspecialchars($c['name']) ?></span>
+            Custom Website Design &amp; Web Development in <span class="text-[#EE483D]"><?= htmlspecialchars($city_location_heading) ?></span>
         </h2>
         <p class="text-gray-600 text-lg leading-relaxed">
             <?= preg_replace(
@@ -713,7 +709,7 @@ if ($country === 'india') {
     <div class="bg-[#49499A]/5 border-l-4 border-[#49499A] rounded-xl px-6 py-5 flex gap-4 items-start">
         <i class="bi bi-geo-alt-fill text-[#EE483D] text-2xl mt-0.5 shrink-0" aria-hidden="true"></i>
         <div>
-            <p class="text-xs font-bold tracking-widest uppercase text-[#49499A] mb-1"><?= htmlspecialchars($c['name']) ?> Market Insight</p>
+            <p class="text-xs font-bold tracking-widest uppercase text-[#49499A] mb-1"><?= htmlspecialchars($c['name']) ?> Web Design Agency Insights &amp; Local Market Strategy</p>
             <p class="text-gray-700 text-sm leading-relaxed"><?= htmlspecialchars($city_insights[$slug]) ?></p>
         </div>
     </div>
@@ -729,7 +725,7 @@ if ($country === 'india') {
     <div class="max-w-5xl mx-auto text-center">
         <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">Service Area</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-4 mb-3">
-            Website Services Across <?= htmlspecialchars($c['name']) ?> and Nearby Areas
+            Website Design Services Across <?= htmlspecialchars($c['name']) ?> and Nearby Business Areas
         </h2>
         <p class="text-gray-500 max-w-3xl mx-auto mb-7">
             Our India-based team delivers projects remotely for businesses across the <?= htmlspecialchars($c['name']) ?> market, with online discovery, design reviews and project updates.
@@ -803,7 +799,7 @@ if ($country === 'india') {
         <div class="text-center mb-12">
             <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">What We Do</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
-                Services for <?= htmlspecialchars($c['name']) ?> Businesses
+                Website Design, Ecommerce &amp; Custom Development Services in <?= htmlspecialchars($c['name']) ?>
             </h2>
             <p class="text-gray-500 max-w-2xl mx-auto">Website design, development and supporting services, scoped around your business.</p>
         </div>
@@ -944,7 +940,7 @@ if ($country === 'india') {
         <div class="flex-1">
             <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">Why Chulbul Design</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-5 mb-5">
-                The Right Choice for <span class="text-[#EE483D]"><?= htmlspecialchars($c['name']) ?></span> Businesses
+                Why <span class="text-[#EE483D]"><?= htmlspecialchars($c['name']) ?></span> Businesses Choose Our Web Design Company
             </h2>
             <p class="text-gray-600 leading-relaxed mb-8">
                 <?= htmlspecialchars($c['why_local']) ?>
@@ -1041,7 +1037,7 @@ if ($country === 'india') {
     <div class="text-center mb-12">
         <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">How We Work</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
-            Our Simple 5-Step Process
+            Our 5-Step <?= htmlspecialchars($c['name']) ?> Website Design &amp; Redesign Process
         </h2>
         <p class="text-gray-500 max-w-xl mx-auto">From first call to final launch — transparent, on-time, and hassle-free for you.</p>
     </div>
@@ -1082,7 +1078,7 @@ if ($country === 'india') {
         <div class="text-center mb-12">
             <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">Working Together</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
-                What Your Project Includes
+                What Every Custom <?= htmlspecialchars($c['name']) ?> Website Design Package Includes
             </h2>
         </div>
 
@@ -1108,7 +1104,7 @@ if ($country === 'india') {
     <div class="text-center mb-12">
         <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">Pricing</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
-            Transparent Pricing for <?= htmlspecialchars($c['name']) ?> Businesses
+            <?= htmlspecialchars($c['name']) ?> Website Design Cost &amp; Transparent Packages
         </h2>
         <p class="text-gray-500 max-w-xl mx-auto">No hidden costs. No surprises. All prices in <?= $c['currency_label'] ?? 'Indian Rupees (INR)' ?>. Choose a plan that fits your goals.</p>
     </div>
@@ -1181,15 +1177,92 @@ if ($country === 'india') {
 </section>
 
 
+<?php if (!empty($city_spokes) || !empty($city_blogs)): ?>
+<!-- ═══════════════════════════════════════════════
+     LOCAL WEBSITE PRICING GUIDES & SPECIALIZED SERVICES
+════════════════════════════════════════════════ -->
+<section id="local-resources" class="bg-white border-t border-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">Local Resources &amp; Solutions</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
+                Local Website Pricing Guides &amp; Specialized Services in <?= htmlspecialchars($c['name']) ?>
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                Explore dedicated service scopes, small business web design options, ecommerce architectures, and <?= htmlspecialchars($c['name']) ?> cost guides to plan your project.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <?php foreach ($city_spokes as $spoke):
+                $spokeSlug = (string)($spoke['slug'] ?? '');
+                $spokeTitle = match ($spokeSlug) {
+                    'small-business-web-design' => 'Small Business Web Design in ' . $c['name'],
+                    'ecommerce-development' => 'Ecommerce Website Design in ' . $c['name'],
+                    'wordpress-developer' => 'WordPress Web Design in ' . $c['name'],
+                    'contractor-web-design' => 'Contractor Website Design in ' . $c['name'],
+                    default => $spoke['label'] . ' — ' . $c['name'],
+                };
+                $spokeIcon = match ($spokeSlug) {
+                    'ecommerce-development' => 'bi-cart-check',
+                    'wordpress-developer' => 'bi-wordpress',
+                    'contractor-web-design' => 'bi-tools',
+                    default => 'bi-briefcase',
+                };
+            ?>
+            <article class="bg-gray-50 rounded-2xl p-7 border border-gray-200 hover:shadow-md hover:-translate-y-1 transition-all flex flex-col">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                    <span class="text-xs font-bold tracking-widest uppercase text-[#49499A] bg-[#49499A]/10 px-3 py-1 rounded-full">Dedicated Service</span>
+                    <i class="bi <?= htmlspecialchars($spokeIcon) ?> text-xl text-[#49499A]" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2"><?= htmlspecialchars($spokeTitle) ?></h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-1">
+                    <?= htmlspecialchars((string)($spoke['description'] ?: 'Scoped website design and development deliverables tailored for ' . $c['name'] . ' businesses.')) ?>
+                </p>
+                <a href="<?= htmlspecialchars($base . $spoke['href']) ?>"
+                   class="inline-flex items-center gap-1 text-[#EE483D] text-sm font-semibold mt-4 hover:gap-2 transition-all">
+                    <?= htmlspecialchars($spokeTitle) ?> <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+            <?php endforeach; ?>
+
+            <?php foreach ($city_blogs as $guide): ?>
+            <article class="bg-gray-50 rounded-2xl p-7 border border-gray-200 hover:shadow-md hover:-translate-y-1 transition-all flex flex-col">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                    <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-3 py-1 rounded-full">
+                        <?= htmlspecialchars(!empty($guide['is_city_match']) ? $c['name'] . ' Guide' : ($guide['category'] ?: 'Planning Guide')) ?>
+                    </span>
+                    <?php if (!empty($guide['read_time'])): ?>
+                    <span class="text-xs text-gray-500 font-medium"><?= htmlspecialchars((string)$guide['read_time']) ?></span>
+                    <?php endif; ?>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2"><?= htmlspecialchars((string)$guide['title']) ?></h3>
+                <?php if (!empty($guide['excerpt'])): ?>
+                <p class="text-gray-600 text-sm leading-relaxed flex-1">
+                    <?= htmlspecialchars((string)$guide['excerpt']) ?>
+                </p>
+                <?php endif; ?>
+                <a href="<?= htmlspecialchars($base . $guide['href']) ?>"
+                   class="inline-flex items-center gap-1 text-[#49499A] text-sm font-semibold mt-4 hover:gap-2 transition-all">
+                    Read <?= htmlspecialchars(!empty($guide['is_city_match']) ? $c['name'] . ' Guide' : 'Full Guide') ?> <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+
 <!-- ═══════════════════════════════════════════════
      FAQ SECTION
 ═══════════════════════════════════════════════ -->
-<section class="bg-gray-50 py-16">
+<section id="faq" class="bg-gray-50 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <span class="text-xs font-bold tracking-widest uppercase text-[#EE483D] bg-red-50 px-4 py-1.5 rounded-full">FAQ</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 mb-3">
-                Frequently Asked Questions — <?= htmlspecialchars($c['name']) ?>
+                <?= htmlspecialchars($c['name']) ?> Web Design, Pricing &amp; SEO FAQs
             </h2>
         </div>
 

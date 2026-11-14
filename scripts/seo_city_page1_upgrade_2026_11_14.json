@@ -1,0 +1,1167 @@
+{
+  "version": "2026-11-14-page1-upgrade",
+  "cities": [
+    {
+      "slug": "delhi",
+      "meta_title": "Web Design Company in Delhi | Doctors & B2B ₹18,000+",
+      "meta_description": "Trusted web design company in Delhi NCR from ₹18,000. Custom clinic, doctor, B2B & ecommerce websites across South Delhi, Connaught Place & Okhla.",
+      "tagline": "Web Design Company in Delhi NCR · Healthcare, B2B & Retail",
+      "heading_html": "Web Design &amp; Development Agency <span class=\"text-[#EE483D]\">in New Delhi NCR</span>",
+      "hero_description": "Custom websites for Delhi clinics, doctors, real estate consultants, exporters and SMEs across Connaught Place, South Delhi and Okhla starting from ₹18,000."
+    },
+    {
+      "slug": "gurgaon",
+      "meta_title": "Website Development Company in Gurgaon | Sites ₹18,000+",
+      "meta_description": "Best web design & website development company in Gurgaon (Gurugram) from ₹18,000. Custom B2B, SaaS & D2C websites in Cyber City, Golf Course Rd & Udyog Vihar.",
+      "tagline": "Website Development Company in Gurgaon · Direct Local Team",
+      "heading_html": "Website Development Company <span class=\"text-[#EE483D]\">in Gurgaon (Gurugram)</span>",
+      "hero_description": "Work directly with our Sector 15, Gurugram web design and development team—custom corporate B2B websites, SaaS portals and ecommerce builds for Cyber City and NCR companies starting from ₹18,000."
+    },
+    {
+      "slug": "noida",
+      "meta_title": "Web Design Company in Noida | B2B & Mfg Sites ₹18,000+",
+      "meta_description": "Custom web design & manufacturing RFQ website development in Noida from ₹18,000. Serving Sector 62, 63, Film City & Greater Noida companies. Free quote.",
+      "tagline": "Web Design Noida · Manufacturing RFQ, IT & Local Business",
+      "heading_html": "Website Design &amp; RFQ Portals <span class=\"text-[#EE483D]\">in Noida &amp; Greater Noida</span>",
+      "hero_description": "Custom IT, corporate and industrial/manufacturing RFQ websites built for Sector 62, Sector 63 and Greater Noida businesses starting from ₹18,000."
+    },
+    {
+      "slug": "mumbai",
+      "meta_title": "Web Design Company in Mumbai | D2C & B2B from ₹18,000",
+      "meta_description": "Mumbai web design & Shopify ecommerce development from ₹18,000. Luxury D2C, finance & corporate websites for BKC, Andheri & Lower Parel brands.",
+      "tagline": "Web Design Mumbai · Luxury D2C, Shopify Plus & Corporate",
+      "heading_html": "D2C Ecommerce &amp; Corporate Web Design <span class=\"text-[#EE483D]\">in Mumbai</span>",
+      "hero_description": "High-AOV D2C ecommerce stores, Razorpay/UPI checkouts and corporate websites engineered for Mumbai brands in BKC, Lower Parel and Andheri from ₹18,000."
+    },
+    {
+      "slug": "bangalore",
+      "meta_title": "Web Design Company Bangalore | Small Biz & SaaS ₹18,000",
+      "meta_description": "Bangalore web design for small businesses, SaaS startups & custom web apps from ₹18,000. Fast UX for Koramangala, Indiranagar & Whitefield teams.",
+      "tagline": "Web Design Bangalore · Small Business, SaaS & Product UX",
+      "heading_html": "SaaS &amp; Small Business Web Design <span class=\"text-[#EE483D]\">in Bangalore</span>",
+      "hero_description": "Conversion-ready websites for Bangalore SaaS startups, IT consultancies and local SMEs across Koramangala, Indiranagar and HSR Layout starting from ₹18,000."
+    },
+    {
+      "slug": "hyderabad",
+      "meta_title": "Web Design & Development Company in Hyderabad | ₹18,000+",
+      "meta_description": "Leading web design and development company in Hyderabad from ₹18,000. Custom enterprise, IT & healthcare websites for HITEC City & Gachibowli.",
+      "tagline": "Web Design Company in Hyderabad · HITEC City, Pharma & SMEs",
+      "heading_html": "Web Design &amp; Development Company <span class=\"text-[#EE483D]\">in Hyderabad</span>",
+      "hero_description": "Custom corporate, biotech, IT and ecommerce websites for Hyderabad businesses in HITEC City, Madhapur, Banjara Hills and Gachibowli starting from ₹18,000."
+    },
+    {
+      "slug": "chennai",
+      "meta_title": "Web Design Company in Chennai | B2B & Retail ₹18,000+",
+      "meta_description": "Chennai web design & custom ecommerce agency from ₹18,000. Built for automotive, manufacturing, healthcare & SaaS teams along OMR & Guindy.",
+      "tagline": "Web Design Chennai · Manufacturing, SaaS & Ecommerce",
+      "heading_html": "Industrial &amp; Business Web Design <span class=\"text-[#EE483D]\">in Chennai</span>",
+      "hero_description": "Mobile-first websites, B2B catalogues and Razorpay-ready ecommerce stores for Chennai companies across OMR, Guindy, Anna Nagar and T. Nagar starting from ₹18,000."
+    },
+    {
+      "slug": "pune",
+      "meta_title": "Web Design Company in Pune | B2B & SaaS from ₹18,000",
+      "meta_description": "Custom B2B, IT & small business web design in Pune from ₹18,000. Serving Hinjewadi, Baner, Koregaon Park & PCMC industrial firms with clean SEO.",
+      "tagline": "Web Design Pune · B2B Case Studies, SaaS & Manufacturing",
+      "heading_html": "B2B &amp; Tech Website Design <span class=\"text-[#EE483D]\">in Pune</span>",
+      "hero_description": "Case-study-led B2B websites, WordPress builds and custom portals for Pune IT teams, edtech platforms and PCMC manufacturers from ₹18,000."
+    },
+    {
+      "slug": "kolkata",
+      "meta_title": "Web Design Company in Kolkata | SME & Retail ₹18,000+",
+      "meta_description": "Affordable web design & ecommerce websites in Kolkata from ₹18,000. Custom sites for Salt Lake Sector V, Park Street & East India brands. Free quote.",
+      "tagline": "Web Design Kolkata · SMEs, Retail & Heritage Brands",
+      "heading_html": "Website &amp; Ecommerce Design <span class=\"text-[#EE483D]\">in Kolkata</span>",
+      "hero_description": "Fast, mobile-ready business websites and ecommerce storefronts with Razorpay/UPI checkout for Salt Lake, New Town and Park Street brands starting from ₹18,000."
+    },
+    {
+      "slug": "ahmedabad",
+      "meta_title": "Web Design Company Ahmedabad | Textile & B2B ₹18,000+",
+      "meta_description": "Custom web design & textile ecommerce in Ahmedabad from ₹18,000. Built for SG Highway, GIFT City & Gujarat exporters with bulk inquiry workflows.",
+      "tagline": "Web Design Ahmedabad · Textile Ecommerce, B2B & Exporters",
+      "heading_html": "Textile, Exporter &amp; Business Web Design <span class=\"text-[#EE483D]\">in Ahmedabad</span>",
+      "hero_description": "Custom ecommerce stores with fabric-sample/bulk quote workflows and B2B websites for Ahmedabad, SG Highway and GIFT City companies from ₹18,000."
+    },
+    {
+      "slug": "jaipur",
+      "meta_title": "Web Design Company in Jaipur | Jewellery & Tourism ₹18k",
+      "meta_description": "Custom web design in Jaipur from ₹18,000 for jewellery exporters, boutique hotels & tour operators. Global Razorpay/Stripe checkout & local SEO.",
+      "tagline": "Web Design Jaipur · Jewellery Wholesale, Tourism & SMEs",
+      "heading_html": "Jewellery &amp; Hospitality Web Design <span class=\"text-[#EE483D]\">in Jaipur</span>",
+      "hero_description": "Custom jewellery wholesale/retail websites and hotel/tour booking portals crafted for Johari Bazaar exporters and Jaipur hospitality brands from ₹18,000."
+    },
+    {
+      "slug": "chandigarh",
+      "meta_title": "Web Design Company in Chandigarh | Tricity from ₹18,000",
+      "meta_description": "Top web design company in Chandigarh Tricity from ₹18,000. Custom WordPress, clinic, education & business websites across Sector 17, Mohali & Panchkula.",
+      "tagline": "Web Design Chandigarh · Tricity Clinics, EdTech & SMEs",
+      "heading_html": "Custom Website Design <span class=\"text-[#EE483D]\">in Chandigarh Tricity</span>",
+      "hero_description": "Clean, mobile-first WordPress and custom business websites for Chandigarh, Mohali and Panchkula clinics, education institutes and SMEs starting from ₹18,000."
+    },
+    {
+      "slug": "mohali",
+      "meta_title": "Web Design Company in Mohali | Small Business ₹18,000+",
+      "meta_description": "Custom IT, startup & small business web design in Mohali from ₹18,000. High-speed websites built for IT City, Phase 8 & Tricity businesses.",
+      "tagline": "Web Design Mohali · Startups, IT Agencies & Small Business",
+      "heading_html": "Startup &amp; Small Business Web Design <span class=\"text-[#EE483D]\">in Mohali</span>",
+      "hero_description": "Performance-focused websites and custom web applications built for Mohali IT Park, Phase 8 startups and growing Punjab service companies starting from ₹18,000."
+    },
+    {
+      "slug": "amritsar",
+      "meta_title": "Web Design Company in Amritsar | Hotels & Exports ₹18k+",
+      "meta_description": "Custom web design in Amritsar from ₹18,000 for boutique hotels, tourism operators, food brands & exporters across Ranjit Avenue & Hall Bazaar.",
+      "tagline": "Web Design Amritsar · Hospitality, Food Brands & Exports",
+      "heading_html": "Hospitality &amp; Export Web Design <span class=\"text-[#EE483D]\">in Amritsar</span>",
+      "hero_description": "Direct-booking hotel websites, restaurant ordering sites and B2B export catalogues tailored for Amritsar businesses starting from ₹18,000."
+    },
+    {
+      "slug": "meerut",
+      "meta_title": "Web Design Company in Meerut | Sports & Mfg ₹18,000+",
+      "meta_description": "Web design & B2B catalogue websites in Meerut from ₹18,000 for sports goods exporters, manufacturers, clinics & local enterprises. Free consultation.",
+      "tagline": "Web Design Meerut · Sports Goods Exporters & Manufacturing",
+      "heading_html": "Export &amp; Manufacturing Web Design <span class=\"text-[#EE483D]\">in Meerut</span>",
+      "hero_description": "Lead-generating B2B websites, product catalogues and healthcare sites for Meerut sports manufacturers, publishers and local enterprises starting from ₹18,000."
+    },
+    {
+      "slug": "saharanpur",
+      "meta_title": "Web Design Company in Saharanpur | Woodcraft & B2B ₹18k",
+      "meta_description": "Custom B2B & export catalogue web design in Saharanpur from ₹18,000 for furniture, woodcraft exporters & local SMEs. Fast launch with WhatsApp leads.",
+      "tagline": "Web Design Saharanpur · Woodcraft Exporters & SMEs",
+      "heading_html": "Woodcraft Export &amp; B2B Web Design <span class=\"text-[#EE483D]\">in Saharanpur</span>",
+      "hero_description": "International-ready B2B furniture/woodcraft export websites and inquiry portals built for Saharanpur manufacturers and traders starting from ₹18,000."
+    },
+    {
+      "slug": "coimbatore",
+      "meta_title": "Web Design Company in Coimbatore | B2B & Textile ₹18k+",
+      "meta_description": "Custom web design & B2B engineering portals in Coimbatore from ₹18,000. Built for textile, pump & manufacturing exporters across Peelamedu & RS Puram.",
+      "tagline": "Web Design Coimbatore · Industrial, Pumps & Textile B2B",
+      "heading_html": "Industrial &amp; Textile Web Design <span class=\"text-[#EE483D]\">in Coimbatore</span>",
+      "hero_description": "Specification-rich B2B websites, industrial RFQ portals and ecommerce storefronts for Coimbatore textile and engineering exporters from ₹18,000."
+    },
+    {
+      "slug": "bhubaneswar",
+      "meta_title": "Web Design Company in Bhubaneswar | IT & Tourism ₹18k+",
+      "meta_description": "Custom web design & local SEO in Bhubaneswar from ₹18,000 for IT firms, universities, healthcare & tourism businesses in Infocity & Saheed Nagar.",
+      "tagline": "Web Design Bhubaneswar · IT, Education & Hospitality",
+      "heading_html": "Business &amp; EdTech Website Design <span class=\"text-[#EE483D]\">in Bhubaneswar</span>",
+      "hero_description": "Mobile-first institutional, IT, clinic and hospitality websites engineered for Bhubaneswar and Odisha businesses from ₹18,000."
+    },
+    {
+      "slug": "new-york",
+      "meta_title": "Web Design Agency New York | Custom & SaaS from $799",
+      "meta_description": "Custom web design & WordPress development for New York & NYC startups, agencies & SMEs from $799. High-speed UX, SEO foundations & EST project reviews.",
+      "tagline": "Web Design Agency New York · Startups, FinTech & Ecommerce",
+      "heading_html": "Custom Website Design Agency <span class=\"text-[#EE483D]\">in New York, NY</span>",
+      "hero_description": "Conversion-driven custom websites, B2B web apps and ecommerce stores for Manhattan, Brooklyn and NYC Metro businesses starting from $799 with EST reviews."
+    },
+    {
+      "slug": "los-angeles",
+      "meta_title": "Web Design Los Angeles | Custom & Ecommerce from $799",
+      "meta_description": "Los Angeles web design agency for creative brands, Shopify ecommerce & custom business websites from $799. Fast 2–4 week delivery with Pacific Time reviews.",
+      "tagline": "Los Angeles Web Design · Creative, Ecommerce & Small Business",
+      "heading_html": "Custom Web Design &amp; Ecommerce <span class=\"text-[#EE483D]\">in Los Angeles, CA</span>",
+      "hero_description": "Brand-focused custom website design and high-speed Shopify/WooCommerce stores for Los Angeles, Santa Monica, Beverly Hills and Southern California businesses starting from $799."
+    },
+    {
+      "slug": "chicago",
+      "meta_title": "Website Design Chicago | Custom Web Agency from $799",
+      "meta_description": "Top website design Chicago businesses trust. Affordable B2B, FinTech & custom web development from $799 across The Loop & Chicagoland. Free quote.",
+      "tagline": "Website Design Chicago · B2B, FinTech & Affordable Custom Sites",
+      "heading_html": "Website Design &amp; Development Agency <span class=\"text-[#EE483D]\">in Chicago, IL</span>",
+      "hero_description": "Affordable, custom website design in Chicago for B2B firms, financial services, startups and local businesses across The Loop, River North, Wicker Park and Chicagoland. Transparent packages from $799 with 2–4 week delivery."
+    },
+    {
+      "slug": "houston",
+      "meta_title": "Web Design Houston | Plumbing, HVAC & Biotech Sites $799",
+      "meta_description": "Custom web design for Houston plumbing, HVAC, contractor, industrial & biotech companies from $799. Service-area SEO & lead forms across Greater Houston.",
+      "tagline": "Web Design Houston TX · Plumbing, HVAC, Biotech & B2B",
+      "heading_html": "Contractor, Biotech &amp; Business Web Design <span class=\"text-[#EE483D]\">in Houston, TX</span>",
+      "hero_description": "Lead-focused websites for Houston plumbing, HVAC, home service contractors, energy and biotech firms—Energy Corridor, The Woodlands and Downtown—starting from $799."
+    },
+    {
+      "slug": "dallas",
+      "meta_title": "Dallas Web Design TX | B2B & Custom Websites from $799",
+      "meta_description": "B2B website design & custom web development in Dallas, TX from $799. Redesigns, contractor & ecommerce sites across Plano, Frisco & DFW. Free consultation.",
+      "tagline": "Web Design Dallas TX · B2B Websites, Redesigns & Custom Builds",
+      "heading_html": "B2B &amp; Custom Website Design <span class=\"text-[#EE483D]\">in Dallas, TX</span>",
+      "hero_description": "Custom B2B website design, website redesigns and ecommerce development for Dallas, Plano, Frisco and DFW Metroplex companies. Move beyond rigid website builders with fast custom code starting from $799."
+    },
+    {
+      "slug": "san-francisco",
+      "meta_title": "San Francisco Web Design | WordPress & SaaS from $799",
+      "meta_description": "San Francisco web design & custom WordPress agency for SaaS startups and B2B brands. Responsive websites from $799 with PST project reviews. Free quote today.",
+      "tagline": "San Francisco Web Design · WordPress, SaaS & B2B Websites",
+      "heading_html": "WordPress &amp; Startup Web Design <span class=\"text-[#EE483D]\">in San Francisco</span>",
+      "hero_description": "High-speed custom WordPress, SaaS and B2B website design for San Francisco and Bay Area startups and established businesses—SOMA, Financial District and Silicon Valley—starting from $799 with Pacific Time reviews."
+    },
+    {
+      "slug": "miami",
+      "meta_title": "Miami & Miami Beach Web Design | Costs & Agency ($799+)",
+      "meta_description": "Miami & Miami Beach web design with transparent prices from $799. Custom bilingual websites, hospitality & ecommerce development in South Florida. Free quote.",
+      "tagline": "Miami & Miami Beach Web Design · Transparent Prices ($799+)",
+      "heading_html": "Web Design &amp; Ecommerce Agency <span class=\"text-[#EE483D]\">in Miami &amp; Miami Beach</span>",
+      "hero_description": "Transparent website development pricing for Miami, Miami Beach, Brickell and Wynwood businesses—from $799 starter websites to hospitality booking systems and Shopify/WooCommerce stores."
+    },
+    {
+      "slug": "seattle",
+      "meta_title": "Seattle & Kirkland Web Design | Ecommerce & WordPress",
+      "meta_description": "Seattle web design & custom ecommerce development from $799. Serving Seattle, Kirkland, Bellevue & Eastside with WordPress & Shopify stores. Free quote.",
+      "tagline": "Seattle, Kirkland & Bellevue Web Design · Ecommerce & WordPress",
+      "heading_html": "Seattle &amp; Eastside <span class=\"text-[#EE483D]\">Web Design &amp; Ecommerce</span>",
+      "hero_description": "Custom website design, Shopify and WooCommerce ecommerce development, and WordPress engineering for businesses across Seattle, Kirkland, Bellevue and Redmond. Small-business websites start from $799 with Pacific Time reviews."
+    },
+    {
+      "slug": "boston",
+      "meta_title": "Boston Web Design | Biotech, Life Sciences & B2B ($799+)",
+      "meta_description": "Biotech website design & B2B web development in Boston & Cambridge, MA from $799. Pipeline pages, clinical credibility & investor UX in 2–4 weeks.",
+      "tagline": "Boston Web Design · Biotech, Life Sciences & Healthcare B2B",
+      "heading_html": "Biotech &amp; B2B Website Design <span class=\"text-[#EE483D]\">in Boston, MA</span>",
+      "hero_description": "Research-ready website design for Boston and Cambridge biotech, life sciences, healthcare and B2B firms—Back Bay and Kendall Square—with pipeline & investor-relations UX starting from $799."
+    },
+    {
+      "slug": "atlanta",
+      "meta_title": "Atlanta & Dacula Web Design | Small Business from $799",
+      "meta_description": "Custom web design agency for Atlanta, Dacula & Gwinnett County, GA. Small business, B2B & ecommerce websites from $799 with EST reviews. Get a free quote.",
+      "tagline": "Atlanta, Dacula & Gwinnett County Web Design · Custom & Small Business",
+      "heading_html": "Custom Web Design Agency <span class=\"text-[#EE483D]\">in Atlanta &amp; Dacula, GA</span>",
+      "hero_description": "Affordable small business and ecommerce web design for Atlanta, Dacula, Lawrenceville, Buckhead and Gwinnett County, GA. Custom mobile-first websites from $799 with EST-aligned project reviews and transparent pricing."
+    },
+    {
+      "slug": "london",
+      "meta_title": "Small Business Web Design London | Custom Sites £649+",
+      "meta_description": "Affordable small business web design & ecommerce agency for London companies from £649. Fast WordPress & custom builds with UK-hours milestone reviews.",
+      "tagline": "Small Business Web Design London · Custom & WordPress",
+      "heading_html": "Small Business Web Design <span class=\"text-[#EE483D]\">in London, UK</span>",
+      "hero_description": "Transparent small business web design, WordPress websites and Shopify/WooCommerce stores for London startups, professional firms and local SMEs starting from £649."
+    },
+    {
+      "slug": "manchester",
+      "meta_title": "Web Design Manchester | Redesign & Custom Sites £649+",
+      "meta_description": "Responsive web design, website redesign & landing page design in Manchester from £649. Serving Greater Manchester SMEs with fast delivery & local SEO.",
+      "tagline": "Web Design Greater Manchester · Redesigns & Custom Websites",
+      "heading_html": "Responsive Web Design &amp; Redesigns <span class=\"text-[#EE483D]\">in Manchester</span>",
+      "hero_description": "Responsive website design, SEO-safe redesigns and high-converting landing pages for Greater Manchester SMEs and growing brands—Spinningfields, Northern Quarter and Salford Quays—from £649."
+    },
+    {
+      "slug": "birmingham",
+      "meta_title": "Birmingham & Jewellery Quarter Web Design | From £649",
+      "meta_description": "Web design & ecommerce agency for Birmingham & Jewellery Quarter. Custom B2B, Shopify & WooCommerce websites from £649 across Digbeth & Midlands. Free quote.",
+      "tagline": "Birmingham & Jewellery Quarter Web Design · Ecommerce & B2B",
+      "heading_html": "Birmingham &amp; Jewellery Quarter <span class=\"text-[#EE483D]\">Web Design Company</span>",
+      "hero_description": "Custom B2B website design and high-converting WooCommerce or Shopify stores for Birmingham businesses—including independent retailers in the Jewellery Quarter, Digbeth studios and Colmore Row firms—starting from £649."
+    },
+    {
+      "slug": "leeds",
+      "meta_title": "Leeds Website Design | Ecommerce, WordPress & Redesign",
+      "meta_description": "Website design & ecommerce web agency in Leeds. Affordable Shopify, WooCommerce, Magento & WordPress redesigns from £649 across West Yorkshire. Free quote.",
+      "tagline": "Web Design Leeds · Ecommerce, WordPress & Affordable Redesigns",
+      "heading_html": "Ecommerce &amp; WordPress Web Design <span class=\"text-[#EE483D]\">in Leeds, UK</span>",
+      "hero_description": "Conversion-focused ecommerce web design (Shopify, WooCommerce & Magento), WordPress websites and affordable website redesigns for businesses across Leeds and West Yorkshire from £649."
+    },
+    {
+      "slug": "glasgow",
+      "meta_title": "Web Design Glasgow | Small Business & Redesign from £649",
+      "meta_description": "Small business web design & website redesign in Glasgow from £649. Custom WordPress, startup & ecommerce sites delivered in 2–4 weeks. Request a free quote.",
+      "tagline": "Web Design Glasgow · Small Business, Startups & Website Redesigns",
+      "heading_html": "Small Business Web Design <span class=\"text-[#EE483D]\">&amp; Redesigns in Glasgow</span>",
+      "hero_description": "Affordable website design, SEO-safe website redesigns and startup builds for Glasgow businesses across City Centre, West End, Finnieston and Greater Glasgow. Transparent UK packages starting from £649."
+    },
+    {
+      "slug": "edinburgh",
+      "meta_title": "Web Design Edinburgh | Business & Ecommerce from £649",
+      "meta_description": "Website design in Edinburgh for tourism, hospitality, finance & small businesses from £649. Fast WordPress & ecommerce websites with UK project support.",
+      "tagline": "Web Design Edinburgh · Tourism, Finance & Local SMEs",
+      "heading_html": "Website Design &amp; Ecommerce Agency <span class=\"text-[#EE483D]\">in Edinburgh</span>",
+      "hero_description": "Mobile-first website design and booking/ecommerce platforms for Edinburgh hospitality, tourism, financial and professional service companies starting from £649."
+    },
+    {
+      "slug": "bristol",
+      "meta_title": "Web Design Bristol | Affordable Website Agency from £649",
+      "meta_description": "Trusted web design agency Bristol businesses rely on. Affordable custom websites, WordPress & ecommerce from £649 with 2–4 week delivery. Free UK quote.",
+      "tagline": "Web Design Agency Bristol · Custom Websites, WordPress & Ecommerce",
+      "heading_html": "Web Design &amp; Development Agency <span class=\"text-[#EE483D]\">in Bristol, UK</span>",
+      "hero_description": "Affordable website design in Bristol for growing SMEs, Temple Quarter startups, Clifton firms and independent brands. Custom WordPress and ecommerce websites from £649, built with technical SEO and UK-hours reviews."
+    },
+    {
+      "slug": "sydney",
+      "meta_title": "Web Design Sydney | Custom & Small Business from A$699",
+      "meta_description": "Sydney website design & ecommerce development from A$699. Handcrafted business websites, landing pages & Shopify stores across Sydney CBD & NSW. Free quote.",
+      "tagline": "Web Design Sydney · Custom Small Business & Ecommerce",
+      "heading_html": "Custom &amp; Small Business Web Design <span class=\"text-[#EE483D]\">in Sydney, NSW</span>",
+      "hero_description": "Handcrafted business websites, high-converting landing pages and Shopify/WooCommerce stores for Sydney CBD, North Sydney and Parramatta companies starting from A$699."
+    },
+    {
+      "slug": "melbourne",
+      "meta_title": "Web Design Melbourne | Small Business & Ecommerce A$699",
+      "meta_description": "Custom web design Melbourne agency for small business websites & Shopify/WooCommerce stores from A$699. Mobile-first UX & local SEO across VIC. Free quote.",
+      "tagline": "Web Design Melbourne · Small Business, Mobile & Ecommerce",
+      "heading_html": "Small Business &amp; Ecommerce Web Design <span class=\"text-[#EE483D]\">in Melbourne</span>",
+      "hero_description": "Mobile-first small business website design and conversion-focused ecommerce stores for Melbourne CBD, Southbank, Richmond and Victorian brands starting from A$699."
+    },
+    {
+      "slug": "brisbane",
+      "meta_title": "Web Design Brisbane | Small Business Websites A$699+",
+      "meta_description": "Small business website design & app-ready UX in Brisbane from A$699. Responsive, SEO-ready sites for Brisbane CBD, South Bank & Queensland businesses.",
+      "tagline": "Web Design Brisbane · Small Business Websites & Web Apps",
+      "heading_html": "Small Business Website Design <span class=\"text-[#EE483D]\">in Brisbane, QLD</span>",
+      "hero_description": "Fast, mobile-friendly small business websites and custom web applications for Brisbane CBD, South Bank, Fortitude Valley and South-East Queensland companies from A$699."
+    },
+    {
+      "slug": "perth",
+      "meta_title": "Web Design Perth | Small Business & Trades from A$699",
+      "meta_description": "Small business & tradie web design in Perth, WA from A$699. Custom websites, Shopify ecommerce & web consulting delivered across Perth CBD & WA. Free quote.",
+      "tagline": "Web Design Perth · Small Business, Trades & Web Consulting",
+      "heading_html": "Small Business &amp; Tradie Web Design <span class=\"text-[#EE483D]\">in Perth, WA</span>",
+      "hero_description": "Affordable website design, Shopify ecommerce and web consulting for Perth small businesses, trades, mining services and resources companies across WA. Custom builds from A$699 with AWST reviews."
+    },
+    {
+      "slug": "adelaide",
+      "meta_title": "Web Design Adelaide | Affordable Small Business A$699",
+      "meta_description": "Affordable web design in Adelaide, South Australia from A$699. Custom small business websites, WordPress & ecommerce stores in 2–4 weeks. Get a free quote.",
+      "tagline": "Web Design Adelaide · Affordable Small Business & Ecommerce",
+      "heading_html": "Affordable Web Design <span class=\"text-[#EE483D]\">in Adelaide, SA</span>",
+      "hero_description": "Custom small business web design and Shopify/WooCommerce ecommerce stores for Adelaide and South Australia companies—CBD, North Adelaide and Norwood—with transparent fixed pricing starting from A$699."
+    },
+    {
+      "slug": "toronto",
+      "meta_title": "Toronto Web Design Agency | B2B & Custom Sites C$699+",
+      "meta_description": "Top web design agency in Toronto for B2B websites, redesigns & ecommerce stores from C$699. Serving Downtown Toronto, North York & GTA in 2–4 weeks.",
+      "tagline": "Toronto Web Design Agency · B2B, Redesigns & GTA Ecommerce",
+      "heading_html": "Top Web Design Agency <span class=\"text-[#EE483D]\">in Toronto &amp; GTA</span>",
+      "hero_description": "Conversion-focused B2B website design, structured website redesigns and ecommerce development for Toronto and GTA businesses from C$699, delivered with EST project reviews."
+    },
+    {
+      "slug": "vancouver",
+      "meta_title": "Web Design Vancouver | Mobile & Ecommerce from C$699",
+      "meta_description": "Mobile web design & custom ecommerce development in Vancouver from C$699. Built for Downtown Vancouver & BC businesses in 2–4 weeks. Free consultation.",
+      "tagline": "Web Design Vancouver · Mobile-First & Ecommerce Development",
+      "heading_html": "Mobile Web Design &amp; Ecommerce <span class=\"text-[#EE483D]\">in Vancouver, BC</span>",
+      "hero_description": "Mobile-first web design and custom Shopify/WooCommerce ecommerce development for Downtown Vancouver, Yaletown and British Columbia businesses starting from C$699."
+    },
+    {
+      "slug": "calgary",
+      "meta_title": "Web Design Company in Calgary | B2B & Small Business",
+      "meta_description": "Calgary Alberta web design agency for B2B, contractors & small business websites from C$699. High-converting sales pages & SEO across Downtown & SW Calgary.",
+      "tagline": "Calgary, Alberta Web Design · B2B, Contractors & Small Business",
+      "heading_html": "Web Design &amp; Development Agency <span class=\"text-[#EE483D]\">in Calgary, AB</span>",
+      "hero_description": "Conversion-driven B2B, contractor and small business website design in Calgary, Alberta—serving Downtown, Beltline and energy/industrial service firms from C$699."
+    },
+    {
+      "slug": "montreal",
+      "meta_title": "Bilingual Web Design Montreal | EN/FR & Ecommerce C$699",
+      "meta_description": "Custom bilingual English/French web design & ecommerce websites in Montreal from C$699. Bill 96-conscious UX & transparent packages. Free consultation.",
+      "tagline": "Montreal Web Design · Bilingual EN/FR Websites & Packages",
+      "heading_html": "Bilingual EN/FR Web Design Agency <span class=\"text-[#EE483D]\">in Montreal</span>",
+      "hero_description": "Structured bilingual English-and-French websites, custom web development and ecommerce packages tailored for Downtown Montreal, Plateau and Quebec businesses starting from C$699."
+    },
+    {
+      "slug": "ottawa",
+      "meta_title": "Web Development Ottawa | Small Business Sites C$699+",
+      "meta_description": "Custom web development & accessible small business websites in Ottawa from C$699. Bilingual English/French support and transparent fixed-price scopes.",
+      "tagline": "Web Development Ottawa · B2B, Bilingual & Small Business",
+      "heading_html": "Web Development &amp; Design <span class=\"text-[#EE483D]\">in Ottawa, ON</span>",
+      "hero_description": "Accessible, bilingual-ready website design and custom web development for Ottawa-Gatineau consultancies, SaaS teams and local service firms starting from C$699."
+    },
+    {
+      "slug": "dubai",
+      "meta_title": "Web Design & Development Dubai | Custom Sites AED 2,999",
+      "meta_description": "Custom bilingual website design & ecommerce development in Dubai from AED 2,999. Built for Business Bay, DIFC, Marina startups & real estate. Free quote.",
+      "tagline": "Web Design & Development Dubai · Bilingual & Ecommerce",
+      "heading_html": "Custom Web Design &amp; Ecommerce <span class=\"text-[#EE483D]\">in Dubai, UAE</span>",
+      "hero_description": "High-converting bilingual Arabic-English websites and ecommerce stores for Dubai companies in DIFC, Business Bay and JLT starting from AED 2,999."
+    },
+    {
+      "slug": "abu-dhabi",
+      "meta_title": "Web Design Abu Dhabi | Arabic & English Sites AED 2,999",
+      "meta_description": "Leading web design company in Abu Dhabi. Custom bilingual Arabic-English business websites & ecommerce stores from AED 2,999 with UAE support. Free quote.",
+      "tagline": "Web Design Abu Dhabi · Bilingual Arabic-English & Ecommerce",
+      "heading_html": "Web Design &amp; Ecommerce Agency <span class=\"text-[#EE483D]\">in Abu Dhabi, UAE</span>",
+      "hero_description": "Custom bilingual Arabic-English website design and ecommerce development for Abu Dhabi companies across Al Maryah Island, Yas Island, Khalifa City and Mussafah. Transparent packages from AED 2,999."
+    },
+    {
+      "slug": "sharjah",
+      "meta_title": "Web Design Sharjah | Business & Bilingual from AED 2,499",
+      "meta_description": "Affordable website design in Sharjah from AED 2,499. Custom Arabic-English business websites, trading portals & ecommerce with UAE timezone support.",
+      "tagline": "Web Design Sharjah · Bilingual Business & Industrial Sites",
+      "heading_html": "Affordable Web Design Agency <span class=\"text-[#EE483D]\">in Sharjah, UAE</span>",
+      "hero_description": "Custom English and Arabic business websites, industrial catalogues and ecommerce platforms for Sharjah SMEs starting from AED 2,499."
+    },
+    {
+      "slug": "singapore",
+      "meta_title": "Website Design Singapore | SMEs & Landing Pages S$899",
+      "meta_description": "Custom web design for SMEs, mobile websites & high-converting landing page design in Singapore from S$899. Built for speed & lead capture in 2–4 weeks.",
+      "tagline": "Website Design Singapore · SMEs, Mobile & Landing Pages",
+      "heading_html": "Custom Web Design &amp; Landing Pages <span class=\"text-[#EE483D]\">in Singapore</span>",
+      "hero_description": "Conversion-focused custom websites, mobile web experiences and landing pages for Singapore SMEs, startups and regional enterprises starting from S$899."
+    },
+    {
+      "slug": "johannesburg",
+      "meta_title": "Web Design Johannesburg | Business & Ecommerce R4,999+",
+      "meta_description": "Affordable website design & ecommerce web development in Johannesburg from R4,999. PayFast & Ozow ready sites for Sandton, Rosebank & Gauteng brands.",
+      "tagline": "Web Design Johannesburg · Business Websites & Ecommerce",
+      "heading_html": "Website &amp; Ecommerce Design <span class=\"text-[#EE483D]\">in Johannesburg</span>",
+      "hero_description": "Fast, mobile-first business websites and ecommerce stores with PayFast/Ozow integration for Johannesburg, Sandton, Rosebank and Midrand companies starting from R4,999."
+    },
+    {
+      "slug": "cape-town",
+      "meta_title": "Web Design Cape Town | Shopping Cart & Sites R4,999+",
+      "meta_description": "Custom website & shopping cart web design in Cape Town from R4,999. Shopify, WooCommerce, hospitality & tourism sites for Waterfront & Western Cape.",
+      "tagline": "Web Design Cape Town · Shopping Cart Ecommerce & Tourism",
+      "heading_html": "Shopping Cart &amp; Business Web Design <span class=\"text-[#EE483D]\">in Cape Town</span>",
+      "hero_description": "Custom shopping cart ecommerce development (Shopify & WooCommerce with PayFast/Yoco) and tourism websites for Cape Town, City Bowl, Waterfront and Stellenbosch brands from R4,999."
+    },
+    {
+      "slug": "durban",
+      "meta_title": "Durban Web Design | Custom Websites & SEO from R4,999",
+      "meta_description": "Affordable Durban web design for logistics, trade, tourism & local small businesses from R4,999. Mobile-first builds for Umhlanga & KwaZulu-Natal brands.",
+      "tagline": "Durban Web Design · Logistics, Trade & Local Small Business",
+      "heading_html": "Website Design &amp; Ecommerce <span class=\"text-[#EE483D]\">in Durban, KZN</span>",
+      "hero_description": "Reliable business websites and ecommerce stores for Durban, Umhlanga, Ballito and KwaZulu-Natal trade, hospitality and service firms starting from R4,999."
+    }
+  ],
+  "spokes": [
+    {
+      "city_slug": "seattle",
+      "slug": "ecommerce-development",
+      "meta_title": "Seattle Ecommerce Web Design | Shopify & WooCommerce",
+      "meta_description": "Custom Seattle & Kirkland ecommerce development from $799 starter scope. Shopify, WooCommerce & ERP/inventory sync with Pacific Time project reviews.",
+      "heading_html": "Seattle Ecommerce Website Design <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "seattle",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Seattle & Kirkland | From $799",
+      "meta_description": "Small business website design in Seattle, Kirkland & Bellevue from $799. Mobile-first WordPress & custom builds with lead forms and local SEO setup.",
+      "heading_html": "Small Business Web Design in Seattle <span>Kirkland, Bellevue &amp; Eastside Lead Websites</span>"
+    },
+    {
+      "city_slug": "seattle",
+      "slug": "contractor-web-design",
+      "meta_title": "Contractor Web Design Seattle | HVAC, Plumbing & Trades",
+      "meta_description": "Seattle contractor web design for HVAC, plumbing, roofing & home services across King County & Kirkland. Service-area pages & quote forms that convert.",
+      "heading_html": "Contractor &amp; Trades Web Design in Seattle <span>Service-Area SEO &amp; Quote Forms</span>"
+    },
+    {
+      "city_slug": "seattle",
+      "slug": "wordpress-developer",
+      "meta_title": "Seattle WordPress Web Design & Developer | Custom Sites",
+      "meta_description": "Custom WordPress web design & developer services for Seattle & Kirkland businesses. Fast block themes, clean migrations & SEO foundations from $799.",
+      "heading_html": "Seattle WordPress Web Design <span>Custom Themes, Speed &amp; SEO Architecture</span>"
+    },
+    {
+      "city_slug": "birmingham",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Website Design Birmingham | Jewellery Quarter",
+      "meta_description": "Birmingham & Jewellery Quarter ecommerce web design. High-converting WooCommerce & Shopify stores with Stripe UK, Apple Pay & custom product configurators.",
+      "heading_html": "Ecommerce Website Design Birmingham <span>Jewellery Quarter, WooCommerce &amp; Shopify</span>"
+    },
+    {
+      "city_slug": "atlanta",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Atlanta & Dacula GA | $799+",
+      "meta_description": "Custom small business web design in Atlanta, Dacula & Gwinnett County, GA from $799. Fast 2–4 week delivery, local SEO & lead capture with EST reviews.",
+      "heading_html": "Small Business Web Design Atlanta <span>Serving Atlanta, Dacula &amp; Gwinnett County</span>"
+    },
+    {
+      "city_slug": "chicago",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Chicago | Shopify & Custom Stores",
+      "meta_description": "Chicago ecommerce website development for D2C brands & B2B wholesalers. Fast Shopify, WooCommerce & custom checkout builds across Chicagoland.",
+      "heading_html": "Ecommerce Web Design in Chicago <span>Shopify, WooCommerce &amp; B2B Stores</span>"
+    },
+    {
+      "city_slug": "bristol",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Bristol | Affordable £649+",
+      "meta_description": "Affordable small business websites in Bristol from £649. Custom WordPress design, clear enquiry routes & local UK SEO with 2–4 week delivery.",
+      "heading_html": "Small Business Web Design Bristol <span>Affordable UK Websites from £649</span>"
+    },
+    {
+      "city_slug": "adelaide",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Adelaide | Websites A$699+",
+      "meta_description": "Affordable small business website design in Adelaide from A$699. Custom, mobile-first sites with local SEO & enquiry forms across South Australia.",
+      "heading_html": "Small Business Web Design Adelaide <span>Affordable Websites from A$699</span>"
+    },
+    {
+      "city_slug": "adelaide",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Adelaide | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Adelaide, Australia. Shopify & WooCommerce stores with Afterpay, Zip, Stripe AU & local pickup/shipping rules.",
+      "heading_html": "Ecommerce Web Design in Adelaide <span>Shopify &amp; WooCommerce Australia</span>"
+    },
+    {
+      "city_slug": "brisbane",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Brisbane | From A$699",
+      "meta_description": "Affordable small business web design in Brisbane from A$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Brisbane <span>Custom Sites &amp; Lead Capture from A$699</span>"
+    },
+    {
+      "city_slug": "melbourne",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Melbourne | From A$699",
+      "meta_description": "Affordable small business web design in Melbourne from A$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Melbourne <span>Custom Sites &amp; Lead Capture from A$699</span>"
+    },
+    {
+      "city_slug": "melbourne",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Melbourne | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Melbourne on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Melbourne <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "perth",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business & Tradie Web Design Perth | From A$699",
+      "meta_description": "Small business & tradie web design in Perth, WA from A$699. Built for contractors, mining services & local clinics with WA SEO and AWST reviews.",
+      "heading_html": "Small Business &amp; Tradie Web Design in Perth <span>Fixed Packages from A$699</span>"
+    },
+    {
+      "city_slug": "perth",
+      "slug": "ecommerce-development",
+      "meta_title": "Shopify & WooCommerce Developer Perth | Ecommerce",
+      "meta_description": "Hire dedicated Shopify & WooCommerce developers in Perth, WA. Fast online stores with Afterpay, Zip, Stripe AU & AusPost shipping integration.",
+      "heading_html": "Shopify &amp; WooCommerce Developer Perth <span>Custom High-Converting Stores</span>"
+    },
+    {
+      "city_slug": "sydney",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Sydney | From A$699",
+      "meta_description": "Affordable small business web design in Sydney from A$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Sydney <span>Custom Sites &amp; Lead Capture from A$699</span>"
+    },
+    {
+      "city_slug": "sydney",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Sydney | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Sydney on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Sydney <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "calgary",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Calgary | From C$699",
+      "meta_description": "Affordable small business web design in Calgary from C$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Calgary <span>Custom Sites &amp; Lead Capture from C$699</span>"
+    },
+    {
+      "city_slug": "montreal",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Montreal | From C$699",
+      "meta_description": "Affordable small business web design in Montreal from C$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Montreal <span>Custom Sites &amp; Lead Capture from C$699</span>"
+    },
+    {
+      "city_slug": "montreal",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Montreal | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Montreal on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Montreal <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "ottawa",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Ottawa | From C$699",
+      "meta_description": "Affordable small business web design in Ottawa from C$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Ottawa <span>Custom Sites &amp; Lead Capture from C$699</span>"
+    },
+    {
+      "city_slug": "toronto",
+      "slug": "small-business-web-design",
+      "meta_title": "Toronto Small Business & B2B Web Design | From C$699",
+      "meta_description": "Top small business & B2B web design agency in Toronto from C$699. High-converting websites, RFP redesigns & GTA local SEO in 2–4 weeks.",
+      "heading_html": "Toronto Small Business &amp; B2B Web Design <span>Custom Websites from C$699</span>"
+    },
+    {
+      "city_slug": "toronto",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Toronto | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Toronto on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Toronto <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "vancouver",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Vancouver | From C$699",
+      "meta_description": "Affordable small business web design in Vancouver from C$699. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Vancouver <span>Custom Sites &amp; Lead Capture from C$699</span>"
+    },
+    {
+      "city_slug": "vancouver",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Vancouver | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Vancouver on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Vancouver <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "ahmedabad",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Ahmedabad | From ₹18,000",
+      "meta_description": "Affordable small business web design in Ahmedabad from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Ahmedabad <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "ahmedabad",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Ahmedabad | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Ahmedabad on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Ahmedabad <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "amritsar",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Amritsar | From ₹18,000",
+      "meta_description": "Affordable small business web design in Amritsar from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Amritsar <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "bangalore",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Bangalore | From ₹18,000",
+      "meta_description": "Affordable small business web design in Bangalore from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Bangalore <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "bangalore",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Bangalore | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Bangalore on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Bangalore <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "bhubaneswar",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Bhubaneswar | From ₹18,000",
+      "meta_description": "Affordable small business web design in Bhubaneswar from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Bhubaneswar <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "chandigarh",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Chandigarh | From ₹18,000",
+      "meta_description": "Affordable small business web design in Chandigarh from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Chandigarh <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "chennai",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Chennai | From ₹18,000",
+      "meta_description": "Affordable small business web design in Chennai from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Chennai <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "chennai",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Chennai | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Chennai on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Chennai <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "coimbatore",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Coimbatore | From ₹18,000",
+      "meta_description": "Affordable small business web design in Coimbatore from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Coimbatore <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "delhi",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Delhi | From ₹18,000",
+      "meta_description": "Affordable small business web design in Delhi from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Delhi <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "delhi",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Delhi | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Delhi on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Delhi <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "gurgaon",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Gurgaon | From ₹18,000",
+      "meta_description": "Affordable small business web design in Gurgaon from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Gurgaon <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "gurgaon",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Gurgaon | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Gurgaon on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Gurgaon <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "hyderabad",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Hyderabad | From ₹18,000",
+      "meta_description": "Affordable small business web design in Hyderabad from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Hyderabad <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "hyderabad",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Hyderabad | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Hyderabad on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Hyderabad <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "jaipur",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Jaipur | From ₹18,000",
+      "meta_description": "Affordable small business web design in Jaipur from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Jaipur <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "kolkata",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Kolkata | From ₹18,000",
+      "meta_description": "Affordable small business web design in Kolkata from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Kolkata <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "kolkata",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Kolkata | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Kolkata on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Kolkata <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "meerut",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Meerut | From ₹18,000",
+      "meta_description": "Affordable small business web design in Meerut from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Meerut <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "mohali",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Mohali | From ₹18,000",
+      "meta_description": "Affordable small business web design in Mohali from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Mohali <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "mumbai",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Mumbai | From ₹18,000",
+      "meta_description": "Affordable small business web design in Mumbai from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Mumbai <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "mumbai",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Mumbai | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Mumbai on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Mumbai <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "noida",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Noida | From ₹18,000",
+      "meta_description": "Affordable small business web design in Noida from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Noida <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "noida",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Noida | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Noida on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Noida <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "pune",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Pune | From ₹18,000",
+      "meta_description": "Affordable small business web design in Pune from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Pune <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "pune",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Pune | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Pune on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Pune <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "saharanpur",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Saharanpur | From ₹18,000",
+      "meta_description": "Affordable small business web design in Saharanpur from ₹18,000. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Saharanpur <span>Custom Sites &amp; Lead Capture from ₹18,000</span>"
+    },
+    {
+      "city_slug": "singapore",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Singapore | From S$899",
+      "meta_description": "Affordable small business web design in Singapore from S$899. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Singapore <span>Custom Sites &amp; Lead Capture from S$899</span>"
+    },
+    {
+      "city_slug": "singapore",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Singapore | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Singapore on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Singapore <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "cape-town",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Cape Town | From R4,999",
+      "meta_description": "Affordable small business web design in Cape Town from R4,999. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Cape Town <span>Custom Sites &amp; Lead Capture from R4,999</span>"
+    },
+    {
+      "city_slug": "cape-town",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Cape Town | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Cape Town on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Cape Town <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "durban",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Durban | From R4,999",
+      "meta_description": "Affordable small business web design in Durban from R4,999. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Durban <span>Custom Sites &amp; Lead Capture from R4,999</span>"
+    },
+    {
+      "city_slug": "johannesburg",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Johannesburg | From R4,999",
+      "meta_description": "Affordable small business web design in Johannesburg from R4,999. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Johannesburg <span>Custom Sites &amp; Lead Capture from R4,999</span>"
+    },
+    {
+      "city_slug": "johannesburg",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Johannesburg | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Johannesburg on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Johannesburg <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "abu-dhabi",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Abu Dhabi | From AED 2,999",
+      "meta_description": "Affordable small business web design in Abu Dhabi from AED 2,999. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Abu Dhabi <span>Custom Sites &amp; Lead Capture from AED 2,999</span>"
+    },
+    {
+      "city_slug": "dubai",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Dubai | From AED 2,999",
+      "meta_description": "Affordable small business web design in Dubai from AED 2,999. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Dubai <span>Custom Sites &amp; Lead Capture from AED 2,999</span>"
+    },
+    {
+      "city_slug": "dubai",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Dubai | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Dubai on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Dubai <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "sharjah",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Sharjah | From AED 2,499",
+      "meta_description": "Affordable small business web design in Sharjah from AED 2,499. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Sharjah <span>Custom Sites &amp; Lead Capture from AED 2,499</span>"
+    },
+    {
+      "city_slug": "birmingham",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Birmingham | From £649",
+      "meta_description": "Affordable B2B & small business web design in Birmingham & Jewellery Quarter from £649. Fast WordPress sites & local SEO across Digbeth & West Midlands.",
+      "heading_html": "Small Business Web Design Birmingham <span>B2B &amp; Local Websites from £649</span>"
+    },
+    {
+      "city_slug": "bristol",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Bristol | Shopify & WooCommerce",
+      "meta_description": "Bristol ecommerce website development on Shopify and WooCommerce. Clean product catalogues, UK checkout, Apple Pay & SEO foundations.",
+      "heading_html": "Ecommerce Website Design in Bristol <span>Shopify &amp; WooCommerce UK Stores</span>"
+    },
+    {
+      "city_slug": "edinburgh",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Edinburgh | From £649",
+      "meta_description": "Affordable small business web design in Edinburgh from £649. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Edinburgh <span>Custom Sites &amp; Lead Capture from £649</span>"
+    },
+    {
+      "city_slug": "glasgow",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Glasgow | Startups & Redesign",
+      "meta_description": "Small business & startup web design in Glasgow from £649. Responsive websites & SEO-safe redesigns delivered in 2–4 weeks across Scotland.",
+      "heading_html": "Small Business Web Design in Glasgow <span>Startups, Trades &amp; Redesigns</span>"
+    },
+    {
+      "city_slug": "glasgow",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Glasgow | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Glasgow on Shopify & WooCommerce. Built for Scottish retailers needing mobile checkout speed & local pickup.",
+      "heading_html": "Ecommerce Website Design in Glasgow <span>Shopify &amp; WooCommerce Scotland</span>"
+    },
+    {
+      "city_slug": "leeds",
+      "slug": "small-business-web-design",
+      "meta_title": "Affordable Small Business Web Design Leeds | From £649",
+      "meta_description": "Affordable small business & WordPress website design in Leeds from £649. Fast website redesigns & lead capture across Leeds and West Yorkshire.",
+      "heading_html": "Small Business &amp; WordPress Web Design Leeds <span>Redesigns from £649</span>"
+    },
+    {
+      "city_slug": "leeds",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Leeds | Shopify, Woo & Magento",
+      "meta_description": "Leeds ecommerce web design agency building Shopify, WooCommerce & Magento replacements. Fast product pages, UK checkout & SEO-safe migrations.",
+      "heading_html": "Ecommerce Web Design in Leeds <span>Shopify, WooCommerce &amp; Magento Replacements</span>"
+    },
+    {
+      "city_slug": "london",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design London | From £649",
+      "meta_description": "Affordable small business web design in London from £649. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in London <span>Custom Sites &amp; Lead Capture from £649</span>"
+    },
+    {
+      "city_slug": "london",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design London | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in London on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in London <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "manchester",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Manchester | From £649",
+      "meta_description": "Affordable small business web design in Manchester from £649. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Manchester <span>Custom Sites &amp; Lead Capture from £649</span>"
+    },
+    {
+      "city_slug": "manchester",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Manchester | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Manchester on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Manchester <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "atlanta",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Atlanta GA | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce site design in Atlanta, GA for growing retailers & B2B sellers. Shopify & WooCommerce stores built for mobile checkout conversion.",
+      "heading_html": "Ecommerce Website Design in Atlanta <span>High-Converting Shopify &amp; WooCommerce</span>"
+    },
+    {
+      "city_slug": "boston",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Boston | From $799",
+      "meta_description": "Affordable small business web design in Boston from $799. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Boston <span>Custom Sites &amp; Lead Capture from $799</span>"
+    },
+    {
+      "city_slug": "boston",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Boston | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Boston on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Boston <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "chicago",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Chicago | B2B & Local ($799)",
+      "meta_description": "Affordable small business & financial services web design in Chicago from $799. Lead-focused layouts for Loop, River North & Chicagoland companies.",
+      "heading_html": "Small Business Web Design Chicago <span>B2B, FinTech &amp; Local Service Sites</span>"
+    },
+    {
+      "city_slug": "dallas",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Dallas TX | Contractors & B2B",
+      "meta_description": "Small business & contractor website design in Dallas, TX from $799. Fast custom builds outperforming website builders across Plano, Frisco & DFW.",
+      "heading_html": "Small Business &amp; B2B Web Design in Dallas <span>Contractors, Services &amp; Redesigns</span>"
+    },
+    {
+      "city_slug": "dallas",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Dallas TX | Shopify & Custom",
+      "meta_description": "Dallas TX ecommerce website design on Shopify, WooCommerce & custom stacks. B2B wholesale ordering & high-speed mobile checkout across DFW Metroplex.",
+      "heading_html": "Ecommerce Website Design in Dallas, TX <span>Shopify, WooCommerce &amp; Wholesale</span>"
+    },
+    {
+      "city_slug": "houston",
+      "slug": "small-business-web-design",
+      "meta_title": "Houston Contractor, Plumbing & HVAC Web Design | $799",
+      "meta_description": "Small business & contractor web design in Houston, TX from $799. Plumbing, HVAC, medical & B2B websites with fast service-area pages & quote forms.",
+      "heading_html": "Small Business &amp; Contractor Web Design in Houston <span>Plumbing, HVAC &amp; B2B</span>"
+    },
+    {
+      "city_slug": "houston",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Houston | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Houston on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Houston <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "los-angeles",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Los Angeles | From $799",
+      "meta_description": "Affordable small business web design in Los Angeles from $799. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Los Angeles <span>Custom Sites &amp; Lead Capture from $799</span>"
+    },
+    {
+      "city_slug": "los-angeles",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Los Angeles | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in Los Angeles on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in Los Angeles <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "miami",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design Miami | From $799",
+      "meta_description": "Affordable small business web design in Miami from $799. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in Miami <span>Custom Sites &amp; Lead Capture from $799</span>"
+    },
+    {
+      "city_slug": "miami",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design Miami & Miami Beach | Shopify",
+      "meta_description": "Custom ecommerce website design in Miami & Miami Beach. Bilingual Shopify & WooCommerce stores built for lifestyle, beauty & hospitality brands.",
+      "heading_html": "Ecommerce Web Design in Miami <span>Shopify, WooCommerce &amp; Bilingual UX</span>"
+    },
+    {
+      "city_slug": "new-york",
+      "slug": "small-business-web-design",
+      "meta_title": "Small Business Web Design New York | From $799",
+      "meta_description": "Affordable small business web design in New York from $799. Mobile-first websites, clear enquiry forms & local SEO delivered in 2–4 weeks.",
+      "heading_html": "Small Business Website Design in New York <span>Custom Sites &amp; Lead Capture from $799</span>"
+    },
+    {
+      "city_slug": "new-york",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design New York | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in New York on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in New York <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    },
+    {
+      "city_slug": "san-francisco",
+      "slug": "small-business-web-design",
+      "meta_title": "San Francisco WordPress & Startup Web Design | $799+",
+      "meta_description": "Custom WordPress & small business web design in San Francisco from $799. High-speed startup, SaaS & consulting sites with Pacific Time reviews.",
+      "heading_html": "WordPress &amp; Startup Web Design San Francisco <span>Built for Speed &amp; Growth</span>"
+    },
+    {
+      "city_slug": "san-francisco",
+      "slug": "ecommerce-development",
+      "meta_title": "Ecommerce Web Design San Francisco | Shopify & WooCommerce",
+      "meta_description": "Custom ecommerce website design in San Francisco on Shopify & WooCommerce with local payments & shipping. Fast mobile checkout & SEO in 2–4 weeks.",
+      "heading_html": "Ecommerce Website Design in San Francisco <span>Shopify, WooCommerce &amp; Custom Stores</span>"
+    }
+  ],
+  "services": [
+    {
+      "slug": "php-development",
+      "meta_title": "Custom PHP Development Services & Web Apps | Chulbul",
+      "meta_description": "Hire expert PHP developers for custom web applications, legacy PHP upgrades, REST APIs & secure CRM backends tailored to your workflows."
+    },
+    {
+      "slug": "crm-development",
+      "meta_title": "Custom CRM Software Development Company | Chulbul",
+      "meta_description": "Build custom CRM software tailored to your sales pipeline, WhatsApp leads, invoicing & team roles—with zero per-seat SaaS lock-in."
+    },
+    {
+      "slug": "woocommerce-development",
+      "meta_title": "WooCommerce Development Agency | Custom Stores & Speed",
+      "meta_description": "Custom WooCommerce website development, theme engineering, ERP/CRM integrations & Core Web Vitals speed tuning for high-converting stores."
+    },
+    {
+      "slug": "website-migration",
+      "meta_title": "SEO-Safe Website Migration Services | Zero Traffic Loss",
+      "meta_description": "Zero-downtime website migration & platform replatforming with full 301 redirect mapping, schema preservation & Google Search Console QA."
+    },
+    {
+      "slug": "api-integration",
+      "meta_title": "Custom API Integration Services | CRM, ERP & Webhooks",
+      "meta_description": "Connect your website, CRM, ERP, shipping & payment gateways with reliable custom REST/GraphQL API integrations and error logging."
+    },
+    {
+      "slug": "laravel-development",
+      "meta_title": "Laravel Web Application Development Services | Chulbul",
+      "meta_description": "Enterprise Laravel development for SaaS platforms, customer portals, custom APIs & scalable business dashboards built with clean architecture."
+    },
+    {
+      "slug": "landing-page-design",
+      "meta_title": "High-Converting Landing Page Design Services | Chulbul",
+      "meta_description": "Custom PPC & campaign landing page design built for speed, clear messaging and higher conversion rates across desktop and mobile."
+    },
+    {
+      "slug": "dashboard-ui-design",
+      "meta_title": "SaaS & Admin Dashboard UI/UX Design | Figma Experts",
+      "meta_description": "Data-rich SaaS, analytics and internal admin dashboard UI/UX design crafted in Figma for clarity, fast workflows and smooth developer handoff."
+    },
+    {
+      "slug": "shopify-development",
+      "meta_title": "Custom Shopify Store Development Agency | CRO & Speed",
+      "meta_description": "Conversion-focused Shopify & Shopify Plus development: custom themes, app integrations, checkout optimization & store migrations."
+    },
+    {
+      "slug": "local-seo-services",
+      "meta_title": "Local SEO & Google Maps 3-Pack Services | More Leads",
+      "meta_description": "Targeted local SEO, Google Business Profile optimization, city landing pages & citation cleanups to rank in local search results."
+    },
+    {
+      "slug": "conversion-rate-optimization",
+      "meta_title": "Conversion Rate Optimization (CRO) Services | Audit",
+      "meta_description": "Data-backed CRO audits, checkout friction fixes & landing page testing to turn more existing website visitors into qualified enquiries."
+    },
+    {
+      "slug": "multi-vendor-marketplace",
+      "meta_title": "Multi-Vendor Marketplace Website Development | B2B/D2C",
+      "meta_description": "Build scalable multi-vendor B2B and D2C ecommerce marketplaces with vendor onboarding, split payouts, commissions & custom search."
+    },
+    {
+      "slug": "nodejs-development",
+      "meta_title": "Node.js Backend & API Development Services | Chulbul",
+      "meta_description": "Scalable Node.js backend, real-time APIs & microservice integrations engineered for high-throughput web and mobile applications."
+    },
+    {
+      "slug": "google-maps-ranking",
+      "meta_title": "Google Maps 3-Pack Ranking Services | GBP SEO Experts",
+      "meta_description": "Improve your Google Maps Pack visibility with Google Business Profile optimization, local schema, category tuning & review workflows."
+    },
+    {
+      "slug": "core-web-vitals-optimization",
+      "meta_title": "Core Web Vitals Optimization | Fix LCP, INP & CLS Fast",
+      "meta_description": "Pass Google Core Web Vitals (LCP, INP & CLS) on mobile and desktop with code-level speed engineering, asset tuning & script cleanup."
+    },
+    {
+      "slug": "nextjs-development",
+      "meta_title": "Next.js Web App & Headless Website Development",
+      "meta_description": "SEO-first Next.js development for SSR marketing sites, headless WordPress builds & fast SaaS web applications."
+    },
+    {
+      "slug": "ai-chatbot-integration",
+      "meta_title": "AI Chatbot Integration for WordPress, Shopify & Web",
+      "meta_description": "Deploy custom knowledge-base AI chatbots on WordPress, Shopify or custom web apps to qualify leads, answer FAQs & sync with your CRM."
+    },
+    {
+      "slug": "ai-automation",
+      "meta_title": "AI Workflow & Business Process Automation Services",
+      "meta_description": "Automate lead routing, CRM updates, support triage and reporting with practical AI workflows integrated into your existing tools."
+    },
+    {
+      "slug": "ai-content-solutions",
+      "meta_title": "AI-Assisted SEO Content & Product Copy Workflows",
+      "meta_description": "Human-reviewed AI workflows for structured product catalogues, localized landing copy & scalable editorial operations."
+    },
+    {
+      "slug": "website-redesign",
+      "meta_title": "SEO-Safe Website Redesign Agency | Modernize & Convert",
+      "meta_description": "Redesign your outdated site without losing rankings—modern UX, faster mobile load times, conversion copy & full 301 redirect preservation."
+    },
+    {
+      "slug": "reactjs-development",
+      "meta_title": "React.js Frontend & Web Application Development",
+      "meta_description": "Interactive, accessible React.js dashboards, booking tools & customer portals engineered with clean component architecture."
+    }
+  ]
+}
