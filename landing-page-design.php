@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/includes/http.php';
 require_once __DIR__ . '/includes/seo.php';
+require_once __DIR__ . '/includes/service-city-links.php';
 
 $cbd_page_has_charset = true;
 $page_styles = ['/assets/css/web-development.css'];
@@ -12,8 +13,8 @@ if (cbd_is_direct_script_request('landing-page-design.php')) {
 $base = cbd_base_path();
 $canonical = cbd_canonical_url('/landing-page-design');
 $page_robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
-$pageTitle = 'Landing Page Design Services | Chulbul Design';
-$pageDescription = 'Conversion-focused landing page design for Google Ads, Meta Ads, B2B lead generation and product campaigns, with responsive UX and tracking plans.';
+$pageTitle = 'High-Converting Landing Page Design Services | Chulbul';
+$pageDescription = 'Custom PPC & campaign landing page design built for speed, clear messaging and higher conversion rates across desktop and mobile.';
 $shareImage = cbd_public_url('/assets/images/service-heroes/landing-page-design-hero.webp');
 
 $landingServices = [
@@ -151,6 +152,8 @@ $schema = [
     <section class="wd-section" aria-labelledby="landing-related-title"><div class="wd-container"><div class="wd-heading wd-reveal"><span class="wd-kicker">Related expertise</span><h2 id="landing-related-title">Connect the Landing Page to the Wider Growth System</h2><p>Campaign results also depend on traffic, development quality, measurement and ongoing improvement.</p></div><div class="wd-related-grid"><a class="wd-related-card wd-reveal" href="<?= $base ?>/web-design"><i class="bi bi-palette2"></i><span><strong>Web Design</strong>Strategy and responsive design for the wider website.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/google-ads-ppc"><i class="bi bi-google"></i><span><strong>Google Ads &amp; PPC</strong>Campaign structure, targeting and conversion measurement.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/conversion-rate-optimization"><i class="bi bi-graph-up-arrow"></i><span><strong>Conversion Optimization</strong>Evidence-led improvements to existing customer journeys.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/web-development"><i class="bi bi-code-slash"></i><span><strong>Web Development</strong>Responsive implementation, forms and integrations.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a></div></div></section>
 
     <section class="wd-section wd-faq" aria-labelledby="landing-faq-title"><div class="wd-container wd-faq-grid"><div class="wd-heading wd-heading-left wd-reveal"><span class="wd-kicker">Frequently asked questions</span><h2 id="landing-faq-title">Landing Page Design FAQs</h2><p>Clear answers for teams planning paid campaigns, lead-generation pages or conversion improvements.</p><a class="wd-text-link" href="<?= $base ?>/contact-us">Ask a campaign-specific question <i class="bi bi-arrow-right"></i></a></div><div class="wd-accordion wd-reveal"><?php foreach ($faqs as $index => $faq): ?><details<?= $index === 0 ? ' open' : '' ?>><summary><?= cbd_escape_text($faq['q']) ?><i class="bi bi-plus-lg" aria-hidden="true"></i></summary><p><?= cbd_escape_text($faq['a']) ?></p></details><?php endforeach; ?></div></div></section>
+
+    <?php cbd_render_service_city_links('landing-page-design', $base, 'wd'); ?>
 
     <section class="wd-final-cta"><div class="wd-container wd-reveal"><span class="wd-kicker">Planning a paid campaign?</span><h2>Let’s Align the Ad, Page and Conversion Before Launch.</h2><p>Share your traffic source, audience, offer and intended action. We will help define a focused landing page scope and the next step.</p><div class="wd-actions"><a class="wd-button wd-button-white" href="<?= $base ?>/contact-us"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Request a Campaign Discussion</a><a class="wd-button wd-button-outline" href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%20want%20to%20discuss%20a%20landing%20page%20design%20project." target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a></div></div></section>
 </div>

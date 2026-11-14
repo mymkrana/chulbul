@@ -269,6 +269,86 @@ $jf = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE;
 $schema_area_city = $slug === 'seattle' ? 'Seattle' : $c['schema_city'];
 $schema_area_region = $slug === 'seattle' ? 'Washington' : $c['state'];
 
+$schema_currency = match ($country) {
+    'india' => 'INR',
+    'uk' => 'GBP',
+    'australia' => 'AUD',
+    'canada' => 'CAD',
+    'uae' => 'AED',
+    'singapore' => 'SGD',
+    'south_africa', 'south-africa' => 'ZAR',
+    default => 'USD',
+};
+$schema_starter_price = preg_replace('/[^0-9.]/', '', (string)$c['starter_price']) ?: '799';
+
+$city_offer_catalog_elements = [
+    [
+        '@type' => 'Offer',
+        'url' => $c['canonical'] . '#pricing',
+        'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'Business Website Design in ' . $schema_area_city,
+            'serviceType' => 'Custom Website Design & Development',
+            'url' => $c['canonical'],
+        ],
+        'priceSpecification' => [
+            '@type' => 'PriceSpecification',
+            'price' => $schema_starter_price,
+            'priceCurrency' => $schema_currency,
+        ],
+    ],
+];
+
+foreach ($db_location_data['pricing_plans'] ?? [] as $schemaPlan) {
+    $planName = trim((string)($schemaPlan['name'] ?? ''));
+    $planNumericPrice = preg_replace('/[^0-9.]/', '', (string)($schemaPlan['price'] ?? ''));
+    if ($planName === '' || $planNumericPrice === '') {
+        continue;
+    }
+    $city_offer_catalog_elements[] = [
+        '@type' => 'Offer',
+        'url' => $c['canonical'] . '#pricing',
+        'itemOffered' => [
+            '@type' => 'Service',
+            'name' => $planName . ' Website Package in ' . $schema_area_city,
+            'serviceType' => $planName . ' Web Design Package',
+            'url' => $c['canonical'] . '#pricing',
+        ],
+        'priceSpecification' => [
+            '@type' => 'PriceSpecification',
+            'price' => $planNumericPrice,
+            'priceCurrency' => $schema_currency,
+        ],
+    ];
+}
+
+foreach ($city_spokes as $schemaSpoke) {
+    $spSlug = (string)($schemaSpoke['slug'] ?? '');
+    $spHref = (string)($schemaSpoke['href'] ?? '');
+    if ($spSlug === '' || $spHref === '') {
+        continue;
+    }
+    $spTitle = match ($spSlug) {
+        'small-business-web-design' => 'Small Business Web Design in ' . $schema_area_city,
+        'ecommerce-development' => 'Ecommerce Website Design in ' . $schema_area_city,
+        'wordpress-developer' => 'WordPress Web Design in ' . $schema_area_city,
+        'contractor-web-design' => 'Contractor Website Design in ' . $schema_area_city,
+        default => trim((string)($schemaSpoke['label'] ?? 'Web Design')) . ' in ' . $schema_area_city,
+    };
+    $spUrl = 'https://www.chulbuldesign.com' . $spHref;
+    $city_offer_catalog_elements[] = [
+        '@type' => 'Offer',
+        'url' => $spUrl,
+        'itemOffered' => [
+            '@type' => 'Service',
+            '@id' => $spUrl . '#service',
+            'name' => $spTitle,
+            'serviceType' => $spTitle,
+            'url' => $spUrl,
+        ],
+    ];
+}
+
 // Service schema: Chulbul Design operates from India and serves the selected
 // city remotely. Keeping the provider address inside Organization avoids
 // implying that the company has a physical office in every city page.
@@ -288,26 +368,8 @@ $service_schema = [
     'knowsAbout'   => ['Web Design', 'Web Development', 'E-commerce Development', 'SEO', 'WordPress Development', 'Mobile App Development'],
     'hasOfferCatalog' => [
         '@type' => 'OfferCatalog',
-        'name' => 'Web Design Services',
-        'itemListElement' => [
-            [
-                '@type' => 'Offer',
-                'itemOffered' => [
-                    '@type' => 'Service',
-                    'name' => 'Business Website Design',
-                ],
-                'priceSpecification' => [
-                    '@type' => 'PriceSpecification',
-                    'price' => (string)$c['starter_price'],
-                    'priceCurrency' => match ($country) {
-                        'india' => 'INR',
-                        'uk'    => 'GBP',
-                        'uae'   => 'AED',
-                        default => 'USD',
-                    },
-                ],
-            ],
-        ],
+        'name' => $schema_area_city . ' Web Design Services & Packages',
+        'itemListElement' => $city_offer_catalog_elements,
     ],
     'provider'     => [
         '@type'     => 'Organization',

@@ -3,6 +3,7 @@
 require_once __DIR__ . '/http.php';
 require_once __DIR__ . '/seo.php';
 require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/service-city-links.php';
 
 $pages = require __DIR__ . '/ecommerce-pages-data.php';
 $experiencePages = require __DIR__ . '/ecommerce-experience-data.php';
@@ -514,6 +515,8 @@ $costFactors = [
             <?php foreach (($page['faqs'] ?? []) as $index => $faq): ?><details<?= $index === 0 ? ' open' : '' ?>><summary><?= cbd_escape_text($faq['q'] ?? '') ?><i class="bi bi-plus-lg" aria-hidden="true"></i></summary><p><?= cbd_escape_text($faq['a'] ?? '') ?></p></details><?php endforeach; ?>
         </div></div>
     </section>
+
+    <?php cbd_render_service_city_links($slug, $base, 'wd'); ?>
 
     <section class="wd-final-cta">
         <div class="wd-container wd-reveal"><span class="wd-kicker">Start with the requirements</span><h2>Planning an eCommerce Project?</h2><p>Tell us about your products, customers, current platform and operational constraints. We will help you identify the next useful step without forcing the project into a pre-selected technology.</p><div class="wd-actions"><a class="wd-button wd-button-white" href="<?= $base ?>/contact-us"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Discuss Your Project</a><a class="wd-button wd-button-outline" href="https://wa.me/919990548795" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp Chulbul Design</a></div></div>

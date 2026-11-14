@@ -2,6 +2,7 @@
 require_once __DIR__ . '/includes/db-services.php';
 require_once __DIR__ . '/includes/http.php';
 require_once __DIR__ . '/includes/seo.php';
+require_once __DIR__ . '/includes/service-city-links.php';
 
 $slug = trim($_GET['slug'] ?? '');
 
@@ -331,6 +332,8 @@ function toggleFaq(i) {
 }
 </script>
 <?php endif; ?>
+
+<?php cbd_render_service_city_links($slug, $base, 'tailwind'); ?>
 
 <!-- CTA -->
 <section class="city-cta-section">

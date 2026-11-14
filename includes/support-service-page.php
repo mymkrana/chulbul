@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/http.php';
 require_once __DIR__ . '/seo.php';
+require_once __DIR__ . '/service-city-links.php';
 
 $pages = require __DIR__ . '/support-pages-data.php';
 $slug = (string)($support_slug ?? '');
@@ -16,7 +17,7 @@ if ($script !== '' && cbd_is_direct_script_request($script)) {
     cbd_redirect_path('/' . $slug);
 }
 
-$page = $pages[$slug];
+$page = cbd_service_apply_db_meta($slug, $pages[$slug]);
 $hubSlug = 'website-support';
 $isHub = $slug === $hubSlug;
 $base = cbd_base_path();
@@ -260,6 +261,8 @@ $relatedSlugs = array_slice($relatedSlugs, 0, 6);
         <div class="wd-heading wd-heading-left wd-reveal"><span class="wd-kicker">Useful answers before getting started</span><h2 id="support-faq-title"><?= cbd_escape_text($page['name']) ?> FAQs</h2><p>Clear answers about access, scope, verification, ongoing responsibilities and cost.</p><?php if (!empty($page['reference_url'])): ?><p><a class="wd-text-link" href="<?= cbd_escape_text($page['reference_url']) ?>" target="_blank" rel="noopener noreferrer"><?= cbd_escape_text($page['reference_label']) ?></a></p><?php endif; ?><a class="wd-text-link" href="<?= $base ?>/contact-us">Ask about your business <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
         <div class="wd-accordion wd-reveal"><?php foreach ($page['faqs'] as $index => $faq): ?><details<?= $index === 0 ? ' open' : '' ?>><summary><?= cbd_escape_text($faq['q']) ?><i class="bi bi-plus-lg" aria-hidden="true"></i></summary><p><?= cbd_escape_text($faq['a']) ?></p></details><?php endforeach; ?></div>
     </div></section>
+
+    <?php cbd_render_service_city_links($slug, $base, 'wd'); ?>
 
     <section class="wd-final-cta"><div class="wd-container wd-reveal"><span class="wd-kicker">Start with your business priorities</span><h2><?= cbd_escape_text($page['cta_heading']) ?></h2><p><?= cbd_escape_text($page['cta_text']) ?></p><div class="wd-actions"><a class="wd-button wd-button-white" href="<?= $base ?>/contact-us"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Discuss Your Website Needs</a><a class="wd-button wd-button-outline" href="https://wa.me/919990548795" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp Chulbul Design</a></div></div></section>
 </main>

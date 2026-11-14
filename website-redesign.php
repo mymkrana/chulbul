@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/includes/http.php';
 require_once __DIR__ . '/includes/seo.php';
+require_once __DIR__ . '/includes/service-city-links.php';
 
 $cbd_page_has_charset = true;
 $page_styles = ['/assets/css/web-development.css'];
@@ -12,8 +13,8 @@ if (cbd_is_direct_script_request('website-redesign.php')) {
 $base = cbd_base_path();
 $canonical = cbd_canonical_url('/website-redesign');
 $page_robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
-$pageTitle = 'Website Redesign Services | Chulbul Design';
-$pageDescription = 'Strategic website redesign services covering UX, responsive design, content, SEO-safe migration, CMS modernization, accessibility and performance.';
+$pageTitle = 'SEO-Safe Website Redesign Agency | Modernize & Convert';
+$pageDescription = 'Redesign your outdated site without losing rankings—modern UX, faster mobile load times, conversion copy & full 301 redirect preservation.';
 $shareImage = cbd_public_url('/assets/images/service-heroes/website-redesign-hero.webp');
 
 $redesignServices = [
@@ -132,6 +133,8 @@ $schema = [
     <section class="wd-section" aria-labelledby="redesign-related-title"><div class="wd-container"><div class="wd-heading wd-reveal"><span class="wd-kicker">Related expertise</span><h2 id="redesign-related-title">Build the Right Redesign Team Around the Findings</h2><p>The audit determines which design, development, migration and optimization capabilities are actually required.</p></div><div class="wd-related-grid"><a class="wd-related-card wd-reveal" href="<?= $base ?>/web-design"><i class="bi bi-palette2"></i><span><strong>Web Design</strong>Strategy, responsive interfaces and reusable design systems.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/web-development"><i class="bi bi-code-slash"></i><span><strong>Web Development</strong>Maintainable implementation, forms, systems and integrations.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/website-migration"><i class="bi bi-arrow-left-right"></i><span><strong>Website Migration</strong>Content, URLs, redirects and controlled platform moves.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a><a class="wd-related-card wd-reveal" href="<?= $base ?>/website-maintenance"><i class="bi bi-tools"></i><span><strong>Website Maintenance</strong>Post-launch updates, monitoring and technical support.</span><b>Explore <i class="bi bi-arrow-right"></i></b></a></div></div></section>
 
     <section class="wd-section wd-faq" aria-labelledby="redesign-faq-title"><div class="wd-container wd-faq-grid"><div class="wd-heading wd-heading-left wd-reveal"><span class="wd-kicker">Frequently asked questions</span><h2 id="redesign-faq-title">Website Redesign FAQs</h2><p>Clear answers for organizations considering a visual refresh, structural redesign or full rebuild.</p><a class="wd-text-link" href="<?= $base ?>/contact-us">Ask about your existing website <i class="bi bi-arrow-right"></i></a></div><div class="wd-accordion wd-reveal"><?php foreach ($faqs as $index => $faq): ?><details<?= $index === 0 ? ' open' : '' ?>><summary><?= cbd_escape_text($faq['q']) ?><i class="bi bi-plus-lg" aria-hidden="true"></i></summary><p><?= cbd_escape_text($faq['a']) ?></p></details><?php endforeach; ?></div></div></section>
+
+    <?php cbd_render_service_city_links('website-redesign', $base, 'wd'); ?>
 
     <section class="wd-final-cta"><div class="wd-container wd-reveal"><span class="wd-kicker">Has your website outgrown its original design?</span><h2>Let’s Audit What Should Change Before Rebuilding It.</h2><p>Share your current URL, business goals and known problems. We will help define a practical redesign scope and the next step.</p><div class="wd-actions"><a class="wd-button wd-button-white" href="<?= $base ?>/contact-us"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Request a Website Review</a><a class="wd-button wd-button-outline" href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%20want%20to%20discuss%20redesigning%20my%20website." target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a></div></div></section>
 </div>
