@@ -285,6 +285,7 @@ $static_services = [
     'ecommerce-website-development'=> '0.9',
     'custom-ecommerce-development' => '0.9',
     'shopify-development'          => '0.9',
+    'pet-food-shopify-australia'   => '0.9',
     'woocommerce-development'      => '0.9',
     'magento-development'          => '0.9',
     'multi-vendor-marketplace'     => '0.9',

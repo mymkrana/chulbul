@@ -176,6 +176,12 @@ if (!function_exists('cbd_service_city_destinations')) {
         if (in_array($slug, $ecommerceSlugs, true)) {
             return [
                 [
+                    'href' => '/pet-food-shopify-australia',
+                    'icon' => 'bi-bag-heart-fill',
+                    'title' => 'Australia Pet Food & Pet Store Shopify',
+                    'desc' => 'Shopify 2.0 design, store management & 40–60% cost saving',
+                ],
+                [
                     'href' => '/city/seattle/ecommerce-development',
                     'icon' => 'bi-cart-check',
                     'title' => 'Seattle & Kirkland Ecommerce Design',
@@ -186,12 +192,6 @@ if (!function_exists('cbd_service_city_destinations')) {
                     'icon' => 'bi-cart-check',
                     'title' => 'Birmingham & Jewellery Quarter Ecommerce',
                     'desc' => 'Custom UK Shopify & WooCommerce from £649',
-                ],
-                [
-                    'href' => '/city/leeds/magento-development',
-                    'icon' => 'bi-boxes',
-                    'title' => 'Leeds Magento & Ecommerce Dev',
-                    'desc' => 'Magento 2 stores & Shopify/Woo migrations',
                 ],
                 [
                     'href' => '/city/chicago/ecommerce-development',
