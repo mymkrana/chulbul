@@ -372,10 +372,30 @@ foreach ($city_spoke_rows as $spoke_row) {
     $xml .= sm_url("$domain/city/$city_slug/$spoke_slug", $lastmod, 'monthly', '0.82');
 }
 
-// 8. Blog posts
+// 8. Blog posts (exclude 301-consolidated duplicate slugs managed in blog/.htaccess)
+$redirected_blog_slugs = array_fill_keys([
+    'shopify-vs-woocommerce',
+    'web-development-seattle',
+    'web-design-leeds',
+    'the-ultimate-guide-to-web-design-in-leeds-649-speed-local-seo',
+    'latest-figma-updates',
+    'figma-new-features-may-2026',
+    'figma-updates-explained',
+    'figma-june-2026-updates',
+    'travel-website-development',
+    'figma-latest-updates-august-2026',
+    'how-to-create-an-ecommerce-website',
+    'best-web-design-development-company-india',
+    'website-development-cost-in-india',
+    'website-redesign-checklist-2026',
+    'business-website-features-2026',
+    'how-to-rank-in-google-ai-overviews-amp-ai-mode-in-2026-a-practical-guide-for-small-businesses',
+    'birmingham-jewellery-website-design-guide',
+    'financial-services-web-design-chicago-guide',
+], true);
 foreach ($blog_posts as $p) {
     $post_slug = (string)($p['slug'] ?? '');
-    if (!sm_valid_slug($post_slug)) {
+    if (!sm_valid_slug($post_slug) || isset($redirected_blog_slugs[$post_slug])) {
         continue;
     }
     $lastmod = sm_lastmod($p['lastmod'] ?? '', $today);

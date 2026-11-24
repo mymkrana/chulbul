@@ -71,6 +71,18 @@ RewriteRule ^how-to-rank-in-google-ai-overviews-amp-ai-mode-in-2026-a-practical-
 RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
 RewriteRule ^how-to-rank-in-google-ai-overviews-amp-ai-mode-in-2026-a-practical-guide-for-small-businesses/?$ /seo-services [R=301,L,NE,QSD]
 
+# Phase 4 blog cannibalization consolidation (Nov 24, 2026): merge duplicate
+# zero-click guides into their Page 1–2 ranking primary counterparts.
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^birmingham-jewellery-website-design-guide/?$ /chulbul/blog/birmingham-web-design-jewellery-quarter-guide-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^birmingham-jewellery-website-design-guide/?$ /blog/birmingham-web-design-jewellery-quarter-guide-2026 [R=301,L,NE,QSD]
+
+RewriteCond %{HTTP_HOST} ^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^financial-services-web-design-chicago-guide/?$ /chulbul/blog/chicago-web-design-costs-b2b-financial-guide-2026 [R=301,L,NE,QSD]
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::[0-9]+)?$ [NC]
+RewriteRule ^financial-services-web-design-chicago-guide/?$ /blog/chicago-web-design-costs-b2b-financial-guide-2026 [R=301,L,NE,QSD]
+
 # Shared data loader is an include, not a public page.
 <Files "data.php">
     <IfModule mod_authz_core.c>

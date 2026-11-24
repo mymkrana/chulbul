@@ -286,9 +286,33 @@ foreach ($faq_matches as $faq) {
             <?php endif; ?>
 
             <!-- Title -->
-            <h1 class="font-extrabold text-[#1e1e5c] leading-tight mb-8" style="font-size:36px">
+            <h1 class="font-extrabold text-[#1e1e5c] leading-tight mb-6" style="font-size:36px">
                 <?= htmlspecialchars($post['title']) ?>
             </h1>
+
+            <?php if ($matched_city_info): ?>
+            <!-- Above-the-Fold Local Agency Quick-Action Strip -->
+            <div class="bg-gray-50 border border-[#49499A]/20 rounded-xl p-4 mb-8 flex flex-wrap items-center justify-between gap-3">
+                <div class="min-w-0">
+                    <p class="text-xs font-bold uppercase tracking-widest text-[#EE483D] mb-0.5">
+                        <?= htmlspecialchars((string)$matched_city_info['name']) ?> Web Design &amp; Development Agency
+                    </p>
+                    <p class="text-sm text-gray-900 font-semibold">
+                        Need a custom website, ecommerce store or SEO-safe redesign in <?= htmlspecialchars((string)$matched_city_info['name']) ?>?
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <a href="<?= $base . htmlspecialchars((string)$matched_city_info['href']) ?>"
+                       class="inline-flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-lg bg-[#49499A] text-white hover:bg-[#EE483D] transition">
+                        View <?= htmlspecialchars((string)$matched_city_info['name']) ?> Packages <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="<?= $base ?>/contact-us"
+                       class="inline-flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-lg bg-white text-gray-900 border border-gray-200 hover:border-[#EE483D] hover:text-[#EE483D] transition">
+                        Get Free Quote
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
 
             <!-- Post Content -->
             <div class="prose-custom text-gray-700 leading-relaxed max-w-none">
