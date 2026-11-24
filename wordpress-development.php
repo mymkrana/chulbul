@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/includes/http.php';
 require_once __DIR__ . '/includes/seo.php';
+require_once __DIR__ . '/includes/service-city-links.php';
 
 $cbd_page_has_charset = true;
 $page_styles = ['/assets/css/web-development.css'];
@@ -372,6 +373,8 @@ $schema = [
             </div>
         </div>
     </section>
+
+    <?php cbd_render_service_city_links('wordpress-development', $base, 'wd'); ?>
 
     <section class="wd-final-cta">
         <div class="wd-container wd-reveal">

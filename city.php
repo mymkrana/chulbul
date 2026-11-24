@@ -333,6 +333,10 @@ foreach ($city_spokes as $schemaSpoke) {
         'ecommerce-development' => 'Ecommerce Website Design in ' . $schema_area_city,
         'wordpress-developer' => 'WordPress Web Design in ' . $schema_area_city,
         'contractor-web-design' => 'Contractor Website Design in ' . $schema_area_city,
+        'magento-development' => 'Magento Web Design & Development in ' . $schema_area_city,
+        'b2b-web-design' => 'B2B Web Design in ' . $schema_area_city,
+        'biotech-web-design' => 'Biotech & Life Sciences Web Design in ' . $schema_area_city,
+        'website-redesign' => 'Website Redesign & Revamp in ' . $schema_area_city,
         default => trim((string)($schemaSpoke['label'] ?? 'Web Design')) . ' in ' . $schema_area_city,
     };
     $spUrl = 'https://www.chulbuldesign.com' . $spHref;
@@ -1263,12 +1267,20 @@ if ($country === 'india') {
                     'ecommerce-development' => 'Ecommerce Website Design in ' . $c['name'],
                     'wordpress-developer' => 'WordPress Web Design in ' . $c['name'],
                     'contractor-web-design' => 'Contractor Website Design in ' . $c['name'],
+                    'magento-development' => 'Magento Web Design in ' . $c['name'],
+                    'b2b-web-design' => 'B2B Web Design in ' . $c['name'],
+                    'biotech-web-design' => 'Biotech Web Design in ' . $c['name'],
+                    'website-redesign' => 'Website Redesign in ' . $c['name'],
                     default => $spoke['label'] . ' — ' . $c['name'],
                 };
                 $spokeIcon = match ($spokeSlug) {
                     'ecommerce-development' => 'bi-cart-check',
                     'wordpress-developer' => 'bi-wordpress',
                     'contractor-web-design' => 'bi-tools',
+                    'magento-development' => 'bi-boxes',
+                    'b2b-web-design' => 'bi-building',
+                    'biotech-web-design' => 'bi-heart-pulse',
+                    'website-redesign' => 'bi-arrow-repeat',
                     default => 'bi-briefcase',
                 };
             ?>

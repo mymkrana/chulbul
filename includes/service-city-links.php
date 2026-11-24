@@ -41,10 +41,132 @@ if (!function_exists('cbd_service_city_destinations')) {
     /** Return high-impact city hub and spoke links relevant to the current service page. */
     function cbd_service_city_destinations(string $slug): array
     {
+        if (in_array($slug, ['wordpress-development', 'cms-development'], true)) {
+            return [
+                [
+                    'href' => '/city/leeds/wordpress-developer',
+                    'icon' => 'bi-wordpress',
+                    'title' => 'Leeds WordPress Web Design & Dev',
+                    'desc' => 'Custom Gutenberg themes & WooCommerce from £649',
+                ],
+                [
+                    'href' => '/city/chicago/wordpress-developer',
+                    'icon' => 'bi-wordpress',
+                    'title' => 'Chicago WordPress Developer',
+                    'desc' => 'Fast custom WordPress & SEO builds from $799',
+                ],
+                [
+                    'href' => '/city/san-francisco/wordpress-developer',
+                    'icon' => 'bi-wordpress',
+                    'title' => 'San Francisco WordPress Web Design',
+                    'desc' => 'Bay Area startup & SaaS WordPress builds from $799',
+                ],
+                [
+                    'href' => '/city/bristol/wordpress-developer',
+                    'icon' => 'bi-wordpress',
+                    'title' => 'Bristol WordPress Agency',
+                    'desc' => 'Affordable UK WordPress & SEO websites from £649',
+                ],
+                [
+                    'href' => '/city/seattle/wordpress-developer',
+                    'icon' => 'bi-wordpress',
+                    'title' => 'Seattle & Kirkland WordPress Dev',
+                    'desc' => 'Clean block themes & migrations from $799',
+                ],
+                [
+                    'href' => '/city/london/small-business-web-design',
+                    'icon' => 'bi-geo-alt-fill',
+                    'title' => 'London Small Business Web Design',
+                    'desc' => 'Custom UK WordPress & business sites from £649',
+                ],
+            ];
+        }
+
+        if ($slug === 'magento-development') {
+            return [
+                [
+                    'href' => '/city/leeds/magento-development',
+                    'icon' => 'bi-boxes',
+                    'title' => 'Leeds Magento Web Design & Dev',
+                    'desc' => 'Magento 2 builds & SEO-safe UK migrations',
+                ],
+                [
+                    'href' => '/city/birmingham/ecommerce-development',
+                    'icon' => 'bi-cart-check',
+                    'title' => 'Birmingham & Jewellery Quarter Ecommerce',
+                    'desc' => 'Custom UK Shopify & WooCommerce from £649',
+                ],
+                [
+                    'href' => '/city/london/ecommerce-development',
+                    'icon' => 'bi-cart-check',
+                    'title' => 'London Ecommerce Website Agency',
+                    'desc' => 'High-converting UK online stores from £649',
+                ],
+                [
+                    'href' => '/city/chicago/ecommerce-development',
+                    'icon' => 'bi-cart-check',
+                    'title' => 'Chicago Ecommerce Web Development',
+                    'desc' => 'D2C & B2B wholesale stores from $799',
+                ],
+                [
+                    'href' => '/city/dallas/ecommerce-development',
+                    'icon' => 'bi-cart-check',
+                    'title' => 'Dallas TX Ecommerce Web Design',
+                    'desc' => 'Custom B2B & retail storefronts from $799',
+                ],
+                [
+                    'href' => '/city/seattle/ecommerce-development',
+                    'icon' => 'bi-cart-check',
+                    'title' => 'Seattle & Kirkland Ecommerce Design',
+                    'desc' => 'Shopify, WooCommerce & ERP sync from $799',
+                ],
+            ];
+        }
+
+        if (in_array($slug, ['website-redesign', 'website-migration', 'conversion-rate-optimization'], true)) {
+            return [
+                [
+                    'href' => '/city/glasgow/website-redesign',
+                    'icon' => 'bi-arrow-repeat',
+                    'title' => 'Glasgow Website Redesign & Revamp',
+                    'desc' => 'SEO-safe UK redesigns & 301 mapping from £649',
+                ],
+                [
+                    'href' => '/city/chicago/b2b-web-design',
+                    'icon' => 'bi-building',
+                    'title' => 'Chicago B2B & Financial Web Design',
+                    'desc' => 'ADA-ready corporate redesigns & CRM sync from $799',
+                ],
+                [
+                    'href' => '/city/dallas/b2b-web-design',
+                    'icon' => 'bi-building',
+                    'title' => 'Dallas TX B2B Website Design',
+                    'desc' => 'DFW enterprise & industrial RFQ sites from $799',
+                ],
+                [
+                    'href' => '/city/bristol/b2b-web-design',
+                    'icon' => 'bi-building',
+                    'title' => 'Bristol B2B Web Design Agency',
+                    'desc' => 'Corporate UX & pipeline websites from £649',
+                ],
+                [
+                    'href' => '/city/boston/biotech-web-design',
+                    'icon' => 'bi-heart-pulse',
+                    'title' => 'Boston Biotech & Life Sciences Web Design',
+                    'desc' => 'Clinical pipeline & investor-ready UX from $799',
+                ],
+                [
+                    'href' => '/city/toronto',
+                    'icon' => 'bi-geo-alt-fill',
+                    'title' => 'Toronto Web Design & Redesign Agency',
+                    'desc' => 'Custom GTA websites & redesigns from C$699',
+                ],
+            ];
+        }
+
         $ecommerceSlugs = [
             'shopify-development',
             'woocommerce-development',
-            'magento-development',
             'multi-vendor-marketplace',
             'ecommerce-development',
             'ecommerce-website-development',
@@ -66,6 +188,12 @@ if (!function_exists('cbd_service_city_destinations')) {
                     'desc' => 'Custom UK Shopify & WooCommerce from £649',
                 ],
                 [
+                    'href' => '/city/leeds/magento-development',
+                    'icon' => 'bi-boxes',
+                    'title' => 'Leeds Magento & Ecommerce Dev',
+                    'desc' => 'Magento 2 stores & Shopify/Woo migrations',
+                ],
+                [
                     'href' => '/city/chicago/ecommerce-development',
                     'icon' => 'bi-cart-check',
                     'title' => 'Chicago Ecommerce Web Development',
@@ -78,12 +206,6 @@ if (!function_exists('cbd_service_city_destinations')) {
                     'desc' => 'High-converting UK online stores from £649',
                 ],
                 [
-                    'href' => '/city/dallas/ecommerce-development',
-                    'icon' => 'bi-cart-check',
-                    'title' => 'Dallas TX Ecommerce Web Design',
-                    'desc' => 'Custom B2B & retail storefronts from $799',
-                ],
-                [
                     'href' => '/city/dubai/ecommerce-development',
                     'icon' => 'bi-cart-check',
                     'title' => 'Dubai Bilingual Ecommerce Stores',
@@ -94,40 +216,40 @@ if (!function_exists('cbd_service_city_destinations')) {
 
         return [
             [
-                'href' => '/city/seattle/small-business-web-design',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'Seattle & Kirkland Web Design',
-                'desc' => 'Custom WordPress & small business websites from $799',
+                'href' => '/city/dallas/b2b-web-design',
+                'icon' => 'bi-building',
+                'title' => 'Dallas TX B2B Website Design',
+                'desc' => 'Custom DFW B2B & RFQ websites from $799',
             ],
             [
-                'href' => '/city/dallas',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'Dallas TX B2B & Custom Web Design',
-                'desc' => 'Conversion-focused Dallas websites from $799',
+                'href' => '/city/chicago/b2b-web-design',
+                'icon' => 'bi-building',
+                'title' => 'Chicago B2B & Financial Web Design',
+                'desc' => 'Corporate & financial services sites from $799',
             ],
             [
-                'href' => '/city/birmingham',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'Birmingham & Jewellery Quarter Web Design',
-                'desc' => 'Custom UK business & ecommerce sites from £649',
+                'href' => '/city/bristol/b2b-web-design',
+                'icon' => 'bi-building',
+                'title' => 'Bristol B2B Web Design Agency',
+                'desc' => 'South West UK corporate & SaaS sites from £649',
             ],
             [
-                'href' => '/city/atlanta/small-business-web-design',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'Atlanta & Dacula Small Business Sites',
-                'desc' => 'Lead-generating Georgia websites from $799',
+                'href' => '/city/boston/biotech-web-design',
+                'icon' => 'bi-heart-pulse',
+                'title' => 'Boston Biotech & Life Sciences Sites',
+                'desc' => 'Clinical pipeline & investor-ready UX from $799',
             ],
             [
-                'href' => '/city/london/small-business-web-design',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'London Small Business Web Design',
-                'desc' => 'Affordable custom UK websites from £649',
+                'href' => '/city/leeds/wordpress-developer',
+                'icon' => 'bi-wordpress',
+                'title' => 'Leeds WordPress Web Design',
+                'desc' => 'Custom Gutenberg WordPress builds from £649',
             ],
             [
-                'href' => '/city/gurgaon',
-                'icon' => 'bi-geo-alt-fill',
-                'title' => 'Gurgaon (Gurugram) Web Development',
-                'desc' => 'Custom business & B2B websites from ₹18,000',
+                'href' => '/city/glasgow/website-redesign',
+                'icon' => 'bi-arrow-repeat',
+                'title' => 'Glasgow Website Redesign Agency',
+                'desc' => 'SEO-safe revamps & 301 mapping from £649',
             ],
         ];
     }

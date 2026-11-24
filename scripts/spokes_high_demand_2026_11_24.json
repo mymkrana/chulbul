@@ -1,0 +1,3051 @@
+{
+  "version": "2026-11-24-10-high-demand-spokes",
+  "spokes": [
+    {
+      "city_slug": "leeds",
+      "slug": "wordpress-developer",
+      "sort_order": 30,
+      "meta_title": "WordPress Agency Leeds | Custom Web Design & Dev (£649+)",
+      "meta_description": "Trusted WordPress agency & developer for Leeds & West Yorkshire businesses from £649. Custom Gutenberg themes, WooCommerce, speed tuning & UK reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/leeds/wordpress-developer",
+      "breadcrumb_label": "WordPress Web Design",
+      "eyebrow": "Leeds WordPress Web Design & Development",
+      "heading_html": "WordPress Web Design &amp; Developer in Leeds <span>Fast, Editable &amp; SEO-Ready Builds</span>",
+      "hero_description": "Custom WordPress websites, lightweight Gutenberg block themes, WooCommerce builds and SEO-safe migrations for Leeds businesses across Leeds City Centre, Leeds Dock, Headingley, Chapel Allerton, Horsforth and West Yorkshire. Delivered remotely by Chulbul Design with scheduled UK (GMT/BST) project reviews and transparent £649+ starter scopes.",
+      "introduction": "WordPress powers a huge share of business websites in Leeds, but bloated multipurpose themes and stacked plugins often turn sites slow, fragile and frustrating for internal marketers to edit. A dependable WordPress build starts with your content model—service pages, case studies, team bios, landing pages and forms—before a single plugin is installed.\n\nFor companies across Leeds City Centre, Leeds Dock, Headingley, Chapel Allerton, Horsforth and West Yorkshire and wider West Yorkshire, we engineer clean WordPress architectures using lightweight custom themes or controlled Gutenberg block patterns, strict Core Web Vitals budgets, and clear role-based editing guardrails so your team publishes updates in minutes without breaking layout spacing.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Leeds clients through scheduled UK (GMT/BST) discovery calls, staging previews and written launch checklists—without claiming a local Leeds street office.",
+      "content": {
+        "hero_icon": "bi-wordpress",
+        "hero_primary_cta": "Get a Leeds WordPress Quote",
+        "hero_secondary_cta": "All Leeds Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-lightning-charge",
+            "text": "Lean Gutenberg themes built for Core Web Vitals"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled UK (GMT/BST) reviews & written milestones"
+          },
+          {
+            "icon": "bi-shield-check",
+            "text": "Full admin, hosting & source-code ownership"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Leeds WordPress planning checklist",
+          "kicker": "Before installing plugins",
+          "title": "Engineer an editing system your team can actually run.",
+          "description": "Strong WordPress sites in Leeds pair fast mobile rendering with clean editorial templates, controlled plugins and measurable lead forms.",
+          "items": [
+            "Custom Gutenberg blocks & reusable service templates",
+            "Minimal vetted plugin stack with zero bloat",
+            "301 redirect map for WordPress redesigns",
+            "GA4, Search Console & CRM enquiry routing"
+          ]
+        },
+        "intro_label": "WordPress architecture strategy",
+        "intro_title": "Why Leeds businesses replace bloated themes with engineered WordPress builds",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Leeds?",
+        "hub_link_label": "Review the complete Leeds web design hub",
+        "platform_label": "WordPress build options",
+        "platform_title": "Choose the right WordPress setup for your Leeds team",
+        "platform_intro": "Every Leeds organisation has different publishing frequency, compliance needs and internal technical comfort. We match the build model to your operational workflow.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom Gutenberg Block Theme",
+            "icon": "bi-grid-1x2",
+            "best_fit": "Marketing and leadership teams in Leeds who launch new service pages, landing pages or articles frequently and want fast Core Web Vitals without heavy page-builder bloat.",
+            "tradeoff": "Requires upfront component planning and block design so editors get structured flexibility instead of ad-hoc drag-and-drop overrides.",
+            "href": "/wordpress-development",
+            "link_label": "Explore custom WordPress development"
+          },
+          {
+            "name": "WooCommerce on WordPress",
+            "icon": "bi-cart-check",
+            "best_fit": "Content-led Leeds retailers, B2B catalogues and subscription brands combining editorial SEO with flexible checkout, shipping and payment gateways.",
+            "tradeoff": "Transactional stores need disciplined caching exclusions, staging update tests and active plugin security ownership.",
+            "href": "/woocommerce-development",
+            "link_label": "Explore WooCommerce development"
+          },
+          {
+            "name": "Headless WordPress + Next.js",
+            "icon": "bi-window-stack",
+            "best_fit": "High-traffic Leeds SaaS, publisher or multi-region sites that want WordPress editorial familiarity paired with a React/Next.js frontend.",
+            "tradeoff": "Introduces separate frontend deployment and preview workflows, so it should solve a verified performance or product requirement.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          }
+        ],
+        "architecture_label": "Clean WordPress engineering",
+        "architecture_title": "Templates, custom fields and plugins structured for Leeds growth",
+        "architecture_intro": "Planning content types, SEO signals and security boundaries upfront eliminates the maintenance debt common in off-the-shelf agency sites.",
+        "architecture_items": [
+          {
+            "icon": "bi-collection",
+            "title": "Custom post types & structured fields",
+            "description": "Separate services, industries, case studies, team members and locations across West Yorkshire into structured templates so pages stay consistent as your site grows."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Technical SEO & schema foundations",
+            "description": "Clean heading hierarchy, canonical URLs, XML sitemaps, Service/FAQ JSON-LD schema and fast mobile HTML ready for Google Search Console indexing."
+          },
+          {
+            "icon": "bi-plug",
+            "title": "Vetted integrations & CRM forms",
+            "description": "Connect HubSpot, Salesforce, Zoho, Mailchimp, booking calendars or WhatsApp routing through reliable APIs and webhooks with spam protection."
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "title": "Zero-downtime WordPress migration",
+            "description": "Full URL inventory, 1-to-1 301 redirect spreadsheet, staging lock and post-launch crawl verification so existing rankings stay protected."
+          }
+        ],
+        "process_label": "WordPress delivery workflow",
+        "process_title": "How we build and launch your Leeds WordPress website",
+        "process_intro": "Every milestone includes staging links and scheduled UK (GMT/BST) walkthroughs so stakeholders review real pages before launch.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Content, plugin & SEO audit",
+            "description": "Review your existing site (if any), priority Leeds buyer queries, editorial workflows, required integrations and hosting constraints."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & Gutenberg block plan",
+            "description": "Map core page templates, custom fields, navigation hierarchy and conversion calls to action before visual styling begins."
+          },
+          {
+            "step": "03",
+            "title": "Responsive UI design",
+            "description": "Design mobile-first page layouts and reusable block patterns tailored to your brand and accessibility contrast standards."
+          },
+          {
+            "step": "04",
+            "title": "Lean WordPress engineering",
+            "description": "Code semantic PHP/block templates, configure minimal vetted plugins, build lead forms and integrate CRM or analytics tracking."
+          },
+          {
+            "step": "05",
+            "title": "Speed, security & redirect QA",
+            "description": "Test Core Web Vitals (LCP, INP, CLS), mobile forms, 301 redirects, SSL, backups and user-role permissions on staging."
+          },
+          {
+            "step": "06",
+            "title": "Controlled launch & editor handover",
+            "description": "Deploy with a launch checklist, verify Google Search Console indexing and provide recorded walkthroughs so your team can edit confidently."
+          }
+        ],
+        "operations_label": "Long-term reliability",
+        "operations_title": "Performance, security and ownership built into every handover",
+        "operations_intro": "A WordPress website stays fast only when caching, updates and editor permissions are planned before go-live.",
+        "operations_items": [
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals tuning",
+            "description": "WebP/AVIF media sizing, deferred non-critical scripts, clean CSS and server/CDN page caching for fast mobile loads."
+          },
+          {
+            "icon": "bi-shield-lock",
+            "title": "Hardened WordPress security",
+            "description": "Least-privilege admin roles, 2FA, XML-RPC lockdown, automated off-site backups and clean update workflows."
+          },
+          {
+            "icon": "bi-pencil-square",
+            "title": "Guardrailed editor UX",
+            "description": "Editors can update copy, images, FAQs and landing sections without accidentally breaking spacing, fonts or mobile grids."
+          },
+          {
+            "icon": "bi-bar-chart-line",
+            "title": "Lead & event measurement",
+            "description": "GA4 conversion events for quote forms, phone clicks and bookings so you measure real enquiries instead of vanity pageviews."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "Accessibility readiness",
+            "description": "Semantic landmarks, descriptive alt text, keyboard-friendly menus and readable colour contrast across breakpoints."
+          },
+          {
+            "icon": "bi-key",
+            "title": "100% client ownership",
+            "description": "You own your domain, hosting, WordPress admin accounts, licences and custom theme repository from day one."
+          }
+        ],
+        "pricing_label": "Transparent Leeds WordPress pricing",
+        "pricing_title": "What affects WordPress web design cost in Leeds?",
+        "pricing_intro": "While WordPress core is open-source, reliable pricing reflects template count, custom functionality, migration scope and QA depth.",
+        "pricing_factors": [
+          {
+            "title": "Custom templates & block count",
+            "description": "A focused 5–8 page business site requires fewer unique blocks than a 25-page multi-service or multi-location platform."
+          },
+          {
+            "title": "Redesign & SEO migration scope",
+            "description": "Auditing existing URLs, mapping 301 redirects, cleaning legacy shortcodes and preserving high-ranking posts adds structured QA effort."
+          },
+          {
+            "title": "WooCommerce or custom plugins",
+            "description": "Ecommerce catalogues, calculators, member portals or custom API integrations require dedicated backend development and testing."
+          },
+          {
+            "title": "Content & media readiness",
+            "description": "Approved copy, photography and case studies speed up delivery; copywriting and asset curation can be scoped separately."
+          },
+          {
+            "title": "CRM, booking & third-party sync",
+            "description": "Connecting HubSpot, Salesforce, Calendly, payment gateways or ERP feeds includes webhook testing and error handling."
+          },
+          {
+            "title": "Ongoing care & update plans",
+            "description": "Optional monthly WordPress core/plugin updates, staging tests, backups and performance monitoring can be added post-launch."
+          }
+        ],
+        "pricing_note": "Our Leeds starter WordPress websites begin at £649 for lean 5-page business scopes. Custom multi-template builds, WooCommerce stores and complex migrations are quoted with itemized milestones after a brief discovery review.",
+        "schema_catalog_name": "Leeds WordPress Development Services",
+        "schema_offers": [
+          "Leeds WordPress Web Design",
+          "Custom Gutenberg Block Theme Development",
+          "WordPress Speed & Core Web Vitals Optimization",
+          "WooCommerce Store Development",
+          "SEO-Safe WordPress Redesign & Migration"
+        ],
+        "related_label": "Related Leeds services & guides",
+        "related_title": "Explore more Leeds web design capabilities",
+        "related_intro": "Compare sibling Leeds services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Leeds Web Design Hub",
+            "description": "Full website packages, local starter pricing (£649+) and consultation options in Leeds.",
+            "href": "/city/leeds",
+            "label": "Explore Leeds web design"
+          },
+          {
+            "title": "Small Business Web Design in Leeds",
+            "description": "Custom company websites, local SEO foundations and lead capture for Leeds teams.",
+            "href": "/city/leeds/small-business-web-design",
+            "label": "View Leeds small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Leeds",
+            "description": "WooCommerce, Shopify and custom online store engineering for Leeds brands.",
+            "href": "/city/leeds/ecommerce-development",
+            "label": "Explore Leeds ecommerce"
+          },
+          {
+            "title": "WordPress Development Services",
+            "description": "Review our core WordPress theme, block editor, migration and security engineering capabilities.",
+            "href": "/wordpress-development",
+            "label": "View WordPress development"
+          },
+          {
+            "title": "Leeds Ecommerce & Website Redesign Guide (2026)",
+            "description": "Compare 2026 UK website costs, WordPress/WooCommerce vs Shopify vs Magento, and redesign checklists in Leeds.",
+            "href": "/blog/leeds-ecommerce-web-design-website-redesign-guide-2026",
+            "label": "Read Leeds 2026 pricing guide"
+          }
+        ],
+        "faq_label": "Leeds WordPress FAQs",
+        "faq_title": "WordPress web design & developer FAQs for Leeds businesses",
+        "form_eyebrow": "Leeds WordPress enquiry",
+        "form_service": "Leeds WordPress Web Design",
+        "form_source": "city-leeds-wordpress-developer-spoke",
+        "form_bullets": [
+          "Plugin, speed & architecture review",
+          "Custom Gutenberg vs WooCommerce recommendation",
+          "Transparent £649+ milestone pricing"
+        ],
+        "form_message_label": "Tell us about your WordPress project or current site",
+        "form_message_placeholder": "Current URL, number of pages/templates, required plugins or CRM integrations, and target launch window in Leeds.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Leeds project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/wordpress-development-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "WordPress delivery checklist",
+        "title": "Engineer for speed and editing clarity before launch",
+        "location": "Remote delivery for Leeds (UK (GMT/BST)) from Gurugram, India",
+        "context": "This is our standard WordPress engineering checklist—not a fabricated local case study.",
+        "problem_label": "Common bottleneck",
+        "work_label": "Engineering scope",
+        "result_label": "Pre-launch verification",
+        "problem": "Many Leeds WordPress websites accumulate 25+ conflicting plugins, slow mobile LCP times and fragile layouts that marketers are afraid to edit.",
+        "work": "Replace heavy theme builders with lean Gutenberg block templates, structured custom fields, vetted integrations and documented 301 redirects.",
+        "result": "Verify mobile Core Web Vitals, clean heading/schema output, working lead forms and editor role permissions on staging before production cutover.",
+        "metrics": [],
+        "source_href": "/wordpress-development",
+        "source_label": "Review WordPress engineering capabilities"
+      },
+      "faqs": [
+        {
+          "question": "How much does a WordPress website cost in Leeds?",
+          "answer": "Starter WordPress business websites for Leeds companies begin at £649 for focused 5-page scopes. Larger custom Gutenberg builds, multi-service sites, CRM integrations and WooCommerce stores are quoted transparently based on templates and technical requirements."
+        },
+        {
+          "question": "How do you collaborate with Leeds businesses remotely?",
+          "answer": "Chulbul Design is headquartered in Gurugram, India and serves Leeds clients remotely with scheduled UK (GMT/BST) discovery calls, shared staging URLs and written weekly milestones. We do not claim a local Leeds street office."
+        },
+        {
+          "question": "Do you build custom Gutenberg block themes or use heavy page builders?",
+          "answer": "We recommend lightweight custom Gutenberg block themes for speed, clean code and easy editing. If your internal team already relies on a specific builder and prefers to stay on it, we audit and streamline the setup to protect Core Web Vitals."
+        },
+        {
+          "question": "Can you fix or redesign our slow existing WordPress site without losing Google rankings?",
+          "answer": "Yes. We audit existing URLs, rankings and plugins first, map 1-to-1 301 redirects for any changed URLs, preserve metadata and schema, and verify crawl health in Google Search Console immediately after launch."
+        },
+        {
+          "question": "Will we own full WordPress admin access and hosting after launch?",
+          "answer": "Yes. Every client retains 100% ownership of their domain, hosting account, WordPress administrator credentials, custom theme code and third-party licences—with zero vendor lock-in."
+        }
+      ],
+      "schema_service_name": "Leeds WordPress Web Design & Development",
+      "schema_service_type": "WordPress Web Design, Custom WordPress Theme Development and WordPress Migration",
+      "cta_title": "Plan a faster, cleaner Leeds WordPress website",
+      "cta_description": "Share your current WordPress URL (or new project brief), editing needs and launch timeline. We will prepare a clear scope and milestone quote aligned to UK (GMT/BST) reviews."
+    },
+    {
+      "city_slug": "chicago",
+      "slug": "wordpress-developer",
+      "sort_order": 30,
+      "meta_title": "WordPress Web Design Chicago | Custom Developer ($799+)",
+      "meta_description": "Custom WordPress web design & developer services for Chicago businesses from $799. Fast Gutenberg block themes, WooCommerce, SEO migrations & CST reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/chicago/wordpress-developer",
+      "breadcrumb_label": "WordPress Web Design",
+      "eyebrow": "Chicago WordPress Web Design & Development",
+      "heading_html": "WordPress Web Design &amp; Developer in Chicago <span>Fast, Editable &amp; SEO-Ready Builds</span>",
+      "hero_description": "Custom WordPress websites, lightweight Gutenberg block themes, WooCommerce builds and SEO-safe migrations for Chicago businesses across The Loop, River North, Fulton Market, West Loop, Lincoln Park, Naperville and Chicagoland. Delivered remotely by Chulbul Design with scheduled Central Time (CST/CDT) project reviews and transparent $799+ starter scopes.",
+      "introduction": "WordPress powers a huge share of business websites in Chicago, but bloated multipurpose themes and stacked plugins often turn sites slow, fragile and frustrating for internal marketers to edit. A dependable WordPress build starts with your content model—service pages, case studies, team bios, landing pages and forms—before a single plugin is installed.\n\nFor companies across The Loop, River North, Fulton Market, West Loop, Lincoln Park, Naperville and Chicagoland and wider Illinois & Chicagoland, we engineer clean WordPress architectures using lightweight custom themes or controlled Gutenberg block patterns, strict Core Web Vitals budgets, and clear role-based editing guardrails so your team publishes updates in minutes without breaking layout spacing.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Chicago clients through scheduled Central Time (CST/CDT) discovery calls, staging previews and written launch checklists—without claiming a local Chicago street office.",
+      "content": {
+        "hero_icon": "bi-wordpress",
+        "hero_primary_cta": "Get a Chicago WordPress Quote",
+        "hero_secondary_cta": "All Chicago Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-lightning-charge",
+            "text": "Lean Gutenberg themes built for Core Web Vitals"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled Central Time (CST/CDT) reviews & written milestones"
+          },
+          {
+            "icon": "bi-shield-check",
+            "text": "Full admin, hosting & source-code ownership"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Chicago WordPress planning checklist",
+          "kicker": "Before installing plugins",
+          "title": "Engineer an editing system your team can actually run.",
+          "description": "Strong WordPress sites in Chicago pair fast mobile rendering with clean editorial templates, controlled plugins and measurable lead forms.",
+          "items": [
+            "Custom Gutenberg blocks & reusable service templates",
+            "Minimal vetted plugin stack with zero bloat",
+            "301 redirect map for WordPress redesigns",
+            "GA4, Search Console & CRM enquiry routing"
+          ]
+        },
+        "intro_label": "WordPress architecture strategy",
+        "intro_title": "Why Chicago businesses replace bloated themes with engineered WordPress builds",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Chicago?",
+        "hub_link_label": "Review the complete Chicago web design hub",
+        "platform_label": "WordPress build options",
+        "platform_title": "Choose the right WordPress setup for your Chicago team",
+        "platform_intro": "Every Chicago organisation has different publishing frequency, compliance needs and internal technical comfort. We match the build model to your operational workflow.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom Gutenberg Block Theme",
+            "icon": "bi-grid-1x2",
+            "best_fit": "Marketing and leadership teams in Chicago who launch new service pages, landing pages or articles frequently and want fast Core Web Vitals without heavy page-builder bloat.",
+            "tradeoff": "Requires upfront component planning and block design so editors get structured flexibility instead of ad-hoc drag-and-drop overrides.",
+            "href": "/wordpress-development",
+            "link_label": "Explore custom WordPress development"
+          },
+          {
+            "name": "WooCommerce on WordPress",
+            "icon": "bi-cart-check",
+            "best_fit": "Content-led Chicago retailers, B2B catalogues and subscription brands combining editorial SEO with flexible checkout, shipping and payment gateways.",
+            "tradeoff": "Transactional stores need disciplined caching exclusions, staging update tests and active plugin security ownership.",
+            "href": "/woocommerce-development",
+            "link_label": "Explore WooCommerce development"
+          },
+          {
+            "name": "Headless WordPress + Next.js",
+            "icon": "bi-window-stack",
+            "best_fit": "High-traffic Chicago SaaS, publisher or multi-region sites that want WordPress editorial familiarity paired with a React/Next.js frontend.",
+            "tradeoff": "Introduces separate frontend deployment and preview workflows, so it should solve a verified performance or product requirement.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          }
+        ],
+        "architecture_label": "Clean WordPress engineering",
+        "architecture_title": "Templates, custom fields and plugins structured for Chicago growth",
+        "architecture_intro": "Planning content types, SEO signals and security boundaries upfront eliminates the maintenance debt common in off-the-shelf agency sites.",
+        "architecture_items": [
+          {
+            "icon": "bi-collection",
+            "title": "Custom post types & structured fields",
+            "description": "Separate services, industries, case studies, team members and locations across Illinois & Chicagoland into structured templates so pages stay consistent as your site grows."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Technical SEO & schema foundations",
+            "description": "Clean heading hierarchy, canonical URLs, XML sitemaps, Service/FAQ JSON-LD schema and fast mobile HTML ready for Google Search Console indexing."
+          },
+          {
+            "icon": "bi-plug",
+            "title": "Vetted integrations & CRM forms",
+            "description": "Connect HubSpot, Salesforce, Zoho, Mailchimp, booking calendars or WhatsApp routing through reliable APIs and webhooks with spam protection."
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "title": "Zero-downtime WordPress migration",
+            "description": "Full URL inventory, 1-to-1 301 redirect spreadsheet, staging lock and post-launch crawl verification so existing rankings stay protected."
+          }
+        ],
+        "process_label": "WordPress delivery workflow",
+        "process_title": "How we build and launch your Chicago WordPress website",
+        "process_intro": "Every milestone includes staging links and scheduled Central Time (CST/CDT) walkthroughs so stakeholders review real pages before launch.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Content, plugin & SEO audit",
+            "description": "Review your existing site (if any), priority Chicago buyer queries, editorial workflows, required integrations and hosting constraints."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & Gutenberg block plan",
+            "description": "Map core page templates, custom fields, navigation hierarchy and conversion calls to action before visual styling begins."
+          },
+          {
+            "step": "03",
+            "title": "Responsive UI design",
+            "description": "Design mobile-first page layouts and reusable block patterns tailored to your brand and accessibility contrast standards."
+          },
+          {
+            "step": "04",
+            "title": "Lean WordPress engineering",
+            "description": "Code semantic PHP/block templates, configure minimal vetted plugins, build lead forms and integrate CRM or analytics tracking."
+          },
+          {
+            "step": "05",
+            "title": "Speed, security & redirect QA",
+            "description": "Test Core Web Vitals (LCP, INP, CLS), mobile forms, 301 redirects, SSL, backups and user-role permissions on staging."
+          },
+          {
+            "step": "06",
+            "title": "Controlled launch & editor handover",
+            "description": "Deploy with a launch checklist, verify Google Search Console indexing and provide recorded walkthroughs so your team can edit confidently."
+          }
+        ],
+        "operations_label": "Long-term reliability",
+        "operations_title": "Performance, security and ownership built into every handover",
+        "operations_intro": "A WordPress website stays fast only when caching, updates and editor permissions are planned before go-live.",
+        "operations_items": [
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals tuning",
+            "description": "WebP/AVIF media sizing, deferred non-critical scripts, clean CSS and server/CDN page caching for fast mobile loads."
+          },
+          {
+            "icon": "bi-shield-lock",
+            "title": "Hardened WordPress security",
+            "description": "Least-privilege admin roles, 2FA, XML-RPC lockdown, automated off-site backups and clean update workflows."
+          },
+          {
+            "icon": "bi-pencil-square",
+            "title": "Guardrailed editor UX",
+            "description": "Editors can update copy, images, FAQs and landing sections without accidentally breaking spacing, fonts or mobile grids."
+          },
+          {
+            "icon": "bi-bar-chart-line",
+            "title": "Lead & event measurement",
+            "description": "GA4 conversion events for quote forms, phone clicks and bookings so you measure real enquiries instead of vanity pageviews."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "Accessibility readiness",
+            "description": "Semantic landmarks, descriptive alt text, keyboard-friendly menus and readable colour contrast across breakpoints."
+          },
+          {
+            "icon": "bi-key",
+            "title": "100% client ownership",
+            "description": "You own your domain, hosting, WordPress admin accounts, licences and custom theme repository from day one."
+          }
+        ],
+        "pricing_label": "Transparent Chicago WordPress pricing",
+        "pricing_title": "What affects WordPress web design cost in Chicago?",
+        "pricing_intro": "While WordPress core is open-source, reliable pricing reflects template count, custom functionality, migration scope and QA depth.",
+        "pricing_factors": [
+          {
+            "title": "Custom templates & block count",
+            "description": "A focused 5–8 page business site requires fewer unique blocks than a 25-page multi-service or multi-location platform."
+          },
+          {
+            "title": "Redesign & SEO migration scope",
+            "description": "Auditing existing URLs, mapping 301 redirects, cleaning legacy shortcodes and preserving high-ranking posts adds structured QA effort."
+          },
+          {
+            "title": "WooCommerce or custom plugins",
+            "description": "Ecommerce catalogues, calculators, member portals or custom API integrations require dedicated backend development and testing."
+          },
+          {
+            "title": "Content & media readiness",
+            "description": "Approved copy, photography and case studies speed up delivery; copywriting and asset curation can be scoped separately."
+          },
+          {
+            "title": "CRM, booking & third-party sync",
+            "description": "Connecting HubSpot, Salesforce, Calendly, payment gateways or ERP feeds includes webhook testing and error handling."
+          },
+          {
+            "title": "Ongoing care & update plans",
+            "description": "Optional monthly WordPress core/plugin updates, staging tests, backups and performance monitoring can be added post-launch."
+          }
+        ],
+        "pricing_note": "Our Chicago starter WordPress websites begin at $799 for lean 5-page business scopes. Custom multi-template builds, WooCommerce stores and complex migrations are quoted with itemized milestones after a brief discovery review.",
+        "schema_catalog_name": "Chicago WordPress Development Services",
+        "schema_offers": [
+          "Chicago WordPress Web Design",
+          "Custom Gutenberg Block Theme Development",
+          "WordPress Speed & Core Web Vitals Optimization",
+          "WooCommerce Store Development",
+          "SEO-Safe WordPress Redesign & Migration"
+        ],
+        "related_label": "Related Chicago services & guides",
+        "related_title": "Explore more Chicago web design capabilities",
+        "related_intro": "Compare sibling Chicago services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Chicago Web Design Hub",
+            "description": "Full website packages, local starter pricing ($799+) and consultation options in Chicago.",
+            "href": "/city/chicago",
+            "label": "Explore Chicago web design"
+          },
+          {
+            "title": "Small Business Web Design in Chicago",
+            "description": "Custom company websites, local SEO foundations and lead capture for Chicago teams.",
+            "href": "/city/chicago/small-business-web-design",
+            "label": "View Chicago small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Chicago",
+            "description": "WooCommerce, Shopify and custom online store engineering for Chicago brands.",
+            "href": "/city/chicago/ecommerce-development",
+            "label": "Explore Chicago ecommerce"
+          },
+          {
+            "title": "WordPress Development Services",
+            "description": "Review our core WordPress theme, block editor, migration and security engineering capabilities.",
+            "href": "/wordpress-development",
+            "label": "View WordPress development"
+          },
+          {
+            "title": "Chicago B2B & Financial Services Web Design Guide (2026)",
+            "description": "Review 2026 Chicago web design pricing tiers, ADA/WCAG UX and conversion strategies.",
+            "href": "/blog/chicago-web-design-costs-b2b-financial-guide-2026",
+            "label": "Read Chicago 2026 cost guide"
+          }
+        ],
+        "faq_label": "Chicago WordPress FAQs",
+        "faq_title": "WordPress web design & developer FAQs for Chicago businesses",
+        "form_eyebrow": "Chicago WordPress enquiry",
+        "form_service": "Chicago WordPress Web Design",
+        "form_source": "city-chicago-wordpress-developer-spoke",
+        "form_bullets": [
+          "Plugin, speed & architecture review",
+          "Custom Gutenberg vs WooCommerce recommendation",
+          "Transparent $799+ milestone pricing"
+        ],
+        "form_message_label": "Tell us about your WordPress project or current site",
+        "form_message_placeholder": "Current URL, number of pages/templates, required plugins or CRM integrations, and target launch window in Chicago.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Chicago project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/wordpress-development-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "WordPress delivery checklist",
+        "title": "Engineer for speed and editing clarity before launch",
+        "location": "Remote delivery for Chicago (Central Time (CST/CDT)) from Gurugram, India",
+        "context": "This is our standard WordPress engineering checklist—not a fabricated local case study.",
+        "problem_label": "Common bottleneck",
+        "work_label": "Engineering scope",
+        "result_label": "Pre-launch verification",
+        "problem": "Many Chicago WordPress websites accumulate 25+ conflicting plugins, slow mobile LCP times and fragile layouts that marketers are afraid to edit.",
+        "work": "Replace heavy theme builders with lean Gutenberg block templates, structured custom fields, vetted integrations and documented 301 redirects.",
+        "result": "Verify mobile Core Web Vitals, clean heading/schema output, working lead forms and editor role permissions on staging before production cutover.",
+        "metrics": [],
+        "source_href": "/wordpress-development",
+        "source_label": "Review WordPress engineering capabilities"
+      },
+      "faqs": [
+        {
+          "question": "How much does a WordPress website cost in Chicago?",
+          "answer": "Starter WordPress business websites for Chicago companies begin at $799 for focused 5-page scopes. Larger custom Gutenberg builds, multi-service sites, CRM integrations and WooCommerce stores are quoted transparently based on templates and technical requirements."
+        },
+        {
+          "question": "How do you collaborate with Chicago businesses remotely?",
+          "answer": "Chulbul Design is headquartered in Gurugram, India and serves Chicago clients remotely with scheduled Central Time (CST/CDT) discovery calls, shared staging URLs and written weekly milestones. We do not claim a local Chicago street office."
+        },
+        {
+          "question": "Do you build custom Gutenberg block themes or use heavy page builders?",
+          "answer": "We recommend lightweight custom Gutenberg block themes for speed, clean code and easy editing. If your internal team already relies on a specific builder and prefers to stay on it, we audit and streamline the setup to protect Core Web Vitals."
+        },
+        {
+          "question": "Can you fix or redesign our slow existing WordPress site without losing Google rankings?",
+          "answer": "Yes. We audit existing URLs, rankings and plugins first, map 1-to-1 301 redirects for any changed URLs, preserve metadata and schema, and verify crawl health in Google Search Console immediately after launch."
+        },
+        {
+          "question": "Will we own full WordPress admin access and hosting after launch?",
+          "answer": "Yes. Every client retains 100% ownership of their domain, hosting account, WordPress administrator credentials, custom theme code and third-party licences—with zero vendor lock-in."
+        }
+      ],
+      "schema_service_name": "Chicago WordPress Web Design & Development",
+      "schema_service_type": "WordPress Web Design, Custom WordPress Theme Development and WordPress Migration",
+      "cta_title": "Plan a faster, cleaner Chicago WordPress website",
+      "cta_description": "Share your current WordPress URL (or new project brief), editing needs and launch timeline. We will prepare a clear scope and milestone quote aligned to Central Time (CST/CDT) reviews."
+    },
+    {
+      "city_slug": "san-francisco",
+      "slug": "wordpress-developer",
+      "sort_order": 30,
+      "meta_title": "San Francisco WordPress Web Design | Custom Dev ($799+)",
+      "meta_description": "Responsive WordPress web design & custom block development for San Francisco & Bay Area startups from $799. Fast Core Web Vitals, SaaS CMS & PST reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/san-francisco/wordpress-developer",
+      "breadcrumb_label": "WordPress Web Design",
+      "eyebrow": "San Francisco WordPress Web Design & Development",
+      "heading_html": "WordPress Web Design &amp; Developer in San Francisco <span>Fast, Editable &amp; SEO-Ready Builds</span>",
+      "hero_description": "Custom WordPress websites, lightweight Gutenberg block themes, WooCommerce builds and SEO-safe migrations for San Francisco businesses across SoMa, Financial District, Mission Bay, Palo Alto, San Mateo and the Bay Area. Delivered remotely by Chulbul Design with scheduled Pacific Time (PST/PDT) project reviews and transparent $799+ starter scopes.",
+      "introduction": "WordPress powers a huge share of business websites in San Francisco, but bloated multipurpose themes and stacked plugins often turn sites slow, fragile and frustrating for internal marketers to edit. A dependable WordPress build starts with your content model—service pages, case studies, team bios, landing pages and forms—before a single plugin is installed.\n\nFor companies across SoMa, Financial District, Mission Bay, Palo Alto, San Mateo and the Bay Area and wider the Bay Area & California, we engineer clean WordPress architectures using lightweight custom themes or controlled Gutenberg block patterns, strict Core Web Vitals budgets, and clear role-based editing guardrails so your team publishes updates in minutes without breaking layout spacing.\n\nChulbul Design operates from Gurugram, India and delivers remotely for San Francisco clients through scheduled Pacific Time (PST/PDT) discovery calls, staging previews and written launch checklists—without claiming a local San Francisco street office.",
+      "content": {
+        "hero_icon": "bi-wordpress",
+        "hero_primary_cta": "Get a San Francisco WordPress Quote",
+        "hero_secondary_cta": "All San Francisco Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-lightning-charge",
+            "text": "Lean Gutenberg themes built for Core Web Vitals"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled Pacific Time (PST/PDT) reviews & written milestones"
+          },
+          {
+            "icon": "bi-shield-check",
+            "text": "Full admin, hosting & source-code ownership"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "San Francisco WordPress planning checklist",
+          "kicker": "Before installing plugins",
+          "title": "Engineer an editing system your team can actually run.",
+          "description": "Strong WordPress sites in San Francisco pair fast mobile rendering with clean editorial templates, controlled plugins and measurable lead forms.",
+          "items": [
+            "Custom Gutenberg blocks & reusable service templates",
+            "Minimal vetted plugin stack with zero bloat",
+            "301 redirect map for WordPress redesigns",
+            "GA4, Search Console & CRM enquiry routing"
+          ]
+        },
+        "intro_label": "WordPress architecture strategy",
+        "intro_title": "Why San Francisco businesses replace bloated themes with engineered WordPress builds",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in San Francisco?",
+        "hub_link_label": "Review the complete San Francisco web design hub",
+        "platform_label": "WordPress build options",
+        "platform_title": "Choose the right WordPress setup for your San Francisco team",
+        "platform_intro": "Every San Francisco organisation has different publishing frequency, compliance needs and internal technical comfort. We match the build model to your operational workflow.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom Gutenberg Block Theme",
+            "icon": "bi-grid-1x2",
+            "best_fit": "Marketing and leadership teams in San Francisco who launch new service pages, landing pages or articles frequently and want fast Core Web Vitals without heavy page-builder bloat.",
+            "tradeoff": "Requires upfront component planning and block design so editors get structured flexibility instead of ad-hoc drag-and-drop overrides.",
+            "href": "/wordpress-development",
+            "link_label": "Explore custom WordPress development"
+          },
+          {
+            "name": "WooCommerce on WordPress",
+            "icon": "bi-cart-check",
+            "best_fit": "Content-led San Francisco retailers, B2B catalogues and subscription brands combining editorial SEO with flexible checkout, shipping and payment gateways.",
+            "tradeoff": "Transactional stores need disciplined caching exclusions, staging update tests and active plugin security ownership.",
+            "href": "/woocommerce-development",
+            "link_label": "Explore WooCommerce development"
+          },
+          {
+            "name": "Headless WordPress + Next.js",
+            "icon": "bi-window-stack",
+            "best_fit": "High-traffic San Francisco SaaS, publisher or multi-region sites that want WordPress editorial familiarity paired with a React/Next.js frontend.",
+            "tradeoff": "Introduces separate frontend deployment and preview workflows, so it should solve a verified performance or product requirement.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          }
+        ],
+        "architecture_label": "Clean WordPress engineering",
+        "architecture_title": "Templates, custom fields and plugins structured for San Francisco growth",
+        "architecture_intro": "Planning content types, SEO signals and security boundaries upfront eliminates the maintenance debt common in off-the-shelf agency sites.",
+        "architecture_items": [
+          {
+            "icon": "bi-collection",
+            "title": "Custom post types & structured fields",
+            "description": "Separate services, industries, case studies, team members and locations across the Bay Area & California into structured templates so pages stay consistent as your site grows."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Technical SEO & schema foundations",
+            "description": "Clean heading hierarchy, canonical URLs, XML sitemaps, Service/FAQ JSON-LD schema and fast mobile HTML ready for Google Search Console indexing."
+          },
+          {
+            "icon": "bi-plug",
+            "title": "Vetted integrations & CRM forms",
+            "description": "Connect HubSpot, Salesforce, Zoho, Mailchimp, booking calendars or WhatsApp routing through reliable APIs and webhooks with spam protection."
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "title": "Zero-downtime WordPress migration",
+            "description": "Full URL inventory, 1-to-1 301 redirect spreadsheet, staging lock and post-launch crawl verification so existing rankings stay protected."
+          }
+        ],
+        "process_label": "WordPress delivery workflow",
+        "process_title": "How we build and launch your San Francisco WordPress website",
+        "process_intro": "Every milestone includes staging links and scheduled Pacific Time (PST/PDT) walkthroughs so stakeholders review real pages before launch.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Content, plugin & SEO audit",
+            "description": "Review your existing site (if any), priority San Francisco buyer queries, editorial workflows, required integrations and hosting constraints."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & Gutenberg block plan",
+            "description": "Map core page templates, custom fields, navigation hierarchy and conversion calls to action before visual styling begins."
+          },
+          {
+            "step": "03",
+            "title": "Responsive UI design",
+            "description": "Design mobile-first page layouts and reusable block patterns tailored to your brand and accessibility contrast standards."
+          },
+          {
+            "step": "04",
+            "title": "Lean WordPress engineering",
+            "description": "Code semantic PHP/block templates, configure minimal vetted plugins, build lead forms and integrate CRM or analytics tracking."
+          },
+          {
+            "step": "05",
+            "title": "Speed, security & redirect QA",
+            "description": "Test Core Web Vitals (LCP, INP, CLS), mobile forms, 301 redirects, SSL, backups and user-role permissions on staging."
+          },
+          {
+            "step": "06",
+            "title": "Controlled launch & editor handover",
+            "description": "Deploy with a launch checklist, verify Google Search Console indexing and provide recorded walkthroughs so your team can edit confidently."
+          }
+        ],
+        "operations_label": "Long-term reliability",
+        "operations_title": "Performance, security and ownership built into every handover",
+        "operations_intro": "A WordPress website stays fast only when caching, updates and editor permissions are planned before go-live.",
+        "operations_items": [
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals tuning",
+            "description": "WebP/AVIF media sizing, deferred non-critical scripts, clean CSS and server/CDN page caching for fast mobile loads."
+          },
+          {
+            "icon": "bi-shield-lock",
+            "title": "Hardened WordPress security",
+            "description": "Least-privilege admin roles, 2FA, XML-RPC lockdown, automated off-site backups and clean update workflows."
+          },
+          {
+            "icon": "bi-pencil-square",
+            "title": "Guardrailed editor UX",
+            "description": "Editors can update copy, images, FAQs and landing sections without accidentally breaking spacing, fonts or mobile grids."
+          },
+          {
+            "icon": "bi-bar-chart-line",
+            "title": "Lead & event measurement",
+            "description": "GA4 conversion events for quote forms, phone clicks and bookings so you measure real enquiries instead of vanity pageviews."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "Accessibility readiness",
+            "description": "Semantic landmarks, descriptive alt text, keyboard-friendly menus and readable colour contrast across breakpoints."
+          },
+          {
+            "icon": "bi-key",
+            "title": "100% client ownership",
+            "description": "You own your domain, hosting, WordPress admin accounts, licences and custom theme repository from day one."
+          }
+        ],
+        "pricing_label": "Transparent San Francisco WordPress pricing",
+        "pricing_title": "What affects WordPress web design cost in San Francisco?",
+        "pricing_intro": "While WordPress core is open-source, reliable pricing reflects template count, custom functionality, migration scope and QA depth.",
+        "pricing_factors": [
+          {
+            "title": "Custom templates & block count",
+            "description": "A focused 5–8 page business site requires fewer unique blocks than a 25-page multi-service or multi-location platform."
+          },
+          {
+            "title": "Redesign & SEO migration scope",
+            "description": "Auditing existing URLs, mapping 301 redirects, cleaning legacy shortcodes and preserving high-ranking posts adds structured QA effort."
+          },
+          {
+            "title": "WooCommerce or custom plugins",
+            "description": "Ecommerce catalogues, calculators, member portals or custom API integrations require dedicated backend development and testing."
+          },
+          {
+            "title": "Content & media readiness",
+            "description": "Approved copy, photography and case studies speed up delivery; copywriting and asset curation can be scoped separately."
+          },
+          {
+            "title": "CRM, booking & third-party sync",
+            "description": "Connecting HubSpot, Salesforce, Calendly, payment gateways or ERP feeds includes webhook testing and error handling."
+          },
+          {
+            "title": "Ongoing care & update plans",
+            "description": "Optional monthly WordPress core/plugin updates, staging tests, backups and performance monitoring can be added post-launch."
+          }
+        ],
+        "pricing_note": "Our San Francisco starter WordPress websites begin at $799 for lean 5-page business scopes. Custom multi-template builds, WooCommerce stores and complex migrations are quoted with itemized milestones after a brief discovery review.",
+        "schema_catalog_name": "San Francisco WordPress Development Services",
+        "schema_offers": [
+          "San Francisco WordPress Web Design",
+          "Custom Gutenberg Block Theme Development",
+          "WordPress Speed & Core Web Vitals Optimization",
+          "WooCommerce Store Development",
+          "SEO-Safe WordPress Redesign & Migration"
+        ],
+        "related_label": "Related San Francisco services & guides",
+        "related_title": "Explore more San Francisco web design capabilities",
+        "related_intro": "Compare sibling San Francisco services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "San Francisco Web Design Hub",
+            "description": "Full website packages, local starter pricing ($799+) and consultation options in San Francisco.",
+            "href": "/city/san-francisco",
+            "label": "Explore San Francisco web design"
+          },
+          {
+            "title": "Small Business Web Design in San Francisco",
+            "description": "Custom company websites, local SEO foundations and lead capture for San Francisco teams.",
+            "href": "/city/san-francisco/small-business-web-design",
+            "label": "View San Francisco small business sites"
+          },
+          {
+            "title": "Ecommerce Development in San Francisco",
+            "description": "WooCommerce, Shopify and custom online store engineering for San Francisco brands.",
+            "href": "/city/san-francisco/ecommerce-development",
+            "label": "Explore San Francisco ecommerce"
+          },
+          {
+            "title": "WordPress Development Services",
+            "description": "Review our core WordPress theme, block editor, migration and security engineering capabilities.",
+            "href": "/wordpress-development",
+            "label": "View WordPress development"
+          },
+          {
+            "title": "San Francisco Web Design & WordPress Pricing Guide (2026)",
+            "description": "Compare 2026 San Francisco WordPress, SaaS marketing site costs and Bay Area UX benchmarks.",
+            "href": "/blog/web-design-san-francisco-wordpress-startup-pricing-guide-2026",
+            "label": "Read San Francisco 2026 guide"
+          }
+        ],
+        "faq_label": "San Francisco WordPress FAQs",
+        "faq_title": "WordPress web design & developer FAQs for San Francisco businesses",
+        "form_eyebrow": "San Francisco WordPress enquiry",
+        "form_service": "San Francisco WordPress Web Design",
+        "form_source": "city-san-francisco-wordpress-developer-spoke",
+        "form_bullets": [
+          "Plugin, speed & architecture review",
+          "Custom Gutenberg vs WooCommerce recommendation",
+          "Transparent $799+ milestone pricing"
+        ],
+        "form_message_label": "Tell us about your WordPress project or current site",
+        "form_message_placeholder": "Current URL, number of pages/templates, required plugins or CRM integrations, and target launch window in San Francisco.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your San Francisco project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/wordpress-development-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "WordPress delivery checklist",
+        "title": "Engineer for speed and editing clarity before launch",
+        "location": "Remote delivery for San Francisco (Pacific Time (PST/PDT)) from Gurugram, India",
+        "context": "This is our standard WordPress engineering checklist—not a fabricated local case study.",
+        "problem_label": "Common bottleneck",
+        "work_label": "Engineering scope",
+        "result_label": "Pre-launch verification",
+        "problem": "Many San Francisco WordPress websites accumulate 25+ conflicting plugins, slow mobile LCP times and fragile layouts that marketers are afraid to edit.",
+        "work": "Replace heavy theme builders with lean Gutenberg block templates, structured custom fields, vetted integrations and documented 301 redirects.",
+        "result": "Verify mobile Core Web Vitals, clean heading/schema output, working lead forms and editor role permissions on staging before production cutover.",
+        "metrics": [],
+        "source_href": "/wordpress-development",
+        "source_label": "Review WordPress engineering capabilities"
+      },
+      "faqs": [
+        {
+          "question": "How much does a WordPress website cost in San Francisco?",
+          "answer": "Starter WordPress business websites for San Francisco companies begin at $799 for focused 5-page scopes. Larger custom Gutenberg builds, multi-service sites, CRM integrations and WooCommerce stores are quoted transparently based on templates and technical requirements."
+        },
+        {
+          "question": "How do you collaborate with San Francisco businesses remotely?",
+          "answer": "Chulbul Design is headquartered in Gurugram, India and serves San Francisco clients remotely with scheduled Pacific Time (PST/PDT) discovery calls, shared staging URLs and written weekly milestones. We do not claim a local San Francisco street office."
+        },
+        {
+          "question": "Do you build custom Gutenberg block themes or use heavy page builders?",
+          "answer": "We recommend lightweight custom Gutenberg block themes for speed, clean code and easy editing. If your internal team already relies on a specific builder and prefers to stay on it, we audit and streamline the setup to protect Core Web Vitals."
+        },
+        {
+          "question": "Can you fix or redesign our slow existing WordPress site without losing Google rankings?",
+          "answer": "Yes. We audit existing URLs, rankings and plugins first, map 1-to-1 301 redirects for any changed URLs, preserve metadata and schema, and verify crawl health in Google Search Console immediately after launch."
+        },
+        {
+          "question": "Will we own full WordPress admin access and hosting after launch?",
+          "answer": "Yes. Every client retains 100% ownership of their domain, hosting account, WordPress administrator credentials, custom theme code and third-party licences—with zero vendor lock-in."
+        }
+      ],
+      "schema_service_name": "San Francisco WordPress Web Design & Development",
+      "schema_service_type": "WordPress Web Design, Custom WordPress Theme Development and WordPress Migration",
+      "cta_title": "Plan a faster, cleaner San Francisco WordPress website",
+      "cta_description": "Share your current WordPress URL (or new project brief), editing needs and launch timeline. We will prepare a clear scope and milestone quote aligned to Pacific Time (PST/PDT) reviews."
+    },
+    {
+      "city_slug": "bristol",
+      "slug": "wordpress-developer",
+      "sort_order": 30,
+      "meta_title": "WordPress Agency Bristol | Custom Web Design & Dev £649+",
+      "meta_description": "Affordable WordPress web design agency for Bristol & South West UK businesses from £649. Lightweight Gutenberg themes, WooCommerce & SEO-ready builds.",
+      "canonical_url": "https://www.chulbuldesign.com/city/bristol/wordpress-developer",
+      "breadcrumb_label": "WordPress Web Design",
+      "eyebrow": "Bristol WordPress Web Design & Development",
+      "heading_html": "WordPress Web Design &amp; Developer in Bristol <span>Fast, Editable &amp; SEO-Ready Builds</span>",
+      "hero_description": "Custom WordPress websites, lightweight Gutenberg block themes, WooCommerce builds and SEO-safe migrations for Bristol businesses across Clifton, Harbourside, Temple Quarter, Redland, Bath and South West UK. Delivered remotely by Chulbul Design with scheduled UK (GMT/BST) project reviews and transparent £649+ starter scopes.",
+      "introduction": "WordPress powers a huge share of business websites in Bristol, but bloated multipurpose themes and stacked plugins often turn sites slow, fragile and frustrating for internal marketers to edit. A dependable WordPress build starts with your content model—service pages, case studies, team bios, landing pages and forms—before a single plugin is installed.\n\nFor companies across Clifton, Harbourside, Temple Quarter, Redland, Bath and South West UK and wider South West England, we engineer clean WordPress architectures using lightweight custom themes or controlled Gutenberg block patterns, strict Core Web Vitals budgets, and clear role-based editing guardrails so your team publishes updates in minutes without breaking layout spacing.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Bristol clients through scheduled UK (GMT/BST) discovery calls, staging previews and written launch checklists—without claiming a local Bristol street office.",
+      "content": {
+        "hero_icon": "bi-wordpress",
+        "hero_primary_cta": "Get a Bristol WordPress Quote",
+        "hero_secondary_cta": "All Bristol Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-lightning-charge",
+            "text": "Lean Gutenberg themes built for Core Web Vitals"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled UK (GMT/BST) reviews & written milestones"
+          },
+          {
+            "icon": "bi-shield-check",
+            "text": "Full admin, hosting & source-code ownership"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Bristol WordPress planning checklist",
+          "kicker": "Before installing plugins",
+          "title": "Engineer an editing system your team can actually run.",
+          "description": "Strong WordPress sites in Bristol pair fast mobile rendering with clean editorial templates, controlled plugins and measurable lead forms.",
+          "items": [
+            "Custom Gutenberg blocks & reusable service templates",
+            "Minimal vetted plugin stack with zero bloat",
+            "301 redirect map for WordPress redesigns",
+            "GA4, Search Console & CRM enquiry routing"
+          ]
+        },
+        "intro_label": "WordPress architecture strategy",
+        "intro_title": "Why Bristol businesses replace bloated themes with engineered WordPress builds",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Bristol?",
+        "hub_link_label": "Review the complete Bristol web design hub",
+        "platform_label": "WordPress build options",
+        "platform_title": "Choose the right WordPress setup for your Bristol team",
+        "platform_intro": "Every Bristol organisation has different publishing frequency, compliance needs and internal technical comfort. We match the build model to your operational workflow.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom Gutenberg Block Theme",
+            "icon": "bi-grid-1x2",
+            "best_fit": "Marketing and leadership teams in Bristol who launch new service pages, landing pages or articles frequently and want fast Core Web Vitals without heavy page-builder bloat.",
+            "tradeoff": "Requires upfront component planning and block design so editors get structured flexibility instead of ad-hoc drag-and-drop overrides.",
+            "href": "/wordpress-development",
+            "link_label": "Explore custom WordPress development"
+          },
+          {
+            "name": "WooCommerce on WordPress",
+            "icon": "bi-cart-check",
+            "best_fit": "Content-led Bristol retailers, B2B catalogues and subscription brands combining editorial SEO with flexible checkout, shipping and payment gateways.",
+            "tradeoff": "Transactional stores need disciplined caching exclusions, staging update tests and active plugin security ownership.",
+            "href": "/woocommerce-development",
+            "link_label": "Explore WooCommerce development"
+          },
+          {
+            "name": "Headless WordPress + Next.js",
+            "icon": "bi-window-stack",
+            "best_fit": "High-traffic Bristol SaaS, publisher or multi-region sites that want WordPress editorial familiarity paired with a React/Next.js frontend.",
+            "tradeoff": "Introduces separate frontend deployment and preview workflows, so it should solve a verified performance or product requirement.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          }
+        ],
+        "architecture_label": "Clean WordPress engineering",
+        "architecture_title": "Templates, custom fields and plugins structured for Bristol growth",
+        "architecture_intro": "Planning content types, SEO signals and security boundaries upfront eliminates the maintenance debt common in off-the-shelf agency sites.",
+        "architecture_items": [
+          {
+            "icon": "bi-collection",
+            "title": "Custom post types & structured fields",
+            "description": "Separate services, industries, case studies, team members and locations across South West England into structured templates so pages stay consistent as your site grows."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Technical SEO & schema foundations",
+            "description": "Clean heading hierarchy, canonical URLs, XML sitemaps, Service/FAQ JSON-LD schema and fast mobile HTML ready for Google Search Console indexing."
+          },
+          {
+            "icon": "bi-plug",
+            "title": "Vetted integrations & CRM forms",
+            "description": "Connect HubSpot, Salesforce, Zoho, Mailchimp, booking calendars or WhatsApp routing through reliable APIs and webhooks with spam protection."
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "title": "Zero-downtime WordPress migration",
+            "description": "Full URL inventory, 1-to-1 301 redirect spreadsheet, staging lock and post-launch crawl verification so existing rankings stay protected."
+          }
+        ],
+        "process_label": "WordPress delivery workflow",
+        "process_title": "How we build and launch your Bristol WordPress website",
+        "process_intro": "Every milestone includes staging links and scheduled UK (GMT/BST) walkthroughs so stakeholders review real pages before launch.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Content, plugin & SEO audit",
+            "description": "Review your existing site (if any), priority Bristol buyer queries, editorial workflows, required integrations and hosting constraints."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & Gutenberg block plan",
+            "description": "Map core page templates, custom fields, navigation hierarchy and conversion calls to action before visual styling begins."
+          },
+          {
+            "step": "03",
+            "title": "Responsive UI design",
+            "description": "Design mobile-first page layouts and reusable block patterns tailored to your brand and accessibility contrast standards."
+          },
+          {
+            "step": "04",
+            "title": "Lean WordPress engineering",
+            "description": "Code semantic PHP/block templates, configure minimal vetted plugins, build lead forms and integrate CRM or analytics tracking."
+          },
+          {
+            "step": "05",
+            "title": "Speed, security & redirect QA",
+            "description": "Test Core Web Vitals (LCP, INP, CLS), mobile forms, 301 redirects, SSL, backups and user-role permissions on staging."
+          },
+          {
+            "step": "06",
+            "title": "Controlled launch & editor handover",
+            "description": "Deploy with a launch checklist, verify Google Search Console indexing and provide recorded walkthroughs so your team can edit confidently."
+          }
+        ],
+        "operations_label": "Long-term reliability",
+        "operations_title": "Performance, security and ownership built into every handover",
+        "operations_intro": "A WordPress website stays fast only when caching, updates and editor permissions are planned before go-live.",
+        "operations_items": [
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals tuning",
+            "description": "WebP/AVIF media sizing, deferred non-critical scripts, clean CSS and server/CDN page caching for fast mobile loads."
+          },
+          {
+            "icon": "bi-shield-lock",
+            "title": "Hardened WordPress security",
+            "description": "Least-privilege admin roles, 2FA, XML-RPC lockdown, automated off-site backups and clean update workflows."
+          },
+          {
+            "icon": "bi-pencil-square",
+            "title": "Guardrailed editor UX",
+            "description": "Editors can update copy, images, FAQs and landing sections without accidentally breaking spacing, fonts or mobile grids."
+          },
+          {
+            "icon": "bi-bar-chart-line",
+            "title": "Lead & event measurement",
+            "description": "GA4 conversion events for quote forms, phone clicks and bookings so you measure real enquiries instead of vanity pageviews."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "Accessibility readiness",
+            "description": "Semantic landmarks, descriptive alt text, keyboard-friendly menus and readable colour contrast across breakpoints."
+          },
+          {
+            "icon": "bi-key",
+            "title": "100% client ownership",
+            "description": "You own your domain, hosting, WordPress admin accounts, licences and custom theme repository from day one."
+          }
+        ],
+        "pricing_label": "Transparent Bristol WordPress pricing",
+        "pricing_title": "What affects WordPress web design cost in Bristol?",
+        "pricing_intro": "While WordPress core is open-source, reliable pricing reflects template count, custom functionality, migration scope and QA depth.",
+        "pricing_factors": [
+          {
+            "title": "Custom templates & block count",
+            "description": "A focused 5–8 page business site requires fewer unique blocks than a 25-page multi-service or multi-location platform."
+          },
+          {
+            "title": "Redesign & SEO migration scope",
+            "description": "Auditing existing URLs, mapping 301 redirects, cleaning legacy shortcodes and preserving high-ranking posts adds structured QA effort."
+          },
+          {
+            "title": "WooCommerce or custom plugins",
+            "description": "Ecommerce catalogues, calculators, member portals or custom API integrations require dedicated backend development and testing."
+          },
+          {
+            "title": "Content & media readiness",
+            "description": "Approved copy, photography and case studies speed up delivery; copywriting and asset curation can be scoped separately."
+          },
+          {
+            "title": "CRM, booking & third-party sync",
+            "description": "Connecting HubSpot, Salesforce, Calendly, payment gateways or ERP feeds includes webhook testing and error handling."
+          },
+          {
+            "title": "Ongoing care & update plans",
+            "description": "Optional monthly WordPress core/plugin updates, staging tests, backups and performance monitoring can be added post-launch."
+          }
+        ],
+        "pricing_note": "Our Bristol starter WordPress websites begin at £649 for lean 5-page business scopes. Custom multi-template builds, WooCommerce stores and complex migrations are quoted with itemized milestones after a brief discovery review.",
+        "schema_catalog_name": "Bristol WordPress Development Services",
+        "schema_offers": [
+          "Bristol WordPress Web Design",
+          "Custom Gutenberg Block Theme Development",
+          "WordPress Speed & Core Web Vitals Optimization",
+          "WooCommerce Store Development",
+          "SEO-Safe WordPress Redesign & Migration"
+        ],
+        "related_label": "Related Bristol services & guides",
+        "related_title": "Explore more Bristol web design capabilities",
+        "related_intro": "Compare sibling Bristol services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Bristol Web Design Hub",
+            "description": "Full website packages, local starter pricing (£649+) and consultation options in Bristol.",
+            "href": "/city/bristol",
+            "label": "Explore Bristol web design"
+          },
+          {
+            "title": "Small Business Web Design in Bristol",
+            "description": "Custom company websites, local SEO foundations and lead capture for Bristol teams.",
+            "href": "/city/bristol/small-business-web-design",
+            "label": "View Bristol small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Bristol",
+            "description": "WooCommerce, Shopify and custom online store engineering for Bristol brands.",
+            "href": "/city/bristol/ecommerce-development",
+            "label": "Explore Bristol ecommerce"
+          },
+          {
+            "title": "WordPress Development Services",
+            "description": "Review our core WordPress theme, block editor, migration and security engineering capabilities.",
+            "href": "/wordpress-development",
+            "label": "View WordPress development"
+          },
+          {
+            "title": "Web Design Bristol Costs & Agency Guide (2026)",
+            "description": "Compare 2026 Bristol website pricing, WordPress vs custom builds and local South West UK SEO.",
+            "href": "/blog/web-design-bristol-costs-agencies-guide-2026",
+            "label": "Read Bristol 2026 pricing guide"
+          }
+        ],
+        "faq_label": "Bristol WordPress FAQs",
+        "faq_title": "WordPress web design & developer FAQs for Bristol businesses",
+        "form_eyebrow": "Bristol WordPress enquiry",
+        "form_service": "Bristol WordPress Web Design",
+        "form_source": "city-bristol-wordpress-developer-spoke",
+        "form_bullets": [
+          "Plugin, speed & architecture review",
+          "Custom Gutenberg vs WooCommerce recommendation",
+          "Transparent £649+ milestone pricing"
+        ],
+        "form_message_label": "Tell us about your WordPress project or current site",
+        "form_message_placeholder": "Current URL, number of pages/templates, required plugins or CRM integrations, and target launch window in Bristol.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Bristol project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/wordpress-development-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "WordPress delivery checklist",
+        "title": "Engineer for speed and editing clarity before launch",
+        "location": "Remote delivery for Bristol (UK (GMT/BST)) from Gurugram, India",
+        "context": "This is our standard WordPress engineering checklist—not a fabricated local case study.",
+        "problem_label": "Common bottleneck",
+        "work_label": "Engineering scope",
+        "result_label": "Pre-launch verification",
+        "problem": "Many Bristol WordPress websites accumulate 25+ conflicting plugins, slow mobile LCP times and fragile layouts that marketers are afraid to edit.",
+        "work": "Replace heavy theme builders with lean Gutenberg block templates, structured custom fields, vetted integrations and documented 301 redirects.",
+        "result": "Verify mobile Core Web Vitals, clean heading/schema output, working lead forms and editor role permissions on staging before production cutover.",
+        "metrics": [],
+        "source_href": "/wordpress-development",
+        "source_label": "Review WordPress engineering capabilities"
+      },
+      "faqs": [
+        {
+          "question": "How much does a WordPress website cost in Bristol?",
+          "answer": "Starter WordPress business websites for Bristol companies begin at £649 for focused 5-page scopes. Larger custom Gutenberg builds, multi-service sites, CRM integrations and WooCommerce stores are quoted transparently based on templates and technical requirements."
+        },
+        {
+          "question": "How do you collaborate with Bristol businesses remotely?",
+          "answer": "Chulbul Design is headquartered in Gurugram, India and serves Bristol clients remotely with scheduled UK (GMT/BST) discovery calls, shared staging URLs and written weekly milestones. We do not claim a local Bristol street office."
+        },
+        {
+          "question": "Do you build custom Gutenberg block themes or use heavy page builders?",
+          "answer": "We recommend lightweight custom Gutenberg block themes for speed, clean code and easy editing. If your internal team already relies on a specific builder and prefers to stay on it, we audit and streamline the setup to protect Core Web Vitals."
+        },
+        {
+          "question": "Can you fix or redesign our slow existing WordPress site without losing Google rankings?",
+          "answer": "Yes. We audit existing URLs, rankings and plugins first, map 1-to-1 301 redirects for any changed URLs, preserve metadata and schema, and verify crawl health in Google Search Console immediately after launch."
+        },
+        {
+          "question": "Will we own full WordPress admin access and hosting after launch?",
+          "answer": "Yes. Every client retains 100% ownership of their domain, hosting account, WordPress administrator credentials, custom theme code and third-party licences—with zero vendor lock-in."
+        }
+      ],
+      "schema_service_name": "Bristol WordPress Web Design & Development",
+      "schema_service_type": "WordPress Web Design, Custom WordPress Theme Development and WordPress Migration",
+      "cta_title": "Plan a faster, cleaner Bristol WordPress website",
+      "cta_description": "Share your current WordPress URL (or new project brief), editing needs and launch timeline. We will prepare a clear scope and milestone quote aligned to UK (GMT/BST) reviews."
+    },
+    {
+      "city_slug": "leeds",
+      "slug": "magento-development",
+      "sort_order": 40,
+      "meta_title": "Magento Web Design Leeds | Adobe Commerce & Migrations",
+      "meta_description": "Expert Magento web design, Magento 2 development & SEO-safe Magento-to-Shopify/WooCommerce migrations for Leeds & West Yorkshire retailers. UK reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/leeds/magento-development",
+      "breadcrumb_label": "Magento Development",
+      "eyebrow": "Leeds Magento 2 & Ecommerce Engineering",
+      "heading_html": "Magento Web Design &amp; Development in Leeds <span>Magento 2 Stores, B2B Portals &amp; Migrations</span>",
+      "hero_description": "Engineering support for Leeds and West Yorkshire retailers running large catalogues on Magento 2 / Adobe Commerce—or planning an SEO-safe migration from an ageing Magento store to Shopify or WooCommerce. Delivered remotely with scheduled UK (GMT/BST) reviews.",
+      "introduction": "Leeds and West Yorkshire are home to ambitious retail, wholesale, fashion and manufacturing brands managing thousands of SKUs, trade price lists and multi-warehouse fulfilment. Magento 2 (Adobe Commerce) excels when you genuinely need complex attribute matrices, B2B company accounts or ERP integrations—but poorly maintained Magento builds quickly suffer from slow checkout times, extension conflicts and steep hosting costs.\n\nWe help Leeds businesses make the right architectural call without platform bias: whether that means building or optimising a clean Magento 2 storefront, upgrading legacy code and indexing performance, or executing a zero-traffic-loss migration from Magento to Shopify Plus or WooCommerce.\n\nChulbul Design operates from Gurugram, India and serves Leeds clients remotely through scheduled UK business-hour calls, staging rehearsals and documented release checklists—without claiming a Leeds street office.",
+      "content": {
+        "hero_icon": "bi-boxes",
+        "hero_primary_cta": "Plan Your Leeds Magento Project",
+        "hero_secondary_cta": "All Leeds Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-boxes",
+            "text": "Magento 2 themes, B2B catalogues & ERP sync"
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "text": "SEO-safe Magento → Shopify / Woo migrations"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled UK (GMT/BST) sprint reviews"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Leeds Magento planning checklist",
+          "kicker": "Stay on Magento or replatform?",
+          "title": "Match platform complexity to real UK catalogue needs.",
+          "description": "Before committing budget, we audit catalogue rules, B2B pricing, ERP links and total cost of ownership.",
+          "items": [
+            "Magento 2 theme, module & indexing audits",
+            "UK VAT, Stripe, PayPal, Klarna & courier rules",
+            "1-to-1 301 redirect map for store migrations",
+            "Full staging rehearsal before production switch"
+          ]
+        },
+        "intro_label": "Leeds Magento & commerce strategy",
+        "intro_title": "Honest Magento 2 engineering and migration planning for West Yorkshire retailers",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Leeds?",
+        "hub_link_label": "Review the complete Leeds web design hub",
+        "platform_label": "Commerce path comparison",
+        "platform_title": "Upgrade Magento 2 or migrate to Shopify / WooCommerce?",
+        "platform_intro": "We evaluate SKU volume, B2B account rules, extension debt and internal staffing before recommending whether to invest in Magento 2 or replatform.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Magento 2 / Adobe Commerce",
+            "icon": "bi-boxes",
+            "best_fit": "Leeds B2B wholesalers and multi-store brands with 5,000+ SKUs, tiered contract pricing, complex product configurators or deep ERP/PIM integration.",
+            "tradeoff": "Requires dedicated cloud hosting, disciplined security patching, indexing care and structured deployment workflows.",
+            "href": "/magento-development",
+            "link_label": "Explore Magento 2 development"
+          },
+          {
+            "name": "Magento → Shopify Migration",
+            "icon": "bi-bag-check",
+            "best_fit": "D2C retail brands in Leeds tired of Magento server maintenance and security patches who want faster managed checkout and lower annual overhead.",
+            "tradeoff": "Requires careful URL structure mapping (/collections/, /products/) and 301 redirects so organic rankings transfer cleanly.",
+            "href": "/shopify-development",
+            "link_label": "Explore Shopify development"
+          },
+          {
+            "name": "Magento → WooCommerce Migration",
+            "icon": "bi-wordpress",
+            "best_fit": "Content-rich Yorkshire businesses wanting full open-source ownership and lower maintenance overhead than Magento 2.",
+            "tradeoff": "Large catalogues require proper database indexing, object caching and vetted plugin discipline.",
+            "href": "/woocommerce-development",
+            "link_label": "Explore WooCommerce development"
+          }
+        ],
+        "architecture_label": "Magento technical architecture",
+        "architecture_title": "Catalogue, checkout and UK operational rules engineered cleanly",
+        "architecture_intro": "Every Magento build or replatform maps product data, tax/shipping compliance and SEO continuity before launch.",
+        "architecture_items": [
+          {
+            "icon": "bi-diagram-3",
+            "title": "SKU, attribute & layered navigation model",
+            "description": "Clean configurable products, faceted filters and search indexing so shoppers find exact sizes, specs or trade variants fast."
+          },
+          {
+            "icon": "bi-building",
+            "title": "B2B accounts & trade pricing",
+            "description": "Company buyer roles, shared catalogues, quote requests, PO approvals and VAT-exempt trade workflows for UK wholesalers."
+          },
+          {
+            "icon": "bi-plug",
+            "title": "ERP, PIM & UK courier integration",
+            "description": "Reliable order, stock and dispatch sync with Sage, NetSuite, Xero, Royal Mail, DPD or warehouse management tools."
+          },
+          {
+            "icon": "bi-arrow-left-right",
+            "title": "Rehearsed data & SEO migration",
+            "description": "Test imports for products, customer accounts and historical orders paired with 1-to-1 301 redirect verification."
+          }
+        ],
+        "process_label": "Magento delivery process",
+        "process_title": "From Magento technical audit to zero-surprise UK launch",
+        "process_intro": "Every step is verified on staging with representative SKUs and UK payment test accounts before touching live revenue.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Store & TCO architecture audit",
+            "description": "Audit current Magento extensions, speed bottlenecks, SKU data, ERP hooks and Search Console traffic."
+          },
+          {
+            "step": "02",
+            "title": "Platform & data mapping blueprint",
+            "description": "Document whether to build/upgrade Magento 2 or replatform, plus exact field and URL redirect mappings."
+          },
+          {
+            "step": "03",
+            "title": "Responsive UX & checkout design",
+            "description": "Design fast mobile category filters, product pages and friction-free UK checkout with Stripe, Apple Pay and Klarna."
+          },
+          {
+            "step": "04",
+            "title": "Module, theme & integration build",
+            "description": "Develop upgrade-safe templates, custom modules, tax/VAT settings and ERP/courier connections."
+          },
+          {
+            "step": "05",
+            "title": "Staging migration & load QA",
+            "description": "Run full sample data imports, verify 301 redirects, test payment failure/refund flows and check Core Web Vitals."
+          },
+          {
+            "step": "06",
+            "title": "Controlled cutover & post-launch watch",
+            "description": "Execute off-peak UK launch cutover, monitor error logs, check order sync and track Search Console crawl stats."
+          }
+        ],
+        "operations_label": "Enterprise reliability",
+        "operations_title": "Operational checks that protect revenue after go-live",
+        "operations_intro": "Magento and large-catalogue stores demand disciplined performance, security and monitoring standards.",
+        "operations_items": [
+          {
+            "icon": "bi-speedometer2",
+            "title": "Varnish, Redis & index tuning",
+            "description": "Full-page caching, optimized database indexing, lean frontend bundles and WebP media for fast product discovery."
+          },
+          {
+            "icon": "bi-credit-card",
+            "title": "UK payments & VAT compliance",
+            "description": "Tested Stripe UK, PayPal, Apple Pay, Klarna and VAT invoice configurations across desktop and mobile."
+          },
+          {
+            "icon": "bi-search",
+            "title": "SEO canonicals & facet control",
+            "description": "Prevent filter-URL crawl bloat with clean canonicals, robots rules and Product/Offer structured data."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Security patch & backup plan",
+            "description": "Documented Adobe security patch cadence, least-privilege admin roles and tested database rollback snapshots."
+          },
+          {
+            "icon": "bi-graph-up",
+            "title": "GA4 ecommerce telemetry",
+            "description": "Accurate view_item, add_to_cart, begin_checkout and purchase event tracking separated from raw button clicks."
+          },
+          {
+            "icon": "bi-life-preserver",
+            "title": "Documented handover",
+            "description": "Clear repository ownership, deployment notes and optional monthly engineering retainers."
+          }
+        ],
+        "pricing_label": "Transparent Leeds Magento scoping",
+        "pricing_title": "What determines Magento development or migration cost in Leeds?",
+        "pricing_intro": "Enterprise commerce budgets vary widely with catalogue size, custom modules, ERP integrations and migration rehearsals.",
+        "pricing_factors": [
+          {
+            "title": "New build vs upgrade vs migration",
+            "description": "Upgrading or tuning an existing Magento 2 store differs significantly from a full Magento-to-Shopify or custom Magento build."
+          },
+          {
+            "title": "SKU count & attribute complexity",
+            "description": "Configurable variants, bundle pricing, customizers and legacy data cleanup directly affect import and QA effort."
+          },
+          {
+            "title": "B2B & ERP integrations",
+            "description": "Two-way inventory, invoicing or Sage/NetSuite/Xero integrations require queue handling and reconciliation testing."
+          },
+          {
+            "title": "Extension audit & replacement",
+            "description": "Auditing third-party modules for compatibility or replacing brittle plugins with lean custom code."
+          },
+          {
+            "title": "SEO URL & redirect volume",
+            "description": "Mapping thousands of category and product URLs so high-ranking Leeds & UK organic traffic is preserved."
+          },
+          {
+            "title": "Staging rehearsals & launch support",
+            "description": "Off-peak UK cutover coordination, staff training and post-launch order monitoring."
+          }
+        ],
+        "pricing_note": "While starter brochure websites on our Leeds hub begin at £649, Magento 2 engineering and full ecommerce migrations are scoped individually after auditing your catalogue, extensions and integrations.",
+        "schema_catalog_name": "Leeds Magento Development Services",
+        "schema_offers": [
+          "Magento 2 Web Design Leeds",
+          "Magento Performance & Security Optimization",
+          "Magento to Shopify Migration",
+          "Magento to WooCommerce Migration",
+          "B2B Magento Catalogue & ERP Integration"
+        ],
+        "related_label": "Related Leeds services & guides",
+        "related_title": "Explore more Leeds web design capabilities",
+        "related_intro": "Compare sibling Leeds services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Leeds Web Design Hub",
+            "description": "Full website design, redesign and SEO packages for Leeds businesses.",
+            "href": "/city/leeds",
+            "label": "Explore Leeds web design"
+          },
+          {
+            "title": "Leeds Ecommerce Development",
+            "description": "Compare Shopify, WooCommerce and bespoke online stores in Leeds.",
+            "href": "/city/leeds/ecommerce-development",
+            "label": "View Leeds ecommerce"
+          },
+          {
+            "title": "Leeds WordPress Web Design",
+            "description": "Custom Gutenberg WordPress development for Leeds businesses.",
+            "href": "/city/leeds/wordpress-developer",
+            "label": "Explore Leeds WordPress"
+          },
+          {
+            "title": "Magento Development Services",
+            "description": "Core Magento 2 & Adobe Commerce architecture, modules and ERP integration.",
+            "href": "/magento-development",
+            "label": "View Magento services"
+          },
+          {
+            "title": "Leeds Ecommerce & Redesign Guide (2026)",
+            "description": "2026 UK agency pricing comparing Magento, Shopify and WooCommerce in Leeds.",
+            "href": "/blog/leeds-ecommerce-web-design-website-redesign-guide-2026",
+            "label": "Read Leeds 2026 guide"
+          }
+        ],
+        "faq_label": "Leeds Magento FAQs",
+        "faq_title": "Magento web design & migration FAQs for Leeds retailers",
+        "form_eyebrow": "Leeds Magento enquiry",
+        "form_service": "Leeds Magento Development",
+        "form_source": "city-leeds-magento-development-spoke",
+        "form_bullets": [
+          "Magento 2 audit or migration roadmap",
+          "UK VAT, payment & 301 redirect planning",
+          "Scheduled GMT/BST technical walkthrough"
+        ],
+        "form_message_label": "Share your Magento store URL & requirements",
+        "form_message_placeholder": "Current Magento version, approximate SKU count, ERP/payment tools, and whether you want to upgrade or migrate.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Leeds project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/magento-development-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "Magento migration & build checklist",
+        "title": "Rehearse data, checkout and redirects before launch day",
+        "location": "Remote delivery for Leeds, UK (GMT/BST) from Gurugram, India",
+        "context": "This is our production Magento engineering checklist—not a fabricated local case study.",
+        "problem_label": "Commerce risk",
+        "work_label": "Engineering scope",
+        "result_label": "Launch verification",
+        "problem": "Unplanned Magento upgrades or replatforms routinely drop organic category traffic, break checkout webhooks or corrupt SKU variants.",
+        "work": "Run a full staging rehearsal covering product/customer import, UK VAT/payment sandbox tests and 1-to-1 301 redirect rules.",
+        "result": "Confirm zero broken checkout steps, verified redirect headers, clean GA4 ecommerce events and monitored server logs across launch week.",
+        "metrics": [],
+        "source_href": "/magento-development",
+        "source_label": "Review Magento capabilities"
+      },
+      "faqs": [
+        {
+          "question": "Do you work on existing Magento 2 stores for Leeds businesses?",
+          "answer": "Yes. We handle Magento 2 theme redesigns, Core Web Vitals speed optimization, extension audits, security patches, UK payment/shipping setup and ERP integrations remotely with scheduled UK business-hour calls."
+        },
+        {
+          "question": "Can you migrate our Leeds Magento website to Shopify or WooCommerce without losing SEO?",
+          "answer": "Yes. We inventory every ranking product, category and content URL, build a 1-to-1 301 redirect map, run a full staging test import and validate Google Search Console crawl signals post-launch."
+        },
+        {
+          "question": "How long does a Magento upgrade or replatform take?",
+          "answer": "Focused Magento performance and theme improvements typically take 3–5 weeks. Full Magento 2 builds or complex Magento-to-Shopify/WooCommerce migrations generally span 6–12 weeks depending on SKU volume and ERP integrations."
+        },
+        {
+          "question": "Can you integrate UK VAT, Klarna, Stripe and couriers like DPD or Royal Mail?",
+          "answer": "Yes. We configure and test UK VAT rules, Stripe UK, PayPal, Apple Pay, Klarna finance options and supported shipping/fulfilment rules using approved merchant sandbox accounts before go-live."
+        },
+        {
+          "question": "How do you collaborate with Leeds teams from India?",
+          "answer": "Chulbul Design is headquartered in Gurugram, India and collaborates remotely with Leeds teams via scheduled GMT/BST sprint reviews, shared staging environments and written milestone documentation."
+        }
+      ],
+      "schema_service_name": "Leeds Magento Web Design & Development",
+      "schema_service_type": "Magento 2 Development, Ecommerce Web Design and Magento Migration",
+      "cta_title": "Need a dependable Magento partner in Leeds?",
+      "cta_description": "Share your current Magento store URL, SKU count and pain points (speed, upgrades or migration to Shopify/WooCommerce). We will prepare an honest architectural recommendation."
+    },
+    {
+      "city_slug": "bristol",
+      "slug": "b2b-web-design",
+      "sort_order": 40,
+      "meta_title": "B2B Web Design Agency Bristol | Corporate Sites (£649+)",
+      "meta_description": "B2B web design & development agency for Bristol & South West UK firms from £649. Custom corporate UX, CRM lead capture, technical SEO & UK reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/bristol/b2b-web-design",
+      "breadcrumb_label": "B2B Web Design",
+      "eyebrow": "Bristol B2B Website Design & Development",
+      "heading_html": "B2B Web Design Agency in Bristol <span>Built for Pipeline, Proof &amp; Technical Buyers</span>",
+      "hero_description": "Custom B2B websites for Bristol engineering, aerospace, SaaS, clean-tech and professional service firms across Temple Quarter, Aztec West and South West England. Delivered remotely with scheduled UK (GMT/BST) reviews and transparent £649+ starter tiers.",
+      "introduction": "B2B buyers in Bristol rarely convert on a single impulsive visit. Procurement leads, technical evaluators and executive decision-makers across Temple Quarter, Harbourside, Clifton, Filton, Aztec West and South West UK review your service depth, compliance credibility, integration capabilities and delivery process across multiple visits before requesting a proposal.\n\nWe design B2B websites for Bristol engineering, aerospace, SaaS, clean-tech, consulting and B2B trade companies around real buying committees—structuring clear capability pages, scannable proof blocks, technical spec sheets, multi-step RFQ or demo journeys, and clean CRM attribution so sales teams receive qualified enquiries instead of generic contact spam.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Bristol organisations with scheduled UK (GMT/BST) stakeholder reviews, transparent milestone scoping and full source-code ownership.",
+      "content": {
+        "hero_icon": "bi-building",
+        "hero_primary_cta": "Plan Your Bristol B2B Website",
+        "hero_secondary_cta": "All Bristol Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-funnel",
+            "text": "Buyer-committee UX & qualified RFQ / demo flows"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled UK (GMT/BST) stakeholder workshops"
+          },
+          {
+            "icon": "bi-diagram-3",
+            "text": "HubSpot, Salesforce & GA4 attribution ready"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Bristol B2B website planning checklist",
+          "kicker": "Built for B2B buying committees",
+          "title": "Turn complex capabilities into clear commercial proof.",
+          "description": "High-performing B2B websites in Bristol align positioning, technical depth, accessibility and CRM-connected lead capture.",
+          "items": [
+            "Capability & industry-vertical page architecture",
+            "Multi-step RFQ, demo & consultation routing",
+            "WCAG/ADA-aware typography, contrast & forms",
+            "CRM sync, UTM tracking & SEO migration safety"
+          ]
+        },
+        "intro_label": "B2B conversion strategy",
+        "intro_title": "Architecture built for how Bristol enterprise & B2B buyers shortlist vendors",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Bristol?",
+        "hub_link_label": "Review the complete Bristol web design hub",
+        "platform_label": "B2B technology choices",
+        "platform_title": "Select a maintainable stack for your Bristol B2B marketing & sales team",
+        "platform_intro": "Your B2B site should empower marketing to ship landing pages quickly while supporting technical credibility, security and CRM data hygiene.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom WordPress B2B CMS",
+            "icon": "bi-wordpress",
+            "best_fit": "B2B marketing teams in Bristol publishing whitepapers, industry verticals, case studies and campaign pages with custom Gutenberg blocks.",
+            "tradeoff": "Needs disciplined plugin governance, staging previews and scheduled security maintenance.",
+            "href": "/wordpress-development",
+            "link_label": "Explore WordPress B2B builds"
+          },
+          {
+            "name": "Next.js / Headless Marketing Platform",
+            "icon": "bi-window-stack",
+            "best_fit": "High-growth Bristol SaaS, FinTech and enterprise technology brands demanding instant page transitions, strict security posture and headless CMS workflows.",
+            "tradeoff": "Requires a defined frontend release pipeline and CMS preview configuration.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          },
+          {
+            "name": "Custom B2B Portal / Laravel Web App",
+            "icon": "bi-code-square",
+            "best_fit": "Bristol manufacturers, distributors and corporate service firms needing client logins, tiered pricing calculators, quote builders or ERP sync.",
+            "tradeoff": "Custom application workflows require deeper discovery, role-based access testing and an explicit support roadmap.",
+            "href": "/laravel-development",
+            "link_label": "Explore Laravel web applications"
+          }
+        ],
+        "architecture_label": "B2B information architecture",
+        "architecture_title": "Pages engineered for search visibility and executive confidence in Bristol",
+        "architecture_intro": "We eliminate vague corporate jargon and map every page to a concrete buyer question and commercial next step.",
+        "architecture_items": [
+          {
+            "icon": "bi-signpost-split",
+            "title": "Solutions & industry vertical hubs",
+            "description": "Dedicated capability and sector pages so procurement and technical leads across South West England immediately confirm domain fit."
+          },
+          {
+            "icon": "bi-ui-checks",
+            "title": "High-signal RFQ & demo forms",
+            "description": "Collect project scope, company size and timeline without overwhelming visitors—routing qualified leads straight into your CRM with UTM context."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Trust, security & compliance clarity",
+            "description": "Present certifications, audit standards, disclosures and leadership credentials cleanly near decision points."
+          },
+          {
+            "icon": "bi-file-earmark-richtext",
+            "title": "Scalable resource & case-study templates",
+            "description": "Structured templates for client outcomes, comparison guides and downloadable briefs that fuel organic B2B SEO."
+          }
+        ],
+        "process_label": "B2B delivery workflow",
+        "process_title": "From stakeholder alignment to measurable Bristol B2B launch",
+        "process_intro": "Designed for marketing directors and founders who need predictable timelines, clear sign-off gates and UK (GMT/BST) review sessions.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Sales & buyer-journey discovery",
+            "description": "Interview sales/marketing leads to capture core objections, deal qualification criteria, target keywords and current analytics gaps."
+          },
+          {
+            "step": "02",
+            "title": "Information architecture & SEO blueprint",
+            "description": "Map services, industries, resources, internal links and 1-to-1 301 redirect rules if replacing an existing site."
+          },
+          {
+            "step": "03",
+            "title": "Wireframes & Figma design system",
+            "description": "Prototype clear messaging hierarchy, proof sections and responsive components for executive review before coding."
+          },
+          {
+            "step": "04",
+            "title": "Development & CRM/API integration",
+            "description": "Build clean frontend/CMS templates and wire lead forms, calendar embeds, HubSpot/Salesforce webhooks and GA4 events."
+          },
+          {
+            "step": "05",
+            "title": "Accessibility, speed & migration QA",
+            "description": "Validate WCAG contrast, keyboard navigation, Core Web Vitals, redirect chains and form routing on staging."
+          },
+          {
+            "step": "06",
+            "title": "Staged launch & attribution handover",
+            "description": "Verify live lead delivery, Search Console sitemaps and team CMS documentation after cutover."
+          }
+        ],
+        "operations_label": "B2B growth operations",
+        "operations_title": "Built to connect marketing spend directly to sales pipeline",
+        "operations_intro": "Every technical layer supports fast campaign iteration and accurate conversion measurement.",
+        "operations_items": [
+          {
+            "icon": "bi-person-lines-fill",
+            "title": "CRM & webhook routing",
+            "description": "Automatic lead push with source/medium UTM parameters to HubSpot, Salesforce, Zoho or Slack sales alerts."
+          },
+          {
+            "icon": "bi-bullseye",
+            "title": "Campaign landing templates",
+            "description": "Reusable high-converting PPC and LinkedIn Ads landing page sections so your team launches campaigns without developer bottlenecks."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Commercial B2B SEO",
+            "description": "Clean semantic HTML, structured Service/Organization/FAQ schema and internal link clusters targeting non-branded buyer terms."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "WCAG/ADA-aware UX",
+            "description": "Accessible form labels, logical tab order, readable typography and high-contrast interactive controls."
+          },
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals speed",
+            "description": "Fast mobile and desktop rendering so LinkedIn, Google Ads and organic clicks do not bounce on heavy corporate scripts."
+          },
+          {
+            "icon": "bi-lock",
+            "title": "Security & full ownership",
+            "description": "SSL/TLS, hardened CMS permissions, clean backups and 100% client control over code, domain and data."
+          }
+        ],
+        "pricing_label": "Transparent Bristol B2B scoping",
+        "pricing_title": "What determines B2B web design cost in Bristol?",
+        "pricing_intro": "B2B budgets reflect architecture depth, custom UX components, copy/migration requirements and third-party CRM or portal integrations.",
+        "pricing_factors": [
+          {
+            "title": "Service & industry page architecture",
+            "description": "A focused 8–10 page corporate site differs in scope from a 30+ page multi-vertical B2B platform with gated resources."
+          },
+          {
+            "title": "Custom UX & interactive tools",
+            "description": "ROI calculators, interactive spec tables, product configurators or custom diagrams add design and frontend engineering time."
+          },
+          {
+            "title": "CRM, marketing & ERP integrations",
+            "description": "HubSpot, Salesforce, Marketo, Calendly or custom API connections require mapping, testing and error handling."
+          },
+          {
+            "title": "Compliance & accessibility review",
+            "description": "Financial, legal or enterprise governance reviews and formal WCAG QA passes are built into milestone schedules."
+          },
+          {
+            "title": "SEO migration & redirect mapping",
+            "description": "Preserving rankings across legacy corporate pages, press releases and resource libraries requires thorough URL mapping."
+          },
+          {
+            "title": "Content & stakeholder review cycles",
+            "description": "Clear internal copy ownership and scheduled feedback windows keep multi-stakeholder B2B projects on schedule."
+          }
+        ],
+        "pricing_note": "Entry-level business website scopes in Bristol start from £649. Full custom B2B redesigns, CRM-integrated corporate sites and multi-vertical platforms are quoted transparently after discovery.",
+        "schema_catalog_name": "Bristol B2B Web Design Services",
+        "schema_offers": [
+          "Bristol B2B Website Design",
+          "Corporate Website Redesign & SEO Migration",
+          "B2B Lead Generation & RFQ UX",
+          "CRM & HubSpot/Salesforce Website Integration",
+          "Custom B2B Portal Development"
+        ],
+        "related_label": "Related Bristol services & guides",
+        "related_title": "Explore more Bristol web design capabilities",
+        "related_intro": "Compare sibling Bristol services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Bristol Web Design Hub",
+            "description": "Full website packages, transparent starter pricing (£649+) and consultation options in Bristol.",
+            "href": "/city/bristol",
+            "label": "Explore Bristol web design"
+          },
+          {
+            "title": "Small Business Web Design in Bristol",
+            "description": "Lean service websites, local SEO foundations and mobile lead journeys in Bristol.",
+            "href": "/city/bristol/small-business-web-design",
+            "label": "View Bristol small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Bristol",
+            "description": "B2B trade portals, wholesale catalogues and custom checkout engineering in Bristol.",
+            "href": "/city/bristol/ecommerce-development",
+            "label": "Explore Bristol ecommerce"
+          },
+          {
+            "title": "Custom Web Design & UX Strategy",
+            "description": "See how we plan B2B information architecture, wireframes, accessibility and conversion journeys.",
+            "href": "/web-design",
+            "label": "Explore custom web design"
+          },
+          {
+            "title": "CRM & API Integrations",
+            "description": "Connect quote forms, RFP downloads and sales pipelines directly to HubSpot, Salesforce or custom CRMs.",
+            "href": "/api-integration",
+            "label": "Explore API integrations"
+          },
+          {
+            "title": "Website Redesign SEO Checklist (2026)",
+            "description": "Protect your UK organic rankings during a B2B corporate website redesign with 1-to-1 301 mapping.",
+            "href": "/blog/website-redesign-seo-checklist-migration-guide",
+            "label": "Read redesign SEO checklist"
+          }
+        ],
+        "faq_label": "Bristol B2B web design FAQs",
+        "faq_title": "Frequently asked questions about B2B web design in Bristol",
+        "form_eyebrow": "Bristol B2B website enquiry",
+        "form_service": "Bristol B2B Web Design",
+        "form_source": "city-bristol-b2b-web-design-spoke",
+        "form_bullets": [
+          "B2B sitemap & lead-funnel review",
+          "CRM & SEO migration scoping",
+          "Transparent milestone quote (£649+ starter tier)"
+        ],
+        "form_message_label": "Tell us about your B2B website goals & CRM stack",
+        "form_message_placeholder": "Current site URL, target industries in Bristol, CRM (HubSpot/Salesforce/etc.), key pages and target launch window.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Bristol project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/web-design-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "B2B conversion planning checklist",
+        "title": "Align executive credibility with measurable pipeline capture",
+        "location": "Remote delivery for Bristol (UK (GMT/BST)) from Gurugram, India",
+        "context": "This is our documented B2B architecture checklist—not a claimed local client case study.",
+        "problem_label": "B2B challenge",
+        "work_label": "Architecture scope",
+        "result_label": "Launch verification",
+        "problem": "Outdated B2B websites in Bristol often hide core capabilities behind generic buzzwords and broken contact forms with no CRM source tracking.",
+        "work": "Rebuild around clear solution/vertical hubs, accessible comparison layouts, qualified RFQ/demo forms and 1-to-1 SEO redirect preservation.",
+        "result": "Verify CRM webhook delivery, UTM capture, mobile Core Web Vitals and Google Search Console crawl health before and after launch.",
+        "metrics": [],
+        "source_href": "/web-design",
+        "source_label": "Review our web design approach"
+      },
+      "faqs": [
+        {
+          "question": "How much does B2B web design cost in Bristol?",
+          "answer": "Focused B2B corporate and advisory websites for Bristol firms start from £649 for lean multi-page scopes, while larger B2B platforms with gated resources, HubSpot/Salesforce integration, multi-service architecture and SEO migrations are scoped with itemized milestones."
+        },
+        {
+          "question": "How do you run B2B discovery and stakeholder reviews for Bristol teams?",
+          "answer": "Our team is based in Gurugram, India and runs scheduled UK (GMT/BST) workshops with your marketing, sales and leadership stakeholders using shared Figma prototypes, written scope docs and live staging URLs—without claiming a local Bristol office."
+        },
+        {
+          "question": "Can you integrate our B2B website with HubSpot, Salesforce or custom RFQ workflows?",
+          "answer": "Yes. We build multi-step RFQ and demo-booking forms with UTM source capture, field validation, automated routing and webhook/API sync to HubSpot, Salesforce, Pipedrive, Zoho or custom internal CRMs."
+        },
+        {
+          "question": "How do you protect existing SEO rankings during a B2B website redesign?",
+          "answer": "We crawl every existing URL, review Search Console performance, map 1-to-1 301 redirects for any restructured service or resource pages, preserve canonical/schema signals and run post-launch crawl QA."
+        },
+        {
+          "question": "Which CMS or tech stack works best for a B2B company website?",
+          "answer": "Custom Gutenberg WordPress suits B2B marketing teams publishing frequent thought leadership and case studies, while Next.js or Laravel fits interactive calculators, client portals and complex product configurators. We recommend the stack around your team's real workflow."
+        }
+      ],
+      "schema_service_name": "Bristol B2B Web Design & Development",
+      "schema_service_type": "B2B Website Design, Corporate Web Development and Lead Generation UX",
+      "cta_title": "Upgrade your Bristol B2B website into a pipeline asset",
+      "cta_description": "Share your current URL, target buyer verticals and CRM tools. We will outline a clear architecture, migration plan and milestone estimate with UK (GMT/BST) review calls."
+    },
+    {
+      "city_slug": "chicago",
+      "slug": "b2b-web-design",
+      "sort_order": 40,
+      "meta_title": "B2B & Financial Services Web Design Chicago | From $799",
+      "meta_description": "B2B & financial services web design in Chicago from $799. WCAG/ADA-ready UX, FINRA-aware content structure, HubSpot/Salesforce sync & CST project reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/chicago/b2b-web-design",
+      "breadcrumb_label": "B2B Web Design",
+      "eyebrow": "Chicago B2B & Financial Services Web Design",
+      "heading_html": "B2B &amp; Financial Services Web Design in Chicago <span>Trust, Compliance &amp; Lead Generation</span>",
+      "hero_description": "Conversion-focused B2B and financial services web design for Chicago wealth advisors, FinTech startups, manufacturers and corporate firms across The Loop, LaSalle Street and Fulton Market—with WCAG/ADA-aware UX, CRM integration and scheduled Central Time reviews.",
+      "introduction": "B2B buyers in Chicago rarely convert on a single impulsive visit. Procurement leads, technical evaluators and executive decision-makers across The Loop, LaSalle Street, River North, Fulton Market, Oak Brook and Chicagoland review your service depth, compliance credibility, integration capabilities and delivery process across multiple visits before requesting a proposal.\n\nWe design B2B websites for Chicago financial services firms, RIAs, FinTech companies, logistics, manufacturing and B2B consultancies around real buying committees—structuring clear capability pages, scannable proof blocks, technical spec sheets, multi-step RFQ or demo journeys, and clean CRM attribution so sales teams receive qualified enquiries instead of generic contact spam.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Chicago organisations with scheduled Central Time (CST/CDT) stakeholder reviews, transparent milestone scoping and full source-code ownership.",
+      "content": {
+        "hero_icon": "bi-building",
+        "hero_primary_cta": "Plan Your Chicago B2B Website",
+        "hero_secondary_cta": "All Chicago Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-funnel",
+            "text": "Buyer-committee UX & qualified RFQ / demo flows"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled Central Time (CST/CDT) stakeholder workshops"
+          },
+          {
+            "icon": "bi-diagram-3",
+            "text": "HubSpot, Salesforce & GA4 attribution ready"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Chicago B2B website planning checklist",
+          "kicker": "Built for B2B buying committees",
+          "title": "Turn complex capabilities into clear commercial proof.",
+          "description": "High-performing B2B websites in Chicago align positioning, technical depth, accessibility and CRM-connected lead capture.",
+          "items": [
+            "Capability & industry-vertical page architecture",
+            "Multi-step RFQ, demo & consultation routing",
+            "WCAG/ADA-aware typography, contrast & forms",
+            "CRM sync, UTM tracking & SEO migration safety"
+          ]
+        },
+        "intro_label": "B2B conversion strategy",
+        "intro_title": "Architecture built for how Chicago enterprise & B2B buyers shortlist vendors",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Chicago?",
+        "hub_link_label": "Review the complete Chicago web design hub",
+        "platform_label": "B2B technology choices",
+        "platform_title": "Select a maintainable stack for your Chicago B2B marketing & sales team",
+        "platform_intro": "Your B2B site should empower marketing to ship landing pages quickly while supporting technical credibility, security and CRM data hygiene.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom WordPress B2B CMS",
+            "icon": "bi-wordpress",
+            "best_fit": "B2B marketing teams in Chicago publishing whitepapers, industry verticals, case studies and campaign pages with custom Gutenberg blocks.",
+            "tradeoff": "Needs disciplined plugin governance, staging previews and scheduled security maintenance.",
+            "href": "/wordpress-development",
+            "link_label": "Explore WordPress B2B builds"
+          },
+          {
+            "name": "Next.js / Headless Marketing Platform",
+            "icon": "bi-window-stack",
+            "best_fit": "High-growth Chicago SaaS, FinTech and enterprise technology brands demanding instant page transitions, strict security posture and headless CMS workflows.",
+            "tradeoff": "Requires a defined frontend release pipeline and CMS preview configuration.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          },
+          {
+            "name": "Custom B2B Portal / Laravel Web App",
+            "icon": "bi-code-square",
+            "best_fit": "Chicago manufacturers, distributors and corporate service firms needing client logins, tiered pricing calculators, quote builders or ERP sync.",
+            "tradeoff": "Custom application workflows require deeper discovery, role-based access testing and an explicit support roadmap.",
+            "href": "/laravel-development",
+            "link_label": "Explore Laravel web applications"
+          }
+        ],
+        "architecture_label": "B2B information architecture",
+        "architecture_title": "Pages engineered for search visibility and executive confidence in Chicago",
+        "architecture_intro": "We eliminate vague corporate jargon and map every page to a concrete buyer question and commercial next step.",
+        "architecture_items": [
+          {
+            "icon": "bi-signpost-split",
+            "title": "Solutions & industry vertical hubs",
+            "description": "Dedicated capability and sector pages so procurement and technical leads across Illinois & the Midwest immediately confirm domain fit."
+          },
+          {
+            "icon": "bi-ui-checks",
+            "title": "High-signal RFQ & demo forms",
+            "description": "Collect project scope, company size and timeline without overwhelming visitors—routing qualified leads straight into your CRM with UTM context."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Trust, security & compliance clarity",
+            "description": "Present certifications, audit standards, disclosures and leadership credentials cleanly near decision points."
+          },
+          {
+            "icon": "bi-file-earmark-richtext",
+            "title": "Scalable resource & case-study templates",
+            "description": "Structured templates for client outcomes, comparison guides and downloadable briefs that fuel organic B2B SEO."
+          }
+        ],
+        "process_label": "B2B delivery workflow",
+        "process_title": "From stakeholder alignment to measurable Chicago B2B launch",
+        "process_intro": "Designed for marketing directors and founders who need predictable timelines, clear sign-off gates and Central Time (CST/CDT) review sessions.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Sales & buyer-journey discovery",
+            "description": "Interview sales/marketing leads to capture core objections, deal qualification criteria, target keywords and current analytics gaps."
+          },
+          {
+            "step": "02",
+            "title": "Information architecture & SEO blueprint",
+            "description": "Map services, industries, resources, internal links and 1-to-1 301 redirect rules if replacing an existing site."
+          },
+          {
+            "step": "03",
+            "title": "Wireframes & Figma design system",
+            "description": "Prototype clear messaging hierarchy, proof sections and responsive components for executive review before coding."
+          },
+          {
+            "step": "04",
+            "title": "Development & CRM/API integration",
+            "description": "Build clean frontend/CMS templates and wire lead forms, calendar embeds, HubSpot/Salesforce webhooks and GA4 events."
+          },
+          {
+            "step": "05",
+            "title": "Accessibility, speed & migration QA",
+            "description": "Validate WCAG contrast, keyboard navigation, Core Web Vitals, redirect chains and form routing on staging."
+          },
+          {
+            "step": "06",
+            "title": "Staged launch & attribution handover",
+            "description": "Verify live lead delivery, Search Console sitemaps and team CMS documentation after cutover."
+          }
+        ],
+        "operations_label": "B2B growth operations",
+        "operations_title": "Built to connect marketing spend directly to sales pipeline",
+        "operations_intro": "Every technical layer supports fast campaign iteration and accurate conversion measurement.",
+        "operations_items": [
+          {
+            "icon": "bi-person-lines-fill",
+            "title": "CRM & webhook routing",
+            "description": "Automatic lead push with source/medium UTM parameters to HubSpot, Salesforce, Zoho or Slack sales alerts."
+          },
+          {
+            "icon": "bi-bullseye",
+            "title": "Campaign landing templates",
+            "description": "Reusable high-converting PPC and LinkedIn Ads landing page sections so your team launches campaigns without developer bottlenecks."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Commercial B2B SEO",
+            "description": "Clean semantic HTML, structured Service/Organization/FAQ schema and internal link clusters targeting non-branded buyer terms."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "WCAG/ADA-aware UX",
+            "description": "Accessible form labels, logical tab order, readable typography and high-contrast interactive controls."
+          },
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals speed",
+            "description": "Fast mobile and desktop rendering so LinkedIn, Google Ads and organic clicks do not bounce on heavy corporate scripts."
+          },
+          {
+            "icon": "bi-lock",
+            "title": "Security & full ownership",
+            "description": "SSL/TLS, hardened CMS permissions, clean backups and 100% client control over code, domain and data."
+          }
+        ],
+        "pricing_label": "Transparent Chicago B2B scoping",
+        "pricing_title": "What determines B2B web design cost in Chicago?",
+        "pricing_intro": "B2B budgets reflect architecture depth, custom UX components, copy/migration requirements and third-party CRM or portal integrations.",
+        "pricing_factors": [
+          {
+            "title": "Service & industry page architecture",
+            "description": "A focused 8–10 page corporate site differs in scope from a 30+ page multi-vertical B2B platform with gated resources."
+          },
+          {
+            "title": "Custom UX & interactive tools",
+            "description": "ROI calculators, interactive spec tables, product configurators or custom diagrams add design and frontend engineering time."
+          },
+          {
+            "title": "CRM, marketing & ERP integrations",
+            "description": "HubSpot, Salesforce, Marketo, Calendly or custom API connections require mapping, testing and error handling."
+          },
+          {
+            "title": "Compliance & accessibility review",
+            "description": "Financial, legal or enterprise governance reviews and formal WCAG QA passes are built into milestone schedules."
+          },
+          {
+            "title": "SEO migration & redirect mapping",
+            "description": "Preserving rankings across legacy corporate pages, press releases and resource libraries requires thorough URL mapping."
+          },
+          {
+            "title": "Content & stakeholder review cycles",
+            "description": "Clear internal copy ownership and scheduled feedback windows keep multi-stakeholder B2B projects on schedule."
+          }
+        ],
+        "pricing_note": "Entry-level business website scopes in Chicago start from $799. Full custom B2B redesigns, CRM-integrated corporate sites and multi-vertical platforms are quoted transparently after discovery.",
+        "schema_catalog_name": "Chicago B2B Web Design Services",
+        "schema_offers": [
+          "Chicago B2B Website Design",
+          "Corporate Website Redesign & SEO Migration",
+          "B2B Lead Generation & RFQ UX",
+          "CRM & HubSpot/Salesforce Website Integration",
+          "Custom B2B Portal Development"
+        ],
+        "related_label": "Related Chicago services & guides",
+        "related_title": "Explore more Chicago web design capabilities",
+        "related_intro": "Compare sibling Chicago services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Chicago Web Design Hub",
+            "description": "Full website packages, transparent starter pricing ($799+) and consultation options in Chicago.",
+            "href": "/city/chicago",
+            "label": "Explore Chicago web design"
+          },
+          {
+            "title": "Small Business Web Design in Chicago",
+            "description": "Lean service websites, local SEO foundations and mobile lead journeys in Chicago.",
+            "href": "/city/chicago/small-business-web-design",
+            "label": "View Chicago small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Chicago",
+            "description": "B2B trade portals, wholesale catalogues and custom checkout engineering in Chicago.",
+            "href": "/city/chicago/ecommerce-development",
+            "label": "Explore Chicago ecommerce"
+          },
+          {
+            "title": "Custom Web Design & UX Strategy",
+            "description": "See how we plan B2B information architecture, wireframes, accessibility and conversion journeys.",
+            "href": "/web-design",
+            "label": "Explore custom web design"
+          },
+          {
+            "title": "CRM & API Integrations",
+            "description": "Connect quote forms, RFP downloads and sales pipelines directly to HubSpot, Salesforce or custom CRMs.",
+            "href": "/api-integration",
+            "label": "Explore API integrations"
+          },
+          {
+            "title": "Financial Services & B2B Web Design Chicago Guide (2026)",
+            "description": "In-depth 2026 Chicago agency costs, ADA/WCAG compliance UX and B2B lead architecture.",
+            "href": "/blog/chicago-web-design-costs-b2b-financial-guide-2026",
+            "label": "Read Chicago B2B & FinTech guide"
+          }
+        ],
+        "faq_label": "Chicago B2B web design FAQs",
+        "faq_title": "Frequently asked questions about B2B web design in Chicago",
+        "form_eyebrow": "Chicago B2B website enquiry",
+        "form_service": "Chicago B2B Web Design",
+        "form_source": "city-chicago-b2b-web-design-spoke",
+        "form_bullets": [
+          "B2B sitemap & lead-funnel review",
+          "CRM & SEO migration scoping",
+          "Transparent milestone quote ($799+ starter tier)"
+        ],
+        "form_message_label": "Tell us about your B2B website goals & CRM stack",
+        "form_message_placeholder": "Current site URL, target industries in Chicago, CRM (HubSpot/Salesforce/etc.), key pages and target launch window.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Chicago project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/web-design-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "B2B conversion planning checklist",
+        "title": "Align executive credibility with measurable pipeline capture",
+        "location": "Remote delivery for Chicago (Central Time (CST/CDT)) from Gurugram, India",
+        "context": "This is our documented B2B architecture checklist—not a claimed local client case study.",
+        "problem_label": "B2B challenge",
+        "work_label": "Architecture scope",
+        "result_label": "Launch verification",
+        "problem": "Outdated B2B websites in Chicago often hide core capabilities behind generic buzzwords and broken contact forms with no CRM source tracking.",
+        "work": "Rebuild around clear solution/vertical hubs, accessible comparison layouts, qualified RFQ/demo forms and 1-to-1 SEO redirect preservation.",
+        "result": "Verify CRM webhook delivery, UTM capture, mobile Core Web Vitals and Google Search Console crawl health before and after launch.",
+        "metrics": [],
+        "source_href": "/web-design",
+        "source_label": "Review our web design approach"
+      },
+      "faqs": [
+        {
+          "question": "How much does B2B web design cost in Chicago?",
+          "answer": "Focused B2B corporate and advisory websites for Chicago firms start from $799 for lean multi-page scopes, while larger B2B platforms with gated resources, HubSpot/Salesforce integration, multi-service architecture and SEO migrations are scoped with itemized milestones."
+        },
+        {
+          "question": "Do you design websites for Chicago financial advisors, wealth managers and FinTech firms?",
+          "answer": "Yes. We structure advisor and FinTech websites with clear disclosure zones, clean team credential profiles, WCAG/ADA accessibility standards, SSL-secured consultation forms and CRM integrations so compliance reviews move smoothly."
+        },
+        {
+          "question": "How do you run B2B discovery and stakeholder reviews for Chicago teams?",
+          "answer": "Our team is based in Gurugram, India and runs scheduled Central Time (CST/CDT) workshops with your marketing, sales and leadership stakeholders using shared Figma prototypes, written scope docs and live staging URLs—without claiming a local Chicago office."
+        },
+        {
+          "question": "Can you integrate our B2B website with HubSpot, Salesforce or custom RFQ workflows?",
+          "answer": "Yes. We build multi-step RFQ and demo-booking forms with UTM source capture, field validation, automated routing and webhook/API sync to HubSpot, Salesforce, Pipedrive, Zoho or custom internal CRMs."
+        },
+        {
+          "question": "How do you protect existing SEO rankings during a B2B website redesign?",
+          "answer": "We crawl every existing URL, review Search Console performance, map 1-to-1 301 redirects for any restructured service or resource pages, preserve canonical/schema signals and run post-launch crawl QA."
+        },
+        {
+          "question": "Which CMS or tech stack works best for a B2B company website?",
+          "answer": "Custom Gutenberg WordPress suits B2B marketing teams publishing frequent thought leadership and case studies, while Next.js or Laravel fits interactive calculators, client portals and complex product configurators. We recommend the stack around your team's real workflow."
+        }
+      ],
+      "schema_service_name": "Chicago B2B Web Design & Development",
+      "schema_service_type": "B2B Website Design, Corporate Web Development and Lead Generation UX",
+      "cta_title": "Upgrade your Chicago B2B website into a pipeline asset",
+      "cta_description": "Share your current URL, target buyer verticals and CRM tools. We will outline a clear architecture, migration plan and milestone estimate with Central Time (CST/CDT) review calls."
+    },
+    {
+      "city_slug": "dallas",
+      "slug": "b2b-web-design",
+      "sort_order": 40,
+      "meta_title": "B2B Website Design Dallas TX | Custom B2B Sites ($799+)",
+      "meta_description": "Custom B2B website design & development in Dallas, TX & DFW from $799. Multi-step RFQ forms, HubSpot/Salesforce integration, fast UX & CST project reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/dallas/b2b-web-design",
+      "breadcrumb_label": "B2B Web Design",
+      "eyebrow": "Dallas, TX B2B Website Design Agency",
+      "heading_html": "B2B Website Design in Dallas, TX <span>Engineered for DFW Enterprise &amp; Industrial Leads</span>",
+      "hero_description": "Custom B2B website design and web development for Dallas, Plano, Las Colinas and DFW companies. Built for complex sales cycles with multi-step RFQ funnels, CRM attribution, SEO-safe redesigns and scheduled Central Time stakeholder reviews.",
+      "introduction": "B2B buyers in Dallas rarely convert on a single impulsive visit. Procurement leads, technical evaluators and executive decision-makers across Uptown Dallas, Las Colinas, Plano, Frisco, Richardson and the DFW Metroplex review your service depth, compliance credibility, integration capabilities and delivery process across multiple visits before requesting a proposal.\n\nWe design B2B websites for Dallas–Fort Worth B2B SaaS, industrial manufacturing, logistics, commercial real estate and corporate advisory firms around real buying committees—structuring clear capability pages, scannable proof blocks, technical spec sheets, multi-step RFQ or demo journeys, and clean CRM attribution so sales teams receive qualified enquiries instead of generic contact spam.\n\nChulbul Design operates from Gurugram, India and delivers remotely for Dallas organisations with scheduled Central Time (CST/CDT) stakeholder reviews, transparent milestone scoping and full source-code ownership.",
+      "content": {
+        "hero_icon": "bi-building",
+        "hero_primary_cta": "Plan Your Dallas B2B Website",
+        "hero_secondary_cta": "All Dallas Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-funnel",
+            "text": "Buyer-committee UX & qualified RFQ / demo flows"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled Central Time (CST/CDT) stakeholder workshops"
+          },
+          {
+            "icon": "bi-diagram-3",
+            "text": "HubSpot, Salesforce & GA4 attribution ready"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Dallas B2B website planning checklist",
+          "kicker": "Built for B2B buying committees",
+          "title": "Turn complex capabilities into clear commercial proof.",
+          "description": "High-performing B2B websites in Dallas align positioning, technical depth, accessibility and CRM-connected lead capture.",
+          "items": [
+            "Capability & industry-vertical page architecture",
+            "Multi-step RFQ, demo & consultation routing",
+            "WCAG/ADA-aware typography, contrast & forms",
+            "CRM sync, UTM tracking & SEO migration safety"
+          ]
+        },
+        "intro_label": "B2B conversion strategy",
+        "intro_title": "Architecture built for how Dallas enterprise & B2B buyers shortlist vendors",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Dallas?",
+        "hub_link_label": "Review the complete Dallas web design hub",
+        "platform_label": "B2B technology choices",
+        "platform_title": "Select a maintainable stack for your Dallas B2B marketing & sales team",
+        "platform_intro": "Your B2B site should empower marketing to ship landing pages quickly while supporting technical credibility, security and CRM data hygiene.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom WordPress B2B CMS",
+            "icon": "bi-wordpress",
+            "best_fit": "B2B marketing teams in Dallas publishing whitepapers, industry verticals, case studies and campaign pages with custom Gutenberg blocks.",
+            "tradeoff": "Needs disciplined plugin governance, staging previews and scheduled security maintenance.",
+            "href": "/wordpress-development",
+            "link_label": "Explore WordPress B2B builds"
+          },
+          {
+            "name": "Next.js / Headless Marketing Platform",
+            "icon": "bi-window-stack",
+            "best_fit": "High-growth Dallas SaaS, FinTech and enterprise technology brands demanding instant page transitions, strict security posture and headless CMS workflows.",
+            "tradeoff": "Requires a defined frontend release pipeline and CMS preview configuration.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          },
+          {
+            "name": "Custom B2B Portal / Laravel Web App",
+            "icon": "bi-code-square",
+            "best_fit": "Dallas manufacturers, distributors and corporate service firms needing client logins, tiered pricing calculators, quote builders or ERP sync.",
+            "tradeoff": "Custom application workflows require deeper discovery, role-based access testing and an explicit support roadmap.",
+            "href": "/laravel-development",
+            "link_label": "Explore Laravel web applications"
+          }
+        ],
+        "architecture_label": "B2B information architecture",
+        "architecture_title": "Pages engineered for search visibility and executive confidence in Dallas",
+        "architecture_intro": "We eliminate vague corporate jargon and map every page to a concrete buyer question and commercial next step.",
+        "architecture_items": [
+          {
+            "icon": "bi-signpost-split",
+            "title": "Solutions & industry vertical hubs",
+            "description": "Dedicated capability and sector pages so procurement and technical leads across Dallas–Fort Worth & Texas immediately confirm domain fit."
+          },
+          {
+            "icon": "bi-ui-checks",
+            "title": "High-signal RFQ & demo forms",
+            "description": "Collect project scope, company size and timeline without overwhelming visitors—routing qualified leads straight into your CRM with UTM context."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Trust, security & compliance clarity",
+            "description": "Present certifications, audit standards, disclosures and leadership credentials cleanly near decision points."
+          },
+          {
+            "icon": "bi-file-earmark-richtext",
+            "title": "Scalable resource & case-study templates",
+            "description": "Structured templates for client outcomes, comparison guides and downloadable briefs that fuel organic B2B SEO."
+          }
+        ],
+        "process_label": "B2B delivery workflow",
+        "process_title": "From stakeholder alignment to measurable Dallas B2B launch",
+        "process_intro": "Designed for marketing directors and founders who need predictable timelines, clear sign-off gates and Central Time (CST/CDT) review sessions.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Sales & buyer-journey discovery",
+            "description": "Interview sales/marketing leads to capture core objections, deal qualification criteria, target keywords and current analytics gaps."
+          },
+          {
+            "step": "02",
+            "title": "Information architecture & SEO blueprint",
+            "description": "Map services, industries, resources, internal links and 1-to-1 301 redirect rules if replacing an existing site."
+          },
+          {
+            "step": "03",
+            "title": "Wireframes & Figma design system",
+            "description": "Prototype clear messaging hierarchy, proof sections and responsive components for executive review before coding."
+          },
+          {
+            "step": "04",
+            "title": "Development & CRM/API integration",
+            "description": "Build clean frontend/CMS templates and wire lead forms, calendar embeds, HubSpot/Salesforce webhooks and GA4 events."
+          },
+          {
+            "step": "05",
+            "title": "Accessibility, speed & migration QA",
+            "description": "Validate WCAG contrast, keyboard navigation, Core Web Vitals, redirect chains and form routing on staging."
+          },
+          {
+            "step": "06",
+            "title": "Staged launch & attribution handover",
+            "description": "Verify live lead delivery, Search Console sitemaps and team CMS documentation after cutover."
+          }
+        ],
+        "operations_label": "B2B growth operations",
+        "operations_title": "Built to connect marketing spend directly to sales pipeline",
+        "operations_intro": "Every technical layer supports fast campaign iteration and accurate conversion measurement.",
+        "operations_items": [
+          {
+            "icon": "bi-person-lines-fill",
+            "title": "CRM & webhook routing",
+            "description": "Automatic lead push with source/medium UTM parameters to HubSpot, Salesforce, Zoho or Slack sales alerts."
+          },
+          {
+            "icon": "bi-bullseye",
+            "title": "Campaign landing templates",
+            "description": "Reusable high-converting PPC and LinkedIn Ads landing page sections so your team launches campaigns without developer bottlenecks."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Commercial B2B SEO",
+            "description": "Clean semantic HTML, structured Service/Organization/FAQ schema and internal link clusters targeting non-branded buyer terms."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "WCAG/ADA-aware UX",
+            "description": "Accessible form labels, logical tab order, readable typography and high-contrast interactive controls."
+          },
+          {
+            "icon": "bi-speedometer2",
+            "title": "Core Web Vitals speed",
+            "description": "Fast mobile and desktop rendering so LinkedIn, Google Ads and organic clicks do not bounce on heavy corporate scripts."
+          },
+          {
+            "icon": "bi-lock",
+            "title": "Security & full ownership",
+            "description": "SSL/TLS, hardened CMS permissions, clean backups and 100% client control over code, domain and data."
+          }
+        ],
+        "pricing_label": "Transparent Dallas B2B scoping",
+        "pricing_title": "What determines B2B web design cost in Dallas?",
+        "pricing_intro": "B2B budgets reflect architecture depth, custom UX components, copy/migration requirements and third-party CRM or portal integrations.",
+        "pricing_factors": [
+          {
+            "title": "Service & industry page architecture",
+            "description": "A focused 8–10 page corporate site differs in scope from a 30+ page multi-vertical B2B platform with gated resources."
+          },
+          {
+            "title": "Custom UX & interactive tools",
+            "description": "ROI calculators, interactive spec tables, product configurators or custom diagrams add design and frontend engineering time."
+          },
+          {
+            "title": "CRM, marketing & ERP integrations",
+            "description": "HubSpot, Salesforce, Marketo, Calendly or custom API connections require mapping, testing and error handling."
+          },
+          {
+            "title": "Compliance & accessibility review",
+            "description": "Financial, legal or enterprise governance reviews and formal WCAG QA passes are built into milestone schedules."
+          },
+          {
+            "title": "SEO migration & redirect mapping",
+            "description": "Preserving rankings across legacy corporate pages, press releases and resource libraries requires thorough URL mapping."
+          },
+          {
+            "title": "Content & stakeholder review cycles",
+            "description": "Clear internal copy ownership and scheduled feedback windows keep multi-stakeholder B2B projects on schedule."
+          }
+        ],
+        "pricing_note": "Entry-level business website scopes in Dallas start from $799. Full custom B2B redesigns, CRM-integrated corporate sites and multi-vertical platforms are quoted transparently after discovery.",
+        "schema_catalog_name": "Dallas B2B Web Design Services",
+        "schema_offers": [
+          "Dallas B2B Website Design",
+          "Corporate Website Redesign & SEO Migration",
+          "B2B Lead Generation & RFQ UX",
+          "CRM & HubSpot/Salesforce Website Integration",
+          "Custom B2B Portal Development"
+        ],
+        "related_label": "Related Dallas services & guides",
+        "related_title": "Explore more Dallas web design capabilities",
+        "related_intro": "Compare sibling Dallas services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Dallas Web Design Hub",
+            "description": "Full website packages, transparent starter pricing ($799+) and consultation options in Dallas.",
+            "href": "/city/dallas",
+            "label": "Explore Dallas web design"
+          },
+          {
+            "title": "Small Business Web Design in Dallas",
+            "description": "Lean service websites, local SEO foundations and mobile lead journeys in Dallas.",
+            "href": "/city/dallas/small-business-web-design",
+            "label": "View Dallas small business sites"
+          },
+          {
+            "title": "Ecommerce Development in Dallas",
+            "description": "B2B trade portals, wholesale catalogues and custom checkout engineering in Dallas.",
+            "href": "/city/dallas/ecommerce-development",
+            "label": "Explore Dallas ecommerce"
+          },
+          {
+            "title": "Custom Web Design & UX Strategy",
+            "description": "See how we plan B2B information architecture, wireframes, accessibility and conversion journeys.",
+            "href": "/web-design",
+            "label": "Explore custom web design"
+          },
+          {
+            "title": "CRM & API Integrations",
+            "description": "Connect quote forms, RFP downloads and sales pipelines directly to HubSpot, Salesforce or custom CRMs.",
+            "href": "/api-integration",
+            "label": "Explore API integrations"
+          },
+          {
+            "title": "Dallas B2B Custom Web Design Pricing Guide (2026)",
+            "description": "Compare 2026 Dallas TX B2B web design agency costs, custom architectures and DFW ROI benchmarks.",
+            "href": "/blog/b2b-website-design-dallas-custom-web-development-pricing-guide-2026",
+            "label": "Read Dallas B2B pricing guide"
+          }
+        ],
+        "faq_label": "Dallas B2B web design FAQs",
+        "faq_title": "Frequently asked questions about B2B web design in Dallas",
+        "form_eyebrow": "Dallas B2B website enquiry",
+        "form_service": "Dallas B2B Web Design",
+        "form_source": "city-dallas-b2b-web-design-spoke",
+        "form_bullets": [
+          "B2B sitemap & lead-funnel review",
+          "CRM & SEO migration scoping",
+          "Transparent milestone quote ($799+ starter tier)"
+        ],
+        "form_message_label": "Tell us about your B2B website goals & CRM stack",
+        "form_message_placeholder": "Current site URL, target industries in Dallas, CRM (HubSpot/Salesforce/etc.), key pages and target launch window.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Dallas project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/web-design-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "B2B conversion planning checklist",
+        "title": "Align executive credibility with measurable pipeline capture",
+        "location": "Remote delivery for Dallas (Central Time (CST/CDT)) from Gurugram, India",
+        "context": "This is our documented B2B architecture checklist—not a claimed local client case study.",
+        "problem_label": "B2B challenge",
+        "work_label": "Architecture scope",
+        "result_label": "Launch verification",
+        "problem": "Outdated B2B websites in Dallas often hide core capabilities behind generic buzzwords and broken contact forms with no CRM source tracking.",
+        "work": "Rebuild around clear solution/vertical hubs, accessible comparison layouts, qualified RFQ/demo forms and 1-to-1 SEO redirect preservation.",
+        "result": "Verify CRM webhook delivery, UTM capture, mobile Core Web Vitals and Google Search Console crawl health before and after launch.",
+        "metrics": [],
+        "source_href": "/web-design",
+        "source_label": "Review our web design approach"
+      },
+      "faqs": [
+        {
+          "question": "How much does B2B web design cost in Dallas?",
+          "answer": "Focused B2B corporate and advisory websites for Dallas firms start from $799 for lean multi-page scopes, while larger B2B platforms with gated resources, HubSpot/Salesforce integration, multi-service architecture and SEO migrations are scoped with itemized milestones."
+        },
+        {
+          "question": "How do you run B2B discovery and stakeholder reviews for Dallas teams?",
+          "answer": "Our team is based in Gurugram, India and runs scheduled Central Time (CST/CDT) workshops with your marketing, sales and leadership stakeholders using shared Figma prototypes, written scope docs and live staging URLs—without claiming a local Dallas office."
+        },
+        {
+          "question": "Can you integrate our B2B website with HubSpot, Salesforce or custom RFQ workflows?",
+          "answer": "Yes. We build multi-step RFQ and demo-booking forms with UTM source capture, field validation, automated routing and webhook/API sync to HubSpot, Salesforce, Pipedrive, Zoho or custom internal CRMs."
+        },
+        {
+          "question": "How do you protect existing SEO rankings during a B2B website redesign?",
+          "answer": "We crawl every existing URL, review Search Console performance, map 1-to-1 301 redirects for any restructured service or resource pages, preserve canonical/schema signals and run post-launch crawl QA."
+        },
+        {
+          "question": "Which CMS or tech stack works best for a B2B company website?",
+          "answer": "Custom Gutenberg WordPress suits B2B marketing teams publishing frequent thought leadership and case studies, while Next.js or Laravel fits interactive calculators, client portals and complex product configurators. We recommend the stack around your team's real workflow."
+        }
+      ],
+      "schema_service_name": "Dallas B2B Web Design & Development",
+      "schema_service_type": "B2B Website Design, Corporate Web Development and Lead Generation UX",
+      "cta_title": "Upgrade your Dallas B2B website into a pipeline asset",
+      "cta_description": "Share your current URL, target buyer verticals and CRM tools. We will outline a clear architecture, migration plan and milestone estimate with Central Time (CST/CDT) review calls."
+    },
+    {
+      "city_slug": "boston",
+      "slug": "biotech-web-design",
+      "sort_order": 30,
+      "meta_title": "Biotech Web Design Boston | Life Sciences & Lab ($799+)",
+      "meta_description": "Specialized biotech & life sciences web design for Boston & Kendall Square companies from $799. Clinical pipeline visuals, IR clarity, WCAG UX & EST reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/boston/biotech-web-design",
+      "breadcrumb_label": "Biotech Web Design",
+      "eyebrow": "Boston & Cambridge Biotech Web Design",
+      "heading_html": "Biotech &amp; Life Sciences Web Design in Boston <span>Scientific Clarity for Investors &amp; Partners</span>",
+      "hero_description": "Purpose-built biotech, biopharma, medtech and life-sciences web design for Boston, Kendall Square and Cambridge teams. Present clinical pipelines, scientific platforms, leadership credentials and investor-ready narratives with clarity—delivered remotely with scheduled Eastern Time reviews.",
+      "introduction": "A biotech or life-sciences website in Boston and Cambridge serves demanding audiences: venture investors, pharma BD partners, clinical trial investigators, scientific talent and patients. Generic marketing templates fail when they oversimplify complex therapeutic science or bury pipeline stages and publication evidence.\n\nWe design biotech and medtech websites around scientific precision and regulatory discipline—featuring clean therapeutic pipeline tables, mechanism-of-action visual hierarchies, leadership and SAB bio modules, publication libraries, accessible WCAG/ADA layouts and press/investor contact routing.\n\nChulbul Design operates from Gurugram, India and collaborates remotely with Boston and Kendall Square teams via scheduled Eastern Time (EST/EDT) workshops, Figma prototypes and structured compliance sign-off rounds—without claiming a Boston street office.",
+      "content": {
+        "hero_icon": "bi-heart-pulse",
+        "hero_primary_cta": "Plan Your Boston Biotech Website",
+        "hero_secondary_cta": "All Boston Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-diagram-3",
+            "text": "Interactive clinical pipeline & platform storytelling"
+          },
+          {
+            "icon": "bi-universal-access",
+            "text": "WCAG/ADA-aware typography & regulatory review flow"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled Eastern Time (EST/EDT) reviews"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Boston biotech website planning checklist",
+          "kicker": "Built for Kendall Square standards",
+          "title": "Communicate complex science without sacrificing clarity.",
+          "description": "Every section supports investor diligence, pharma partnering, scientific recruiting and clinical-stage updates.",
+          "items": [
+            "Editable therapeutic pipeline & stage table",
+            "Science/MOA overview & peer-reviewed publications",
+            "Leadership, Board & Scientific Advisory Board bios",
+            "Newsroom, partnering enquiries & IR readiness"
+          ]
+        },
+        "intro_label": "Life sciences digital strategy",
+        "intro_title": "Websites shaped for Boston biotech diligence, partnering and talent",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Boston?",
+        "hub_link_label": "Review the complete Boston web design hub",
+        "platform_label": "Biotech CMS & architecture",
+        "platform_title": "Choose a secure, easily updated platform for scientific teams",
+        "platform_intro": "Biotech teams update pipeline stages, posters, press releases and job openings rapidly around conferences like BIO or JPM—your CMS should make those updates safe and effortless.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "Custom Gutenberg WordPress CMS",
+            "icon": "bi-wordpress",
+            "best_fit": "Pre-clinical through clinical-stage Boston biotechs needing quick internal updates to pipeline bars, press releases, posters and SAB bios with strict layout guardrails.",
+            "tradeoff": "Requires lean custom blocks, security hardening and clean editorial permissions rather than bloated third-party plugins.",
+            "href": "/wordpress-development",
+            "link_label": "Explore WordPress engineering"
+          },
+          {
+            "name": "Next.js Static / Headless Platform",
+            "icon": "bi-window-stack",
+            "best_fit": "Series B+, medtech or diagnostics companies wanting ultra-fast global speed, high security posture and seamless integration with investor relations feeds.",
+            "tradeoff": "Requires a planned headless CMS preview workflow for legal/regulatory reviewers before publishing.",
+            "href": "/nextjs-development",
+            "link_label": "Explore Next.js development"
+          },
+          {
+            "name": "Custom Scientific Portal / Web App",
+            "icon": "bi-code-square",
+            "best_fit": "Life-sciences tool providers, CROs or labs needing searchable assay catalogues, sample calculators or gated partner portals.",
+            "tradeoff": "Interactive tools require structured data models, authentication scoping and thorough QA.",
+            "href": "/web-development",
+            "link_label": "Explore custom web development"
+          }
+        ],
+        "architecture_label": "Biotech content architecture",
+        "architecture_title": "Core modules investors, partners and scientists expect to find immediately",
+        "architecture_intro": "We structure scientific navigation so visitors move cleanly from high-level thesis to deep supporting evidence.",
+        "architecture_items": [
+          {
+            "icon": "bi-bar-chart-steps",
+            "title": "Editable clinical pipeline module",
+            "description": "Clean visual tables displaying therapeutic area, target/modality, discovery through Phase III status and partnering rights—editable from the CMS."
+          },
+          {
+            "icon": "bi-journal-medical",
+            "title": "Publications, posters & newsroom",
+            "description": "Filterable repository for peer-reviewed papers, conference posters, press releases and media kits with fast PDF handling."
+          },
+          {
+            "icon": "bi-people",
+            "title": "Leadership, Board & SAB profiles",
+            "description": "Credible executive and Scientific Advisory Board layouts highlighting academic affiliations, prior exits and clinical expertise."
+          },
+          {
+            "icon": "bi-briefcase",
+            "title": "Partnering & careers pathways",
+            "description": "Clear BD/partnering contact routing and clean careers integration (Greenhouse, Lever, Ashby) for attracting Boston talent."
+          }
+        ],
+        "process_label": "Biotech delivery workflow",
+        "process_title": "From stealth launch or Series A refresh to compliant go-live",
+        "process_intro": "Built around scientific and legal review cycles with clear staging links for leadership and advisors.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Narrative & stakeholder discovery",
+            "description": "Align with founders, scientific leads and comms advisors on target audiences (investors, pharma BD, clinicians, recruits)."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & pipeline wireframes",
+            "description": "Map Science, Pipeline, Leadership, Publications, News and Partnering pages before visual design."
+          },
+          {
+            "step": "03",
+            "title": "Visual identity & diagram integration",
+            "description": "Craft a crisp, modern life-sciences UI system that showcases MOA illustrations cleanly on desktop and mobile."
+          },
+          {
+            "step": "04",
+            "title": "Secure CMS build & staging review",
+            "description": "Develop editable pipeline/publication templates on a password-protected staging URL for legal and SAB sign-off."
+          },
+          {
+            "step": "05",
+            "title": "Accessibility, speed & SEO QA",
+            "description": "Test WCAG contrast, keyboard navigation, Core Web Vitals, canonical metadata and 301 redirects (if redesigning)."
+          },
+          {
+            "step": "06",
+            "title": "Coordinated press-ready launch",
+            "description": "Deploy on your launch window (funding announcement or conference embargo) with full admin ownership handover."
+          }
+        ],
+        "operations_label": "Compliance & reliability",
+        "operations_title": "Technical discipline built for biotech & medtech standards",
+        "operations_intro": "Clean engineering ensures your site stays fast, accessible and dependable during high-visibility funding or trial announcements.",
+        "operations_items": [
+          {
+            "icon": "bi-lock",
+            "title": "Password-gated pre-launch staging",
+            "description": "Keep stealth or funding-announcement sites completely noindexed and password-protected until your exact embargo lifts."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "WCAG 2.1 AA-aware design",
+            "description": "Readable scientific typography, accessible pipeline tables, alt descriptions and keyboard-navigable menus."
+          },
+          {
+            "icon": "bi-speedometer2",
+            "title": "Fast media & diagram loading",
+            "description": "Crisp SVG/WebP scientific graphics that load rapidly without blurring technical text on retina screens."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Hardened security & SSL",
+            "description": "Strict TLS, minimal attack surface, 2FA admin access and automated daily backups."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Structured brand & medical SEO",
+            "description": "Clean Organization/Service schema, descriptive metadata and Search Console verification."
+          },
+          {
+            "icon": "bi-envelope-check",
+            "title": "Segmented enquiry routing",
+            "description": "Route investor, partnering, media and general enquiries to the right internal inbox cleanly."
+          }
+        ],
+        "pricing_label": "Transparent Boston biotech scoping",
+        "pricing_title": "What determines biotech web design pricing in Boston?",
+        "pricing_intro": "Scopes range from lean stealth/seed launch sites to comprehensive Series B+ corporate and medtech platforms.",
+        "pricing_factors": [
+          {
+            "title": "Company stage & page depth",
+            "description": "A focused 5–7 page seed/stealth site differs from a 20+ page multi-program clinical-stage platform."
+          },
+          {
+            "title": "Pipeline & publication CMS modules",
+            "description": "Custom editable pipeline trackers, filterable poster/publication libraries and newsroom archives."
+          },
+          {
+            "title": "Scientific diagrams & visual assets",
+            "description": "Integrating client-supplied MOA figures vs creating custom web-optimized scientific diagrams."
+          },
+          {
+            "title": "ATS, IR & CRM integrations",
+            "description": "Connecting Greenhouse/Lever job boards, investor alert feeds or HubSpot partnering forms."
+          },
+          {
+            "title": "Legal/MLR review staging cycles",
+            "description": "Building structured review rounds for regulatory, legal and scientific advisory sign-offs."
+          },
+          {
+            "title": "Embargoed launch coordination",
+            "description": "Coordinating timed DNS cutover and Search Console indexing alongside press releases."
+          }
+        ],
+        "pricing_note": "Focused starter websites on our Boston hub begin at $799 for lean scopes. Full custom biotech and life-sciences websites with custom pipeline modules and stakeholder review cycles are quoted with itemized milestones after discovery.",
+        "schema_catalog_name": "Boston Biotech Web Design Services",
+        "schema_offers": [
+          "Boston Biotech Website Design",
+          "Life Sciences & Biopharma UX",
+          "Clinical Pipeline & Publication CMS",
+          "Stealth & Series A Biotech Launch Sites",
+          "Medtech & Diagnostics Web Development"
+        ],
+        "related_label": "Related Boston services & guides",
+        "related_title": "Explore more Boston web design capabilities",
+        "related_intro": "Compare sibling Boston services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Boston Web Design Hub",
+            "description": "Full website design, B2B and local starter packages for Boston & Cambridge.",
+            "href": "/city/boston",
+            "label": "Explore Boston web design"
+          },
+          {
+            "title": "Boston Small Business Web Design",
+            "description": "Lean custom websites and local SEO for Greater Boston teams.",
+            "href": "/city/boston/small-business-web-design",
+            "label": "View Boston small business sites"
+          },
+          {
+            "title": "Boston Ecommerce Development",
+            "description": "Custom Shopify, WooCommerce and B2B lab-supply storefronts.",
+            "href": "/city/boston/ecommerce-development",
+            "label": "Explore Boston ecommerce"
+          },
+          {
+            "title": "Healthcare & Life Sciences Industry",
+            "description": "See our healthcare, clinical and compliance-aware web development capabilities.",
+            "href": "/industry/healthcare",
+            "label": "View healthcare industry solutions"
+          }
+        ],
+        "faq_label": "Boston biotech web design FAQs",
+        "faq_title": "Biotech & life sciences web design FAQs for Boston teams",
+        "form_eyebrow": "Boston biotech website enquiry",
+        "form_service": "Boston Biotech Web Design",
+        "form_source": "city-boston-biotech-web-design-spoke",
+        "form_bullets": [
+          "Confidential staging & NDA-friendly discovery",
+          "Editable pipeline & publication architecture",
+          "Scheduled EST/EDT milestone reviews"
+        ],
+        "form_message_label": "Tell us about your biotech or life-sciences website",
+        "form_message_placeholder": "Company stage (stealth, Seed, Series A/B, clinical), needed modules (pipeline, publications, careers) and target launch timing.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Boston project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/web-design-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "Biotech launch readiness checklist",
+        "title": "Structure scientific credibility for investors and partners",
+        "location": "Remote delivery for Boston & Cambridge (EST/EDT) from Gurugram, India",
+        "context": "This is our documented biotech delivery checklist—not a fabricated local client case study.",
+        "problem_label": "Biotech challenge",
+        "work_label": "Delivery scope",
+        "result_label": "Pre-launch checks",
+        "problem": "Early- and clinical-stage biotechs often launch with static brochure pages that cannot present pipeline updates, publications or partnering paths clearly.",
+        "work": "Architect modular Science, Pipeline, Leadership, Publications and Partnering templates on password-protected staging with WCAG-aware UX.",
+        "result": "Verify embargo security, mobile pipeline readability, routed BD/investor forms and clean post-launch Google indexing.",
+        "metrics": [],
+        "source_href": "/web-design",
+        "source_label": "Explore our web design process"
+      },
+      "faqs": [
+        {
+          "question": "Can you build a stealth-mode or Series A biotech website on a tight launch window?",
+          "answer": "Yes. We build on password-protected, noindexed staging servers so your team and advisors can review privately, then coordinate a clean live cutover right when your funding or conference news goes public."
+        },
+        {
+          "question": "Will our internal comms team be able to update the clinical pipeline table easily?",
+          "answer": "Yes. We build structured CMS fields for each therapeutic program so updating a phase bar, indication or partnering note takes seconds without touching HTML or breaking mobile layout."
+        },
+        {
+          "question": "How do you collaborate with Boston and Kendall Square teams remotely?",
+          "answer": "Chulbul Design operates from Gurugram, India and runs scheduled Eastern Time (EST/EDT) workshops, Figma walkthroughs and written milestone reviews. We do not claim a Boston street office."
+        },
+        {
+          "question": "Do you support WCAG/ADA accessibility and scientific PDF/poster libraries?",
+          "answer": "Yes. We design around readable contrast, semantic headings, keyboard accessibility and fast, cleanly organised publication and conference poster repositories."
+        },
+        {
+          "question": "How much does a Boston biotech website cost?",
+          "answer": "Lean starter website scopes begin at $799, while custom biotech websites with interactive pipeline trackers, custom design systems and legal review cycles are scoped transparently after a short discovery call."
+        }
+      ],
+      "schema_service_name": "Boston Biotech & Life Sciences Web Design",
+      "schema_service_type": "Biotech Web Design, Life Sciences Website Development and Medtech UX",
+      "cta_title": "Launch a credible Boston biotech website with zero agency bloat",
+      "cta_description": "Share your company stage, target launch date (or conference deadline) and core pages. We will propose a clean scope and EST review schedule."
+    },
+    {
+      "city_slug": "glasgow",
+      "slug": "website-redesign",
+      "sort_order": 30,
+      "meta_title": "Website Redesign Glasgow | SEO-Safe Revamp from £649",
+      "meta_description": "SEO-safe website redesign & revamp agency for Glasgow businesses from £649. Modern mobile UX, faster Core Web Vitals, 301 redirect mapping & UK reviews.",
+      "canonical_url": "https://www.chulbuldesign.com/city/glasgow/website-redesign",
+      "breadcrumb_label": "Website Redesign",
+      "eyebrow": "Glasgow Website Redesign & Revamp",
+      "heading_html": "Website Redesign &amp; Revamp in Glasgow <span>Modern UX Without Losing Google Rankings</span>",
+      "hero_description": "Modernise your outdated Glasgow business or ecommerce website without risking your hard-earned search traffic. We audit existing URLs, rebuild mobile UX and Core Web Vitals speed, map 1-to-1 301 redirects and deliver remotely with scheduled UK (GMT/BST) reviews from £649+.",
+      "introduction": "Many established Glasgow businesses across the City Centre, Merchant City, Finnieston, West End and Strathclyde have websites that still earn steady local search traffic—yet look dated on mobile, load slowly or fail to convert visitors into phone calls and quotes. Rebuilding from scratch without auditing what already ranks is the fastest way to lose organic leads.\n\nOur website redesign process protects what works while replacing what holds you back: we inventory every indexed URL, keep high-performing page paths or map exact 1-to-1 301 redirects, modernise visual design and mobile enquiry flows, and upgrade your CMS so your team can edit pages easily.\n\nChulbul Design operates from Gurugram, India and delivers website redesigns for Glasgow businesses remotely via scheduled UK (GMT/BST) walkthroughs, staging previews and transparent milestone pricing—without claiming a local Glasgow street office.",
+      "content": {
+        "hero_icon": "bi-arrow-repeat",
+        "hero_primary_cta": "Request a Glasgow Redesign Audit",
+        "hero_secondary_cta": "All Glasgow Web Design Services",
+        "hero_trust_items": [
+          {
+            "icon": "bi-shield-check",
+            "text": "1-to-1 301 redirect map & SEO preservation"
+          },
+          {
+            "icon": "bi-speedometer2",
+            "text": "Mobile-first UX & Core Web Vitals rebuild"
+          },
+          {
+            "icon": "bi-clock",
+            "text": "Scheduled UK (GMT/BST) reviews from £649+"
+          }
+        ],
+        "hero_card": {
+          "aria_label": "Glasgow website redesign checklist",
+          "kicker": "Audit before rebuilding",
+          "title": "Keep your rankings while upgrading conversion UX.",
+          "description": "Every Glasgow website revamp follows a documented migration and QA protocol so launch day brings growth, not traffic drops.",
+          "items": [
+            "Full URL, backlink & Search Console audit",
+            "Modern mobile layouts & clearer quote CTAs",
+            "1-to-1 301 redirect map & canonical parity",
+            "72-hour post-launch crawl & form verification"
+          ]
+        },
+        "intro_label": "SEO-safe website revamp",
+        "intro_title": "Why a disciplined website redesign outperforms a cosmetic theme swap",
+        "hub_link_intro": "Comparing broader website, ecommerce or SEO options in Glasgow?",
+        "hub_link_label": "Review the complete Glasgow web design hub",
+        "platform_label": "Redesign approach options",
+        "platform_title": "Choose the right revamp depth for your Glasgow website",
+        "platform_intro": "Not every site needs a ground-up platform switch. We recommend the cleanest route based on your current CMS, speed bottlenecks and commercial goals.",
+        "platform_primary_label": "Best fit when",
+        "platform_secondary_label": "Plan carefully for",
+        "platforms": [
+          {
+            "name": "WordPress UX & Speed Rebuild",
+            "icon": "bi-wordpress",
+            "best_fit": "Glasgow companies already on WordPress whose design feels dated or sluggish due to legacy page builders and plugin sprawl.",
+            "tradeoff": "Requires cleaning legacy shortcodes and auditing existing URLs so permalinks and rankings remain intact.",
+            "href": "/website-redesign",
+            "link_label": "Explore website redesign services"
+          },
+          {
+            "name": "Platform Migration & Modernisation",
+            "icon": "bi-arrow-left-right",
+            "best_fit": "Businesses moving off Wix, Squarespace, legacy PHP or ageing Magento/Joomla sites onto WordPress, Shopify or Next.js.",
+            "tradeoff": "Changing URL structures demands a complete 1-to-1 301 redirect spreadsheet and post-launch Search Console monitoring.",
+            "href": "/website-migration",
+            "link_label": "Explore SEO-safe migration"
+          },
+          {
+            "name": "Conversion & Landing Page Revamp",
+            "icon": "bi-graph-up-arrow",
+            "best_fit": "Sites receiving steady Glasgow traffic or Google Ads clicks that suffer from weak enquiry rates on mobile.",
+            "tradeoff": "Visual refreshes work best when paired with clearer service offers, local proof and simplified quote forms.",
+            "href": "/conversion-rate-optimization",
+            "link_label": "Explore CRO services"
+          }
+        ],
+        "architecture_label": "Redesign safeguards",
+        "architecture_title": "Four technical pillars that protect your Glasgow search visibility",
+        "architecture_intro": "We combine visual modernisation with disciplined technical SEO migration practices.",
+        "architecture_items": [
+          {
+            "icon": "bi-list-ul",
+            "title": "Complete URL & ranking inventory",
+            "description": "Export existing pages, top-performing Glasgow keywords and backlinks before changing a single slug or navigation item."
+          },
+          {
+            "icon": "bi-phone",
+            "title": "Mobile-first conversion redesign",
+            "description": "Restructure sticky headers, tap targets, click-to-call buttons, WhatsApp/quote forms and service proof for smartphone visitors."
+          },
+          {
+            "icon": "bi-signpost-split",
+            "title": "1-to-1 301 redirects & schema parity",
+            "description": "Map every changed URL directly to its closest new destination with zero redirect chains, plus clean Service and FAQ schema."
+          },
+          {
+            "icon": "bi-lightning-charge",
+            "title": "Core Web Vitals speed engineering",
+            "description": "Eliminate render-blocking legacy scripts, compress oversized imagery into WebP and stabilise layout shift (CLS)."
+          }
+        ],
+        "process_label": "Glasgow redesign process",
+        "process_title": "Six structured steps from existing-site audit to safe relaunch",
+        "process_intro": "Every phase is reviewed on password-protected staging during UK business hours before touching your live domain.",
+        "process": [
+          {
+            "step": "01",
+            "title": "Baseline UX, speed & SEO audit",
+            "description": "Review your live Glasgow site, Search Console queries, mobile friction, Core Web Vitals and conversion blockers."
+          },
+          {
+            "step": "02",
+            "title": "Sitemap & 301 redirect plan",
+            "description": "Decide which URLs stay identical, which merge and exact 1-to-1 redirect mappings to protect search equity."
+          },
+          {
+            "step": "03",
+            "title": "Modern responsive UI design",
+            "description": "Design fresh desktop and mobile layouts focused on brand credibility, clear pricing/service messaging and fast quote paths."
+          },
+          {
+            "step": "04",
+            "title": "Clean staging development",
+            "description": "Build the redesigned templates on a noindexed staging environment, migrate content cleanly and wire GA4 enquiry tracking."
+          },
+          {
+            "step": "05",
+            "title": "Redirect, form & device QA",
+            "description": "Test every redirect rule, mobile breakpoint, form delivery, SSL certificate and metadata tag prior to cutover."
+          },
+          {
+            "step": "06",
+            "title": "Staged launch & 72-hour monitoring",
+            "description": "Deploy cleanly, submit the refreshed sitemap to Search Console and monitor 404 logs and enquiry submissions."
+          }
+        ],
+        "operations_label": "Post-redesign performance",
+        "operations_title": "Built to convert more of the Glasgow visitors you already earn",
+        "operations_intro": "A redesign pays for itself when faster load times and clearer messaging lift both organic rankings and enquiry rate.",
+        "operations_items": [
+          {
+            "icon": "bi-graph-up",
+            "title": "Higher mobile enquiry rate",
+            "description": "Clear above-the-fold offers, concise forms and visible trust signals tailored to Glasgow buyers."
+          },
+          {
+            "icon": "bi-speedometer2",
+            "title": "Faster mobile page speed",
+            "description": "Trimmed assets and modern code replace sluggish legacy templates to pass Core Web Vitals."
+          },
+          {
+            "icon": "bi-search",
+            "title": "Protected & expanded local SEO",
+            "description": "Improved heading hierarchy, internal links and local Glasgow/Scotland relevance without losing historic rankings."
+          },
+          {
+            "icon": "bi-pencil-square",
+            "title": "Easier day-to-day updates",
+            "description": "Clean CMS editing so your staff can update services, team photos and news without developer delays."
+          },
+          {
+            "icon": "bi-universal-access",
+            "title": "Modern accessibility",
+            "description": "Readable font scales, clear contrast ratios and keyboard-accessible navigation and forms."
+          },
+          {
+            "icon": "bi-shield-check",
+            "title": "Full backup & ownership",
+            "description": "Complete pre-launch archive of your old site plus 100% ownership of the new code, domain and hosting."
+          }
+        ],
+        "pricing_label": "Transparent Glasgow redesign pricing",
+        "pricing_title": "How much does a website redesign cost in Glasgow?",
+        "pricing_intro": "Redesign quotes depend on existing page volume, platform migration complexity, custom UX scope and ecommerce requirements.",
+        "pricing_factors": [
+          {
+            "title": "Page volume & content migration",
+            "description": "Refreshing an 8-page service site takes less migration effort than restructuring a 60-page site with blog archives."
+          },
+          {
+            "title": "Same CMS vs platform switch",
+            "description": "Rebuilding inside WordPress is faster than migrating products, orders and URLs across different platforms."
+          },
+          {
+            "title": "SEO redirect & audit depth",
+            "description": "High-traffic sites with years of backlinks require detailed URL mapping and post-launch Search Console QA."
+          },
+          {
+            "title": "Ecommerce or booking workflows",
+            "description": "Preserving Shopify/WooCommerce catalogues, customer accounts or appointment systems adds testing milestones."
+          },
+          {
+            "title": "Copy & visual asset refresh",
+            "description": "Tightening conversion headlines and updating imagery alongside layout design lifts post-launch enquiry rates."
+          },
+          {
+            "title": "Launch timing & support",
+            "description": "Off-peak UK cutover, staff CMS training and optional post-launch monitoring retainers."
+          }
+        ],
+        "pricing_note": "Starter Glasgow website redesigns begin at £649 for focused small-business scopes (up to 5 core pages). Larger multi-service, custom UX and ecommerce redesigns are quoted transparently after a free audit of your current URL.",
+        "schema_catalog_name": "Glasgow Website Redesign Services",
+        "schema_offers": [
+          "Glasgow Website Redesign",
+          "SEO-Safe Website Migration & 301 Redirects",
+          "Mobile UX & Conversion Revamp",
+          "WordPress & Ecommerce Redesign",
+          "Core Web Vitals Speed Rebuild"
+        ],
+        "related_label": "Related Glasgow services & guides",
+        "related_title": "Explore more Glasgow web design capabilities",
+        "related_intro": "Compare sibling Glasgow services, core engineering capabilities, and local planning guides.",
+        "related_links": [
+          {
+            "title": "Glasgow Web Design Hub",
+            "description": "Full website design packages and transparent £649+ pricing for Glasgow.",
+            "href": "/city/glasgow",
+            "label": "Explore Glasgow web design"
+          },
+          {
+            "title": "Glasgow Small Business Web Design",
+            "description": "Custom small-business sites and local Scotland SEO.",
+            "href": "/city/glasgow/small-business-web-design",
+            "label": "View Glasgow small business sites"
+          },
+          {
+            "title": "Glasgow Ecommerce Development",
+            "description": "Shopify and WooCommerce online store builds and migrations in Glasgow.",
+            "href": "/city/glasgow/ecommerce-development",
+            "label": "Explore Glasgow ecommerce"
+          },
+          {
+            "title": "Glasgow Web Design & Redesign Guide (2026)",
+            "description": "2026 UK pricing, redesign ROI and small business growth checklist for Glasgow.",
+            "href": "/blog/web-design-glasgow-small-business-redesign-guide-2026",
+            "label": "Read Glasgow 2026 redesign guide"
+          },
+          {
+            "title": "Website Redesign SEO Checklist (2026)",
+            "description": "Step-by-step 301 redirect and staging checklist to prevent traffic drops.",
+            "href": "/blog/website-redesign-seo-checklist-migration-guide",
+            "label": "Read SEO redesign checklist"
+          }
+        ],
+        "faq_label": "Glasgow website redesign FAQs",
+        "faq_title": "Website redesign & revamp FAQs for Glasgow businesses",
+        "form_eyebrow": "Glasgow website redesign enquiry",
+        "form_service": "Glasgow Website Redesign",
+        "form_source": "city-glasgow-website-redesign-spoke",
+        "form_bullets": [
+          "Free baseline UX & SEO URL check",
+          "1-to-1 301 redirect & migration plan",
+          "Transparent £649+ milestone quote"
+        ],
+        "form_message_label": "Share your current website URL & redesign goals",
+        "form_message_placeholder": "Current website URL, platform (WordPress/Wix/etc.), main issues you want fixed, and target launch timeline.",
+        "form_button": "Request a Scoped Quote",
+        "form_success_message": "Thank you. Your Glasgow project enquiry has been received.",
+        "og_image": "https://www.chulbuldesign.com/assets/images/service-heroes/website-redesign-hero.webp"
+      },
+      "proof": {
+        "eyebrow": "Redesign migration checklist",
+        "title": "Modernise UX while safeguarding existing organic equity",
+        "location": "Remote delivery for Glasgow, UK (GMT/BST) from Gurugram, India",
+        "context": "This is our documented website redesign QA checklist—not a fabricated local case study.",
+        "problem_label": "Redesign risk",
+        "work_label": "Migration scope",
+        "result_label": "Launch verification",
+        "problem": "Rushed website revamps frequently drop local rankings when old URLs return 404 errors, metadata disappears or heavy new layouts slow mobile loading.",
+        "work": "Inventory all indexed URLs, build lean responsive templates on noindexed staging, test 1-to-1 301 redirects and verify form routing.",
+        "result": "Confirm zero broken redirect chains, clean Core Web Vitals, active GA4 conversion tracking and healthy Search Console coverage post-launch.",
+        "metrics": [],
+        "source_href": "/website-redesign",
+        "source_label": "Review website redesign services"
+      },
+      "faqs": [
+        {
+          "question": "Will redesigning our Glasgow website hurt our existing Google rankings?",
+          "answer": "Not when handled with a proper SEO migration plan. We audit your current top pages, preserve winning URLs wherever possible, map 1-to-1 301 redirects for any changed paths and verify Google Search Console indexing immediately after launch."
+        },
+        {
+          "question": "How much does a website redesign cost in Glasgow?",
+          "answer": "Focused small-business website redesigns in Glasgow start from £649. Larger multi-service corporate websites, platform migrations and Shopify/WooCommerce revamps are quoted with itemized milestones after reviewing your current site."
+        },
+        {
+          "question": "How long does a Glasgow website revamp take?",
+          "answer": "Most small-business redesigns complete in 2–4 weeks from audit to launch. Larger corporate or ecommerce migrations typically take 5–8 weeks including staging QA and redirect testing."
+        },
+        {
+          "question": "Will our existing website go offline during the redesign?",
+          "answer": "No. Your current Glasgow website stays live throughout design and development. We build and test the entire new site on a private staging link and perform a quick, controlled cutover once you sign off."
+        },
+        {
+          "question": "How do you work with Glasgow businesses remotely?",
+          "answer": "Chulbul Design is based in Gurugram, India and collaborates with Glasgow clients remotely through scheduled UK (GMT/BST) video reviews, shared staging links and clear milestone sign-offs."
+        }
+      ],
+      "schema_service_name": "Glasgow Website Redesign & Revamp",
+      "schema_service_type": "Website Redesign, Website Revamp and SEO-Safe Website Migration",
+      "cta_title": "Ready to modernise your Glasgow website safely?",
+      "cta_description": "Send us your current Glasgow website URL and what you want improved. We will run a quick UX & SEO audit and share a clear £649+ redesign plan."
+    }
+  ]
+}

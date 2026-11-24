@@ -116,6 +116,30 @@ if ($matched_city_info) {
                 $mcName . ' Contractor Web Design',
                 'Service-area pages & quote forms',
             ],
+            'magento-development' => [
+                'bi-boxes',
+                'Magento Web Design & Migrations in ' . $mcName,
+                $mcName . ' Magento Development',
+                'Magento 2 builds & Shopify/Woo moves',
+            ],
+            'b2b-web-design' => [
+                'bi-building',
+                'B2B Website Design & Development in ' . $mcName,
+                $mcName . ' B2B Web Design',
+                'Corporate UX, RFQ forms & CRM sync',
+            ],
+            'biotech-web-design' => [
+                'bi-heart-pulse',
+                'Biotech & Life Sciences Web Design in ' . $mcName,
+                $mcName . ' Biotech Web Design',
+                'Clinical pipelines, IR & scientific UX',
+            ],
+            'website-redesign' => [
+                'bi-arrow-repeat',
+                'SEO-Safe Website Redesign & Revamp in ' . $mcName,
+                $mcName . ' Website Redesign',
+                'Modern UX, speed & 301 redirect map',
+            ],
             default => [
                 'bi-window-desktop',
                 (string)$sp['label'] . ' in ' . $mcName,

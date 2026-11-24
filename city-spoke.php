@@ -406,6 +406,10 @@ require __DIR__ . '/includes/header.php';
             'ecommerce-development' => 'Ecommerce Website Design in ' . $city['name'],
             'wordpress-developer' => 'WordPress Web Design in ' . $city['name'],
             'contractor-web-design' => 'Contractor Website Design in ' . $city['name'],
+            'magento-development' => 'Magento Web Design in ' . $city['name'],
+            'b2b-web-design' => 'B2B Web Design in ' . $city['name'],
+            'biotech-web-design' => 'Biotech Web Design in ' . $city['name'],
+            'website-redesign' => 'Website Redesign in ' . $city['name'],
             default => (string)($siblingSpoke['label'] ?? '') . ' in ' . $city['name'],
         };
         $appendRelatedLink(
