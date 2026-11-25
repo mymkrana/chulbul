@@ -1,0 +1,1107 @@
+/* ==========================================================================
+   Chulbul Design — Reusable "Work Worth Showing Off" Portfolio Component
+   Chulbul Brand Design System: Light Crisp Surface · Indigo #49499A · Coral #EE483D
+   100% Namespaced (.cbd-work-*) — Safe to include on ANY page
+   ========================================================================== */
+
+.cbd-work-section {
+    --cw-bg: #f8f9ff;
+    --cw-bg-end: #ffffff;
+    --cw-card: #ffffff;
+    --cw-stage-bg: #f1f3fb;
+    --cw-border: #e5e8f4;
+    --cw-border-hover: rgba(73, 73, 154, 0.28);
+    --cw-brand: #ee483d;
+    --cw-brand-dark: #d43c31;
+    --cw-indigo: #49499a;
+    --cw-navy: #1e1e5c;
+    --cw-ink: #111827;
+    --cw-muted: #4b5563;
+    --cw-subtle: #6b7280;
+
+    position: relative;
+    width: 100%;
+    padding: 88px 0 92px;
+    background: linear-gradient(180deg, var(--cw-bg) 0%, var(--cw-bg-end) 100%);
+    border-top: 1px solid #eef0fb;
+    border-bottom: 1px solid #eef0fb;
+    color: var(--cw-ink);
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    box-sizing: border-box;
+}
+
+.cbd-work-section *,
+.cbd-work-section *::before,
+.cbd-work-section *::after {
+    box-sizing: border-box;
+}
+
+.cbd-work-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ── Centered Chulbul Section Header ────────────────────────────────────── */
+.cbd-work-head {
+    max-width: 720px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.cbd-work-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cw-brand);
+    background: #fff1f0;
+    border: 1px solid #fed7d4;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+.cbd-work-eyebrow-line {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--cw-brand);
+}
+
+.cbd-work-title {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--cw-indigo);
+}
+
+.cbd-work-subtitle {
+    margin: 0;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--cw-subtle);
+}
+
+/* ── Project Selector Pills (Chulbul Light Pill Bar) ────────────────────── */
+.cbd-work-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 2px 22px;
+    margin-bottom: 6px;
+}
+
+.cbd-work-tab {
+    position: relative;
+    flex: 0 0 auto;
+    appearance: none;
+    border: 1px solid var(--cw-border);
+    background: #ffffff;
+    color: var(--cw-muted);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(30, 30, 92, 0.04);
+    transition: border-color 0.22s ease, color 0.22s ease, background 0.22s ease, transform 0.2s ease, box-shadow 0.22s ease;
+}
+
+.cbd-work-tab:hover {
+    border-color: rgba(73, 73, 154, 0.35);
+    color: var(--cw-indigo);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(30, 30, 92, 0.08);
+}
+
+.cbd-work-tab span {
+    position: relative;
+    z-index: 2;
+}
+
+.cbd-work-tab-progress {
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    background: linear-gradient(90deg, rgba(73, 73, 154, 0.14), rgba(238, 72, 61, 0.12));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cbd-work-tab.is-active {
+    border-color: var(--cw-indigo);
+    color: var(--cw-navy);
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(73, 73, 154, 0.14), 0 0 0 1px rgba(73, 73, 154, 0.12);
+}
+
+.cbd-work-tab.is-active .cbd-work-tab-progress {
+    animation: cbdWorkTabFill var(--cw-auto-duration, 7500ms) linear forwards;
+}
+
+.cbd-work-section.is-paused .cbd-work-tab.is-active .cbd-work-tab-progress {
+    animation-play-state: paused;
+}
+
+@keyframes cbdWorkTabFill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+/* ── Main White Elevated Showcase Card ──────────────────────────────────── */
+.cbd-work-stage {
+    position: relative;
+    border-radius: 28px;
+    border: 1px solid var(--cw-border);
+    background: var(--cw-card);
+    box-shadow: 0 24px 64px rgba(30, 30, 92, 0.08), 0 4px 16px rgba(30, 30, 92, 0.04);
+    padding: 28px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cbd-work-stage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cw-brand) 0%, var(--cw-indigo) 55%, #7c3aed 100%);
+    z-index: 3;
+}
+
+.cbd-work-stage:hover {
+    border-color: var(--cw-border-hover);
+    box-shadow: 0 28px 72px rgba(30, 30, 92, 0.12), 0 6px 20px rgba(30, 30, 92, 0.05);
+}
+
+/* Soft pastel studio glows */
+.cbd-work-glow {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 999px;
+    filter: blur(75px);
+    opacity: 0.55;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.cbd-work-glow-red {
+    width: 320px;
+    height: 320px;
+    top: -80px;
+    left: 6%;
+    background: rgba(238, 72, 61, 0.14);
+}
+
+.cbd-work-glow-indigo {
+    width: 340px;
+    height: 340px;
+    bottom: -90px;
+    left: 28%;
+    background: rgba(73, 73, 154, 0.14);
+}
+
+.cbd-work-stage:hover .cbd-work-glow {
+    opacity: 0.8;
+}
+
+.cbd-work-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr);
+    gap: 36px;
+    align-items: center;
+}
+
+/* ── Left: Soft Lavender Studio Stage + Device Mockups ──────────────────── */
+.cbd-work-device-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    background: linear-gradient(145deg, #f4f6fe 0%, #eef1fc 60%, #fff5f4 100%);
+    border: 1px solid #e7eaf6;
+    border-radius: 22px;
+    padding: 24px 22px 18px;
+}
+
+.cbd-work-device-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 392px;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cbd-work-stage:hover .cbd-work-device-wrap {
+    transform: translateY(-4px);
+}
+
+/* Sleek Dark MacBook Frame (high contrast on light stage) */
+.cbd-work-laptop {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+}
+
+.cbd-work-device-col[data-device="mobile"] .cbd-work-laptop {
+    display: none;
+}
+
+.cbd-work-laptop-lid {
+    border-radius: 16px 16px 6px 6px;
+    background: linear-gradient(180deg, #272c3f 0%, #151929 100%);
+    padding: 10px 10px 12px;
+    border: 1px solid rgba(30, 30, 92, 0.25);
+    box-shadow: 0 22px 44px rgba(30, 30, 92, 0.18);
+}
+
+.cbd-work-browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 2px 6px 10px;
+}
+
+.cbd-work-dots {
+    display: inline-flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.cbd-work-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+}
+
+.cbd-work-dots span:nth-child(1) { background: #ff5f57; }
+.cbd-work-dots span:nth-child(2) { background: #febc2e; }
+.cbd-work-dots span:nth-child(3) { background: #28c840; }
+
+.cbd-work-address {
+    flex: 1;
+    max-width: 340px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 7px;
+    padding: 4px 12px;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cbd-work-screen {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.cbd-work-laptop-base {
+    position: relative;
+    width: 105%;
+    margin-left: -2.5%;
+    height: 14px;
+    border-radius: 0 0 14px 14px;
+    background: linear-gradient(180deg, #d7dce8 0%, #b5bdd0 65%, #9aa4bc 100%);
+    box-shadow: 0 16px 26px -10px rgba(30, 30, 92, 0.28);
+}
+
+.cbd-work-laptop-base::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82px;
+    height: 5px;
+    border-radius: 0 0 6px 6px;
+    background: #8e98b0;
+}
+
+/* iPhone Mobile Frame */
+.cbd-work-phone {
+    display: none;
+    position: relative;
+    width: 236px;
+    border-radius: 36px;
+    padding: 9px;
+    background: linear-gradient(160deg, #2b3044 0%, #141826 100%);
+    border: 2px solid #3c435c;
+    box-shadow: 0 24px 48px rgba(30, 30, 92, 0.24);
+}
+
+.cbd-work-device-col[data-device="mobile"] .cbd-work-phone {
+    display: block;
+}
+
+.cbd-work-phone-island {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68px;
+    height: 17px;
+    border-radius: 999px;
+    background: #07090f;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.cbd-work-phone-screen {
+    position: relative;
+    width: 100%;
+    height: 392px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Auto-Scrolling Screenshot Image */
+.cbd-work-shot {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    animation: cbdWorkPan var(--cw-pan-duration, 16s) linear infinite alternate;
+}
+
+.cbd-work-stage:hover .cbd-work-shot,
+.cbd-work-section.is-paused .cbd-work-shot {
+    animation-play-state: paused;
+}
+
+.cbd-work-shot.is-waking {
+    animation-name: cbdWorkWake, cbdWorkPan;
+    animation-duration: 0.45s, var(--cw-pan-duration, 16s);
+    animation-timing-function: ease-out, linear;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+}
+
+@keyframes cbdWorkPan {
+    0%, 8%   { transform: translate3d(0, 0, 0); }
+    92%, 100% { transform: translate3d(0, calc(-1 * var(--cw-pan-distance, 0px)), 0); }
+}
+
+@keyframes cbdWorkWake {
+    from { opacity: 0.4; transform: translate3d(0, 0, 0); }
+    to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* Hover Pause Hint Pill */
+.cbd-work-pause-pill {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: rgba(30, 30, 92, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: 999px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+.cbd-work-stage:hover .cbd-work-pause-pill {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Bottom Device & Subpage Controls Bar (Crisp White Pills) ───────────── */
+.cbd-work-controls {
+    width: 100%;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(73, 73, 154, 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cbd-work-device-toggle {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #dfe3f2;
+    border-radius: 999px;
+    padding: 4px;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(30, 30, 92, 0.05);
+}
+
+.cbd-work-dev-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--cw-muted);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 13px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cbd-work-dev-btn:hover {
+    color: var(--cw-indigo);
+}
+
+.cbd-work-dev-btn.is-active {
+    background: var(--cw-indigo);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(73, 73, 154, 0.28);
+}
+
+.cbd-work-subpages {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cbd-work-subpages.is-hidden {
+    display: none;
+}
+
+.cbd-work-subpage-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--cw-navy);
+    white-space: nowrap;
+}
+
+.cbd-work-subpage-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cbd-work-subdot {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: rgba(73, 73, 154, 0.22);
+    cursor: pointer;
+    transition: width 0.25s ease, background 0.25s ease;
+}
+
+.cbd-work-subdot.is-active {
+    width: 22px;
+    background: linear-gradient(90deg, var(--cw-brand), var(--cw-indigo));
+}
+
+.cbd-work-subbtn {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 1px solid #d9deef;
+    background: #ffffff;
+    color: var(--cw-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.cbd-work-subbtn:hover {
+    border-color: var(--cw-indigo);
+    background: var(--cw-indigo);
+    color: #ffffff;
+}
+
+/* ── Right: Clean Chulbul Narrative & Metrics Column ────────────────────── */
+.cbd-work-info-col {
+    position: relative;
+    padding: 6px 6px 6px 26px;
+    min-width: 0;
+}
+
+.cbd-work-info-col::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--cw-brand) 0%, var(--cw-indigo) 65%, rgba(73, 73, 154, 0.08) 100%);
+}
+
+.cbd-work-watermark {
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    font-size: clamp(78px, 8vw, 106px);
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(73, 73, 154, 0.055);
+    pointer-events: none;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.cbd-work-stage:hover .cbd-work-watermark {
+    color: rgba(73, 73, 154, 0.09);
+}
+
+.cbd-work-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.cbd-work-cat-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cw-brand);
+    background: #fff1f0;
+    border: 1px solid #fed7d4;
+    padding: 5px 12px;
+    border-radius: 999px;
+}
+
+.cbd-work-tech-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cw-indigo);
+    background: #eef0fb;
+    padding: 5px 11px;
+    border-radius: 999px;
+}
+
+.cbd-work-proj-title {
+    margin: 0 0 10px;
+    font-size: clamp(24px, 2.5vw, 31px);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: var(--cw-navy);
+}
+
+.cbd-work-proj-desc {
+    margin: 0 0 20px;
+    font-size: 14.5px;
+    line-height: 1.68;
+    color: var(--cw-muted);
+}
+
+.cbd-work-highlights {
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.cbd-work-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.48;
+    color: #374151;
+}
+
+.cbd-work-highlights i {
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background: #fff1f0;
+    color: var(--cw-brand);
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+/* Chulbul Metric Tiles */
+.cbd-work-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.cbd-work-metrics.is-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cbd-work-metrics.is-empty {
+    display: none;
+}
+
+.cbd-work-metric-card {
+    position: relative;
+    border-radius: 14px;
+    background: #f8f9ff;
+    border: 1px solid #e6e9f7;
+    padding: 14px 10px 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cbd-work-metric-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--cw-brand), var(--cw-indigo));
+}
+
+.cbd-work-metric-val {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--cw-indigo);
+    margin-bottom: 4px;
+}
+
+.cbd-work-metric-lbl {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--cw-subtle);
+    line-height: 1.3;
+}
+
+/* Chulbul CTA Buttons */
+.cbd-work-actions {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.cbd-work-btn-primary {
+    appearance: none;
+    border: 0;
+    border-radius: 12px;
+    background: var(--cw-brand);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 10px 22px rgba(238, 72, 61, 0.24);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cbd-work-btn-primary:hover {
+    background: var(--cw-brand-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(238, 72, 61, 0.32);
+    color: #ffffff;
+}
+
+.cbd-work-btn-ghost {
+    border-radius: 12px;
+    border: 2px solid #dfe3f2;
+    background: #ffffff;
+    color: var(--cw-indigo);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.cbd-work-btn-ghost:hover {
+    border-color: var(--cw-indigo);
+    background: #f5f6fe;
+    color: var(--cw-navy);
+}
+
+/* ── Bottom Carousel Progress & Prev/Next Footer ────────────────────────── */
+.cbd-work-footer {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cbd-work-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+
+.cbd-work-counter-cur {
+    color: var(--cw-indigo);
+}
+
+.cbd-work-counter-total {
+    color: #9ca3af;
+}
+
+.cbd-work-progress-track {
+    width: 140px;
+    height: 4px;
+    border-radius: 999px;
+    background: #e5e8f4;
+    overflow: hidden;
+}
+
+.cbd-work-progress-fill {
+    display: block;
+    height: 100%;
+    width: 12.5%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--cw-brand), var(--cw-indigo));
+    transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cbd-work-arrows {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cbd-work-arrow {
+    appearance: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid #dfe3f2;
+    background: #ffffff;
+    color: var(--cw-indigo);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(30, 30, 92, 0.06);
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.cbd-work-arrow:hover {
+    border-color: var(--cw-indigo);
+    background: var(--cw-indigo);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.cbd-work-partner-note {
+    margin-top: 18px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--cw-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.cbd-work-partner-note i {
+    color: var(--cw-indigo);
+}
+
+/* ── Built-in Full Screen Preview Modal (Chulbul Light Theme) ───────────── */
+.cbd-work-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(30, 30, 92, 0.62);
+    backdrop-filter: blur(8px);
+}
+
+.cbd-work-modal.is-open {
+    display: flex;
+}
+
+.cbd-work-modal-box {
+    width: 100%;
+    max-width: 1040px;
+    max-height: 90vh;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e8f4;
+    box-shadow: 0 32px 80px rgba(30, 30, 92, 0.28);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--cw-ink);
+}
+
+.cbd-work-modal-head {
+    padding: 16px 22px;
+    border-bottom: 1px solid #eef0fb;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cbd-work-modal-title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cbd-work-modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--cw-navy);
+}
+
+.cbd-work-modal-close {
+    appearance: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid #dfe3f2;
+    background: #f8f9ff;
+    color: var(--cw-navy);
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cbd-work-modal-close:hover {
+    border-color: var(--cw-brand);
+    background: #fff1f0;
+    color: var(--cw-brand);
+}
+
+.cbd-work-modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 22px;
+    background: #f1f4fb;
+}
+
+.cbd-work-modal-frame {
+    margin: 0 auto;
+    max-width: 960px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #dfe3f2;
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(30, 30, 92, 0.1);
+}
+
+.cbd-work-modal-frame.is-mobile {
+    max-width: 375px;
+    border-radius: 28px;
+}
+
+.cbd-work-modal-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cbd-work-modal-foot {
+    padding: 14px 22px;
+    border-top: 1px solid #eef0fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #ffffff;
+}
+
+.cbd-work-modal-pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cbd-work-modal-page-btn {
+    appearance: none;
+    border: 1px solid #dfe3f2;
+    background: #f8f9ff;
+    color: var(--cw-muted);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.cbd-work-modal-page-btn.is-active {
+    border-color: var(--cw-indigo);
+    background: var(--cw-indigo);
+    color: #ffffff;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+    .cbd-work-section {
+        padding: 68px 0 72px;
+    }
+
+    .cbd-work-stage {
+        padding: 20px;
+    }
+
+    .cbd-work-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .cbd-work-device-wrap {
+        min-height: 310px;
+    }
+
+    .cbd-work-screen {
+        height: 280px;
+    }
+
+    .cbd-work-info-col {
+        padding: 18px 4px 4px;
+    }
+
+    .cbd-work-info-col::before {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        width: auto;
+        height: 3px;
+        background: linear-gradient(90deg, var(--cw-brand) 0%, var(--cw-indigo) 65%, transparent 100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .cbd-work-container {
+        padding: 0 16px;
+    }
+
+    .cbd-work-tabs {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .cbd-work-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cbd-work-device-col {
+        padding: 16px 12px 14px;
+    }
+
+    .cbd-work-screen {
+        height: 220px;
+    }
+
+    .cbd-work-phone {
+        width: 218px;
+    }
+
+    .cbd-work-phone-screen {
+        height: 365px;
+    }
+
+    .cbd-work-controls {
+        justify-content: center;
+    }
+
+    .cbd-work-progress-track {
+        width: 96px;
+    }
+
+    .cbd-work-actions .cbd-work-btn-primary,
+    .cbd-work-actions .cbd-work-btn-ghost {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cbd-work-shot,
+    .cbd-work-tab.is-active .cbd-work-tab-progress {
+        animation: none !important;
+    }
+}
