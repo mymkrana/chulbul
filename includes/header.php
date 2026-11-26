@@ -75,6 +75,46 @@ $_menu_icons = [
         ],
     ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
+    <?php
+    require_once __DIR__ . '/geo-schema.php';
+    if (empty($cbd_skip_global_webpage_schema)) {
+        $_geoAutoUrl = '';
+        if (!empty($cbd_geo_page['url'])) {
+            $_geoAutoUrl = (string)$cbd_geo_page['url'];
+        } elseif (!empty($page_canonical) && is_string($page_canonical)) {
+            $_geoAutoUrl = $page_canonical;
+        } elseif (!empty($canonical) && is_string($canonical)) {
+            $_geoAutoUrl = $canonical;
+        } else {
+            $_reqPath = parse_url((string)($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH) ?: '/';
+            if ($base !== '' && str_starts_with($_reqPath, $base)) {
+                $_reqPath = substr($_reqPath, strlen($base)) ?: '/';
+            }
+            $_geoAutoUrl = 'https://www.chulbuldesign.com' . ($_reqPath === '' ? '/' : $_reqPath);
+        }
+
+        $_geoAutoName = (string)($cbd_geo_page['name']
+            ?? ($page_title ?? ($homeTitle ?? ($page['meta_title'] ?? ($ind['meta_title'] ?? ($c['name'] ?? 'Chulbul Design'))))));
+        $_geoAutoDesc = (string)($cbd_geo_page['description']
+            ?? ($page_description ?? ($homeDescription ?? ($page['meta_desc'] ?? ($ind['meta_desc'] ?? '')))));
+        $_geoAutoAbout = $cbd_geo_page['about'] ?? [];
+        if ($_geoAutoAbout === []) {
+            if (!empty($page['name'])) $_geoAutoAbout[] = (string)$page['name'];
+            elseif (!empty($ind['name'])) $_geoAutoAbout[] = (string)$ind['name'] . ' Website Design & Development';
+            elseif (!empty($c['name'])) $_geoAutoAbout[] = 'Web Design & Development in ' . (string)$c['name'];
+        }
+
+        cbd_render_webpage_geo_schema([
+            'url' => $_geoAutoUrl,
+            'name' => $_geoAutoName,
+            'description' => $_geoAutoDesc,
+            'inLanguage' => (string)($cbd_geo_page['inLanguage'] ?? ($hreflang ?? 'en')),
+            'about' => $_geoAutoAbout,
+            'dateModified' => $cbd_geo_page['dateModified'] ?? null,
+            'speakable' => $cbd_geo_page['speakable'] ?? ['h1', '.cbd-ai-summary', '#faq'],
+        ]);
+    }
+    ?>
 
     <?php if ($__cbd_public_tracking): ?>
     <!-- Google Analytics GA4 (production only) -->

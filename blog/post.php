@@ -50,7 +50,7 @@ if (!$post) {
     <head>
     <title><?= htmlspecialchars($page_title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
-    <?php require_once dirname(__DIR__) . '/includes/header.php'; ?>
+    <?php $cbd_skip_global_webpage_schema = true; require_once dirname(__DIR__) . '/includes/header.php'; ?>
     <section class="py-32 text-center">
         <div class="max-w-lg mx-auto px-4">
             <i class="bi bi-file-earmark-x text-6xl text-gray-300 block mb-6"></i>
@@ -263,7 +263,21 @@ foreach ($faq_matches as $faq) {
 <?php if (!empty($kw_list)): ?>
 <meta name="keywords" content="<?= htmlspecialchars(implode(', ', $kw_list)) ?>">
 <?php endif; ?>
-<?php require_once dirname(__DIR__) . '/includes/header.php'; ?>
+<?php
+$cbd_geo_page = [
+    'url' => $page_canonical,
+    'name' => $page_title,
+    'description' => $page_description,
+    'inLanguage' => 'en',
+    'dateModified' => !empty($post['updated_at']) ? date('Y-m-d', strtotime((string)$post['updated_at'])) : (string)$post['date'],
+    'about' => array_values(array_filter([
+        (string)($post['category'] ?? ''),
+        !empty($matched_city_info['name']) ? ('Web Design & Development in ' . (string)$matched_city_info['name']) : '',
+    ])),
+    'speakable' => ['h1', '.prose-custom > div:first-of-type', '.prose-custom p:first-of-type'],
+];
+require_once dirname(__DIR__) . '/includes/header.php';
+?>
 
 <!-- Breadcrumb -->
 <nav aria-label="Breadcrumb" class="bg-gray-50 border-b border-gray-100 py-3">

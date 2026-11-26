@@ -226,6 +226,22 @@ $faqSchema = [
     <script type="application/ld+json"><?= cbd_json_ld($serviceSchema) ?></script>
     <script type="application/ld+json"><?= cbd_json_ld($breadcrumbSchema) ?></script>
     <script type="application/ld+json"><?= cbd_json_ld($faqSchema) ?></script>
+    <?php
+    require_once __DIR__ . '/includes/geo-schema.php';
+    cbd_render_webpage_geo_schema([
+        'url' => $canonical,
+        'name' => $pageTitle,
+        'description' => $pageDescription,
+        'inLanguage' => 'en-AU',
+        'about' => [
+            'Pet Food Shopify Development Australia',
+            'Custom Shopify Pet Store Design',
+            'Pet Food Subscription Ecommerce',
+            'Shopify Store Management Australia',
+        ],
+        'speakable' => ['h1', '#pfa-hero-desc', '#faq'],
+    ]);
+    ?>
 </head>
 <body>
 

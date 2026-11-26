@@ -60,6 +60,7 @@ RewriteRule ^ecommerce-website-design(?:\.php)?/?$ %1ecommerce-website-developme
 
 # Route clean URLs relative to this project directory on local and live hosts.
 RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+RewriteRule ^llms-full\.txt$ llms-full.php [L,QSA]
 RewriteRule ^city/([a-z0-9-]+)/([a-z0-9-]+)/?$ city-spoke.php?city=$1&service=$2 [L,QSA]
 RewriteRule ^city/([a-z0-9-]+)/?$ city.php?slug=$1 [L,QSA]
 RewriteRule ^industry/([a-z0-9-]+)/?$ industry.php?slug=$1 [L,QSA]

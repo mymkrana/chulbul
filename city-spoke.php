@@ -180,6 +180,17 @@ $_geo_meta = [
     'pos' => $city['geo_position'],
     'icbm' => $city['geo_icbm'],
 ];
+$cbd_geo_page = [
+    'url' => (string)$page['canonical_url'],
+    'name' => (string)$page['meta_title'],
+    'description' => (string)$page['meta_description'],
+    'inLanguage' => (string)($country['hreflang'] ?: 'en'),
+    'about' => [
+        $page['breadcrumb_label'] . ' in ' . $city['name'],
+        $city['name'] . ' Web Design & Development',
+    ],
+    'speakable' => ['h1', '.cbd-ai-summary', '#faq'],
+];
 require __DIR__ . '/includes/header.php';
 ?>
 
@@ -239,6 +250,20 @@ require __DIR__ . '/includes/header.php';
             </p>
         </div>
     </section>
+
+    <?php
+    require_once __DIR__ . '/includes/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: ' . $page['breadcrumb_label'] . ' in ' . $city['name'],
+        'summary' => (string)$page['meta_description'] . ' Delivered remotely by Chulbul Design (headquartered in Gurugram, India) with documented scope, full code ownership, and scheduled ' . $city['name'] . '-friendly review calls.',
+        'facts' => [
+            'Specialist Service' => (string)$page['breadcrumb_label'],
+            'Target Market'      => $city['name'] . ($city['state'] !== '' ? ', ' . $city['state'] : ''),
+            'Scoping Model'      => 'Fixed milestones & written quote',
+            'Delivery Team'      => 'Chulbul Design (Remote Worldwide)',
+        ],
+    ]);
+    ?>
 
     <section class="cbd-spoke-section cbd-spoke-section-alt" id="platforms">
         <div class="cbd-spoke-container">

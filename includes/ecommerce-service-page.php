@@ -296,6 +296,20 @@ $costFactors = [
         </div>
     </section>
 
+    <?php
+    require_once __DIR__ . '/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: ' . $page['name'] . ' by Chulbul Design',
+        'summary' => (string)$page['meta_desc'] . ' Chulbul Design is headquartered in Gurugram, India and delivers ecommerce projects remotely for brands across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+        'facts' => [
+            'Service Focus'   => (string)$page['name'],
+            'Regions Served'  => 'Australia, US, UK, Canada, UAE & India',
+            'Ownership'       => '100% client-owned code & store',
+            'Engagement'      => 'Fixed-scope builds or monthly care',
+        ],
+    ]);
+    ?>
+
     <section class="wd-section wd-section-soft" id="ecommerce-services" aria-labelledby="ecommerce-services-title">
         <div class="wd-container">
             <div class="wd-heading wd-reveal">

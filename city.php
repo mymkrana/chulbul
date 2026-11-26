@@ -857,6 +857,20 @@ if ($country === 'india') {
 </section>
 
 
+<?php
+require_once __DIR__ . '/includes/geo-schema.php';
+cbd_render_ai_summary_box([
+    'heading' => 'Quick Facts: Web Design & Development in ' . $c['name'],
+    'summary' => 'Chulbul Design provides custom website design, Shopify and WooCommerce ecommerce stores, WordPress development, and technical SEO for businesses in ' . $city_location_heading . '. Headquartered in Gurugram, India, our team delivers projects remotely with clear milestone scoping, full code ownership, and time-zone-friendly communication.',
+    'facts' => [
+        'Primary Services' => 'Web Design, Shopify, WordPress & SEO',
+        'Location Covered' => $city_location_heading,
+        'Indicative Range' => $price_range !== '' ? $price_range : 'Custom fixed-scope quote',
+        'Delivery Model'   => 'Remote from Gurugram, India',
+    ],
+]);
+?>
+
 <!-- ═══════════════════════════════════════════════
      SERVICES SECTION
 ═══════════════════════════════════════════════ -->
