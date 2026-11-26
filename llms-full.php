@@ -125,7 +125,7 @@ $out[] = '';
 if ($pdo instanceof PDO) {
     try {
         $cityRows = $pdo->query(
-            "SELECT ci.slug, ci.name, ci.state, co.name AS country_name, co.iso_code, ci.price_range
+            "SELECT ci.slug, ci.name, ci.state_region, co.name AS country_name, co.price_range
              FROM cities ci
              INNER JOIN countries co ON co.id = ci.country_id
              WHERE ci.status = 'published' AND co.status = 'published'
@@ -141,14 +141,19 @@ if ($pdo instanceof PDO) {
             foreach ($byCountry as $cName => $rows) {
                 $out[] = '### ' . $cName;
                 foreach ($rows as $r) {
-                    $loc = $r['name'] . ($r['state'] !== '' && strcasecmp($r['state'], $r['name']) !== 0 ? ', ' . $r['state'] : '');
+                    $st = trim((string)($r['state_region'] ?? ''));
+                    $loc = $r['name'] . ($st !== '' && strcasecmp($st, (string)$r['name']) !== 0 ? ', ' . $st : '');
                     $price = trim((string)($r['price_range'] ?? ''));
                     $out[] = '- [' . $loc . ' Web Design & Development](' . $origin . '/city/' . $r['slug'] . ')' . ($price !== '' ? ' — Typical range: ' . $price : '');
                 }
             }
             $out[] = '';
         }
+    } catch (Throwable $e) {
+        error_log('llms-full cities query failed: ' . $e->getMessage());
+    }
 
+    try {
         $spokeRows = $pdo->query(
             "SELECT ci.slug AS city_slug, ci.name AS city_name, sp.slug AS spoke_slug, sp.breadcrumb_label, sp.meta_description
              FROM city_spokes sp
@@ -167,7 +172,11 @@ if ($pdo instanceof PDO) {
             }
             $out[] = '';
         }
+    } catch (Throwable $e) {
+        error_log('llms-full spokes query failed: ' . $e->getMessage());
+    }
 
+    try {
         $blogRows = $pdo->query(
             "SELECT slug, title, category, date, excerpt
              FROM posts
@@ -187,8 +196,7 @@ if ($pdo instanceof PDO) {
             $out[] = '';
         }
     } catch (Throwable $e) {
-        $out[] = '## Note';
-        $out[] = 'Dynamic city and blog indexes are also available in ' . $origin . '/sitemap.xml.';
+        error_log('llms-full blogs query failed: ' . $e->getMessage());
     }
 } else {
     $out[] = '## Live Directory Index';
