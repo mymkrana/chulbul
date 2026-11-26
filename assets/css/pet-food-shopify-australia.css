@@ -1,8 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Chulbul Design — Australia Pet Food & Dog Goods Shopify (Standalone CSS)
-   100% Isolated Stylesheet — Zero Sitewide Tailwind / Custom CSS Dependency
-   Palette: Vibrant Pet Emerald (#0E6B47), Sunny Yellow (#F8C936),
-            Pet Orange (#F26B1D), Warm Cream (#FFF9F0), Crisp White (#FFFFFF)
+   Chulbul Design — Pet Food Shopify Development Australia (Standalone CSS)
+   Preserves existing Green, Cream, Yellow, Orange & White design identity
+   with refined typography, accessibility, contrast, and responsive polish.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 *, *::before, *::after {
@@ -15,22 +14,21 @@
     --emerald-soft: #e8f5ee;
     --yellow: #f8c936;
     --yellow-soft: #fff6d6;
-    --orange: #f26b1d;
-    --orange-dark: #d9550c;
+    --orange: #e05a10;
+    --orange-dark: #b94608;
     --orange-soft: #fff1e6;
     --cream: #fff9f0;
     --cream-deep: #f8efe0;
     --white: #ffffff;
-    --border: #ebe4d8;
+    --border: #e6dfd2;
     --ink: #16241d;
-    --muted: #52625a;
-    --subtle: #788880;
+    --muted: #45544d;
+    --subtle: #5f6f67;
     --radius-sm: 12px;
     --radius-md: 20px;
-    --radius-lg: 28px;
-    --shadow-sm: 0 8px 24px rgba(14, 107, 71, 0.06);
-    --shadow-md: 0 18px 42px rgba(14, 107, 71, 0.11);
-    --font-display: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+    --radius-lg: 26px;
+    --shadow-sm: 0 6px 20px rgba(14, 107, 71, 0.06);
+    --shadow-md: 0 16px 38px rgba(14, 107, 71, 0.1);
     --font-serif: 'Fraunces', Georgia, serif;
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
@@ -39,6 +37,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
 }
 
 body {
@@ -49,6 +48,7 @@ body {
     font-size: 16px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
 }
 
 img {
@@ -66,11 +66,45 @@ button, input, select, textarea {
     font-family: inherit;
 }
 
+:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: 2px;
+}
+
+.pfa-skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    z-index: 100;
+    background: var(--emerald-deep);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.pfa-skip-link:focus {
+    left: 16px;
+}
+
+.pfa-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .pfa-wrap {
     width: 100%;
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 24px;
 }
 
 .pfa-section {
@@ -88,15 +122,26 @@ button, input, select, textarea {
     overflow: hidden;
 }
 
-/* Subtle Paw-Print Watermark SVG Pattern */
+/* Preserved Subtle Paw-Print Watermark SVG Pattern */
 .pfa-paw-bg {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cg opacity='0.06' fill='%23ffffff'%3E%3Cellipse cx='38' cy='38' rx='7' ry='9' transform='rotate(-15 38 38)'/%3E%3Cellipse cx='56' cy='28' rx='7' ry='9'/%3E%3Cellipse cx='74' cy='32' rx='7' ry='9' transform='rotate(12 74 32)'/%3E%3Cellipse cx='86' cy='46' rx='6.5' ry='8.5' transform='rotate(24 86 46)'/%3E%3Cpath d='M60 48c-13 0-22 10-20 21 1.5 8 9 11 16 9 3-.8 5-.8 8 0 7 2 14.5-1 16-9 2-11-7-21-20-21z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cg opacity='0.055' fill='%23ffffff'%3E%3Cellipse cx='38' cy='38' rx='7' ry='9' transform='rotate(-15 38 38)'/%3E%3Cellipse cx='56' cy='28' rx='7' ry='9'/%3E%3Cellipse cx='74' cy='32' rx='7' ry='9' transform='rotate(12 74 32)'/%3E%3Cellipse cx='86' cy='46' rx='6.5' ry='8.5' transform='rotate(24 86 46)'/%3E%3Cpath d='M60 48c-13 0-22 10-20 21 1.5 8 9 11 16 9 3-.8 5-.8 8 0 7 2 14.5-1 16-9 2-11-7-21-20-21z'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 150px 150px;
 }
 
 .pfa-paw-bg-light {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cg opacity='0.05' fill='%230e6b47'%3E%3Cellipse cx='38' cy='38' rx='7' ry='9' transform='rotate(-15 38 38)'/%3E%3Cellipse cx='56' cy='28' rx='7' ry='9'/%3E%3Cellipse cx='74' cy='32' rx='7' ry='9' transform='rotate(12 74 32)'/%3E%3Cellipse cx='86' cy='46' rx='6.5' ry='8.5' transform='rotate(24 86 46)'/%3E%3Cpath d='M60 48c-13 0-22 10-20 21 1.5 8 9 11 16 9 3-.8 5-.8 8 0 7 2 14.5-1 16-9 2-11-7-21-20-21z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cg opacity='0.045' fill='%230e6b47'%3E%3Cellipse cx='38' cy='38' rx='7' ry='9' transform='rotate(-15 38 38)'/%3E%3Cellipse cx='56' cy='28' rx='7' ry='9'/%3E%3Cellipse cx='74' cy='32' rx='7' ry='9' transform='rotate(12 74 32)'/%3E%3Cellipse cx='86' cy='46' rx='6.5' ry='8.5' transform='rotate(24 86 46)'/%3E%3Cpath d='M60 48c-13 0-22 10-20 21 1.5 8 9 11 16 9 3-.8 5-.8 8 0 7 2 14.5-1 16-9 2-11-7-21-20-21z'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 160px 160px;
+}
+
+.pfa-inline-link {
+    color: var(--emerald);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.pfa-inline-link:hover {
+    color: var(--emerald-deep);
 }
 
 /* ── Headings & Pills ─────────────────────────────────────────────────────── */
@@ -109,7 +154,7 @@ button, input, select, textarea {
     padding: 6px 14px;
     border-radius: 999px;
     background: var(--emerald-soft);
-    color: var(--emerald);
+    color: var(--emerald-deep);
 }
 
 .pfa-pill-orange {
@@ -119,26 +164,29 @@ button, input, select, textarea {
 
 .pfa-pill-yellow {
     background: var(--yellow);
-    color: #1c1917;
+    color: #16241d;
 }
 
-.pfa-pill-glass {
-    background: rgba(255, 255, 255, 0.14);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.24);
+.pfa-pill-dark {
+    background: #16241d;
+    color: var(--yellow);
 }
 
 .pfa-heading {
     text-align: center;
-    max-width: 740px;
+    max-width: 760px;
     margin: 0 auto 42px;
+}
+
+.pfa-heading-compact {
+    margin-bottom: 32px;
 }
 
 .pfa-heading h2 {
     font-family: var(--font-serif);
-    font-size: clamp(30px, 3.6vw, 44px);
+    font-size: clamp(28px, 3.4vw, 42px);
     font-weight: 600;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: -0.02em;
     color: var(--ink);
     margin: 14px 0 12px;
@@ -152,18 +200,7 @@ button, input, select, textarea {
     font-size: 16px;
     color: var(--muted);
     margin: 0;
-}
-
-.pfa-section-emerald .pfa-heading h2 {
-    color: #ffffff;
-}
-
-.pfa-section-emerald .pfa-heading h2 span {
-    color: var(--yellow);
-}
-
-.pfa-section-emerald .pfa-heading p {
-    color: #d6ede2;
+    line-height: 1.65;
 }
 
 /* ── Buttons ──────────────────────────────────────────────────────────────── */
@@ -172,24 +209,25 @@ button, input, select, textarea {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 13px 24px;
+    min-height: 46px;
+    padding: 12px 24px;
     border-radius: 999px;
     font-size: 14.5px;
     font-weight: 700;
     cursor: pointer;
     border: 2px solid transparent;
-    transition: transform 0.16s ease, box-shadow 0.2s ease, background 0.18s ease;
+    transition: transform 0.16s ease, box-shadow 0.2s ease, background 0.18s ease, border-color 0.18s ease;
     white-space: nowrap;
 }
 
 .pfa-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .pfa-btn-orange {
     background: var(--orange);
     color: #ffffff;
-    box-shadow: 0 10px 24px rgba(242, 107, 29, 0.34);
+    box-shadow: 0 10px 24px rgba(224, 90, 16, 0.28);
 }
 
 .pfa-btn-orange:hover {
@@ -199,7 +237,7 @@ button, input, select, textarea {
 .pfa-btn-emerald {
     background: var(--emerald);
     color: #ffffff;
-    box-shadow: 0 10px 24px rgba(14, 107, 71, 0.24);
+    box-shadow: 0 10px 24px rgba(14, 107, 71, 0.22);
 }
 
 .pfa-btn-emerald:hover {
@@ -209,36 +247,50 @@ button, input, select, textarea {
 .pfa-btn-yellow {
     background: var(--yellow);
     color: #16241d;
-    box-shadow: 0 10px 24px rgba(248, 201, 54, 0.32);
 }
 
-.pfa-btn-white {
-    background: #ffffff;
-    color: var(--emerald-deep);
+.pfa-btn-yellow:hover {
+    background: #ebb922;
 }
 
 .pfa-btn-outline {
     background: #ffffff;
-    color: var(--emerald);
-    border-color: #c5dfd2;
+    color: var(--emerald-deep);
+    border-color: #b7d7c7;
 }
 
 .pfa-btn-outline:hover {
     border-color: var(--emerald);
+    background: var(--emerald-soft);
 }
 
 .pfa-btn-glass {
     background: rgba(255, 255, 255, 0.12);
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.34);
 }
 
-/* ── Topbar (Clean Pet-Commerce Navigation) ───────────────────────────────── */
+.pfa-btn-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.pfa-full-btn {
+    width: 100%;
+}
+
+.pfa-btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+/* ── Header & Mobile Nav ──────────────────────────────────────────────────── */
 .pfa-header {
     position: sticky;
     top: 0;
     z-index: 45;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
@@ -256,6 +308,7 @@ button, input, select, textarea {
     display: inline-flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
 }
 
 .pfa-brand img {
@@ -269,22 +322,27 @@ button, input, select, textarea {
     gap: 6px;
     font-size: 12px;
     font-weight: 700;
-    color: var(--emerald);
+    color: var(--emerald-deep);
     background: var(--emerald-soft);
     padding: 5px 12px;
     border-radius: 999px;
 }
 
+.pfa-brand-badge i {
+    color: var(--orange);
+}
+
 .pfa-nav {
     display: flex;
     align-items: center;
-    gap: 26px;
+    gap: 22px;
 }
 
 .pfa-nav a {
     font-size: 14px;
     font-weight: 600;
     color: var(--muted);
+    padding: 6px 2px;
     transition: color 0.16s ease;
 }
 
@@ -292,58 +350,135 @@ button, input, select, textarea {
     color: var(--emerald);
 }
 
-/* ── 1. FRAMED EMERALD HERO CARD (Inspired by PetDuct + PawVita) ─────────── */
+.pfa-header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pfa-header-cta {
+    min-height: 42px;
+    padding: 9px 18px;
+    font-size: 13.5px;
+}
+
+.pfa-menu-btn {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1.5px solid var(--border);
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pfa-mobile-nav {
+    border-top: 1px solid var(--border);
+    background: #ffffff;
+    box-shadow: 0 14px 30px rgba(14, 107, 71, 0.1);
+}
+
+.pfa-mobile-nav-inner {
+    display: grid;
+    gap: 4px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+}
+
+.pfa-mobile-nav-inner a:not(.pfa-btn) {
+    padding: 11px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.pfa-mobile-nav-inner a:not(.pfa-btn):hover {
+    background: var(--cream);
+    color: var(--emerald);
+}
+
+.pfa-mobile-nav-inner .pfa-btn {
+    margin-top: 10px;
+}
+
+/* ── Visible Breadcrumb Bar ───────────────────────────────────────────────── */
+.pfa-breadcrumb-bar {
+    background: var(--white);
+    padding: 14px 0 4px;
+}
+
+.pfa-breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--subtle);
+}
+
+.pfa-breadcrumb a {
+    color: var(--emerald);
+    font-weight: 600;
+}
+
+.pfa-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.pfa-breadcrumb [aria-current="page"] {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* ── 1. FRAMED EMERALD HERO CARD ──────────────────────────────────────────── */
 .pfa-hero-shell {
-    padding: 24px 0 18px;
+    padding: 14px 0 22px;
     background: var(--white);
 }
 
 .pfa-hero-card {
-    background: linear-gradient(135deg, #0b5d3d 0%, #0e6b47 58%, #0a5437 100%);
+    background: linear-gradient(135deg, #0b5d3d 0%, #0e6b47 62%, #094f34 100%);
     border-radius: var(--radius-lg);
     padding: 46px 48px;
     color: #ffffff;
     display: grid;
-    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 44px;
     align-items: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 24px 56px rgba(9, 79, 52, 0.2);
+    box-shadow: 0 22px 52px rgba(9, 79, 52, 0.18);
 }
 
-.pfa-audience-pills {
+.pfa-hero-eyebrow {
     display: inline-flex;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: var(--yellow);
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 7px 14px;
     border-radius: 999px;
-    padding: 4px;
-    gap: 4px;
     margin-bottom: 18px;
-}
-
-.pfa-aud-btn {
-    border: 0;
-    background: transparent;
-    color: #dff3e9;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 8px 16px;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: all 0.16s ease;
-}
-
-.pfa-aud-btn.is-active {
-    background: var(--yellow);
-    color: #16241d;
 }
 
 .pfa-hero-card h1 {
     font-family: var(--font-serif);
-    font-size: clamp(34px, 4.3vw, 54px);
+    font-size: clamp(32px, 4.1vw, 50px);
     font-weight: 600;
-    line-height: 1.08;
+    line-height: 1.1;
     letter-spacing: -0.02em;
     margin: 0 0 16px;
     color: #ffffff;
@@ -356,22 +491,28 @@ button, input, select, textarea {
 .pfa-hero-desc {
     font-size: 16.5px;
     line-height: 1.65;
-    color: #e2f5ec;
-    max-width: 560px;
+    color: #e6f6ee;
+    max-width: 580px;
     margin: 0 0 24px;
 }
 
-/* Quick URL Bar inside Hero */
+.pfa-hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
 .pfa-hero-quickbar {
     display: flex;
     align-items: center;
     gap: 8px;
     background: #ffffff;
     border-radius: 999px;
-    padding: 6px 6px 6px 20px;
-    max-width: 530px;
-    box-shadow: 0 14px 32px rgba(5, 40, 26, 0.25);
-    margin-bottom: 20px;
+    padding: 5px 5px 5px 18px;
+    max-width: 540px;
+    box-shadow: 0 12px 28px rgba(5, 40, 26, 0.22);
+    margin-bottom: 22px;
 }
 
 .pfa-hero-quickbar input {
@@ -381,34 +522,40 @@ button, input, select, textarea {
     font-size: 14px;
     color: var(--ink);
     min-width: 0;
+    background: transparent;
+}
+
+.pfa-quick-btn {
+    min-height: 40px;
+    padding: 8px 16px;
+    font-size: 13px;
 }
 
 .pfa-hero-proof-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 14px 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 18px;
     font-size: 13.5px;
-    color: #e2f5ec;
+    font-weight: 600;
+    color: #e9f8f1;
+    max-width: 540px;
 }
 
-.pfa-bff-chip {
-    display: inline-flex;
+.pfa-hero-proof-row li {
+    display: flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.14);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 7px 14px;
-    border-radius: 999px;
-    font-weight: 700;
-    color: #ffffff;
 }
 
-.pfa-bff-chip span {
+.pfa-hero-proof-row i {
     color: var(--yellow);
+    flex-shrink: 0;
 }
 
-/* Joyful Sunny-Yellow Framed Hero Dog Portrait */
+/* Framed Hero Portrait */
 .pfa-hero-art {
     position: relative;
     display: flex;
@@ -417,15 +564,16 @@ button, input, select, textarea {
 
 .pfa-portrait-frame {
     width: 100%;
-    max-width: 440px;
-    aspect-ratio: 4 / 4.2;
-    border-radius: 26px;
+    max-width: 420px;
+    aspect-ratio: 896 / 1020;
+    border-radius: 24px;
     overflow: hidden;
     background: var(--yellow);
-    border: 5px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 24px 50px rgba(4, 34, 22, 0.35);
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 22px 46px rgba(4, 34, 22, 0.32);
 }
 
+.pfa-portrait-frame picture,
 .pfa-portrait-frame img {
     width: 100%;
     height: 100%;
@@ -436,20 +584,20 @@ button, input, select, textarea {
     position: absolute;
     background: #ffffff;
     color: var(--ink);
-    border-radius: 16px;
+    border-radius: 14px;
     padding: 10px 14px;
-    box-shadow: 0 14px 30px rgba(7, 48, 32, 0.24);
+    box-shadow: 0 12px 26px rgba(7, 48, 32, 0.22);
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     font-size: 12.5px;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.28;
 }
 
 .pfa-sticker i {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 999px;
     display: flex;
     align-items: center;
@@ -459,18 +607,36 @@ button, input, select, textarea {
 }
 
 .pfa-sticker.is-left {
-    top: 24px;
-    left: -14px;
+    top: 20px;
+    left: -10px;
+}
+
+.pfa-sticker.is-left i {
+    background: var(--emerald-soft);
+    color: var(--emerald);
+}
+
+.pfa-sticker.is-left span {
+    color: var(--emerald-deep);
 }
 
 .pfa-sticker.is-right {
-    bottom: 24px;
-    right: -12px;
+    bottom: 20px;
+    right: -10px;
 }
 
-/* ── 2. PAWVITA-STYLE CIRCULAR PET-COMMERCE CAPABILITY STRIP ──────────────── */
+.pfa-sticker.is-right i {
+    background: var(--orange-soft);
+    color: var(--orange);
+}
+
+.pfa-sticker .is-orange-txt {
+    color: var(--orange-dark);
+}
+
+/* ── 2. CIRCULAR CAPABILITY STRIP ─────────────────────────────────────────── */
 .pfa-circle-strip {
-    padding: 36px 0 22px;
+    padding: 32px 0 18px;
     background: var(--white);
 }
 
@@ -487,26 +653,26 @@ button, input, select, textarea {
     align-items: center;
     gap: 10px;
     padding: 8px 4px;
-    border-radius: 16px;
+    border-radius: 14px;
     transition: transform 0.16s ease;
 }
 
 .pfa-circle-item:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 .pfa-circle-icon {
-    width: 72px;
-    height: 72px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
     background: var(--cream);
-    border: 2px solid #f2e4cc;
+    border: 1.5px solid #eadcc6;
     color: var(--emerald);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    box-shadow: 0 6px 16px rgba(14, 107, 71, 0.06);
+    font-size: 25px;
+    box-shadow: 0 5px 14px rgba(14, 107, 71, 0.06);
 }
 
 .pfa-circle-item span {
@@ -516,9 +682,9 @@ button, input, select, textarea {
     line-height: 1.3;
 }
 
-/* ── 3. PETDUCT-STYLE 3 COLOR-BLOCKED OFFER BANNERS (Yellow / Green / Orange) */
+/* ── 3. THREE CORE SERVICE CARDS (YELLOW / GREEN / ORANGE) ────────────────── */
 .pfa-deals-section {
-    padding: 28px 0 64px;
+    padding: 36px 0 70px;
     background: var(--white);
 }
 
@@ -529,18 +695,18 @@ button, input, select, textarea {
 }
 
 .pfa-deal-card {
-    border-radius: 24px;
+    border-radius: 22px;
     padding: 28px 26px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    min-height: 220px;
+    min-height: 235px;
 }
 
 .pfa-deal-card.is-yellow {
-    background: linear-gradient(135deg, #ffd84d 0%, #f8c936 100%);
+    background: linear-gradient(135deg, #ffd952 0%, #f8c936 100%);
     color: #16241d;
 }
 
@@ -550,7 +716,7 @@ button, input, select, textarea {
 }
 
 .pfa-deal-card.is-orange {
-    background: linear-gradient(135deg, #ff7b2c 0%, #f26b1d 100%);
+    background: linear-gradient(135deg, #eb681e 0%, #d9520a 100%);
     color: #ffffff;
 }
 
@@ -559,7 +725,7 @@ button, input, select, textarea {
     align-items: center;
     gap: 6px;
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 700;
     padding: 5px 12px;
     border-radius: 999px;
@@ -569,21 +735,21 @@ button, input, select, textarea {
 
 .is-yellow .pfa-deal-badge { background: #16241d; color: #f8c936; }
 .is-green .pfa-deal-badge  { background: #f8c936; color: #16241d; }
-.is-orange .pfa-deal-badge { background: #ffffff; color: #d9550c; }
+.is-orange .pfa-deal-badge { background: #ffffff; color: #b94608; }
 
 .pfa-deal-card h3 {
     font-family: var(--font-serif);
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 600;
-    line-height: 1.18;
-    margin: 0 0 8px;
+    line-height: 1.2;
+    margin: 0 0 10px;
 }
 
 .pfa-deal-card p {
-    font-size: 14px;
-    line-height: 1.55;
-    margin: 0 0 18px;
-    opacity: 0.92;
+    font-size: 14.5px;
+    line-height: 1.58;
+    margin: 0 0 20px;
+    opacity: 0.95;
 }
 
 .pfa-deal-link {
@@ -592,19 +758,25 @@ button, input, select, textarea {
     gap: 6px;
     font-size: 13.5px;
     font-weight: 800;
-    padding: 9px 16px;
+    min-height: 40px;
+    padding: 8px 16px;
     border-radius: 999px;
     width: fit-content;
+    transition: transform 0.15s ease;
+}
+
+.pfa-deal-link:hover {
+    transform: translateX(2px);
 }
 
 .is-yellow .pfa-deal-link { background: #16241d; color: #ffffff; }
-.is-green .pfa-deal-link  { background: #f26b1d; color: #ffffff; }
+.is-green .pfa-deal-link  { background: #e05a10; color: #ffffff; }
 .is-orange .pfa-deal-link { background: #16241d; color: #ffffff; }
 
-/* ── 4. REAL CLIENT PROOF — BRUNSWICK FUR FOOD (MELBOURNE) ────────────────── */
+/* ── 4. SOLUTIONS FEATURED CARD & 6-CARD DETAIL GRID ──────────────────────── */
 .pfa-bff-card {
     background: #ffffff;
-    border: 2px solid #d5e8de;
+    border: 1.5px solid #d5e8de;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -612,49 +784,42 @@ button, input, select, textarea {
 
 .pfa-bff-top {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
     align-items: stretch;
 }
 
 .pfa-bff-body {
-    padding: 40px;
+    padding: 38px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.pfa-bff-body h2,
 .pfa-bff-body h3 {
     font-family: var(--font-serif);
-    font-size: clamp(28px, 3.2vw, 38px);
+    font-size: clamp(26px, 3vw, 35px);
     font-weight: 600;
-    line-height: 1.15;
+    line-height: 1.18;
     margin: 14px 0 12px;
     color: var(--ink);
 }
 
-.pfa-bff-body h2 span,
 .pfa-bff-body h3 span {
     color: var(--emerald);
 }
 
-.pfa-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+.pfa-body-copy {
+    font-size: 15.5px;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.68;
 }
 
 .pfa-bff-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 16px 0 24px;
+    margin: 18px 0 24px;
 }
 
 .pfa-bff-tag {
@@ -672,53 +837,86 @@ button, input, select, textarea {
     min-height: 320px;
 }
 
+.pfa-bff-media picture,
 .pfa-bff-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.pfa-bff-steps {
+.pfa-solutions-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     background: var(--emerald-soft);
     border-top: 1px solid #d5e8de;
 }
 
-.pfa-bff-step {
-    padding: 24px 28px;
+.pfa-sol-item {
+    padding: 26px 28px;
     border-right: 1px solid #d5e8de;
+    border-bottom: 1px solid #d5e8de;
 }
 
-.pfa-bff-step:last-child {
+.pfa-sol-item:nth-child(3n) {
     border-right: 0;
 }
 
-.pfa-bff-step strong {
-    display: block;
-    font-size: 15px;
-    color: var(--emerald-deep);
-    margin-bottom: 5px;
+.pfa-sol-item:nth-last-child(-n+3) {
+    border-bottom: 0;
 }
 
-.pfa-bff-step p {
+.pfa-sol-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.pfa-sol-head i {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--emerald);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(14, 107, 71, 0.08);
+}
+
+.pfa-sol-head h3 {
+    font-family: var(--font-sans);
+    font-size: 15.5px;
+    font-weight: 800;
+    color: var(--emerald-deep);
     margin: 0;
+    line-height: 1.3;
+}
+
+.pfa-sol-item p {
+    margin: 0 0 8px;
     font-size: 13.5px;
     color: var(--muted);
-    line-height: 1.55;
+    line-height: 1.58;
 }
 
-/* ── 5. LIVE INTERACTIVE PET STOREFRONT PREVIEW (BROWSER MOCKUP) ──────────── */
+.pfa-sol-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── 5. INTERACTIVE STOREFRONT DEMO (BROWSER MOCKUP) ──────────────────────── */
 .pfa-browser {
     background: #ffffff;
     border: 1.5px solid var(--border);
-    border-radius: 26px;
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
 }
 
 .pfa-browser-bar {
-    background: #f5f2ec;
+    background: #f5f1ea;
     border-bottom: 1px solid var(--border);
     padding: 12px 20px;
     display: flex;
@@ -737,12 +935,11 @@ button, input, select, textarea {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #d6cfc2;
 }
 
-.pfa-dots span:nth-child(1) { background: #f87171; }
-.pfa-dots span:nth-child(2) { background: #fbbf24; }
-.pfa-dots span:nth-child(3) { background: #34d399; }
+.pfa-dots span:nth-child(1) { background: #ef4444; }
+.pfa-dots span:nth-child(2) { background: #f59e0b; }
+.pfa-dots span:nth-child(3) { background: #10b981; }
 
 .pfa-url-bar {
     font-family: var(--font-mono);
@@ -761,21 +958,28 @@ button, input, select, textarea {
 }
 
 .pfa-demo-tab {
-    border: 1.5px solid #d5e8de;
+    border: 1.5px solid #c5dfd2;
     background: #ffffff;
     color: var(--ink);
     font-size: 13px;
     font-weight: 700;
-    padding: 7px 14px;
+    min-height: 40px;
+    padding: 7px 15px;
     border-radius: 999px;
     cursor: pointer;
     transition: all 0.15s ease;
+}
+
+.pfa-demo-tab:hover {
+    border-color: var(--emerald);
+    color: var(--emerald-deep);
 }
 
 .pfa-demo-tab.is-active {
     background: var(--emerald);
     color: #ffffff;
     border-color: var(--emerald);
+    box-shadow: 0 6px 16px rgba(14, 107, 71, 0.22);
 }
 
 .pfa-browser-body {
@@ -791,7 +995,43 @@ button, input, select, textarea {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 32px;
-    align-items: center;
+    align-items: start;
+}
+
+.pfa-panel-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(24px, 2.6vw, 28px);
+    font-weight: 600;
+    line-height: 1.22;
+    margin: 12px 0 10px;
+    color: var(--ink);
+}
+
+.pfa-panel-copy {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 18px;
+    line-height: 1.65;
+}
+
+.pfa-demo-disclaimer {
+    margin: 18px 0 0;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px dashed #d3c6b2;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.55;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.pfa-demo-disclaimer i {
+    color: var(--emerald);
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 .pfa-panel-card {
@@ -800,6 +1040,28 @@ button, input, select, textarea {
     border-radius: 20px;
     padding: 26px;
     box-shadow: var(--shadow-sm);
+}
+
+.pfa-demo-tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--orange-dark);
+    background: var(--orange-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+.pfa-slider-group {
+    margin-bottom: 22px;
+}
+
+.pfa-slider-group-last {
+    margin-bottom: 6px;
 }
 
 .pfa-slider-top {
@@ -813,30 +1075,39 @@ button, input, select, textarea {
 .pfa-slider-top label {
     font-size: 14px;
     font-weight: 700;
+    color: var(--ink);
 }
 
 .pfa-mono-badge {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 700;
-    color: var(--emerald);
+    color: var(--emerald-deep);
     background: var(--emerald-soft);
     padding: 4px 11px;
     border-radius: 999px;
+    white-space: nowrap;
 }
 
 .pfa-range {
     width: 100%;
-    height: 7px;
+    height: 8px;
     accent-color: var(--orange);
     cursor: pointer;
+}
+
+.pfa-mini-label {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 16px 0 4px;
+    color: var(--ink);
 }
 
 .pfa-chips {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 12px 0 18px;
+    margin: 10px 0 18px;
 }
 
 .pfa-chip {
@@ -845,7 +1116,8 @@ button, input, select, textarea {
     color: var(--ink);
     font-size: 13px;
     font-weight: 700;
-    padding: 7px 14px;
+    min-height: 38px;
+    padding: 6px 14px;
     border-radius: 999px;
     cursor: pointer;
     transition: all 0.15s ease;
@@ -882,15 +1154,78 @@ button, input, select, textarea {
     color: var(--muted);
 }
 
+.pfa-kpi .pfa-kpi-accent {
+    color: var(--emerald-deep);
+    font-weight: 700;
+}
+
 .pfa-kpi strong {
     display: block;
     font-family: var(--font-mono);
-    font-size: 17px;
+    font-size: 16px;
     color: var(--emerald-deep);
     margin-top: 4px;
 }
 
-/* ── 6. AUD COST-SAVING CALCULATOR + APP LEDGER ───────────────────────────── */
+.pfa-inline-input-row {
+    display: flex;
+    gap: 8px;
+}
+
+.pfa-compact-btn {
+    min-height: 44px;
+    padding: 10px 18px;
+}
+
+.pfa-postcode-result {
+    background: var(--cream);
+    border: 2px solid var(--emerald);
+    border-radius: 14px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.pfa-postcode-result strong {
+    color: var(--emerald-deep);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.pfa-postcode-result span {
+    color: var(--muted);
+}
+
+.pfa-flow-stack {
+    display: grid;
+    gap: 12px;
+}
+
+.pfa-flow-step {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+}
+
+.pfa-flow-step.is-highlight {
+    background: var(--emerald-soft);
+    border-color: #9dd4b8;
+}
+
+.pfa-flow-step strong {
+    color: var(--emerald-deep);
+    font-size: 14px;
+    display: block;
+}
+
+.pfa-flow-step p {
+    margin: 4px 0 0;
+    font-size: 13.5px;
+    color: var(--muted);
+}
+
+/* ── 6. COST ESTIMATOR & APP TABLE ────────────────────────────────────────── */
 .pfa-calc-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -913,27 +1248,39 @@ button, input, select, textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .pfa-calc-big {
     font-family: var(--font-mono);
-    font-size: clamp(34px, 4.2vw, 48px);
+    font-size: clamp(32px, 4vw, 46px);
     font-weight: 700;
     color: var(--yellow);
-    line-height: 1.08;
-    margin: 12px 0 6px;
+    line-height: 1.1;
+    margin: 14px 0 8px;
+}
+
+.pfa-calc-subcopy {
+    margin: 0;
+    color: #ddf2e7;
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+.pfa-calc-subcopy strong {
+    color: #ffffff;
 }
 
 .pfa-calc-mini-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
-    margin: 20px 0 24px;
+    margin: 20px 0 18px;
 }
 
 .pfa-calc-mini {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 14px;
     padding: 14px;
 }
@@ -941,17 +1288,24 @@ button, input, select, textarea {
 .pfa-calc-mini span {
     display: block;
     font-size: 12px;
-    color: #cce8da;
+    color: #d6eee2;
 }
 
 .pfa-calc-mini strong {
     display: block;
     font-family: var(--font-mono);
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 4px;
+    color: #ffffff;
 }
 
-/* Paid App Elimination Mini Table */
+.pfa-calc-note {
+    margin: 0;
+    font-size: 12.5px;
+    color: #cbe7d9;
+    line-height: 1.55;
+}
+
 .pfa-app-table {
     margin-top: 22px;
     border: 1px solid var(--border);
@@ -962,7 +1316,8 @@ button, input, select, textarea {
 
 .pfa-app-row {
     display: grid;
-    grid-template-columns: 1.5fr 0.75fr 0.75fr;
+    grid-template-columns: 1.4fr 0.8fr 0.8fr;
+    gap: 8px;
     padding: 10px 14px;
     border-bottom: 1px solid var(--border);
     align-items: center;
@@ -970,8 +1325,6 @@ button, input, select, textarea {
 
 .pfa-app-row:last-child {
     border-bottom: 0;
-    background: var(--emerald-soft);
-    font-weight: 800;
 }
 
 .pfa-app-head {
@@ -983,48 +1336,90 @@ button, input, select, textarea {
     font-weight: 700;
 }
 
-/* ── 7. WHITE-LABEL AU AGENCY BANNER & 3 AUD PRICING CARDS ────────────────── */
-.pfa-agency-box {
-    background: linear-gradient(135deg, #fff6d6 0%, #ffefc0 100%);
-    border: 2px solid #f2cc52;
-    border-radius: 26px;
-    padding: 34px 36px;
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
-    gap: 28px;
-    align-items: center;
-    margin-bottom: 48px;
+.pfa-muted-cell {
+    color: var(--subtle);
 }
 
-.pfa-agency-box h3 {
+.pfa-emerald-cell {
+    color: var(--emerald-deep);
+    font-weight: 700;
+}
+
+/* ── 7. YELLOW PROCESS BANNER & 3 AUD PRICING CARDS ───────────────────────── */
+.pfa-process-box {
+    background: linear-gradient(135deg, #fff6d6 0%, #ffefc0 100%);
+    border: 2px solid #f0c94f;
+    border-radius: 26px;
+    padding: 36px;
+    margin-bottom: 56px;
+}
+
+.pfa-process-header {
+    max-width: 720px;
+    margin-bottom: 26px;
+}
+
+.pfa-process-header h2 {
     font-family: var(--font-serif);
-    font-size: 28px;
+    font-size: clamp(26px, 3.2vw, 36px);
     font-weight: 600;
     color: var(--ink);
-    margin: 10px 0 8px;
+    margin: 12px 0 8px;
+    line-height: 1.15;
 }
 
-.pfa-margin-card {
+.pfa-process-header p {
+    margin: 0;
+    color: #44403c;
+    font-size: 15.5px;
+}
+
+.pfa-process-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.pfa-process-step {
     background: #ffffff;
+    border: 1px solid #eed995;
     border-radius: 18px;
     padding: 20px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 6px 18px rgba(133, 94, 10, 0.06);
 }
 
-.pfa-margin-line {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
+.pfa-step-num {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--emerald-deep);
+    background: var(--emerald-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.pfa-process-step h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: var(--ink);
+}
+
+.pfa-process-step p {
+    margin: 0;
     font-size: 13.5px;
-    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    line-height: 1.55;
 }
 
-.pfa-margin-line:last-child {
-    border-bottom: 0;
-    padding-top: 10px;
-    font-size: 15.5px;
-    font-weight: 800;
-    color: var(--emerald);
+.pfa-pricing-anchor {
+    scroll-margin-top: 90px;
 }
 
 .pfa-pricing-grid {
@@ -1066,7 +1461,8 @@ button, input, select, textarea {
     font-family: var(--font-serif);
     font-size: 22px;
     font-weight: 600;
-    margin: 8px 0 12px;
+    margin: 10px 0 12px;
+    color: var(--ink);
 }
 
 .pfa-price-val {
@@ -1082,6 +1478,39 @@ button, input, select, textarea {
     color: var(--muted);
 }
 
+.pfa-price-meta {
+    font-size: 13.5px;
+    color: var(--subtle);
+    margin: 8px 0 20px;
+}
+
+.pfa-price-list {
+    flex: 1;
+    margin-bottom: 24px;
+}
+
+.pfa-pricing-note {
+    margin: 26px auto 0;
+    max-width: 820px;
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.pfa-agency-footnote {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--subtle);
+}
+
+.pfa-agency-footnote a {
+    color: var(--emerald);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .pfa-checks {
     list-style: none;
     padding: 0;
@@ -1089,7 +1518,7 @@ button, input, select, textarea {
     display: grid;
     gap: 10px;
     font-size: 14px;
-    color: #36453e;
+    color: #2f3e37;
 }
 
 .pfa-checks li {
@@ -1100,11 +1529,142 @@ button, input, select, textarea {
 
 .pfa-checks i {
     color: var(--emerald);
-    margin-top: 2px;
+    margin-top: 3px;
     flex-shrink: 0;
 }
 
-/* ── 8. FAQS & FINAL AUDIT FORM ───────────────────────────────────────────── */
+.pfa-checks-light {
+    color: #edf9f3;
+    margin-bottom: 28px;
+}
+
+.pfa-checks-light i {
+    color: var(--yellow);
+}
+
+/* ── 8. WHY CHOOSE CHULBUL DESIGN & CLIENT SPOTLIGHT ──────────────────────── */
+.pfa-case-card {
+    background: #ffffff;
+    border: 1.5px solid #d5e8de;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 28px;
+}
+
+.pfa-case-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: stretch;
+}
+
+.pfa-case-media {
+    background: var(--cream-deep);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfa-case-media picture,
+.pfa-case-media img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.pfa-case-body {
+    padding: 34px 36px;
+}
+
+.pfa-case-body h3 {
+    font-family: var(--font-serif);
+    font-size: clamp(24px, 2.8vw, 30px);
+    font-weight: 600;
+    margin: 12px 0 10px;
+    color: var(--ink);
+}
+
+.pfa-case-body > p {
+    margin: 0 0 18px;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.pfa-case-dl {
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.pfa-case-dl dt {
+    font-size: 12.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--emerald-deep);
+    margin-bottom: 2px;
+}
+
+.pfa-case-dl dd {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.58;
+}
+
+.pfa-placeholder-note {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--cream);
+    border: 1px dashed #d5c8b2;
+    font-size: 13px !important;
+}
+
+.pfa-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.pfa-trust-card {
+    background: #ffffff;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: var(--shadow-sm);
+}
+
+.pfa-trust-card i {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--emerald-soft);
+    color: var(--emerald);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.pfa-trust-card h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: var(--ink);
+}
+
+.pfa-trust-card p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* ── 9. FAQS & FINAL AUDIT FORM ───────────────────────────────────────────── */
 .pfa-faq-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1112,10 +1672,16 @@ button, input, select, textarea {
 }
 
 .pfa-faq-grid details {
-    background: #ffffff;
+    background: var(--cream);
     border: 1.5px solid var(--border);
     border-radius: 16px;
     padding: 18px 22px;
+    transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.pfa-faq-grid details[open] {
+    background: #ffffff;
+    border-color: #b7d7c7;
 }
 
 .pfa-faq-grid summary {
@@ -1134,49 +1700,136 @@ button, input, select, textarea {
     display: none;
 }
 
+.pfa-faq-icon {
+    color: var(--emerald);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.pfa-faq-grid details[open] .pfa-faq-icon {
+    transform: rotate(45deg);
+}
+
 .pfa-faq-grid details p {
     margin: 12px 0 0;
-    font-size: 14px;
+    font-size: 14.5px;
     color: var(--muted);
     line-height: 1.65;
 }
 
 .pfa-audit-grid {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
     gap: 44px;
     align-items: start;
+}
+
+.pfa-audit-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(30px, 3.6vw, 42px);
+    line-height: 1.14;
+    margin: 16px 0 14px;
+    color: #ffffff;
+}
+
+.pfa-audit-heading span {
+    color: var(--yellow);
+}
+
+.pfa-audit-copy {
+    color: #ddf2e7;
+    font-size: 15.5px;
+    margin: 0 0 24px;
+    line-height: 1.65;
+}
+
+.pfa-audit-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.pfa-wa-icon {
+    color: #4ade80;
+}
+
+.pfa-audit-email {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--yellow);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .pfa-form-card {
     background: #ffffff;
     color: var(--ink);
-    border-radius: 26px;
+    border-radius: 24px;
     padding: 34px;
-    box-shadow: 0 24px 56px rgba(4, 34, 22, 0.35);
+    box-shadow: 0 24px 56px rgba(4, 34, 22, 0.32);
+}
+
+.pfa-form-title {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    margin: 0 0 6px;
+    color: var(--ink);
+}
+
+.pfa-form-subtitle {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0 0 20px;
+}
+
+.pfa-hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
 }
 
 .pfa-form-stack {
     display: grid;
-    gap: 12px;
+    gap: 14px;
 }
 
 .pfa-form-2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    gap: 14px;
+}
+
+.pfa-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pfa-field-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.pfa-optional {
+    font-weight: 500;
+    color: var(--subtle);
 }
 
 .pfa-input,
 .pfa-select,
 .pfa-textarea {
     width: 100%;
-    padding: 12px 15px;
+    min-height: 44px;
+    padding: 11px 14px;
     border-radius: 12px;
-    border: 1.5px solid #d9d0c1;
+    border: 1.5px solid #d5ccbc;
     background: var(--cream);
     color: var(--ink);
-    font-size: 14px;
+    font-size: 14.5px;
+    transition: border-color 0.16s ease, background 0.16s ease;
 }
 
 .pfa-input:focus,
@@ -1185,13 +1838,21 @@ button, input, select, textarea {
     outline: none;
     border-color: var(--emerald);
     background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(14, 107, 71, 0.14);
+}
+
+.pfa-input.is-invalid,
+.pfa-select.is-invalid,
+.pfa-textarea.is-invalid {
+    border-color: var(--orange-dark);
+    background: #fff7f3;
 }
 
 .pfa-status {
-    margin-top: 12px;
-    padding: 12px 14px;
+    margin-top: 14px;
+    padding: 12px 15px;
     border-radius: 12px;
-    font-size: 13.5px;
+    font-size: 14px;
     font-weight: 600;
     display: none;
 }
@@ -1210,7 +1871,7 @@ button, input, select, textarea {
     border: 1px solid #f7c5a6;
 }
 
-/* ── Trust Footer Bar (PawVita-Style Emerald Strip) ───────────────────────── */
+/* ── Emerald Trust Bar & Footer ───────────────────────────────────────────── */
 .pfa-green-strip {
     background: var(--emerald);
     color: #ffffff;
@@ -1245,6 +1906,10 @@ button, input, select, textarea {
     color: var(--muted);
 }
 
+.pfa-footer-brand {
+    color: var(--emerald-deep);
+}
+
 .pfa-footer-row {
     display: flex;
     flex-wrap: wrap;
@@ -1256,32 +1921,41 @@ button, input, select, textarea {
 .pfa-footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 14px 18px;
 }
 
 .pfa-footer-links a {
-    color: var(--emerald);
+    color: var(--emerald-deep);
     font-weight: 700;
+}
+
+.pfa-footer-links a:hover {
+    text-decoration: underline;
 }
 
 .pfa-mobile-sticky {
     display: none;
 }
 
-/* ── Responsive ───────────────────────────────────────────────────────────── */
-@media (max-width: 1020px) {
+/* ── Responsive Breakpoints (1024px, 768px, 414px, 390px, 375px, 360px) ───── */
+@media (max-width: 1024px) {
     .pfa-nav,
     .pfa-brand-badge {
         display: none;
     }
+    .pfa-menu-btn {
+        display: inline-flex;
+    }
     .pfa-hero-card,
     .pfa-deals-grid,
     .pfa-bff-top,
-    .pfa-bff-steps,
+    .pfa-solutions-grid,
     .pfa-panel.is-active,
     .pfa-calc-grid,
-    .pfa-agency-box,
+    .pfa-process-grid,
     .pfa-pricing-grid,
+    .pfa-case-grid,
+    .pfa-trust-grid,
     .pfa-faq-grid,
     .pfa-audit-grid {
         grid-template-columns: 1fr;
@@ -1292,11 +1966,11 @@ button, input, select, textarea {
     .pfa-green-strip-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .pfa-bff-step {
+    .pfa-sol-item {
         border-right: 0;
         border-bottom: 1px solid #d5e8de;
     }
-    .pfa-bff-step:last-child {
+    .pfa-sol-item:last-child {
         border-bottom: 0;
     }
     .pfa-sticker.is-left { left: 8px; top: 12px; }
@@ -1304,18 +1978,42 @@ button, input, select, textarea {
 }
 
 @media (max-width: 640px) {
+    .pfa-wrap {
+        padding: 0 16px;
+    }
+    .pfa-header-cta {
+        display: none;
+    }
     .pfa-hero-card {
         padding: 28px 20px;
         border-radius: 22px;
+        gap: 28px;
+    }
+    .pfa-hero-ctas {
+        flex-direction: column;
+    }
+    .pfa-hero-ctas .pfa-btn {
+        width: 100%;
     }
     .pfa-hero-quickbar {
         flex-direction: column;
-        border-radius: 18px;
+        border-radius: 16px;
         padding: 10px;
         align-items: stretch;
     }
     .pfa-hero-quickbar input {
         padding: 8px 6px;
+    }
+    .pfa-hero-proof-row {
+        grid-template-columns: 1fr;
+    }
+    .pfa-sticker {
+        position: static;
+        margin-top: 10px;
+    }
+    .pfa-hero-art {
+        flex-direction: column;
+        align-items: stretch;
     }
     .pfa-circle-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1326,15 +2024,25 @@ button, input, select, textarea {
     .pfa-green-strip-grid {
         grid-template-columns: 1fr;
     }
+    .pfa-app-row {
+        grid-template-columns: 1.2fr 0.9fr 0.9fr;
+        font-size: 12px;
+        padding: 10px;
+    }
     .pfa-section {
-        padding: 54px 0;
+        padding: 56px 0;
     }
     .pfa-browser-body,
     .pfa-bff-body,
+    .pfa-case-body,
+    .pfa-process-box,
     .pfa-calc-left,
     .pfa-calc-right,
     .pfa-form-card {
         padding: 24px 18px;
+    }
+    .pfa-inline-input-row {
+        flex-direction: column;
     }
     .pfa-mobile-sticky {
         display: flex;
@@ -1344,18 +2052,30 @@ button, input, select, textarea {
         right: 0;
         z-index: 50;
         background: var(--emerald-deep);
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
         padding: 10px 14px;
         gap: 10px;
     }
     .pfa-mobile-sticky a {
         flex: 1;
-        text-align: center;
-        padding: 11px 10px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
         border-radius: 999px;
-        font-size: 13px;
+        font-size: 13.5px;
         font-weight: 800;
     }
+    .pfa-sticky-primary {
+        background: var(--orange);
+        color: #ffffff;
+    }
+    .pfa-sticky-wa {
+        background: var(--yellow);
+        color: #16241d;
+    }
     body {
-        padding-bottom: 64px;
+        padding-bottom: 68px;
     }
 }

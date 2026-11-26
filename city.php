@@ -1259,6 +1259,13 @@ cbd_render_portfolio_showcase([
 ]);
 ?>
 
+<?php if ($country === 'australia'): ?>
+<?php
+require_once __DIR__ . '/includes/au-pet-shopify-cta.php';
+cbd_render_au_pet_shopify_cta((string)$c['name'], $base);
+?>
+<?php endif; ?>
+
 <?php if (!empty($city_spokes) || !empty($city_blogs)): ?>
 <!-- ═══════════════════════════════════════════════
      LOCAL WEBSITE PRICING GUIDES & SPECIALIZED SERVICES

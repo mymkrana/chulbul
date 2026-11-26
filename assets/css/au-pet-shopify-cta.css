@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Chulbul Design — Australia City Pages: Pet Food Shopify Hero-Style CTA
+   Mirrors /pet-food-shopify-australia emerald + yellow + orange hero design
+   100% Namespaced (.pfa-city-cta-*) — Zero Conflict with Sitewide Styles
+   ========================================================================== */
+
+.pfa-city-cta-wrap {
+    padding: 44px 0;
+    background: #ffffff;
+}
+
+.pfa-city-cta-container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 22px;
+    box-sizing: border-box;
+}
+
+.pfa-city-cta-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 26px;
+    padding: 40px 44px;
+    color: #ffffff;
+    background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cg opacity='0.06' fill='%23ffffff'%3E%3Cellipse cx='38' cy='38' rx='7' ry='9' transform='rotate(-15 38 38)'/%3E%3Cellipse cx='56' cy='28' rx='7' ry='9'/%3E%3Cellipse cx='74' cy='32' rx='7' ry='9' transform='rotate(12 74 32)'/%3E%3Cellipse cx='86' cy='46' rx='6.5' ry='8.5' transform='rotate(24 86 46)'/%3E%3Cpath d='M60 48c-13 0-22 10-20 21 1.5 8 9 11 16 9 3-.8 5-.8 8 0 7 2 14.5-1 16-9 2-11-7-21-20-21z'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 150px 150px,
+        linear-gradient(135deg, #0b5d3d 0%, #0e6b47 60%, #094f34 100%);
+    box-shadow: 0 20px 48px rgba(9, 79, 52, 0.2);
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 38px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.pfa-city-cta-card *,
+.pfa-city-cta-card *::before,
+.pfa-city-cta-card *::after {
+    box-sizing: border-box;
+}
+
+.pfa-city-cta-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: #f8c936;
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.pfa-city-cta-title {
+    margin: 0 0 12px;
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.pfa-city-cta-title span {
+    color: #f8c936;
+}
+
+.pfa-city-cta-desc {
+    margin: 0 0 22px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #e4f6ed;
+    max-width: 580px;
+}
+
+.pfa-city-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.pfa-city-cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #e05a10;
+    color: #ffffff !important;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(224, 90, 16, 0.34);
+    transition: background 0.16s ease, transform 0.16s ease;
+}
+
+.pfa-city-cta-btn-primary:hover {
+    background: #b94608;
+    transform: translateY(-1px);
+    color: #ffffff !important;
+}
+
+.pfa-city-cta-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.34);
+    color: #ffffff !important;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.16s ease, transform 0.16s ease;
+}
+
+.pfa-city-cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateY(-1px);
+    color: #ffffff !important;
+}
+
+.pfa-city-cta-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 18px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #e9f8f1;
+    max-width: 540px;
+}
+
+.pfa-city-cta-points li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pfa-city-cta-points i {
+    color: #f8c936;
+    flex-shrink: 0;
+}
+
+/* Right Framed Dog Portrait + Stickers */
+.pfa-city-cta-media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pfa-city-cta-portrait {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 896 / 960;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #f8c936;
+    border: 4px solid rgba(255, 255, 255, 0.26);
+    box-shadow: 0 20px 42px rgba(4, 34, 22, 0.32);
+}
+
+.pfa-city-cta-portrait picture,
+.pfa-city-cta-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pfa-city-cta-chip {
+    position: absolute;
+    background: #ffffff;
+    color: #16241d;
+    border-radius: 14px;
+    padding: 9px 13px;
+    box-shadow: 0 12px 26px rgba(7, 48, 32, 0.24);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.pfa-city-cta-chip i {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13.5px;
+    flex-shrink: 0;
+}
+
+.pfa-city-cta-chip.is-top {
+    top: 16px;
+    left: -6px;
+}
+
+.pfa-city-cta-chip.is-top i {
+    background: #e8f5ee;
+    color: #0e6b47;
+}
+
+.pfa-city-cta-chip.is-top span {
+    color: #094f34;
+}
+
+.pfa-city-cta-chip.is-bottom {
+    bottom: 16px;
+    right: -6px;
+}
+
+.pfa-city-cta-chip.is-bottom i {
+    background: #fff1e6;
+    color: #e05a10;
+}
+
+.pfa-city-cta-chip.is-bottom span {
+    color: #b94608;
+}
+
+@media (max-width: 960px) {
+    .pfa-city-cta-card {
+        grid-template-columns: 1fr;
+        padding: 32px 26px;
+        gap: 28px;
+    }
+    .pfa-city-cta-chip.is-top { left: 8px; top: 10px; }
+    .pfa-city-cta-chip.is-bottom { right: 8px; bottom: 10px; }
+}
+
+@media (max-width: 600px) {
+    .pfa-city-cta-container {
+        padding: 0 16px;
+    }
+    .pfa-city-cta-card {
+        padding: 26px 18px;
+        border-radius: 20px;
+    }
+    .pfa-city-cta-actions {
+        flex-direction: column;
+    }
+    .pfa-city-cta-btn-primary,
+    .pfa-city-cta-btn-secondary {
+        width: 100%;
+    }
+    .pfa-city-cta-points {
+        grid-template-columns: 1fr;
+    }
+    .pfa-city-cta-media {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .pfa-city-cta-portrait {
+        max-width: 100%;
+    }
+    .pfa-city-cta-chip {
+        position: static;
+        margin-top: 10px;
+    }
+}

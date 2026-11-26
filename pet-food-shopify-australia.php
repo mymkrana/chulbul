@@ -13,47 +13,74 @@ $base = cbd_base_path();
 $canonical = cbd_canonical_url('/pet-food-shopify-australia');
 $isLive = cbd_is_production_host();
 
-$cssVersion  = (int)(@filemtime(__DIR__ . '/assets/css/pet-food-shopify-australia.css') ?: 1);
-$jsVersion   = (int)(@filemtime(__DIR__ . '/assets/js/pet-food-shopify-australia.js') ?: 1);
-$heroArtUrl  = cbd_asset_url('/assets/images/pet-food-au/au-pet-happy-owner-hero.jpg');
-$caseImgUrl  = cbd_asset_url('/assets/images/pet-food-au/au-pet-food-subscription-ux.jpg');
-$shareImage  = cbd_public_url('/assets/images/pet-food-au/au-pet-happy-owner-hero.jpg');
+$cssVersion = (int)(@filemtime(__DIR__ . '/assets/css/pet-food-shopify-australia.css') ?: 1);
+$jsVersion  = (int)(@filemtime(__DIR__ . '/assets/js/pet-food-shopify-australia.js') ?: 1);
 
-$pageTitle = 'Pet Food & Pet Store Shopify Australia | Design & Cost Save';
-$pageDescription = 'Pet food & pet store ecommerce Shopify development in Australia. Custom Shopify 2.0 design, monthly store management & 40–60% app cost savings. Free audit.';
+$heroWebpUrl  = cbd_asset_url('/assets/images/pet-food-au/au-pet-happy-owner-hero.webp');
+$heroJpgUrl   = cbd_asset_url('/assets/images/pet-food-au/au-pet-happy-owner-hero.jpg');
+$caseWebpUrl  = cbd_asset_url('/assets/images/pet-food-au/au-pet-food-subscription-ux.webp');
+$caseJpgUrl   = cbd_asset_url('/assets/images/pet-food-au/au-pet-food-subscription-ux.jpg');
+$bffWebpUrl   = cbd_asset_url('/assets/images/pet-food-au/brunswick-fur-food-preview.webp');
+$bffJpgUrl    = cbd_asset_url('/assets/images/pet-food-au/brunswick-fur-food-preview.jpg');
+$shareImage   = cbd_public_url('/assets/images/pet-food-au/au-pet-happy-owner-hero.jpg');
+
+$pageTitle = 'Pet Food Shopify Development Australia | Chulbul Design';
+$pageDescription = 'Build a high-converting Shopify store for your Australian pet food brand. Get custom Shopify design, subscription features, smart product filters and ongoing support from Chulbul Design.';
 
 $faqs = [
     [
-        'q' => 'What is included in your Shopify Australia ecommerce solution for pet food & pet stores?',
-        'a' => 'We provide an end-to-end pet store ecommerce solution on Shopify covering three pillars: (1) Custom Shopify 2.0 pet shop website design with breed/diet/age filters, feeding calculators, auto-ship subscriptions and Afterpay/Stripe checkout, (2) Ongoing monthly Shopify store management (catalog, promos, speed, bug fixes and CRO), and (3) Shopify cost saving by replacing bloated recurring paid apps with lightweight native code.',
+        'q' => 'How much does it cost to build a Shopify pet food store in Australia?',
+        'a' => 'Starting prices on this page are A$799 (one-time) for an App Cost Cleanup & Speed Sprint, A$999 per month for Ongoing Shopify Store Management & CRO, and A$2,499+ (one-time, starting from) for a Custom Pet Store or Marketplace build. Final pricing for custom builds depends on catalogue size, design complexity, subscription requirements, and third-party integrations, and is confirmed in a written quotation.',
     ],
     [
-        'q' => 'How do you actually reduce monthly Shopify operating and app costs by 40–60%?',
-        'a' => 'Most Australian pet food stores pay A$500–A$1,500+/month for stacked third-party apps (feeding tables, postcode checkers, bundle builders, sticky-cart upsells, review widgets) plus heavy local agency retainers. As a specialist Shopify developer Australia brands trust, we replace redundant paid apps with clean native Shopify 2.0 Liquid code and streamline recurring workflows — a cost-saving approach we have already delivered for Australian pet brands like Melbourne’s Brunswick Fur Food.',
+        'q' => 'Can you build a Shopify subscription website for pet food?',
+        'a' => 'Yes. We design and configure Shopify product pages, recurring delivery selectors, trial-pack flows, and customer portal layouts so Australian pet owners can schedule repeat orders at their preferred frequency. Subscription billing relies on Shopify Selling Plans or a compatible Shopify subscription app selected during scoping.',
     ],
     [
-        'q' => 'What does your ongoing monthly Shopify store management cover?',
-        'a' => 'From A$999/month, our dedicated Shopify developer and UI designer handle product & variant uploads, seasonal sale banners, "Buy More, Save More" bundle promos, subscription & auto-ship UX updates, AusPost/Sendle shipping rules, Core Web Vitals speed monitoring, technical SEO hygiene and weekly AEST/AWST progress check-ins.',
+        'q' => 'Can you redesign my existing pet store Shopify website?',
+        'a' => 'Yes. We audit your current Shopify theme, navigation, mobile product pages, and checkout flow, then upgrade or rebuild the storefront on Online Store 2.0 while preserving your existing product URLs, SEO metadata, and customer data.',
     ],
     [
-        'q' => 'Can you build a Multi-Vendor Australian Pet Goods Marketplace on Shopify?',
-        'a' => 'Yes. Alongside D2C pet food storefronts, we build curated multi-vendor Australian pet marketplaces on Shopify (with Shipturtle or Webkul) featuring supplier portals, automated marketplace commissions, GST-ready split payouts and per-vendor AusPost/Sendle shipping.',
+        'q' => 'Can you help reduce Shopify app costs?',
+        'a' => 'Yes. Many pet food stores accumulate overlapping monthly apps for simple storefront features like feeding tables, bundle layouts, postcode notices, or cart upsells. We audit your installed apps and replace suitable front-end widgets with lightweight native Shopify 2.0 Liquid code where practical, helping lower unnecessary recurring app spend without sacrificing usability.',
     ],
     [
-        'q' => 'Can you build pet-specific features like auto-ship subscriptions, smart filters and feeding calculators?',
-        'a' => 'Yes. We engineer every modern pet shop website essential directly into Shopify 2.0: smart filters by pet type, breed, life stage and dietary/allergy needs; interactive dog feeding calculators wired into Recharge, Skio, Appstle or native Shopify Selling Plans; tiered quantity discounts; photo reviews; and fast mobile checkout with Afterpay, Zip, Apple Pay and PayPal.',
+        'q' => 'Can you integrate recurring orders and subscription features?',
+        'a' => 'Yes. Depending on your operational requirements, we can implement recurring order workflows using Shopify Selling Plans or integrate third-party subscription tools that support flexible intervals, order skipping, and subscription management. Specific app compatibility is confirmed during discovery.',
     ],
     [
-        'q' => 'How do you handle Australian cold-chain delivery postcodes and heavy 15–20kg dog food bags?',
-        'a' => 'We build native 4-digit Australian postcode checkers right inside your Shopify theme so Melbourne, Sydney, Brisbane, Perth and Adelaide metro buyers see chilled delivery options while regional postcodes automatically route to shelf-stable treats and dry kibble via AusPost, Sendle, Shippit or Starshipit.',
+        'q' => 'Do you provide ongoing Shopify maintenance?',
+        'a' => 'Yes. Our Monthly Care & CRO package (A$999 per month) covers theme updates, new landing pages and seasonal promotions, product and content updates, troubleshooting, storefront speed checks, and ongoing conversion improvements.',
     ],
     [
-        'q' => 'Can you partner white-label with our existing Shopify agency Australia team?',
-        'a' => 'Yes. Existing Australian Meta Ads, Google Ads, Klaviyo and Shopify agency Australia partners plug in our NDA-protected Shopify engineering pod to slash backend development costs by 55%+, lower their clients’ monthly Shopify app bills, and turn ongoing store management into a 65%+ gross margin retainer.',
+        'q' => 'Can you help with Australian shipping and postcode-based delivery?',
+        'a' => 'Yes. We configure Shopify shipping zones, weight-based rates for heavy pet food bags, local delivery rules, and storefront postcode availability messaging tailored to your courier setup. Any carrier or chilled-delivery integration depends on the shipping providers and apps your business uses.',
     ],
     [
-        'q' => 'What do I get in the Free 5-Minute Shopify Cost-Saving & Store Audit?',
-        'a' => 'Within 24 hours our senior Shopify team sends a personalised 5-minute Loom walkthrough of your live .com.au store identifying paid apps you can cut, mobile speed fixes (LCP/CLS), pet-UX conversion upgrades and exact projected AUD savings — with zero admin password required.',
+        'q' => 'How long does a custom Shopify pet store project take?',
+        'a' => 'Timelines vary based on design scope, product data readiness, custom features, and review turnaround. Smaller cleanup sprints typically take days to a couple of weeks, while custom Shopify store builds generally span several weeks. An estimated schedule and milestone plan are provided in your written quote.',
+    ],
+    [
+        'q' => 'Do you work with Australian pet food brands remotely?',
+        'a' => 'Yes. Chulbul Design is headquartered in Gurugram, India, and works with Australian pet food and ecommerce businesses remotely. We coordinate via scheduled AEST/AEDT and AWST-friendly calls, shared staging previews, email, and WhatsApp.',
+    ],
+];
+
+$organizationSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Organization',
+    '@id' => 'https://www.chulbuldesign.com/#organization',
+    'name' => 'Chulbul Design',
+    'url' => 'https://www.chulbuldesign.com/',
+    'logo' => 'https://www.chulbuldesign.com/assets/images/logo/chulbuldesign.svg',
+    'telephone' => '+919990548795',
+    'email' => 'info@chulbuldesign.com',
+    'address' => [
+        '@type' => 'PostalAddress',
+        'streetAddress' => 'Sector 15, Flat No. 1277',
+        'addressLocality' => 'Gurugram',
+        'addressRegion' => 'Haryana',
+        'addressCountry' => 'IN',
     ],
 ];
 
@@ -61,39 +88,48 @@ $serviceSchema = [
     '@context' => 'https://schema.org',
     '@type' => 'Service',
     '@id' => $canonical . '#service',
-    'name' => 'Australia Pet Food & Pet Shop Shopify Ecommerce Development',
-    'serviceType' => 'Pet Store Ecommerce Website Development, Shopify Cost Optimization, Pet Marketplace and White-Label AU Agency Partner',
+    'name' => 'Pet Food Shopify Development Australia',
+    'serviceType' => 'Custom Shopify Store Development, Pet Ecommerce Design, Subscription UX, and Ongoing Shopify Management',
     'url' => $canonical,
     'description' => $pageDescription,
     'areaServed' => ['@type' => 'Country', 'name' => 'Australia'],
+    'provider' => ['@id' => 'https://www.chulbuldesign.com/#organization'],
     'hasOfferCatalog' => [
         '@type' => 'OfferCatalog',
-        'name' => 'Australia Pet Food Shopify Packages (AUD)',
+        'name' => 'Pet Food Shopify Development Pricing (AUD)',
         'itemListElement' => [
             [
                 '@type' => 'Offer',
-                'itemOffered' => ['@type' => 'Service', 'name' => 'Shopify App-Cost Cleanup & Speed Sprint'],
-                'priceSpecification' => ['@type' => 'PriceSpecification', 'price' => '799', 'priceCurrency' => 'AUD'],
+                'name' => 'App Cost Cleanup Sprint',
+                'description' => 'One-time Shopify app audit, native Online Store 2.0 code consolidation, and storefront performance optimisation.',
+                'priceSpecification' => [
+                    '@type' => 'PriceSpecification',
+                    'price' => '799',
+                    'priceCurrency' => 'AUD',
+                ],
             ],
             [
                 '@type' => 'Offer',
-                'itemOffered' => ['@type' => 'Service', 'name' => 'Monthly Shopify Store Care & CRO Pod'],
-                'priceSpecification' => ['@type' => 'PriceSpecification', 'price' => '999', 'priceCurrency' => 'AUD'],
+                'name' => 'Monthly Care & CRO Pod',
+                'description' => 'Ongoing monthly Shopify store management, content and campaign updates, troubleshooting, and conversion improvements.',
+                'priceSpecification' => [
+                    '@type' => 'UnitPriceSpecification',
+                    'price' => '999',
+                    'priceCurrency' => 'AUD',
+                    'unitText' => 'MONTH',
+                ],
             ],
             [
                 '@type' => 'Offer',
-                'itemOffered' => ['@type' => 'Service', 'name' => 'Custom Pet Food Shopify Store or Multi-Vendor Marketplace'],
-                'priceSpecification' => ['@type' => 'PriceSpecification', 'price' => '2499', 'priceCurrency' => 'AUD'],
+                'name' => 'Custom Pet Store / Marketplace',
+                'description' => 'Custom Shopify 2.0 pet food store or marketplace development, starting from A$2,499 subject to written quotation.',
+                'priceSpecification' => [
+                    '@type' => 'PriceSpecification',
+                    'minPrice' => '2499',
+                    'priceCurrency' => 'AUD',
+                ],
             ],
         ],
-    ],
-    'provider' => [
-        '@type' => 'Organization',
-        '@id' => 'https://www.chulbuldesign.com/#organization',
-        'name' => 'Chulbul Design',
-        'url' => 'https://www.chulbuldesign.com/',
-        'telephone' => '+919990548795',
-        'email' => 'info@chulbuldesign.com',
     ],
 ];
 
@@ -132,16 +168,21 @@ $faqSchema = [
     <meta name="geo.region" content="AU">
     <meta name="geo.placename" content="Australia">
     <link rel="canonical" href="<?= cbd_escape_text($canonical) ?>">
-    <link rel="alternate" hreflang="en-AU" href="<?= cbd_escape_text($canonical) ?>">
-    <link rel="alternate" hreflang="x-default" href="<?= cbd_escape_text($canonical) ?>">
     <link rel="icon" type="image/png" sizes="512x512" href="<?= cbd_escape_text($base) ?>/assets/images/logo/favicon.png">
+
+    <!-- Preload Primary Hero LCP Image -->
+    <link rel="preload" as="image" type="image/webp" href="<?= cbd_escape_text($heroWebpUrl) ?>" fetchpriority="high">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_AU">
+    <meta property="og:site_name" content="Chulbul Design">
     <meta property="og:title" content="<?= cbd_escape_text($pageTitle) ?>">
     <meta property="og:description" content="<?= cbd_escape_text($pageDescription) ?>">
     <meta property="og:url" content="<?= cbd_escape_text($canonical) ?>">
     <meta property="og:image" content="<?= cbd_escape_text($shareImage) ?>">
+    <meta property="og:image:width" content="896">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Smiling dog owner with golden retriever and dog food pouch representing custom Shopify development for Australian pet food brands">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= cbd_escape_text($pageTitle) ?>">
     <meta name="twitter:description" content="<?= cbd_escape_text($pageDescription) ?>">
@@ -161,19 +202,23 @@ $faqSchema = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 
     <!-- 100% Isolated Page Stylesheet -->
     <link rel="stylesheet" href="<?= cbd_escape_text($base) ?>/assets/css/pet-food-shopify-australia.css?v=<?= $cssVersion ?>">
 
+    <script type="application/ld+json"><?= cbd_json_ld($organizationSchema) ?></script>
     <script type="application/ld+json"><?= cbd_json_ld($serviceSchema) ?></script>
     <script type="application/ld+json"><?= cbd_json_ld($breadcrumbSchema) ?></script>
     <script type="application/ld+json"><?= cbd_json_ld($faqSchema) ?></script>
 </head>
 <body>
 
+<a href="#main-content" class="pfa-skip-link">Skip to main content</a>
+
 <!-- ═══════════════════════════════════════════════
-     CLEAN PET-STORE ADS TOPBAR
+     HEADER & ACCESSIBLE NAVIGATION
 ════════════════════════════════════════════════ -->
 <header class="pfa-header">
     <div class="pfa-wrap pfa-header-inner">
@@ -182,80 +227,129 @@ $faqSchema = [
                 <img src="<?= cbd_escape_text($base) ?>/assets/images/logo/chulbuldesign.svg" alt="Chulbul Design" width="146" height="30">
             </a>
             <span class="pfa-brand-badge">
-                <i class="bi bi-heart-fill" style="color:#f26b1d;" aria-hidden="true"></i>
-                AU Pet Food Shopify Studio
+                <i class="bi bi-bag-heart-fill" aria-hidden="true"></i>
+                Pet Food Shopify · Australia
             </span>
         </div>
 
         <nav class="pfa-nav" aria-label="Page navigation">
-            <a href="#shopify-solutions">Shopify Solutions</a>
-            <a href="#live-storefront">Store Features</a>
-            <a href="#cost-calculator">Cost Saving</a>
+            <a href="#shopify-solutions">Solutions</a>
+            <a href="#live-storefront">Features</a>
+            <a href="#cost-calculator">App Cost Estimator</a>
             <a href="#pricing">Pricing</a>
+            <a href="#why-chulbul">Why Chulbul</a>
+            <a href="#faq">FAQs</a>
         </nav>
 
-        <a href="#audit-form" class="pfa-btn pfa-btn-orange" style="padding:10px 20px;font-size:13.5px;">
-            Free 5-Min Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
-        </a>
+        <div class="pfa-header-actions">
+            <a href="#audit-form" class="pfa-btn pfa-btn-orange pfa-header-cta" data-track-cta="header_free_audit">
+                Get a Free Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            <button type="button"
+                    class="pfa-menu-btn"
+                    id="pfa-menu-toggle"
+                    aria-expanded="false"
+                    aria-controls="pfa-mobile-nav"
+                    aria-label="Toggle navigation menu">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+        </div>
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="pfa-mobile-nav" class="pfa-mobile-nav" aria-label="Mobile page navigation" hidden>
+        <div class="pfa-wrap pfa-mobile-nav-inner">
+            <a href="#shopify-solutions">Shopify Solutions</a>
+            <a href="#live-storefront">Interactive Store Features</a>
+            <a href="#cost-calculator">App Cost Estimator</a>
+            <a href="#process">Our Process</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#why-chulbul">Why Chulbul Design</a>
+            <a href="#faq">FAQs</a>
+            <a href="#audit-form" class="pfa-btn pfa-btn-orange" data-track-cta="mobile_nav_free_audit">Get a Free Store Audit</a>
+        </div>
+    </nav>
 </header>
 
-<main>
+<main id="main-content">
+
+    <!-- Visible Breadcrumb Navigation (Matches BreadcrumbList JSON-LD) -->
+    <nav class="pfa-breadcrumb-bar" aria-label="Breadcrumb">
+        <div class="pfa-wrap">
+            <ol class="pfa-breadcrumb">
+                <li><a href="<?= cbd_escape_text($base) ?>/">Home</a></li>
+                <li aria-hidden="true">/</li>
+                <li><a href="<?= cbd_escape_text($base) ?>/shopify-development">Shopify Development</a></li>
+                <li aria-hidden="true">/</li>
+                <li aria-current="page">Pet Food Shopify Australia</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- ═══════════════════════════════════════════════
-         1. VIBRANT ROUNDED EMERALD HERO (PetDuct / PawVita Spirit)
+         1. EMERALD HERO SECTION (PRESERVED IDENTITY, REFINED HIERARCHY)
     ════════════════════════════════════════════════ -->
     <section class="pfa-hero-shell" aria-labelledby="pfa-hero-h1">
         <div class="pfa-wrap">
             <div class="pfa-hero-card pfa-paw-bg">
                 <div>
-                    <div class="pfa-audience-pills" role="tablist" aria-label="Choose business type">
-                        <button type="button" class="pfa-aud-btn is-active" data-pfa-audience="brand" aria-selected="true">
-                            🐾 AU Pet Food Brands
-                        </button>
-                        <button type="button" class="pfa-aud-btn" data-pfa-audience="agency" aria-selected="false">
-                            🏢 Existing AU Agencies
-                        </button>
-                    </div>
+                    <span class="pfa-hero-eyebrow">
+                        <i class="bi bi-stars" aria-hidden="true"></i>
+                        SHOPIFY DEVELOPMENT FOR AUSTRALIAN PET BRANDS
+                    </span>
 
                     <h1 id="pfa-hero-h1">
-                        Complete <span>Pet Food &amp; Pet Store</span> Shopify Solutions for Australia.
+                        Shopify Development for <span>Pet Food Brands</span> in Australia
                     </h1>
 
                     <p class="pfa-hero-desc" id="pfa-hero-desc">
-                        Specialist Shopify Australia partner for pet store ecommerce: we design high-converting pet food &amp; pet shop websites, handle ongoing monthly Shopify store management, and slash recurring app &amp; agency costs by 40–60%.
+                        Build a smarter, faster, and more profitable online pet store with custom Shopify development. From product subscriptions and recurring orders to conversion-focused design, we help Australian pet businesses create better shopping experiences.
                     </p>
 
+                    <div class="pfa-hero-ctas">
+                        <a href="#audit-form" class="pfa-btn pfa-btn-orange" data-track-cta="hero_primary_audit">
+                            Get a Free Store Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#shopify-solutions" class="pfa-btn pfa-btn-glass" data-track-cta="hero_secondary_solutions">
+                            Explore Our Shopify Solutions
+                        </a>
+                    </div>
+
                     <form id="pfa-quick-form" class="pfa-hero-quickbar" novalidate>
-                        <input id="pfa-quick-url" type="text" placeholder="Enter yourpetstore.com.au for a free 5-min Shopify cost audit" aria-label="Your Australian Shopify URL">
-                        <button type="submit" class="pfa-btn pfa-btn-orange" style="padding:11px 20px;font-size:14px;">
-                            Get Free Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        <label for="pfa-quick-url" class="pfa-sr-only">Enter your Shopify store URL</label>
+                        <input id="pfa-quick-url" type="url" inputmode="url" placeholder="Have a live store? Enter yourpetstore.com.au to pre-fill your audit" aria-label="Your Australian Shopify store URL">
+                        <button type="submit" class="pfa-btn pfa-btn-yellow pfa-quick-btn" data-track-cta="hero_quick_url">
+                            Pre-fill Audit <i class="bi bi-arrow-down-short" aria-hidden="true"></i>
                         </button>
                     </form>
 
-                    <div class="pfa-hero-proof-row">
-                        <span><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> Custom Shopify 2.0 Design</span>
-                        <span><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> Full Store Management</span>
-                        <span><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> 40–60% Cost Saving</span>
-                    </div>
+                    <ul class="pfa-hero-proof-row" aria-label="Core capabilities">
+                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Custom Shopify Development</li>
+                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Pet Ecommerce Solutions</li>
+                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Subscription &amp; Recurring Orders</li>
+                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Ongoing Shopify Support</li>
+                    </ul>
                 </div>
 
-                <!-- Sunny-Yellow Framed Happy Dog + Owner Portrait -->
+                <!-- Sunny-Yellow Framed Hero Dog + Owner Portrait -->
                 <div class="pfa-hero-art">
                     <div class="pfa-portrait-frame">
-                        <img src="<?= cbd_escape_text($heroArtUrl) ?>"
-                             alt="Happy Australian dog owner hugging a smiling golden retriever beside organic dog food pouch and bowl"
-                             width="900" height="1000" fetchpriority="high">
+                        <picture>
+                            <source srcset="<?= cbd_escape_text($heroWebpUrl) ?>" type="image/webp">
+                            <img src="<?= cbd_escape_text($heroJpgUrl) ?>"
+                                 alt="Smiling Australian dog owner hugging a golden retriever beside a natural dog food pouch and bowl"
+                                 width="896" height="1200" fetchpriority="high" decoding="async">
+                        </picture>
                     </div>
 
                     <div class="pfa-sticker is-left">
-                        <i class="bi bi-piggy-bank-fill" style="background:#e8f5ee;color:#0e6b47;" aria-hidden="true"></i>
-                        <div>Cut Paid App Bills<br><span style="color:#0e6b47;">Up to 45%–60%</span></div>
+                        <i class="bi bi-code-slash" aria-hidden="true"></i>
+                        <div>Native Online Store 2.0<br><span>Clean Liquid &amp; Speed Focus</span></div>
                     </div>
 
                     <div class="pfa-sticker is-right">
-                        <i class="bi bi-repeat" style="background:#fff1e6;color:#f26b1d;" aria-hidden="true"></i>
-                        <div>Shopify Store Care<br><span style="color:#d9550c;">From A$999 / mo</span></div>
+                        <i class="bi bi-repeat" aria-hidden="true"></i>
+                        <div>Ongoing Shopify Support<br><span class="is-orange-txt">From A$999 / month</span></div>
                     </div>
                 </div>
             </div>
@@ -263,287 +357,353 @@ $faqSchema = [
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         2. PAWVITA-STYLE CIRCULAR PET-SHOPIFY CAPABILITIES STRIP
+         2. CIRCULAR PET-SHOPIFY CAPABILITY STRIP
     ════════════════════════════════════════════════ -->
-    <section class="pfa-circle-strip" aria-label="Shopify pet store capabilities">
+    <section class="pfa-circle-strip" aria-label="Pet ecommerce Shopify capabilities">
         <div class="pfa-wrap">
             <div class="pfa-circle-grid">
                 <a href="#shopify-solutions" class="pfa-circle-item">
                     <div class="pfa-circle-icon"><i class="bi bi-palette-fill" aria-hidden="true"></i></div>
-                    <span>Shopify Store Design</span>
-                </a>
-                <a href="#shopify-solutions" class="pfa-circle-item">
-                    <div class="pfa-circle-icon"><i class="bi bi-gear-wide-connected" aria-hidden="true"></i></div>
-                    <span>Store Management</span>
-                </a>
-                <a href="#cost-calculator" class="pfa-circle-item">
-                    <div class="pfa-circle-icon"><i class="bi bi-piggy-bank-fill" aria-hidden="true"></i></div>
-                    <span>Shopify Cost Saving</span>
+                    <span>Custom Shopify Design</span>
                 </a>
                 <a href="#live-storefront" class="pfa-circle-item">
                     <div class="pfa-circle-icon"><i class="bi bi-repeat" aria-hidden="true"></i></div>
-                    <span>Auto-Ship Subscriptions</span>
+                    <span>Pet Subscriptions</span>
+                </a>
+                <a href="#shopify-solutions" class="pfa-circle-item">
+                    <div class="pfa-circle-icon"><i class="bi bi-funnel-fill" aria-hidden="true"></i></div>
+                    <span>Smart Product Filters</span>
                 </a>
                 <a href="#live-storefront" class="pfa-circle-item">
-                    <div class="pfa-circle-icon"><i class="bi bi-funnel-fill" aria-hidden="true"></i></div>
-                    <span>Breed &amp; Diet Filters</span>
+                    <div class="pfa-circle-icon"><i class="bi bi-sliders" aria-hidden="true"></i></div>
+                    <span>Feeding Calculators</span>
                 </a>
                 <a href="#live-storefront" class="pfa-circle-item">
                     <div class="pfa-circle-icon"><i class="bi bi-truck" aria-hidden="true"></i></div>
-                    <span>AU Cold-Chain Shipping</span>
+                    <span>AU Delivery Rules</span>
                 </a>
-                <a href="#live-storefront" class="pfa-circle-item">
-                    <div class="pfa-circle-icon"><i class="bi bi-shop-window" aria-hidden="true"></i></div>
-                    <span>Pet Marketplaces</span>
+                <a href="#cost-calculator" class="pfa-circle-item">
+                    <div class="pfa-circle-icon"><i class="bi bi-piggy-bank-fill" aria-hidden="true"></i></div>
+                    <span>App Cost Reduction</span>
+                </a>
+                <a href="#shopify-solutions" class="pfa-circle-item">
+                    <div class="pfa-circle-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></div>
+                    <span>Store Performance</span>
                 </a>
                 <a href="#pricing" class="pfa-circle-item">
-                    <div class="pfa-circle-icon"><i class="bi bi-building-check" aria-hidden="true"></i></div>
-                    <span>AU Agency White-Label</span>
+                    <div class="pfa-circle-icon"><i class="bi bi-gear-wide-connected" aria-hidden="true"></i></div>
+                    <span>Ongoing Management</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         3. PETDUCT-STYLE 3 COLOR-BLOCKED CORE PILLAR CARDS
+         3. THREE CORE SHOPIFY SERVICE CARDS (YELLOW / GREEN / ORANGE)
     ════════════════════════════════════════════════ -->
-    <section class="pfa-deals-section" aria-labelledby="pfa-pillars-sr">
+    <section class="pfa-deals-section" aria-labelledby="pfa-pillars-title">
         <div class="pfa-wrap">
-            <h2 id="pfa-pillars-sr" class="pfa-sr-only">Core Shopify Australia Pet Store Solutions: Design, Management &amp; Cost Saving</h2>
+            <div class="pfa-heading pfa-heading-compact">
+                <span class="pfa-pill"><i class="bi bi-grid-fill" aria-hidden="true"></i> Core Shopify Services</span>
+                <h2 id="pfa-pillars-title">Build a Better Shopify Store for Your <span>Pet Food Business</span></h2>
+                <p>Whether you are launching a new Australian pet food brand, migrating onto Shopify, or fixing a slow existing storefront, we structure our services around measurable store outcomes.</p>
+            </div>
+
             <div class="pfa-deals-grid">
                 <article class="pfa-deal-card is-yellow">
                     <div>
-                        <span class="pfa-deal-badge">PILLAR 01 · DESIGN &amp; BUILD</span>
-                        <h3>Custom Pet Food Shopify Design</h3>
-                        <p>Mobile-first Shopify 2.0 storefronts &amp; multi-vendor pet marketplaces with breed/diet filters, Afterpay/Apple Pay &amp; auto-ship UX from <strong>A$2,499</strong>.</p>
+                        <span class="pfa-deal-badge">01 · DESIGN &amp; DEVELOPMENT</span>
+                        <h3>Custom Shopify Pet Store Design</h3>
+                        <p>Tailored Online Store 2.0 themes with clear nutrition hierarchy, dietary filters, mobile-friendly product pages, and smooth checkout flows — starting from <strong>A$2,499+</strong>.</p>
                     </div>
-                    <a href="#live-storefront" class="pfa-deal-link">Explore Store Features <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#shopify-solutions" class="pfa-deal-link" data-track-cta="pillar_custom_design">Explore Solutions <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
                 </article>
 
                 <article class="pfa-deal-card is-green pfa-paw-bg">
                     <div>
-                        <span class="pfa-deal-badge">PILLAR 02 · MANAGEMENT</span>
-                        <h3>Ongoing Shopify Store Management</h3>
-                        <p>Dedicated Shopify engineers &amp; designers managing catalog updates, seasonal bundles, speed, CRO &amp; subscription ops from <strong>A$999/mo</strong>.</p>
+                        <span class="pfa-deal-badge">02 · ONGOING SUPPORT</span>
+                        <h3>Shopify Store Management &amp; Optimization</h3>
+                        <p>Consistent monthly support covering catalogue updates, seasonal campaigns, speed checks, troubleshooting, and conversion improvements — <strong>A$999 / month</strong>.</p>
                     </div>
-                    <a href="#pricing" class="pfa-deal-link">View Monthly Care Pod <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#pricing" class="pfa-deal-link" data-track-cta="pillar_ongoing_management">View Care Package <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
                 </article>
 
                 <article class="pfa-deal-card is-orange">
                     <div>
-                        <span class="pfa-deal-badge">PILLAR 03 · SAVE COSTING</span>
-                        <h3>Cut Monthly Shopify Costs 40–60%</h3>
-                        <p>Audit &amp; replace bloated recurring paid Shopify apps and heavy local retainers with clean native Shopify 2.0 Liquid code — starting at <strong>A$799</strong>.</p>
+                        <span class="pfa-deal-badge">03 · APP CLEANUP SPRINT</span>
+                        <h3>Reduce Unnecessary Shopify App Costs</h3>
+                        <p>Review overlapping monthly apps and replace suitable front-end widgets with lightweight native Liquid code to cut bloat and recurring fees — <strong>A$799 one-time</strong>.</p>
                     </div>
-                    <a href="#cost-calculator" class="pfa-deal-link">Calculate AUD Savings <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#cost-calculator" class="pfa-deal-link" data-track-cta="pillar_app_cleanup">Estimate App Spend <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
                 </article>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         4. 360° SHOPIFY PET ECOMMERCE SOLUTIONS (DESIGN · MANAGEMENT · COST SAVING)
+         4. PET FOOD SHOPIFY SOLUTIONS SECTION (WHAT / WHY / PROBLEM / HOW)
     ════════════════════════════════════════════════ -->
     <section class="pfa-section pfa-section-cream pfa-paw-bg-light" id="shopify-solutions" aria-labelledby="pfa-solutions-title">
         <div class="pfa-wrap">
             <div class="pfa-heading">
-                <span class="pfa-pill"><i class="bi bi-bag-check-fill" aria-hidden="true"></i> End-to-End Shopify Pet eCommerce</span>
-                <h2 id="pfa-solutions-title">Built Exclusively for <span>Shopify Design, Management &amp; Cost Saving</span></h2>
-                <p>Everything an Australian pet food brand, pet shop, or ecommerce agency needs to launch, scale and run lean on Shopify — without paying bloated app or agency taxes.</p>
+                <span class="pfa-pill"><i class="bi bi-bag-check-fill" aria-hidden="true"></i> Pet Ecommerce Expertise</span>
+                <h2 id="pfa-solutions-title">Shopify Solutions Designed for <span>Pet Brands</span></h2>
+                <p>Selling pet food online involves repeat purchase cycles, varied bag weights, dietary needs, and local Australian delivery rules. Every solution below addresses a real operational or conversion bottleneck.</p>
             </div>
 
+            <!-- Preserved Featured Visual Card -->
             <div class="pfa-bff-card">
                 <div class="pfa-bff-top">
                     <div class="pfa-bff-body">
-                        <span class="pfa-pill pfa-pill-orange">Shopify Developer Australia · Pet Ecommerce</span>
-                        <h3>One Shopify Team for <span>Design, Daily Ops &amp; Lower Bills</span></h3>
-                        <p style="font-size:15.5px;color:#52625a;margin:0;">
-                            Pet store ecommerce has unique demands — recurring auto-ship deliveries, breed &amp; dietary filters, fresh/frozen postcode rules, heavy kibble shipping and promo bundles. Whether you run a growing pet shop website or a Shopify agency Australia team, we engineer and manage your entire Shopify ecosystem cleanly so you convert more pet parents while spending far less every month.
+                        <span class="pfa-pill pfa-pill-orange">Shopify Online Store 2.0 · Australian Pet Retail</span>
+                        <h3>Purpose-Built Storefronts That Make Ordering <span>Simple for Pet Parents</span></h3>
+                        <p class="pfa-body-copy">
+                            Generic retail templates rarely fit how Australians buy dog food, cat nutrition, treats, or supplements. Shoppers want to confirm ingredients, match portions to their pet's weight, check delivery availability for their postcode, and set up hassle-free recurring orders on mobile. We combine <a href="<?= cbd_escape_text($base) ?>/shopify-development" class="pfa-inline-link">custom Shopify development</a> with practical <a href="<?= cbd_escape_text($base) ?>/ecommerce-website-development" class="pfa-inline-link">ecommerce engineering</a> so your store is easy to shop and easy for your team to manage.
                         </p>
                         <div class="pfa-bff-tags">
-                            <span class="pfa-bff-tag">🐾 Breed, Age &amp; Diet Smart Filters</span>
-                            <span class="pfa-bff-tag">🔁 Auto-Ship &amp; Loyalty Tiers</span>
-                            <span class="pfa-bff-tag">💳 Afterpay, Stripe &amp; Apple Pay</span>
-                            <span class="pfa-bff-tag">⚡ Native Code · Zero App Bloat</span>
+                            <span class="pfa-bff-tag">Custom Shopify 2.0 Themes</span>
+                            <span class="pfa-bff-tag">Subscription &amp; Repeat Orders</span>
+                            <span class="pfa-bff-tag">Dietary &amp; Breed Filtering</span>
+                            <span class="pfa-bff-tag">Australian Shipping Logic</span>
                         </div>
-                        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
-                            <a href="#audit-form" class="pfa-btn pfa-btn-emerald">
-                                Get Free Shopify Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        <div class="pfa-btn-row">
+                            <a href="#audit-form" class="pfa-btn pfa-btn-emerald" data-track-cta="solutions_free_audit">
+                                Get a Free Store Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
                             </a>
-                            <a href="#cost-calculator" class="pfa-btn pfa-btn-outline">
-                                Estimate Cost Savings
+                            <a href="#live-storefront" class="pfa-btn pfa-btn-outline" data-track-cta="solutions_try_demos">
+                                View Interactive Demos
                             </a>
                         </div>
-                        <p style="margin:2px 0 0;font-size:13px;color:#52625a;padding-top:12px;border-top:1px dashed #e2dbd0;">
-                            <i class="bi bi-patch-check-fill" style="color:#0e6b47;" aria-hidden="true"></i>
-                            <strong>Proven in Australia:</strong> Trusted by Aussie pet food brands including Melbourne’s
-                            <a href="https://www.brunswickfurfood.com/" target="_blank" rel="noopener noreferrer" style="color:#0e6b47;font-weight:700;text-decoration:underline;">Brunswick Fur Food ↗</a>,
-                            where we helped reduce ongoing Shopify operating costs.
-                        </p>
                     </div>
 
                     <div class="pfa-bff-media">
-                        <img src="<?= cbd_escape_text($caseImgUrl) ?>"
-                             alt="Australian pet food Shopify subscription box and mobile storefront UX"
-                             width="1200" height="750" loading="lazy">
+                        <picture>
+                            <source srcset="<?= cbd_escape_text($caseWebpUrl) ?>" type="image/webp">
+                            <img src="<?= cbd_escape_text($caseJpgUrl) ?>"
+                                 alt="Dog food subscription meal box, air-dried treats, and mobile Shopify product view"
+                                 width="1376" height="768" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
 
-                <div class="pfa-bff-steps">
-                    <div class="pfa-bff-step">
-                        <strong>1. Shopify Design &amp; Conversion UX</strong>
-                        <p>Custom Shopify 2.0 storefronts built for dog &amp; cat parents — smart pet filters (breed, weight, allergies), "Buy More, Save More" bundles, photo reviews, pet-profile personalisation and 1-tap mobile checkout.</p>
-                    </div>
-                    <div class="pfa-bff-step">
-                        <strong>2. Full Shopify Store Management</strong>
-                        <p>Your hands-free AU Shopify tech &amp; ops team: SKU/variant updates, stock sync, auto-ship &amp; subscription tracking, seasonal promo launches, AusPost/Sendle/Shippit setup, Core Web Vitals speed and SEO care.</p>
-                    </div>
-                    <div class="pfa-bff-step">
-                        <strong>3. Shopify Cost Saving &amp; App Cleanup</strong>
-                        <p>We strip out A$300–A$1,000+/mo in redundant paid Shopify apps (feeding calculators, postcode checkers, upsell carts, bundle builders), code them natively in Liquid, and prevent unnecessary Shopify Plus upgrades.</p>
-                    </div>
+                <!-- 6 Detailed Solution Cards Answering What / Why / Problem / How -->
+                <div class="pfa-solutions-grid">
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-window-sidebar" aria-hidden="true"></i>
+                            <h3>Custom Shopify Store Development</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> Generic templates bury ingredients, feeding guides, and pack options, lowering buyer confidence on mobile.</p>
+                        <p><strong>How we help:</strong> We design clean Shopify 2.0 product and collection templates that highlight nutrition benefits, pack sizes, and trust details clearly so pet owners buy with confidence.</p>
+                    </article>
+
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                            <h3>Pet Food Subscription Solutions</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> Pet food is a repeat purchase, yet clunky subscribe-and-save widgets cause shoppers to check out once and forget to reorder.</p>
+                        <p><strong>How we help:</strong> We build clear delivery-frequency selectors, starter-pack flows, and customer-friendly recurring order interfaces powered by Shopify Selling Plans or your chosen compatible subscription app.</p>
+                    </article>
+
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-funnel" aria-hidden="true"></i>
+                            <h3>Product Catalogue &amp; Smart Filtering</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> Shoppers leave when they cannot quickly narrow down dry food, raw meals, puppy formulas, or allergy-safe recipes.</p>
+                        <p><strong>How we help:</strong> We organise metafields and collection filters by pet type, food format, life stage, breed size, protein source, and dietary needs to speed up product discovery.</p>
+                    </article>
+
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-calculator" aria-hidden="true"></i>
+                            <h3>Interactive Feeding Calculator</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> First-time buyers hesitate when they are unsure how much food to order or how long a box or bag will last.</p>
+                        <p><strong>How we help:</strong> We code lightweight feeding estimators driven strictly by your brand's supplied feeding guidelines and product weights — clearly presented as brand sizing guidance, never veterinary advice.</p>
+                    </article>
+
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                            <h3>Australian Shipping &amp; Delivery UX</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> Heavy bags and metro-only fresh deliveries create checkout surprises and abandoned carts when rules are unclear.</p>
+                        <p><strong>How we help:</strong> We structure Shopify shipping zones, local delivery messaging, and postcode eligibility indicators aligned to the carriers and fulfilment rules your business actively operates.</p>
+                    </article>
+
+                    <article class="pfa-sol-item">
+                        <div class="pfa-sol-head">
+                            <i class="bi bi-speedometer2" aria-hidden="true"></i>
+                            <h3>Shopify Store Optimization &amp; Ongoing Care</h3>
+                        </div>
+                        <p><strong>The problem it solves:</strong> Over time, extra apps, unoptimised imagery, and ad-hoc edits slow down mobile pages and break conversion flow.</p>
+                        <p><strong>How we help:</strong> We improve page speed, navigation, product pages, and checkout flow — and provide ongoing monthly maintenance, campaign updates, and technical support as your catalogue grows.</p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         5. LIVE INTERACTIVE PET STOREFRONT BROWSER PREVIEW
+         5. INTERACTIVE SHOPIFY MODULE DEMONSTRATION (CLEARLY LABELLED SAMPLE DEMOS)
     ════════════════════════════════════════════════ -->
     <section class="pfa-section" id="live-storefront" aria-labelledby="pfa-demo-title">
         <div class="pfa-wrap">
             <div class="pfa-heading">
-                <span class="pfa-pill pfa-pill-orange"><i class="bi bi-play-circle-fill" aria-hidden="true"></i> Interactive Storefront Demo</span>
-                <h2 id="pfa-demo-title">Test the Exact <span>Pet-Food Shopify</span> Modules We Build Natively</h2>
-                <p>Zero slow monthly apps. Try our live Shopify 2.0 Dog Feeding Calculator, AU Cold-Chain Postcode Checker, and Multi-Vendor Pet Marketplace checkout flow.</p>
+                <span class="pfa-pill pfa-pill-orange"><i class="bi bi-play-circle-fill" aria-hidden="true"></i> Interactive Storefront Concept Demo</span>
+                <h2 id="pfa-demo-title">Essential Features for a <span>High-Converting Pet Store</span></h2>
+                <p>Test how custom Shopify 2.0 storefront modules can guide pet owners before checkout. All figures and rules below use <strong>sample demonstration data</strong> and are customised to your store's actual products and shipping setup.</p>
             </div>
 
             <div class="pfa-browser">
                 <div class="pfa-browser-bar">
                     <div class="pfa-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-                    <div class="pfa-url-bar">https://aussie-dog-nutrition.com.au/shop</div>
-                    <div class="pfa-demo-tabs" role="tablist" aria-label="Interactive pet store features">
-                        <button type="button" class="pfa-demo-tab is-active" data-pfa-tab="feeding" aria-selected="true">🐾 Feeding &amp; Auto-Ship</button>
-                        <button type="button" class="pfa-demo-tab" data-pfa-tab="postcode" aria-selected="false">🚚 AU Postcode Cold-Chain</button>
-                        <button type="button" class="pfa-demo-tab" data-pfa-tab="marketplace" aria-selected="false">🏪 Pet Marketplace Split</button>
+                    <div class="pfa-url-bar" aria-label="Sample store preview URL">demo-pet-store.myshopify.com (Sample Demo)</div>
+                    <div class="pfa-demo-tabs" role="tablist" aria-label="Interactive pet store feature demos">
+                        <button type="button" id="tab-feeding" class="pfa-demo-tab is-active" role="tab" aria-selected="true" aria-controls="panel-feeding" tabindex="0" data-pfa-tab="feeding">
+                            Feeding &amp; Subscriptions
+                        </button>
+                        <button type="button" id="tab-postcode" class="pfa-demo-tab" role="tab" aria-selected="false" aria-controls="panel-postcode" tabindex="-1" data-pfa-tab="postcode">
+                            Postcode Delivery Demo
+                        </button>
+                        <button type="button" id="tab-marketplace" class="pfa-demo-tab" role="tab" aria-selected="false" aria-controls="panel-marketplace" tabindex="-1" data-pfa-tab="marketplace">
+                            Marketplace Flow Demo
+                        </button>
                     </div>
                 </div>
 
                 <div class="pfa-browser-body">
-                    <!-- TAB 1: Dog Feeding Calculator -->
-                    <div class="pfa-panel is-active" data-pfa-panel="feeding">
+                    <!-- TAB 1: Feeding Calculator & Make Pet Food Subscriptions Easier -->
+                    <div id="panel-feeding" class="pfa-panel is-active" role="tabpanel" aria-labelledby="tab-feeding" data-pfa-panel="feeding">
                         <div>
-                            <span class="pfa-pill">Boosts Repeat Subscriptions</span>
-                            <h3 style="font-family:var(--font-serif);font-size:28px;margin:12px 0 10px;">Interactive Dog Feeding &amp; Subscribe-and-Save Widget</h3>
-                            <p style="color:#52625a;font-size:15px;margin:0 0 18px;">
-                                Dog owners convert faster when they instantly see daily grams, box duration, and <strong>15% Auto-Ship savings</strong>. We code this right into your Shopify 2.0 theme (A$0/mo app fee!) wired to Recharge, Skio or Appstle.
+                            <span class="pfa-pill">Make Pet Food Subscriptions Easier</span>
+                            <h3 class="pfa-panel-heading">Feeding Estimator &amp; Recurring Order Selector (Sample Demo)</h3>
+                            <p class="pfa-panel-copy">
+                                Help pet parents choose the right pack size and delivery cadence in seconds. When built natively into your Shopify 2.0 theme, a feeding estimator connects directly to your product variants and selected Shopify subscription setup without heavy third-party script embeds.
                             </p>
                             <ul class="pfa-checks">
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Works for fresh cooked meals, raw frozen boxes, air-dried roo &amp; kibble</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Auto-selects the ideal 2-, 4- or 6-week recurring frequency</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Saves A$79–A$149/mo vs recurring quiz &amp; feeding apps</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Adapts to fresh meals, raw packs, air-dried food, or dry kibble</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Suggests an estimated reorder cadence based on your pack weights</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Displays one-time vs recurring order options clearly before cart</li>
                             </ul>
+                            <p class="pfa-demo-disclaimer">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                                <strong>Sample demo notice:</strong> Portion weights, pack sizes, and sample pricing shown here are illustrative only. Live calculators use the exact nutrition data and formula supplied by your business and do not constitute veterinary advice.
+                            </p>
                         </div>
 
                         <div class="pfa-panel-card">
+                            <div class="pfa-demo-tag">Sample Interactive Calculator</div>
                             <div class="pfa-slider-top">
-                                <label for="dog-weight-slider">Your Dog’s Weight (kg)</label>
-                                <span class="pfa-mono-badge" id="dog-weight-val">18 kg · Medium Dog</span>
+                                <label for="dog-weight-slider">Sample Dog Weight (kg)</label>
+                                <span class="pfa-mono-badge" id="dog-weight-val">18 kg · Medium</span>
                             </div>
-                            <input id="dog-weight-slider" type="range" class="pfa-range" min="3" max="55" step="1" value="18">
+                            <input id="dog-weight-slider" type="range" class="pfa-range" min="3" max="55" step="1" value="18" aria-describedby="dog-weight-val">
 
-                            <p style="font-size:13px;font-weight:700;margin:16px 0 4px;">Choose Nutrition Format:</p>
-                            <div class="pfa-chips" id="dog-diet-chips">
-                                <button type="button" class="pfa-chip is-active" data-diet="fresh">Fresh Cooked Meals</button>
-                                <button type="button" class="pfa-chip" data-diet="kibble">Grain-Free Kibble</button>
-                                <button type="button" class="pfa-chip" data-diet="airdried">Air-Dried Roo &amp; Beef</button>
+                            <p class="pfa-mini-label">Select Sample Food Format:</p>
+                            <div class="pfa-chips" id="dog-diet-chips" role="group" aria-label="Sample food format">
+                                <button type="button" class="pfa-chip is-active" data-diet="fresh" aria-pressed="true">Fresh Cooked Meals</button>
+                                <button type="button" class="pfa-chip" data-diet="kibble" aria-pressed="false">Dry Kibble</button>
+                                <button type="button" class="pfa-chip" data-diet="airdried" aria-pressed="false">Air-Dried Food</button>
                             </div>
 
-                            <div class="pfa-kpi-grid">
+                            <div class="pfa-kpi-grid" aria-live="polite">
                                 <div class="pfa-kpi">
-                                    <span>Daily Portion</span>
+                                    <span>Sample Daily Portion</span>
                                     <strong id="dog-daily-grams">504 g / day</strong>
                                 </div>
                                 <div class="pfa-kpi">
-                                    <span>Recommended Box</span>
-                                    <strong id="dog-pack-size">16 × 500g Fresh Meal Box (~16d)</strong>
+                                    <span>Illustrative Pack Match</span>
+                                    <strong id="dog-pack-size">8 kg Meal Box (~16 days)</strong>
                                 </div>
                                 <div class="pfa-kpi">
-                                    <span>One-Time Purchase</span>
+                                    <span>Sample One-Time Price</span>
                                     <strong id="dog-onetime-price">A$132.00</strong>
                                 </div>
                                 <div class="pfa-kpi is-save">
-                                    <span style="color:#094f34;font-weight:700;">Auto-Ship (Save 15%)</span>
-                                    <strong id="dog-sub-price">A$112.20 every 2 wks</strong>
+                                    <span class="pfa-kpi-accent">Sample Recurring Plan</span>
+                                    <strong id="dog-sub-price">Every 2 weeks</strong>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- TAB 2: AU Postcode Checker -->
-                    <div class="pfa-panel" data-pfa-panel="postcode">
+                    <!-- TAB 2: Australian Shipping & Postcode Delivery Demo -->
+                    <div id="panel-postcode" class="pfa-panel" role="tabpanel" aria-labelledby="tab-postcode" data-pfa-panel="postcode" hidden>
                         <div>
-                            <span class="pfa-pill">Built for Australia Shipping</span>
-                            <h3 style="font-family:var(--font-serif);font-size:28px;margin:12px 0 10px;">4-Digit AU Postcode Cold-Chain &amp; Heavy-Bag Checker</h3>
-                            <p style="color:#52625a;font-size:15px;margin:0 0 18px;">
-                                Protect margins on chilled dog meals and 15–20kg kibble bags. Shoppers verify Melbourne, Sydney, Brisbane, Perth or Adelaide chilled delivery before checkout — with zero A$69/mo postcode app fees.
+                            <span class="pfa-pill">Australian Shipping &amp; Delivery UX</span>
+                            <h3 class="pfa-panel-heading">4-Digit Australian Postcode Delivery Checker (Sample Demo)</h3>
+                            <p class="pfa-panel-copy">
+                                If your pet food brand offers local metro delivery for perishable meals and standard courier delivery for dry goods nationwide, a storefront postcode checker sets clear expectations early and reduces checkout drop-offs.
                             </p>
                             <ul class="pfa-checks">
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Instant metro chilled-van validation by Australian postcode</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> AusPost, Sendle, Shippit &amp; Starshipit weight-tier synced</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Guides regional buyers cleanly to shelf-stable treats &amp; dry food</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Displays custom delivery eligibility rules by 4-digit AU postcode</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Separates local delivery zones from regional dry-goods shipping</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Tailored to the actual couriers and zones configured in your Shopify admin</li>
                             </ul>
+                            <p class="pfa-demo-disclaimer">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                                <strong>Sample demo notice:</strong> Zones and delivery labels in this preview use illustrative sample data only — not live carrier rates, active cold-chain coverage, or verified courier integrations.
+                            </p>
                         </div>
 
                         <div class="pfa-panel-card">
-                            <label for="au-postcode-input" style="display:block;font-size:13.5px;font-weight:700;margin-bottom:8px;">
-                                Test any 4-digit Australian postcode:
+                            <div class="pfa-demo-tag">Sample Postcode Lookup</div>
+                            <label for="au-postcode-input" class="pfa-field-label">
+                                Try a 4-digit Australian postcode (sample zones):
                             </label>
-                            <div style="display:flex;gap:8px;">
-                                <input id="au-postcode-input" type="text" maxlength="4" class="pfa-input" value="3000" placeholder="e.g. 3000, 2000, 4000">
-                                <button type="button" id="au-postcode-btn" class="pfa-btn pfa-btn-emerald" style="padding:11px 18px;">Check</button>
+                            <div class="pfa-inline-input-row">
+                                <input id="au-postcode-input" type="text" inputmode="numeric" maxlength="4" class="pfa-input" value="3000" placeholder="e.g. 3000, 2000, 4000">
+                                <button type="button" id="au-postcode-btn" class="pfa-btn pfa-btn-emerald pfa-compact-btn">Check</button>
                             </div>
-                            <div class="pfa-chips" id="au-postcode-chips">
+                            <div class="pfa-chips" id="au-postcode-chips" role="group" aria-label="Sample Australian postcodes">
                                 <button type="button" class="pfa-chip is-active" data-pc="3000">3000 Melbourne</button>
                                 <button type="button" class="pfa-chip" data-pc="2000">2000 Sydney</button>
                                 <button type="button" class="pfa-chip" data-pc="4000">4000 Brisbane</button>
                                 <button type="button" class="pfa-chip" data-pc="6000">6000 Perth</button>
-                                <button type="button" class="pfa-chip" data-pc="4870">4870 Cairns Regional</button>
+                                <button type="button" class="pfa-chip" data-pc="4870">4870 Regional</button>
                             </div>
-                            <div id="au-postcode-result" style="background:#fff9f0;border:2px solid #0e6b47;border-radius:14px;padding:15px;font-size:14px;line-height:1.55;">
-                                <strong style="color:#094f34;display:block;margin-bottom:4px;">✓ Melbourne Metro (VIC 3000) — Chilled Fresh Delivery Ready</strong>
-                                <span style="color:#52625a;">Chilled fresh dog food van delivery (Next-day · Free over A$120) + AusPost Metro for air-dried treats &amp; kibble.</span>
+                            <div id="au-postcode-result" class="pfa-postcode-result" aria-live="polite">
+                                <strong>Sample Result: Melbourne Metro Zone (VIC 3000)</strong>
+                                <span>Illustrative rule: Local metro delivery zone eligible for fresh/perishable items plus standard parcel options for dry food and treats.</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- TAB 3: AU Multi-Vendor Pet Marketplace -->
-                    <div class="pfa-panel" data-pfa-panel="marketplace">
+                    <!-- TAB 3: Multi-Vendor Pet Marketplace Architecture Demo -->
+                    <div id="panel-marketplace" class="pfa-panel" role="tabpanel" aria-labelledby="tab-marketplace" data-pfa-panel="marketplace" hidden>
                         <div>
-                            <span class="pfa-pill pfa-pill-orange">Multi-Vendor Shopify Architecture</span>
-                            <h3 style="font-family:var(--font-serif);font-size:28px;margin:12px 0 10px;">Curated Australian Pet Goods Marketplace on Shopify</h3>
-                            <p style="color:#52625a;font-size:15px;margin:0 0 18px;">
-                                Bring 50+ local Aussie dog treat kitchens, organic raw brands, groomers and boutique accessory makers under one joyful Shopify marketplace — with automated commissions and per-vendor AusPost shipping.
+                            <span class="pfa-pill pfa-pill-orange">Multi-Vendor Pet Retail Concept</span>
+                            <h3 class="pfa-panel-heading">Multi-Vendor Pet Marketplace Workflow on Shopify</h3>
+                            <p class="pfa-panel-copy">
+                                Planning a curated Australian pet marketplace bringing multiple pet treat makers, nutrition brands, or accessory suppliers into one storefront? We architect <a href="<?= cbd_escape_text($base) ?>/multi-vendor-marketplace" class="pfa-inline-link">multi-vendor marketplace workflows</a> using compatible Shopify marketplace apps and custom storefront discovery.
                             </p>
                             <ul class="pfa-checks">
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Self-serve vendor dashboards for SKU uploads &amp; order dispatch</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Automated 12–20% marketplace commission &amp; Stripe split payouts</li>
-                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Filter by Breed, Grain-Free, Australian-Made, Vet-Approved &amp; Auto-Ship</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unified storefront browsing by pet type, diet, brand, and product category</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Vendor onboarding and catalogue workflows configured via your chosen marketplace app</li>
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Order routing and payout structure scoped to your exact business model</li>
                             </ul>
+                            <p class="pfa-demo-disclaimer">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                                <strong>Illustrative architecture:</strong> Specific vendor portal features, payout automation, and shipping split rules depend on the marketplace app and payment gateway selected during project scoping.
+                            </p>
                         </div>
 
-                        <div class="pfa-panel-card" style="display:grid;gap:12px;">
-                            <div style="background:#fff9f0;border:1px solid #ebe4d8;border-radius:14px;padding:14px;">
-                                <strong style="color:#0e6b47;font-size:14px;">1. One Joyful Pet-Parent Cart</strong>
-                                <p style="margin:4px 0 0;font-size:13px;color:#52625a;">Buy fresh dog meals from a Melbourne kitchen + kangaroo jerky from Queensland in a single Shopify checkout.</p>
+                        <div class="pfa-panel-card pfa-flow-stack">
+                            <div class="pfa-demo-tag">Illustrative Marketplace Flow</div>
+                            <div class="pfa-flow-step">
+                                <strong>1. Unified Pet-Parent Shopping Experience</strong>
+                                <p>Shoppers filter across pet food, treats, and accessories from approved brands inside one consistent Shopify storefront.</p>
                             </div>
-                            <div style="background:#fff9f0;border:1px solid #ebe4d8;border-radius:14px;padding:14px;">
-                                <strong style="color:#0e6b47;font-size:14px;">2. Automatic Vendor Order &amp; Commission Split</strong>
-                                <p style="margin:4px 0 0;font-size:13px;color:#52625a;">Shipturtle / Webkul routes each line item straight to the right Aussie maker and logs your marketplace fee cleanly.</p>
+                            <div class="pfa-flow-step">
+                                <strong>2. Order Routing by Supplier</strong>
+                                <p>Line items are organised by vendor through your configured multi-vendor marketplace app so each supplier sees their items clearly.</p>
                             </div>
-                            <div style="background:#e8f5ee;border:1px solid #9dd4b8;border-radius:14px;padding:14px;">
-                                <strong style="color:#094f34;font-size:14px;">3. Vendor Dispatch &amp; GST-Ready Payouts</strong>
-                                <p style="margin:4px 0 0;font-size:13px;color:#52625a;">Suppliers print AusPost/Sendle labels from their portal while you control SEO, reviews and brand standards centrally.</p>
+                            <div class="pfa-flow-step is-highlight">
+                                <strong>3. Centralised Brand &amp; SEO Control</strong>
+                                <p>Your team manages collection SEO, merchandising, and customer experience centrally while scaling product breadth.</p>
                             </div>
                         </div>
                     </div>
@@ -553,88 +713,92 @@ $faqSchema = [
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         6. INTERACTIVE AUD COST-SAVING CALCULATOR + APP LEDGER
+         6. REDUCE UNNECESSARY SHOPIFY APP COSTS (ILLUSTRATIVE ESTIMATOR)
     ════════════════════════════════════════════════ -->
     <section class="pfa-section pfa-section-cream" id="cost-calculator" aria-labelledby="pfa-calc-title">
         <div class="pfa-wrap">
             <div class="pfa-heading">
-                <span class="pfa-pill"><i class="bi bi-calculator-fill" aria-hidden="true"></i> Interactive AUD Cost-Saving Calculator</span>
-                <h2 id="pfa-calc-title">See How Much Your <span>Pet Brand or AU Agency</span> Saves Every Year</h2>
-                <p>Adjust your current monthly Shopify agency retainer, paid app bill and number of stores to see your projected annual AUD savings.</p>
+                <span class="pfa-pill"><i class="bi bi-calculator-fill" aria-hidden="true"></i> Illustrative Cost Estimator</span>
+                <h2 id="pfa-calc-title">Reduce Unnecessary <span>Shopify App Costs</span></h2>
+                <p>Many Shopify pet stores pay monthly subscriptions for simple front-end widgets that can be built natively in Shopify 2.0 Liquid. Use this illustrative estimator to model what consolidating overlapping apps and support costs could mean for your annual budget.</p>
             </div>
 
             <div class="pfa-calc-grid">
                 <div class="pfa-calc-left">
-                    <div style="margin-bottom:22px;">
+                    <div class="pfa-slider-group">
                         <div class="pfa-slider-top">
-                            <label for="calc-retainer">Current Monthly Dev / Agency Retainer (per store)</label>
-                            <span class="pfa-mono-badge" id="calc-retainer-val">A$3,500</span>
+                            <label for="calc-apps">Current Monthly Paid Shopify Apps (AUD)</label>
+                            <span class="pfa-mono-badge" id="calc-apps-val">A$450 / mo</span>
                         </div>
-                        <input id="calc-retainer" type="range" class="pfa-range" min="1000" max="10000" step="250" value="3500">
+                        <input id="calc-apps" type="range" class="pfa-range" min="0" max="2000" step="50" value="450">
                     </div>
 
-                    <div style="margin-bottom:22px;">
+                    <div class="pfa-slider-group">
                         <div class="pfa-slider-top">
-                            <label for="calc-apps">Current Monthly Paid Shopify Apps (per store)</label>
-                            <span class="pfa-mono-badge" id="calc-apps-val">A$650</span>
+                            <label for="calc-replace-pct">Share of Apps Replaceable With Native Code (Estimate)</label>
+                            <span class="pfa-mono-badge" id="calc-replace-val">35%</span>
                         </div>
-                        <input id="calc-apps" type="range" class="pfa-range" min="100" max="2500" step="50" value="650">
+                        <input id="calc-replace-pct" type="range" class="pfa-range" min="10" max="60" step="5" value="35">
                     </div>
 
-                    <div>
+                    <div class="pfa-slider-group-last">
                         <div class="pfa-slider-top">
-                            <label for="calc-stores">Number of Shopify Stores (1 = Brand, 2+ = AU Agency)</label>
-                            <span class="pfa-mono-badge" id="calc-stores-val">1 Store</span>
+                            <label for="calc-retainer">Current Monthly Dev / Support Retainer (AUD, optional)</label>
+                            <span class="pfa-mono-badge" id="calc-retainer-val">A$2,000 / mo</span>
                         </div>
-                        <input id="calc-stores" type="range" class="pfa-range" min="1" max="20" step="1" value="1">
+                        <input id="calc-retainer" type="range" class="pfa-range" min="0" max="6000" step="250" value="2000">
                     </div>
 
-                    <div class="pfa-app-table" aria-label="Typical paid Shopify apps we replace natively">
+                    <div class="pfa-app-table" aria-label="Examples of front-end features often consolidated into native Shopify 2.0 code">
                         <div class="pfa-app-row pfa-app-head">
-                            <span>Paid App We Replace Natively</span>
-                            <span>App Rent</span>
-                            <span>Our Code</span>
+                            <span>Common Front-End Feature</span>
+                            <span>Typical Approach</span>
+                            <span>Native 2.0 Option</span>
                         </div>
                         <div class="pfa-app-row">
-                            <span>Dog Feeding &amp; Bundle Builder Apps</span>
-                            <span style="text-decoration:line-through;color:#b91c1c;">A$208/mo</span>
-                            <span style="color:#0e6b47;font-weight:700;">A$0/mo</span>
+                            <span>Feeding guide &amp; size charts</span>
+                            <span class="pfa-muted-cell">Recurring app</span>
+                            <span class="pfa-emerald-cell">Theme Liquid</span>
                         </div>
                         <div class="pfa-app-row">
-                            <span>Postcode Checker + Sticky Cart Upsell</span>
-                            <span style="text-decoration:line-through;color:#b91c1c;">A$148/mo</span>
-                            <span style="color:#0e6b47;font-weight:700;">A$0/mo</span>
+                            <span>Postcode delivery notice</span>
+                            <span class="pfa-muted-cell">Recurring app</span>
+                            <span class="pfa-emerald-cell">Theme Liquid</span>
                         </div>
                         <div class="pfa-app-row">
-                            <span>Annual App Fees Returned to You</span>
-                            <span style="text-decoration:line-through;color:#b91c1c;">A$4,272/yr</span>
-                            <span style="color:#094f34;">100% Saved</span>
+                            <span>Cart upsell / free-shipping bar</span>
+                            <span class="pfa-muted-cell">Recurring app</span>
+                            <span class="pfa-emerald-cell">Theme Liquid</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="pfa-calc-right pfa-paw-bg">
                     <div>
-                        <span class="pfa-pill pfa-pill-yellow">Projected Annual AUD Savings</span>
-                        <div class="pfa-calc-big" id="calc-annual-total">A$26,610 / yr</div>
-                        <p style="margin:0;color:#d6ede2;font-size:14.5px;">
-                            Approx. <strong style="color:#fff;" id="calc-monthly-total">A$2,218 / mo</strong> saved every month — reinvest into Meta/Google Ads, fresh ingredients, or agency profit.
+                        <span class="pfa-pill pfa-pill-yellow">Illustrative Annual Estimate</span>
+                        <div class="pfa-calc-big" id="calc-annual-total">A$13,902 / yr</div>
+                        <p class="pfa-calc-subcopy">
+                            Estimated <strong id="calc-monthly-total">A$1,159 / mo</strong> potential reduction compared against your entered app spend and our A$999/mo ongoing care tier.
                         </p>
 
                         <div class="pfa-calc-mini-grid">
                             <div class="pfa-calc-mini">
-                                <span>Retainer Saved / mo</span>
-                                <strong id="calc-dev-saved">A$1,925</strong>
+                                <span>Est. App Spend Reduced / mo</span>
+                                <strong id="calc-apps-saved">A$158</strong>
                             </div>
                             <div class="pfa-calc-mini">
-                                <span>Paid Apps Cut / mo</span>
-                                <strong id="calc-apps-saved">A$293</strong>
+                                <span>Est. Retainer Difference / mo</span>
+                                <strong id="calc-dev-saved">A$1,001</strong>
                             </div>
                         </div>
+
+                        <p class="pfa-calc-note">
+                            <strong>Important:</strong> Figures above are illustrative estimates based purely on your slider inputs — not a guarantee. Exact savings depend on which third-party apps your store relies on and are verified during your free audit.
+                        </p>
                     </div>
 
-                    <button type="button" id="pfa-lock-savings" class="pfa-btn pfa-btn-orange" style="width:100%;">
-                        Send My Free Audit With These Numbers <i class="bi bi-arrow-down-circle" aria-hidden="true"></i>
+                    <button type="button" id="pfa-lock-savings" class="pfa-btn pfa-btn-orange pfa-full-btn" data-track-cta="calculator_prefill_audit">
+                        Include These Inputs in My Free Audit <i class="bi bi-arrow-down-circle" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -642,92 +806,187 @@ $faqSchema = [
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         7. WHITE-LABEL AU AGENCY MARGIN + AUD PRICING
+         7. OUR SHOPIFY DEVELOPMENT PROCESS (YELLOW CALLOUT) + PRICING
     ════════════════════════════════════════════════ -->
-    <section class="pfa-section" id="pricing" aria-labelledby="pfa-pricing-title">
+    <section class="pfa-section" id="process" aria-labelledby="pfa-process-title">
         <div class="pfa-wrap">
-            <!-- Dedicated White-Label Box for Existing Australian Agencies -->
-            <div class="pfa-agency-box">
-                <div>
-                    <span class="pfa-pill" style="background:#16241d;color:#f8c936;">🏢 For Existing Australian Agencies</span>
-                    <h3>Turn Client Shopify Maintenance Into 65%+ Pure Agency Margin</h3>
-                    <p style="margin:0 0 18px;color:#44403c;font-size:15px;">
-                        Keep your Sydney, Melbourne, Brisbane or Perth client relationships while our NDA-backed Shopify pod handles Liquid customisations, paid-app cleanups, Core Web Vitals speed and monthly CRO behind your brand.
-                    </p>
-                    <a href="#audit-form" class="pfa-btn pfa-btn-emerald">Request White-Label AU Rate Card <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <!-- Preserved Warm Yellow Featured Banner -> Now Our Shopify Development Process -->
+            <div class="pfa-process-box">
+                <div class="pfa-process-header">
+                    <span class="pfa-pill pfa-pill-dark">Structured Delivery Workflow</span>
+                    <h2 id="pfa-process-title">Our Shopify Development Process</h2>
+                    <p>Clear milestones from initial store audit to launch and ongoing support — built for busy Australian pet food founders and ecommerce managers.</p>
                 </div>
 
-                <div class="pfa-margin-card">
-                    <div class="pfa-margin-line"><span>Your AU Agency Bills Client</span><strong>A$4,000 / mo</strong></div>
-                    <div class="pfa-margin-line"><span>Chulbul White-Label Pod</span><strong>A$1,299 / mo</strong></div>
-                    <div class="pfa-margin-line"><span>Your Monthly Net Profit</span><strong>A$2,701 / mo (67%)</strong></div>
+                <ol class="pfa-process-grid">
+                    <li class="pfa-process-step">
+                        <span class="pfa-step-num">01</span>
+                        <h3>Audit &amp; Discovery</h3>
+                        <p>We review your store URL, product catalogue, subscription needs, shipping rules, and installed apps, then share a clear written scope.</p>
+                    </li>
+                    <li class="pfa-process-step">
+                        <span class="pfa-step-num">02</span>
+                        <h3>UX Design &amp; Shopify 2.0 Build</h3>
+                        <p>We craft mobile-first layouts and build clean Online Store 2.0 Liquid templates on a staging theme without disrupting live orders.</p>
+                    </li>
+                    <li class="pfa-process-step">
+                        <span class="pfa-step-num">03</span>
+                        <h3>QA, Speed &amp; Launch Checks</h3>
+                        <p>Before going live, we verify mobile responsiveness, product filters, checkout paths, redirects, metadata, and analytics tracking.</p>
+                    </li>
+                    <li class="pfa-process-step">
+                        <span class="pfa-step-num">04</span>
+                        <h3>Handover &amp; Ongoing Support</h3>
+                        <p>Your team receives clear guidance to manage products daily, with optional monthly support for campaigns, updates, and CRO.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Pricing Section -->
+            <div id="pricing" class="pfa-pricing-anchor">
+                <div class="pfa-heading">
+                    <span class="pfa-pill pfa-pill-orange"><i class="bi bi-tags-fill" aria-hidden="true"></i> Clear AUD Pricing</span>
+                    <h2 id="pfa-pricing-title">Pet Food Shopify <span>Development Pricing</span></h2>
+                    <p>Choose a focused one-time cleanup sprint, ongoing monthly Shopify support, or a custom pet store build. Custom projects are scoped with a clear written quotation.</p>
                 </div>
-            </div>
 
-            <div class="pfa-heading">
-                <span class="pfa-pill pfa-pill-orange"><i class="bi bi-tags-fill" aria-hidden="true"></i> Transparent AUD Packages</span>
-                <h2 id="pfa-pricing-title">Simple Pricing That <span>Pays for Itself</span> in Shopify Savings</h2>
-                <p>Zero lock-in contracts. Start with our A$799 App-Cost Cleanup Sprint or plug in our monthly Shopify store care &amp; CRO pod.</p>
-            </div>
+                <div class="pfa-pricing-grid">
+                    <article class="pfa-price-card">
+                        <span class="pfa-pill">One-Time Fee</span>
+                        <h3>App Cost Cleanup Sprint</h3>
+                        <div class="pfa-price-val">A$799</div>
+                        <p class="pfa-price-meta">One-time project fee · Ideal for existing Shopify stores</p>
+                        <ul class="pfa-checks pfa-price-list">
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Full review of installed Shopify apps and front-end script bloat</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Consolidate suitable front-end widgets into native Shopify 2.0 code</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Mobile speed and layout stability improvements</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Actionable UX and conversion recommendations</li>
+                        </ul>
+                        <a href="#audit-form" class="pfa-btn pfa-btn-outline pfa-full-btn" data-select-service="App Cost Cleanup Sprint (A$799 one-time)" data-track-pricing="app_cost_cleanup_sprint">
+                            Request Cleanup Sprint
+                        </a>
+                    </article>
 
-            <div class="pfa-pricing-grid">
-                <article class="pfa-price-card">
-                    <span class="pfa-pill">Quick-Win Sprint</span>
-                    <h3>App-Cost Cleanup &amp; Speed Fix</h3>
-                    <div class="pfa-price-val">A$799</div>
-                    <p style="font-size:13px;color:#788880;margin:6px 0 20px;">One-time sprint · Delivered in 7–10 days</p>
-                    <ul class="pfa-checks" style="flex:1;margin-bottom:24px;">
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Full Shopify paid app &amp; subscription cost audit</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Replace up to 3 paid apps with native Shopify 2.0 code</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Mobile LCP &amp; Core Web Vitals speed optimisation</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trial-box &amp; auto-ship conversion checklist</li>
-                    </ul>
-                    <a href="#audit-form" class="pfa-btn pfa-btn-outline" style="width:100%;">Book A$799 Sprint</a>
-                </article>
+                    <article class="pfa-price-card is-hot">
+                        <span class="pfa-hot-tag">Ongoing Store Support</span>
+                        <span class="pfa-pill pfa-pill-orange">Monthly Fee</span>
+                        <h3>Monthly Care &amp; CRO Pod</h3>
+                        <div class="pfa-price-val">A$999<span> / month</span></div>
+                        <p class="pfa-price-meta">Recurring monthly support · Flexible ongoing engagement</p>
+                        <ul class="pfa-checks pfa-price-list">
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Ongoing Shopify 2.0 development and design support</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> New landing pages, seasonal promos, and content updates</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Troubleshooting, theme maintenance, and performance checks</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Ongoing conversion flow and product-page improvements</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> AEST / AEDT &amp; AWST-friendly remote check-ins</li>
+                        </ul>
+                        <a href="#audit-form" class="pfa-btn pfa-btn-orange pfa-full-btn" data-select-service="Monthly Care & CRO Pod (A$999/month)" data-track-pricing="monthly_care_cro_pod">
+                            Enquire About Monthly Care
+                        </a>
+                    </article>
 
-                <article class="pfa-price-card is-hot">
-                    <span class="pfa-hot-tag">★ Most Popular · Brands &amp; AU Agencies</span>
-                    <span class="pfa-pill pfa-pill-orange">Ongoing Management</span>
-                    <h3>Monthly Shopify Care &amp; CRO Pod</h3>
-                    <div class="pfa-price-val">A$999<span> / mo</span></div>
-                    <p style="font-size:13px;color:#788880;margin:6px 0 20px;">Month-to-month · NDA White-Label available</p>
-                    <ul class="pfa-checks" style="flex:1;margin-bottom:24px;">
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Dedicated Shopify 2.0 developer &amp; UI designer</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Monthly landing pages, seasonal promos &amp; bundles</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Continuous paid-app cost cuts &amp; speed monitoring</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Subscription, Klaviyo &amp; AusPost shipping updates</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Weekly AEST / AWST review check-ins</li>
-                    </ul>
-                    <a href="#audit-form" class="pfa-btn pfa-btn-orange" style="width:100%;">Start Monthly Care Pod</a>
-                </article>
+                    <article class="pfa-price-card">
+                        <span class="pfa-pill">One-Time · Custom Quote</span>
+                        <h3>Custom Pet Store / Marketplace</h3>
+                        <div class="pfa-price-val">A$2,499<span>+</span></div>
+                        <p class="pfa-price-meta">Starting price · Final quote scoped to requirements</p>
+                        <ul class="pfa-checks pfa-price-list">
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Custom Shopify Online Store 2.0 design for pet food &amp; supplies</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Product taxonomy, dietary filters, and feeding-guide layout</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Subscription UX setup with your selected Shopify subscription app</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Australian shipping zones, postcode rules, or marketplace scoping</li>
+                            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Technical SEO foundations, analytics setup, and launch QA</li>
+                        </ul>
+                        <a href="#audit-form" class="pfa-btn pfa-btn-emerald pfa-full-btn" data-select-service="Custom Pet Store / Marketplace (A$2,499+)" data-track-pricing="custom_pet_store_build">
+                            Request a Custom Quote
+                        </a>
+                    </article>
+                </div>
 
-                <article class="pfa-price-card">
-                    <span class="pfa-pill">Complete Build</span>
-                    <h3>Custom Pet Store or Marketplace</h3>
-                    <div class="pfa-price-val">A$2,499<span>+</span></div>
-                    <p style="font-size:13px;color:#788880;margin:6px 0 20px;">Milestone-based · 3–6 week launch window</p>
-                    <ul class="pfa-checks" style="flex:1;margin-bottom:24px;">
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Joyful custom Shopify 2.0 theme for Aussie pet parents</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Native Dog Feeding Calculator &amp; Auto-Ship UX</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> AU cold-chain postcodes &amp; AusPost/Sendle shipping</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Optional Multi-Vendor AU Pet Marketplace setup</li>
-                        <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> GA4, Meta Pixel, Google Ads &amp; SEO 301 QA</li>
-                    </ul>
-                    <a href="#audit-form" class="pfa-btn pfa-btn-emerald" style="width:100%;">Scope My Pet Store</a>
-                </article>
+                <p class="pfa-pricing-note">
+                    All prices are indicative starting amounts in AUD. Custom store builds, platform migrations, and multi-vendor marketplaces require a written quotation after reviewing your requirements. Applicable tax / GST treatment is confirmed on your formal quote.
+                    <span class="pfa-agency-footnote">Are you an Australian digital agency looking for Shopify development support? <a href="<?= cbd_escape_text($base) ?>/contact-us">Contact us directly</a> to discuss agency collaboration.</span>
+                </p>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         8. FAQS (AUTO-MATCHED TO FAQPAGE JSON-LD)
+         8. WHY CHOOSE CHULBUL DESIGN & VERIFIED CLIENT WORK (E-E-A-T)
     ════════════════════════════════════════════════ -->
-    <section class="pfa-section pfa-section-cream" id="faq" aria-labelledby="pfa-faq-title">
+    <section class="pfa-section pfa-section-cream pfa-paw-bg-light" id="why-chulbul" aria-labelledby="pfa-why-title">
+        <div class="pfa-wrap">
+            <div class="pfa-heading">
+                <span class="pfa-pill"><i class="bi bi-shield-check" aria-hidden="true"></i> Trust &amp; Transparency</span>
+                <h2 id="pfa-why-title">Why Choose <span>Chulbul Design?</span></h2>
+                <p>Straightforward communication, clean Shopify 2.0 engineering, and real Australian pet ecommerce experience — without inflated claims or hidden lock-ins.</p>
+            </div>
+
+            <!-- Real Client Project Spotlight (Brunswick Fur Food) -->
+            <article class="pfa-case-card" aria-labelledby="pfa-case-heading">
+                <div class="pfa-case-grid">
+                    <div class="pfa-case-media">
+                        <picture>
+                            <source srcset="<?= cbd_escape_text($bffWebpUrl) ?>" type="image/webp">
+                            <img src="<?= cbd_escape_text($bffJpgUrl) ?>"
+                                 alt="Brunswick Fur Food Melbourne Shopify storefront desktop preview"
+                                 width="1100" height="720" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="pfa-case-body">
+                        <span class="pfa-pill pfa-pill-orange">Australian Pet Food Client · Melbourne, VIC</span>
+                        <h3 id="pfa-case-heading">Featured Shopify Client: Brunswick Fur Food</h3>
+                        <p>
+                            <strong>Business overview:</strong> <a href="https://www.brunswickfurfood.com/" target="_blank" rel="noopener noreferrer" class="pfa-inline-link">Brunswick Fur Food</a> is a Melbourne-based fresh dog food brand selling gently cooked meals, starter packs, subscription meal boxes, and air-dried treats on Shopify.
+                        </p>
+                        <dl class="pfa-case-dl">
+                            <div>
+                                <dt>Focus area &amp; challenge</dt>
+                                <dd>Streamlining ongoing Shopify operating costs while keeping a clean, mobile-friendly shopping and subscription experience for Melbourne dog owners.</dd>
+                            </div>
+                            <div>
+                                <dt>Work completed</dt>
+                                <dd>Shopify storefront improvements, subscription and starter-pack discovery refinement, and practical cost optimisation across the store setup.</dd>
+                            </div>
+                            <div>
+                                <dt>Verified metrics &amp; client quote</dt>
+                                <dd class="pfa-placeholder-note">Detailed before/after metrics and an approved client testimonial can be published here upon written client sign-off. Explore more live builds in our <a href="<?= cbd_escape_text($base) ?>/#portfolio" class="pfa-inline-link">selected work portfolio</a>.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Genuine Credibility Pillars -->
+            <div class="pfa-trust-grid">
+                <div class="pfa-trust-card">
+                    <i class="bi bi-globe-asia-australia" aria-hidden="true"></i>
+                    <h3>Transparent Remote Partnership</h3>
+                    <p>Chulbul Design is headquartered in Gurugram, India, and serves Australian pet businesses remotely across Melbourne, Sydney, Brisbane, Perth, and Adelaide with AEST/AEDT and AWST-friendly communication.</p>
+                </div>
+                <div class="pfa-trust-card">
+                    <i class="bi bi-code-square" aria-hidden="true"></i>
+                    <h3>Clean Shopify 2.0 Engineering</h3>
+                    <p>We prioritise maintainable Liquid code, clear product architecture, and sensible app choices over bloated plugins that slow down mobile storefronts.</p>
+                </div>
+                <div class="pfa-trust-card">
+                    <i class="bi bi-file-earmark-check" aria-hidden="true"></i>
+                    <h3>Clear Scope &amp; Ownership</h3>
+                    <p>You retain full ownership of your Shopify store, domain, and custom theme code. Every sprint or custom build starts with clear deliverables and written pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         9. FAQS (MATCHED 1-TO-1 WITH FAQPAGE JSON-LD)
+    ════════════════════════════════════════════════ -->
+    <section class="pfa-section" id="faq" aria-labelledby="pfa-faq-title">
         <div class="pfa-wrap">
             <div class="pfa-heading">
                 <span class="pfa-pill"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i> Common Questions</span>
-                <h2 id="pfa-faq-title">Australia Pet Food Shopify <span>FAQs</span></h2>
-                <p>Clear answers on our Shopify store design, monthly management, cost-saving audits, white-label AU agency NDAs and AUD pricing.</p>
+                <h2 id="pfa-faq-title">Frequently Asked <span>Questions</span></h2>
+                <p>Practical answers about Shopify pet food store costs, subscriptions, app cleanup, Australian shipping setup, and working remotely with Chulbul Design.</p>
             </div>
 
             <div class="pfa-faq-grid">
@@ -735,7 +994,7 @@ $faqSchema = [
                 <details<?= $idx < 2 ? ' open' : '' ?>>
                     <summary>
                         <span><?= cbd_escape_text($faq['q']) ?></span>
-                        <i class="bi bi-plus-lg" aria-hidden="true" style="color:#0e6b47;flex-shrink:0;"></i>
+                        <i class="bi bi-plus-lg pfa-faq-icon" aria-hidden="true"></i>
                     </summary>
                     <p><?= cbd_escape_text($faq['a']) ?></p>
                 </details>
@@ -745,61 +1004,87 @@ $faqSchema = [
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         9. FINAL FREE 5-MIN LOOM AUDIT FORM (EMERALD + PAWS)
+         10. FINAL GREEN CTA & ACCESSIBLE FREE AUDIT FORM
     ════════════════════════════════════════════════ -->
     <section class="pfa-section pfa-section-emerald pfa-paw-bg" id="audit-form" aria-labelledby="pfa-form-title">
         <div class="pfa-wrap pfa-audit-grid">
             <div>
-                <span class="pfa-pill pfa-pill-yellow"><i class="bi bi-camera-video-fill" aria-hidden="true"></i> Free 5-Min Loom Store Teardown</span>
-                <h2 id="pfa-form-title" style="font-family:var(--font-serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;margin:16px 0 14px;color:#fff;">
-                    Upgrade Your Shopify Pet Store &amp; Cut Monthly Costs by <span style="color:#f8c936;">Up to 60%</span>
+                <span class="pfa-pill pfa-pill-yellow"><i class="bi bi-clipboard2-check-fill" aria-hidden="true"></i> Free Shopify Store Audit</span>
+                <h2 id="pfa-form-title" class="pfa-audit-heading">
+                    Improve Your Shopify Store Performance &amp; <span>Conversion Flow</span>
                 </h2>
-                <p style="color:#d6ede2;font-size:15.5px;margin:0 0 24px;">
-                    Send us your Australian pet store URL or agency site. Within 24 hours our Shopify team records a personalised 5-minute Loom showing exact paid apps you can cut, design/CRO wins, and a clear AUD management plan.
+                <p class="pfa-audit-copy">
+                    Share your Australian pet store URL or upcoming project brief. Our Shopify team will review your storefront UX, product filtering, subscription journey, and visible app stack, then send clear, practical recommendations.
                 </p>
-                <ul class="pfa-checks" style="color:#ecfdf5;margin-bottom:28px;">
-                    <li><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> Zero store admin password needed for the audit</li>
-                    <li><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> Delivered in 24 hrs · AEST &amp; AWST friendly reviews</li>
-                    <li><i class="bi bi-check-circle-fill" style="color:#f8c936;" aria-hidden="true"></i> Strict NDA ready on day one for AU agency partners</li>
+                <ul class="pfa-checks pfa-checks-light">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> No store admin password required for the initial review</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Practical UX, speed, and app-consolidation recommendations</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Remote AEST/AEDT &amp; AWST-friendly follow-up calls</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Zero obligation — keep the recommendations either way</li>
                 </ul>
-                <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%27d%20like%20a%20free%205-min%20Shopify%20design%2C%20management%20and%20cost-saving%20audit%20for%20our%20Australian%20pet%20store."
-                   target="_blank" rel="noopener noreferrer" class="pfa-btn pfa-btn-glass">
-                    <i class="bi bi-whatsapp" style="color:#4ade80;" aria-hidden="true"></i> Chat Directly on WhatsApp
-                </a>
+                <div class="pfa-audit-contact">
+                    <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%27d%20like%20to%20request%20a%20free%20Shopify%20store%20audit%20for%20our%20Australian%20pet%20brand."
+                       target="_blank" rel="noopener noreferrer" class="pfa-btn pfa-btn-glass" data-track-whatsapp="audit_section">
+                        <i class="bi bi-whatsapp pfa-wa-icon" aria-hidden="true"></i> Chat on WhatsApp
+                    </a>
+                    <a href="mailto:info@chulbuldesign.com" class="pfa-audit-email">info@chulbuldesign.com</a>
+                </div>
             </div>
 
             <div class="pfa-form-card">
-                <h3 style="font-family:var(--font-serif);font-size:24px;margin:0 0 6px;color:#16241d;">Request Your Free AUD Cost-Saving Audit</h3>
-                <p style="font-size:13.5px;color:#52625a;margin:0 0 20px;">Keep the entire app-reduction &amp; speed roadmap — zero obligation.</p>
+                <h3 class="pfa-form-title">Request Your Free Shopify Store Audit</h3>
+                <p class="pfa-form-subtitle">Fields marked with <span aria-hidden="true">*</span><span class="pfa-sr-only">an asterisk</span> are required.</p>
 
                 <form id="pfa-main-form" class="pfa-form-stack" novalidate>
-                    <input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
+                    <input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" class="pfa-hp-field" aria-hidden="true">
+
                     <div class="pfa-form-2">
-                        <input id="pfa-name-input" type="text" name="name" class="pfa-input" placeholder="Full Name *" required>
-                        <input type="email" name="email" class="pfa-input" placeholder="Work Email *" required>
+                        <div class="pfa-field">
+                            <label for="pfa-name-input" class="pfa-field-label">Name <span aria-hidden="true">*</span></label>
+                            <input id="pfa-name-input" type="text" name="name" class="pfa-input" autocomplete="name" placeholder="e.g. Sarah Mitchell" required>
+                        </div>
+                        <div class="pfa-field">
+                            <label for="pfa-email-input" class="pfa-field-label">Business Email <span aria-hidden="true">*</span></label>
+                            <input id="pfa-email-input" type="email" name="email" class="pfa-input" autocomplete="email" placeholder="sarah@yourpetbrand.com.au" required>
+                        </div>
                     </div>
+
                     <div class="pfa-form-2">
-                        <input type="tel" name="phone" class="pfa-input" placeholder="Phone / WhatsApp (+61...)">
-                        <input id="pfa-business-input" type="text" name="business" class="pfa-input" placeholder="Store URL or AU Agency Name *" required>
+                        <div class="pfa-field">
+                            <label for="pfa-store-url-input" class="pfa-field-label">Shopify Store URL <span aria-hidden="true">*</span></label>
+                            <input id="pfa-store-url-input" type="url" name="store_url" class="pfa-input" inputmode="url" placeholder="https://yourpetbrand.com.au (or 'New Store')" required>
+                        </div>
+                        <div class="pfa-field">
+                            <label for="pfa-business-input" class="pfa-field-label">Business Name <span class="pfa-optional">(optional)</span></label>
+                            <input id="pfa-business-input" type="text" name="business" class="pfa-input" autocomplete="organization" placeholder="e.g. Melbourne Paws Co.">
+                        </div>
                     </div>
+
                     <div class="pfa-form-2">
-                        <select id="pfa-service-select" name="service" class="pfa-select" aria-label="Service needed">
-                            <option value="AU Pet Shopify App Cleanup Sprint (A$799)">App-Cost Cleanup &amp; Speed Sprint (A$799)</option>
-                            <option value="AU Pet Shopify Monthly Care Pod (A$999/mo)">Monthly Store Care &amp; CRO Pod (A$999/mo)</option>
-                            <option value="AU Pet Food Shopify Store Build (A$2,499+)">New Pet Food / Dog Goods Shopify Store</option>
-                            <option value="AU Pet Multi-Vendor Marketplace">Australia Pet Goods Multi-Vendor Marketplace</option>
-                            <option value="AU Agency White-Label Shopify Partner">White-Label Partner for Existing AU Agency</option>
-                        </select>
-                        <select name="budget" class="pfa-select" aria-label="Current monthly spend">
-                            <option value="Under A$1,000/mo">Current Spend: Under A$1,000/mo</option>
-                            <option value="A$1,000 - A$3,000/mo" selected>Current Spend: A$1,000 – A$3,000/mo</option>
-                            <option value="A$3,000 - A$6,000/mo">Current Spend: A$3,000 – A$6,000/mo</option>
-                            <option value="A$6,000+/mo (Agency / Plus)">Current Spend: A$6,000+/mo (Agency / Plus)</option>
-                        </select>
+                        <div class="pfa-field">
+                            <label for="pfa-service-select" class="pfa-field-label">Main Requirement <span class="pfa-optional">(optional)</span></label>
+                            <select id="pfa-service-select" name="service" class="pfa-select">
+                                <option value="Free Shopify Store Audit">Free Shopify Store Audit</option>
+                                <option value="App Cost Cleanup Sprint (A$799 one-time)">App Cost Cleanup Sprint (A$799 one-time)</option>
+                                <option value="Monthly Care & CRO Pod (A$999/month)">Monthly Care &amp; CRO Pod (A$999/month)</option>
+                                <option value="Custom Pet Store / Marketplace (A$2,499+)">Custom Pet Store / Marketplace (A$2,499+)</option>
+                                <option value="Shopify Subscriptions & Feeding Calculator">Subscriptions &amp; Feeding Calculator</option>
+                                <option value="Migration to Shopify">Platform Migration to Shopify</option>
+                            </select>
+                        </div>
+                        <div class="pfa-field">
+                            <label for="pfa-phone-input" class="pfa-field-label">Phone / WhatsApp <span class="pfa-optional">(optional)</span></label>
+                            <input id="pfa-phone-input" type="tel" name="phone" class="pfa-input" autocomplete="tel" placeholder="+61 4XX XXX XXX">
+                        </div>
                     </div>
-                    <textarea id="pfa-message-input" name="message" rows="4" class="pfa-textarea" placeholder="Tell us your store URL, paid apps you want to cut, fresh/kibble shipping setup, or AU agency white-label needs..."></textarea>
-                    <button type="submit" class="pfa-btn pfa-btn-orange" style="width:100%;">
-                        Send My Free 5-Min Cost Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
+
+                    <div class="pfa-field">
+                        <label for="pfa-message-input" class="pfa-field-label">Project Notes <span class="pfa-optional">(optional)</span></label>
+                        <textarea id="pfa-message-input" name="message" rows="3" class="pfa-textarea" placeholder="Share any goals around subscriptions, product filters, Australian shipping rules, or apps you want reviewed..."></textarea>
+                    </div>
+
+                    <button type="submit" class="pfa-btn pfa-btn-orange pfa-full-btn">
+                        Get My Free Shopify Audit <i class="bi bi-arrow-right" aria-hidden="true"></i>
                     </button>
                 </form>
                 <div id="pfa-main-status" class="pfa-status" role="status" aria-live="polite"></div>
@@ -809,36 +1094,38 @@ $faqSchema = [
 
 </main>
 
-<!-- PawVita-Style Emerald Trust Footer Bar -->
+<!-- Preserved Emerald Trust Footer Bar -->
 <div class="pfa-green-strip">
     <div class="pfa-wrap pfa-green-strip-grid">
-        <div><i class="bi bi-palette-fill" aria-hidden="true"></i> Custom Shopify 2.0 Design</div>
-        <div><i class="bi bi-gear-wide-connected" aria-hidden="true"></i> Dedicated Store Management</div>
-        <div><i class="bi bi-piggy-bank-fill" aria-hidden="true"></i> 40–60% Lower Shopify Costs</div>
-        <div><i class="bi bi-shield-lock-fill" aria-hidden="true"></i> NDA White-Label for AU Agencies</div>
+        <div><i class="bi bi-palette-fill" aria-hidden="true"></i> Custom Shopify Development</div>
+        <div><i class="bi bi-repeat" aria-hidden="true"></i> Pet Subscription UX</div>
+        <div><i class="bi bi-gear-wide-connected" aria-hidden="true"></i> Ongoing Shopify Support</div>
+        <div><i class="bi bi-globe-asia-australia" aria-hidden="true"></i> Serving Australia Remotely</div>
     </div>
 </div>
 
-<!-- Minimal Standalone Footer -->
+<!-- Preserved Standalone Footer with Clean Contextual Links -->
 <footer class="pfa-footer">
     <div class="pfa-wrap pfa-footer-row">
         <div>
-            <strong style="color:#0e6b47;">Chulbul Design</strong> · Headquartered in Gurugram, India · Serving Melbourne, Sydney, Brisbane, Perth &amp; Adelaide remotely.
+            <strong class="pfa-footer-brand">Chulbul Design</strong> · Headquartered in Gurugram, India · Serving Australian pet food and ecommerce businesses remotely across Melbourne, Sydney, Brisbane, Perth &amp; Adelaide.
         </div>
         <div class="pfa-footer-links">
-            <a href="<?= cbd_escape_text($base) ?>/">Main Website</a>
-            <a href="<?= cbd_escape_text($base) ?>/shopify-development">Shopify Services</a>
+            <a href="<?= cbd_escape_text($base) ?>/shopify-development">Shopify Development</a>
+            <a href="<?= cbd_escape_text($base) ?>/ecommerce-website-development">Ecommerce Services</a>
             <a href="<?= cbd_escape_text($base) ?>/multi-vendor-marketplace">Marketplaces</a>
-            <a href="<?= cbd_escape_text($base) ?>/city/melbourne/ecommerce-development">Melbourne</a>
-            <a href="<?= cbd_escape_text($base) ?>/city/sydney/ecommerce-development">Sydney</a>
-            <a href="<?= cbd_escape_text($base) ?>/privacy-policy">Privacy</a>
+            <a href="<?= cbd_escape_text($base) ?>/#portfolio">Portfolio</a>
+            <a href="<?= cbd_escape_text($base) ?>/city/melbourne/ecommerce-development">Melbourne Ecommerce</a>
+            <a href="<?= cbd_escape_text($base) ?>/city/sydney/ecommerce-development">Sydney Ecommerce</a>
+            <a href="<?= cbd_escape_text($base) ?>/contact-us">Contact</a>
+            <a href="<?= cbd_escape_text($base) ?>/about">About Chulbul Design</a>
         </div>
     </div>
 </footer>
 
 <div class="pfa-mobile-sticky" aria-label="Quick mobile actions">
-    <a href="#audit-form" style="background:#f26b1d;color:#ffffff;">Free 5-Min Audit</a>
-    <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%27d%20like%20a%20free%20AU%20Pet%20Food%20Shopify%20audit." target="_blank" rel="noopener noreferrer" style="background:#f8c936;color:#16241d;">
+    <a href="#audit-form" class="pfa-sticky-primary" data-track-cta="mobile_sticky_audit">Free Store Audit</a>
+    <a href="https://wa.me/919990548795?text=Hi%20Chulbul%20Design%2C%20I%27d%20like%20a%20free%20Shopify%20store%20audit%20for%20our%20Australian%20pet%20brand." target="_blank" rel="noopener noreferrer" class="pfa-sticky-wa" data-track-whatsapp="mobile_sticky">
         <i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp
     </a>
 </div>

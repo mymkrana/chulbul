@@ -453,6 +453,13 @@ require __DIR__ . '/includes/header.php';
     ]);
     ?>
 
+    <?php if (strtoupper((string)($country['iso_code'] ?? '')) === 'AU'): ?>
+    <?php
+    require_once __DIR__ . '/includes/au-pet-shopify-cta.php';
+    cbd_render_au_pet_shopify_cta((string)$city['name'], $base);
+    ?>
+    <?php endif; ?>
+
     <section class="cbd-spoke-section cbd-spoke-section-alt" id="related">
         <div class="cbd-spoke-container">
             <div class="cbd-spoke-section-heading">
