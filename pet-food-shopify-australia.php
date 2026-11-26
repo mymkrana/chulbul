@@ -211,12 +211,12 @@ $faqSchema = [
       gtag('config', 'G-Z45EZTKR2J');
     </script>
     <!-- Clarity tracking code for https://www.chulbuldesign.com/ -->
-    <script>
+    <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "zjsev4vyib");
+        })(window, document, "clarity", "script", "zjsqlds7s6");
     </script>
     <?php endif; ?>
 
