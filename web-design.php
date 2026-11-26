@@ -149,6 +149,20 @@ $schema = [
 
     <section class="wd-section wd-intro"><div class="wd-container wd-narrow wd-reveal"><span class="wd-kicker">Design with a reason</span><h2>A Website Should Clarify Your Business Before It Tries to Impress</h2><p>Strong web design is not a collection of attractive sections. It is a connected system that helps the right visitor recognize a relevant offer, understand why it matters, trust the organization and decide what to do next. Visual quality supports that journey, but it cannot replace clear structure and useful content.</p><p>Chulbul Design begins with questions: Who is the website for? What are they trying to compare or complete? Which concerns delay a decision? What proof can the business honestly provide? These answers shape the sitemap, page hierarchy and calls to action before decorative choices begin. The result is a design that reflects the way customers think rather than the internal structure of the company.</p><p>Typography, color, imagery, spacing and motion are then developed as a reusable system. Important information receives visual priority, repeated patterns become familiar and responsive rules keep the experience coherent on smaller screens. This approach creates an original website without making every page behave differently.</p></div></section>
 
+    <?php
+    require_once __DIR__ . '/includes/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: Custom Web Design by Chulbul Design',
+        'summary' => $pageDescription . ' Headquartered in Gurugram, India, Chulbul Design delivers responsive, conversion-focused website design remotely for businesses across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+        'facts' => [
+            'Service Focus'  => 'Custom Web Design & UI Systems',
+            'Regions Served' => 'Australia, US, UK, Canada, UAE & India',
+            'Ownership'      => '100% client-owned design files & code',
+            'Engagement'     => 'Fixed-scope builds or monthly care',
+        ],
+    ]);
+    ?>
+
     <section class="wd-section wd-section-soft" id="web-design-services" aria-labelledby="web-design-services-title"><div class="wd-container"><div class="wd-heading wd-reveal"><span class="wd-kicker">Web design capabilities</span><h2 id="web-design-services-title">Custom Web Design Services</h2><p>Strategy, structure, interface and responsive behavior developed as one practical website system.</p></div><div class="wd-service-grid">
         <?php foreach ($designServices as $index => $service): ?><article class="wd-service-card wd-reveal"><span class="wd-card-number"><?= str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT) ?></span><div class="wd-icon"><i class="bi <?= cbd_escape_text($service['icon']) ?>" aria-hidden="true"></i></div><h3><?= cbd_escape_text($service['title']) ?></h3><p><?= cbd_escape_text($service['text']) ?></p><?php if (!empty($service['href'])): ?><a href="<?= $base . cbd_escape_text($service['href']) ?>"><?= cbd_escape_text($service['link']) ?> <i class="bi bi-arrow-right" aria-hidden="true"></i></a><?php endif; ?></article><?php endforeach; ?>
     </div></div></section>

@@ -185,6 +185,20 @@ $relatedSlugs = array_slice($relatedSlugs, 0, 6);
         <?php foreach ($page['intro'] as $paragraph): ?><p><?= cbd_escape_text($paragraph) ?></p><?php endforeach; ?>
     </div></section>
 
+    <?php
+    require_once __DIR__ . '/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: ' . $page['name'] . ' by Chulbul Design',
+        'summary' => (string)$page['meta_desc'] . ' Chulbul Design is headquartered in Gurugram, India and delivers UI/UX and brand design remotely for companies across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+        'facts' => [
+            'Service Focus'  => (string)$page['name'],
+            'Regions Served' => 'Australia, US, UK, Canada, UAE & India',
+            'Deliverables'   => 'Editable source files & design systems',
+            'Engagement'     => 'Fixed-scope projects or design retainers',
+        ],
+    ]);
+    ?>
+
     <section class="wd-section wd-section-soft" id="branding-services" aria-labelledby="branding-services-title"><div class="wd-container">
         <div class="wd-heading wd-reveal"><span class="wd-kicker">Service capabilities</span><h2 id="branding-services-title"><?= cbd_escape_text($page['cards_heading']) ?></h2><p><?= cbd_escape_text($page['cards_subtitle']) ?></p></div>
         <div class="wd-service-grid">

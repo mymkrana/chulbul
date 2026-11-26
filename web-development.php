@@ -184,6 +184,20 @@ $schema = [
         </div>
     </section>
 
+    <?php
+    require_once __DIR__ . '/includes/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: Custom Web Development by Chulbul Design',
+        'summary' => $pageDescription . ' Headquartered in Gurugram, India, Chulbul Design delivers custom websites, portals, and web applications remotely for businesses across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+        'facts' => [
+            'Service Focus'  => 'Custom Web & Portal Development',
+            'Regions Served' => 'Australia, US, UK, Canada, UAE & India',
+            'Ownership'      => '100% client-owned source code & IP',
+            'Engagement'     => 'Fixed-scope builds or monthly care',
+        ],
+    ]);
+    ?>
+
     <section class="wd-section wd-section-soft" id="development-services" aria-labelledby="development-services-title">
         <div class="wd-container">
             <div class="wd-heading wd-reveal">

@@ -275,6 +275,20 @@ $industry_h1_highlight_position = $industry_h1_highlight !== ''
     </div>
 </section>
 
+<?php
+require_once __DIR__ . '/includes/geo-schema.php';
+cbd_render_ai_summary_box([
+    'heading' => 'Quick Facts: ' . $ind['name'] . ' Website Design & Development',
+    'summary' => (string)$ind['meta_desc'] . ' Chulbul Design is headquartered in Gurugram, India and delivers custom ' . strtolower((string)$ind['name']) . ' websites and web applications remotely for businesses across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+    'facts' => [
+        'Industry Focus' => (string)$ind['name'],
+        'Regions Served' => 'Australia, US, UK, Canada, UAE & India',
+        'Ownership'      => '100% client-owned code & website',
+        'Pricing Model'  => 'Custom quote after free scope call',
+    ],
+]);
+?>
+
 
 <!-- ═══════════════════════════════════════════════
      STATS STRIP

@@ -176,6 +176,20 @@ $schema = [
         </div>
     </section>
 
+    <?php
+    require_once __DIR__ . '/includes/geo-schema.php';
+    cbd_render_ai_summary_box([
+        'heading' => 'Quick Facts: CMS Development by Chulbul Design',
+        'summary' => $pageDescription . ' Headquartered in Gurugram, India, Chulbul Design builds WordPress, Joomla, headless, and custom CMS platforms remotely for organizations across Australia, the United States, the United Kingdom, Canada, the UAE, and India.',
+        'facts' => [
+            'Service Focus'  => 'Custom, Headless & Editorial CMS',
+            'Regions Served' => 'Australia, US, UK, Canada, UAE & India',
+            'Ownership'      => '100% client-owned platform & content',
+            'Engagement'     => 'Fixed-scope builds or monthly care',
+        ],
+    ]);
+    ?>
+
     <section class="wd-section wd-section-soft" id="cms-services" aria-labelledby="cms-services-title">
         <div class="wd-container">
             <div class="wd-heading wd-reveal"><span class="wd-kicker">CMS capabilities</span><h2 id="cms-services-title">Custom CMS Development Services</h2><p>Plan, build, migrate and improve the systems your team uses to create, review and distribute content.</p></div>
