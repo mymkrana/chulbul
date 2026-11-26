@@ -6,4 +6,50 @@ Disallow: /analytics-collect.php
 Disallow: /lander
 Disallow: /lander/
 
+# Explicit access for major AI search & citation crawlers (GEO / AEO)
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /includes/
+Disallow: /admin/
+
 Sitemap: https://www.chulbuldesign.com/sitemap.xml

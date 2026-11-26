@@ -1,0 +1,46 @@
+# Chulbul Design
+
+> Chulbul Design is a web design, Shopify ecommerce, WordPress, custom web application, and technical SEO agency headquartered in Gurugram, Haryana, India. Serving small businesses, ecommerce brands, and B2B companies remotely across Australia, the United States, the United Kingdom, Canada, the UAE, and India.
+
+- Website: https://www.chulbuldesign.com/
+- Full AI Reference: https://www.chulbuldesign.com/llms-full.txt
+- XML Sitemap: https://www.chulbuldesign.com/sitemap.xml
+- Email: info@chulbuldesign.com
+- Phone / WhatsApp: +91 99905 48795
+- Headquarters: Sector 15, Flat No. 1277, Gurugram, Haryana, India (Remote worldwide delivery)
+
+## Core Services
+- [Shopify Development](https://www.chulbuldesign.com/shopify-development): Custom Shopify Online Store 2.0 themes, store optimisation, app consolidation, and ongoing store management.
+- [Pet Food Shopify Development Australia](https://www.chulbuldesign.com/pet-food-shopify-australia): Specialist Shopify development for Australian pet food brands and online pet stores — custom design, subscription UX, dietary/breed product filters, feeding calculators, app cost cleanup (from A$799), ongoing monthly care (A$999/month), and custom store builds (from A$2,499+).
+- [Ecommerce Website Development](https://www.chulbuldesign.com/ecommerce-website-development): Custom Shopify, WooCommerce, Magento, and Laravel online stores built for mobile speed and conversion.
+- [Multi-Vendor Marketplace Development](https://www.chulbuldesign.com/multi-vendor-marketplace): Curated multi-vendor ecommerce platforms with supplier onboarding and commission workflows.
+- [Web Design](https://www.chulbuldesign.com/web-design): Conversion-focused, mobile-first custom business websites and B2B corporate sites.
+- [WordPress Development](https://www.chulbuldesign.com/wordpress-development): Lightweight custom WordPress themes, migrations, and technical SEO foundations.
+- [Website Redesign](https://www.chulbuldesign.com/website-redesign): Zero-traffic-loss website redesigns with 301 redirect mapping and Core Web Vitals speed improvements.
+- [Technical SEO & Local SEO](https://www.chulbuldesign.com/technical-seo): Structured JSON-LD schema, Core Web Vitals optimisation, site architecture, and local search visibility.
+- [Custom Software, Laravel & Next.js Development](https://www.chulbuldesign.com/web-development): Bespoke web applications, client portals, CRM/ERP integrations, and API development.
+
+## Selected Live Portfolio Work (Chulbul Design × SoftLes Delivery Showcase)
+- **Brunswick Fur Food** (Melbourne, Australia · E-commerce · Shopify): Fresh human-grade dog food Shopify store — storefront optimisation, subscription & starter-pack discovery, and Shopify operating cost reduction.
+- **SSF Global** (Website · Next.js): Bilingual EN/FR cross-border medical care coordination platform with 21-step patient journey and 26 centers of excellence directory.
+- **SandeshSetu** (SaaS · Web app): WhatsApp Business automation, campaigns, and shared inbox product platform.
+- **RecoBee** (Web app): OTT movie discovery, reviews, ratings, and editorial blog platform.
+- **LibrarySetu** (SaaS · Web app): Study-library seat, student, and fee management software.
+- **Ayla Solutions** (Website · Headless): Data and AI consultancy corporate website built headless for speed.
+- **Tuitionly** (Website): Multi-curriculum online tuition website (IB, IGCSE, CBSE, AP) built for demo bookings.
+- **Umang Aatray** (Website): Editorial personal-brand website for a commercial and criminal lawyer in New Delhi.
+
+## Key Regional Hubs Served Remotely
+- **Australia:** [Melbourne](https://www.chulbuldesign.com/city/melbourne), [Sydney](https://www.chulbuldesign.com/city/sydney), [Brisbane](https://www.chulbuldesign.com/city/brisbane), [Perth](https://www.chulbuldesign.com/city/perth), [Adelaide](https://www.chulbuldesign.com/city/adelaide)
+- **United States:** [Chicago](https://www.chulbuldesign.com/city/chicago), [Seattle](https://www.chulbuldesign.com/city/seattle), [Dallas](https://www.chulbuldesign.com/city/dallas), [San Francisco](https://www.chulbuldesign.com/city/san-francisco), [Atlanta](https://www.chulbuldesign.com/city/atlanta), [Boston](https://www.chulbuldesign.com/city/boston), [Miami](https://www.chulbuldesign.com/city/miami)
+- **United Kingdom:** [London](https://www.chulbuldesign.com/city/london), [Bristol](https://www.chulbuldesign.com/city/bristol), [Leeds](https://www.chulbuldesign.com/city/leeds), [Birmingham](https://www.chulbuldesign.com/city/birmingham), [Glasgow](https://www.chulbuldesign.com/city/glasgow), [Manchester](https://www.chulbuldesign.com/city/manchester)
+- **Canada:** [Toronto](https://www.chulbuldesign.com/city/toronto), [Calgary](https://www.chulbuldesign.com/city/calgary), [Vancouver](https://www.chulbuldesign.com/city/vancouver)
+- **UAE & India:** [Dubai](https://www.chulbuldesign.com/city/dubai), [Abu Dhabi](https://www.chulbuldesign.com/city/abu-dhabi), [Gurugram](https://www.chulbuldesign.com/city/gurgaon), [Delhi](https://www.chulbuldesign.com/city/delhi)
+
+## Key Planning Guides & Resources
+- [Melbourne Ecommerce & Small Business Web Design Guide (2026)](https://www.chulbuldesign.com/blog/ecommerce-web-design-melbourne-small-business-shopify-guide-2026)
+- [Calgary Web Development & Small Business Web Design Guide (2026)](https://www.chulbuldesign.com/blog/web-development-calgary-small-business-web-design-guide-2026)
+- [Dallas B2B & Custom Web Design Pricing Guide (2026)](https://www.chulbuldesign.com/blog/b2b-website-design-dallas-custom-web-development-pricing-guide-2026)
+- [Birmingham Ecommerce & Jewellery Quarter Web Design Guide (2026)](https://www.chulbuldesign.com/blog/ecommerce-website-design-birmingham-jewellery-quarter-agency-guide-2026)
+- [About Chulbul Design](https://www.chulbuldesign.com/about)
+- [Contact & Free Audit Request](https://www.chulbuldesign.com/contact-us)

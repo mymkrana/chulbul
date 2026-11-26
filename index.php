@@ -71,7 +71,7 @@ $homeFaqs = [
             'acceptedAnswer' => ['@type' => 'Answer', 'text' => $faq['a']],
         ], $homeFaqs),
     ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
-    <?php require __DIR__ . '/includes/header.php'; ?>
+    <?php $cbd_skip_global_org_schema = true; require __DIR__ . '/includes/header.php'; ?>
 
 <!-- ============================================================
      HERO SECTION

@@ -37,6 +37,44 @@ $_menu_icons = [
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="512x512" href="<?= $base ?>/assets/images/logo/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="<?= $base ?>/assets/images/logo/apple-touch-icon.png">
+    <!-- AI & Answer Engine Knowledge Reference (GEO / AEO) -->
+    <link rel="alternate" type="text/plain" href="https://www.chulbuldesign.com/llms.txt" title="Chulbul Design AI and LLM Reference">
+    <?php if (empty($cbd_skip_global_org_schema)): ?>
+    <script type="application/ld+json"><?= json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'Organization',
+        '@id' => 'https://www.chulbuldesign.com/#organization',
+        'name' => 'Chulbul Design',
+        'url' => 'https://www.chulbuldesign.com/',
+        'logo' => 'https://www.chulbuldesign.com/assets/images/logo/chulbuldesign.svg',
+        'email' => 'info@chulbuldesign.com',
+        'telephone' => '+919990548795',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Sector 15, Flat No. 1277',
+            'addressLocality' => 'Gurugram',
+            'addressRegion' => 'Haryana',
+            'addressCountry' => 'IN',
+        ],
+        'areaServed' => ['Australia', 'United States', 'United Kingdom', 'Canada', 'United Arab Emirates', 'India'],
+        'knowsAbout' => [
+            'Custom Web Design',
+            'Shopify Development',
+            'Pet Food Shopify Ecommerce Development',
+            'WordPress Development',
+            'WooCommerce Development',
+            'Multi-Vendor Marketplace Development',
+            'Technical SEO',
+            'Laravel and Next.js Web Development',
+        ],
+        'sameAs' => [
+            'https://www.facebook.com/chulbuldesign',
+            'https://www.instagram.com/chulbuldesign',
+            'https://twitter.com/ChulbulDesign',
+            'https://www.linkedin.com/company/chulbuldesign/',
+        ],
+    ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
+    <?php endif; ?>
 
     <?php if ($__cbd_public_tracking): ?>
     <!-- Google Analytics GA4 (production only) -->

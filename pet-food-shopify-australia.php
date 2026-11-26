@@ -82,6 +82,19 @@ $organizationSchema = [
         'addressRegion' => 'Haryana',
         'addressCountry' => 'IN',
     ],
+    'knowsAbout' => [
+        'Pet Food Shopify Development',
+        'Shopify Online Store 2.0',
+        'Pet Store Ecommerce Design',
+        'Shopify Subscriptions and Recurring Orders',
+        'Shopify App Cost Optimization',
+    ],
+    'sameAs' => [
+        'https://www.facebook.com/chulbuldesign',
+        'https://www.instagram.com/chulbuldesign',
+        'https://twitter.com/ChulbulDesign',
+        'https://www.linkedin.com/company/chulbuldesign/',
+    ],
 ];
 
 $serviceSchema = [
@@ -168,6 +181,7 @@ $faqSchema = [
     <meta name="geo.region" content="AU">
     <meta name="geo.placename" content="Australia">
     <link rel="canonical" href="<?= cbd_escape_text($canonical) ?>">
+    <link rel="alternate" type="text/plain" href="https://www.chulbuldesign.com/llms.txt" title="Chulbul Design AI and LLM Reference">
     <link rel="icon" type="image/png" sizes="512x512" href="<?= cbd_escape_text($base) ?>/assets/images/logo/favicon.png">
 
     <!-- Preload Primary Hero LCP Image -->
