@@ -474,6 +474,17 @@ $costFactors = [
         </div>
     </section>
 
+    <?php
+    require_once __DIR__ . '/portfolio-showcase.php';
+    cbd_render_portfolio_showcase([
+        'id'         => 'portfolio',
+        'eyebrow'    => 'Live Ecommerce & Web Builds',
+        'title'      => 'Work Worth Showing Off',
+        'subtitle'   => 'Inspect real client builds across Shopify ecommerce, SaaS products and high-converting business sites. Switch between desktop and mobile views or open any screen full size.',
+        'start_slug' => 'brunswick-fur-food',
+    ]);
+    ?>
+
     <section class="wd-section" aria-labelledby="ecommerce-why-title">
         <div class="wd-container wd-split">
             <div class="wd-copy wd-reveal">

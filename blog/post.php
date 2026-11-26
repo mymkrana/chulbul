@@ -385,6 +385,33 @@ $post_content = preg_replace_callback(
             </section>
             <?php endif; ?>
 
+            <!-- E-E-A-T Editorial & Real Agency Trust Box -->
+            <section class="mt-10 p-6 rounded-2xl bg-[#f8f9ff] border border-[#e5e8f4]" aria-label="About the editorial team">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-[#49499A] text-white flex items-center justify-center flex-shrink-0 font-extrabold text-lg" aria-hidden="true">CD</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                            <span class="text-sm font-extrabold text-[#1e1e5c]">Chulbul Design Engineering &amp; SEO Team</span>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-red-50 text-[#EE483D] border border-red-100">Reviewed Guide</span>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                            Written and reviewed by our senior web design, Shopify/WordPress development, and technical SEO engineers in Gurugram, India — delivering custom websites and ecommerce builds for businesses across the US, UK, Canada, Australia, UAE and India.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4 text-xs font-bold">
+                            <a href="<?= $base ?>/#portfolio" class="text-[#EE483D] hover:underline inline-flex items-center gap-1">
+                                <i class="bi bi-laptop" aria-hidden="true"></i> Inspect Live Client Portfolio
+                            </a>
+                            <a href="<?= $base ?>/about-us" class="text-[#49499A] hover:underline inline-flex items-center gap-1">
+                                <i class="bi bi-building" aria-hidden="true"></i> About Chulbul Design
+                            </a>
+                            <a href="<?= $base ?>/contact-us" class="text-[#49499A] hover:underline inline-flex items-center gap-1">
+                                <i class="bi bi-chat-dots" aria-hidden="true"></i> Request Free Technical Audit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Tags / Share Row -->
             <div class="mt-10 pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
                 <div class="flex flex-wrap items-center gap-1.5">

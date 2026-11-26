@@ -1242,6 +1242,22 @@ if ($country === 'india') {
     </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════
+     SELECTED LIVE PORTFOLIO SHOWCASE (E-E-A-T PROOF)
+════════════════════════════════════════════════ -->
+<?php
+require_once __DIR__ . '/includes/portfolio-showcase.php';
+$cityPortfolioStart = in_array($slug, ['melbourne', 'sydney', 'brisbane', 'perth', 'adelaide'], true)
+    ? 'brunswick-fur-food'
+    : 'ssf-global';
+cbd_render_portfolio_showcase([
+    'id'         => 'portfolio',
+    'eyebrow'    => 'Selected Work',
+    'title'      => 'Work Worth Showing Off',
+    'subtitle'   => 'Explore real, live websites, Shopify stores and SaaS builds we deliver for ' . $c['name'] . ' and international clients. Switch desktop/mobile, flip screens, and hover to pause.',
+    'start_slug' => $cityPortfolioStart,
+]);
+?>
 
 <?php if (!empty($city_spokes) || !empty($city_blogs)): ?>
 <!-- ═══════════════════════════════════════════════

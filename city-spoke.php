@@ -435,6 +435,24 @@ require __DIR__ . '/includes/header.php';
         );
     }
     ?>
+    <?php
+    require_once __DIR__ . '/includes/portfolio-showcase.php';
+    $spokeStartSlug = 'ssf-global';
+    if ($page['slug'] === 'ecommerce-development'
+        || in_array((string)($city['slug'] ?? ''), ['melbourne', 'sydney', 'brisbane', 'perth', 'adelaide'], true)) {
+        $spokeStartSlug = 'brunswick-fur-food';
+    } elseif ($page['slug'] === 'b2b-web-design') {
+        $spokeStartSlug = 'ayla-solutions';
+    }
+    cbd_render_portfolio_showcase([
+        'id'         => 'portfolio',
+        'eyebrow'    => 'Verified Delivery Portfolio',
+        'title'      => 'Work Worth Showing Off',
+        'subtitle'   => 'Preview live desktop and mobile client builds delivered across ecommerce, B2B websites and SaaS platforms — comparable to the quality we engineer for ' . $city['name'] . ' businesses.',
+        'start_slug' => $spokeStartSlug,
+    ]);
+    ?>
+
     <section class="cbd-spoke-section cbd-spoke-section-alt" id="related">
         <div class="cbd-spoke-container">
             <div class="cbd-spoke-section-heading">
