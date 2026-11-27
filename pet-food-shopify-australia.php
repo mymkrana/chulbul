@@ -94,6 +94,7 @@ $organizationSchema = [
         'https://www.instagram.com/chulbuldesign',
         'https://twitter.com/ChulbulDesign',
         'https://www.linkedin.com/company/chulbuldesign/',
+        'https://techbehemoths.com/company/chulbul-design',
     ],
 ];
 

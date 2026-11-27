@@ -72,6 +72,7 @@ $_menu_icons = [
             'https://www.instagram.com/chulbuldesign',
             'https://twitter.com/ChulbulDesign',
             'https://www.linkedin.com/company/chulbuldesign/',
+            'https://techbehemoths.com/company/chulbul-design',
         ],
     ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>

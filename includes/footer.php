@@ -40,6 +40,12 @@
                         <i class="bi bi-linkedin text-base"></i>
                     </a>
                 </div>
+                <!-- TechBehemoths Verified Agency Badge -->
+                <div class="mt-4">
+                    <a href="https://techbehemoths.com/company/chulbul-design" target="_blank" rel="noopener" data-techbehemoths-verification class="inline-block opacity-95 hover:opacity-100 transition">
+                        <img src="https://cdn.techbehemoths.com/public/static/validation/tb-verified-logo.svg" alt="TechBehemoths Verification" width="136" height="40" loading="lazy" />
+                    </a>
+                </div>
             </div>
 
             <!-- Col 2: Services -->
