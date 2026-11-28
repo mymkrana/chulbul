@@ -4,6 +4,10 @@ $slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
 require_once __DIR__ . '/includes/location-repository.php';
 require_once __DIR__ . '/includes/http.php';
 $location_page = cbd_location_page($slug);
+if ($slug === 'sydney') {
+    require __DIR__ . '/includes/city-sydney.php';
+    exit;
+}
 $db_location_data = null;
 $cities = [];
 $city_testimonials_data = [];

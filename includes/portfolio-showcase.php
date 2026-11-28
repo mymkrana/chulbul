@@ -284,6 +284,13 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
             return;
         }
 
+        if (!empty($options['hide_metrics'])) {
+            foreach ($projects as &$proj) {
+                $proj['metrics'] = [];
+            }
+            unset($proj);
+        }
+
         $startIndex = 0;
         if (!empty($options['start_slug']) && is_string($options['start_slug'])) {
             foreach ($projects as $idx => $p) {
@@ -514,7 +521,7 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
 
             <div class="cbd-work-modal-body">
                 <div class="cbd-work-modal-frame" data-cw-modal-frame>
-                    <img data-cw-modal-img src="<?= $esc($firstPage['desktop']) ?>" alt="<?= $esc($first['name']) ?>">
+                    <img data-cw-modal-img src="<?= $esc($firstPage['desktop']) ?>" alt="<?= $esc($first['name']) ?>" width="1100" height="720" loading="lazy" decoding="async">
                 </div>
             </div>
 
