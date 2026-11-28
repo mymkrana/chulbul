@@ -90,14 +90,65 @@
     color: var(--cw-subtle);
 }
 
-/* ── Project Selector Pills (Chulbul Light Pill Bar) ────────────────────── */
+/* ── Project Selector Pills (Single-Line Horizontal Scroll Bar) ─────────── */
+.cbd-work-tabs-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
 .cbd-work-tabs {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
     gap: 10px;
-    padding: 4px 2px 22px;
-    margin-bottom: 6px;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 6px 4px;
+    mask-image: linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+}
+
+.cbd-work-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.cbd-work-tabs-nav {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    border: 1px solid var(--cw-border);
+    background: #ffffff;
+    color: var(--cw-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(30, 30, 92, 0.08);
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cbd-work-tabs-nav:hover:not(:disabled) {
+    border-color: var(--cw-indigo);
+    background: var(--cw-indigo);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.cbd-work-tabs-nav:disabled {
+    opacity: 0.35;
+    cursor: default;
+    box-shadow: none;
 }
 
 .cbd-work-tab {

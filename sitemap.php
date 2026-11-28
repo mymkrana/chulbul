@@ -228,6 +228,9 @@ if (file_exists($root . '/blog/index.php')) {
 foreach (['about', 'contact-us', 'cities'] as $slug) {
     $xml .= static_url($root, $domain, $slug, $today, 'monthly', '0.7');
 }
+foreach (['privacy-policy', 'terms-of-service', 'cookie-policy', 'refund-cancellation-policy', 'disclaimer'] as $slug) {
+    $xml .= static_url($root, $domain, $slug, $today, 'yearly', '0.3');
+}
 
 // 3a. Hub pages — always include. Dedicated hub files use their own mtime.
 $hub_pages = [

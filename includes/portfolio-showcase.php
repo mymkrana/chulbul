@@ -170,6 +170,86 @@ if (!function_exists('cbd_portfolio_projects')) {
                     ['label' => 'IB curriculum', 'desktop' => "$imgDir/tuitionly-p1-d.jpg", 'mobile' => "$imgDir/tuitionly-p1-m.jpg"],
                 ],
             ],
+            [
+                'slug'       => 'artannu',
+                'name'       => 'Artannu Fine Art Studio',
+                'category'   => 'E-commerce',
+                'tech'       => 'Custom Store',
+                'summary'    => 'Fine art studio & ecommerce storefront for original Indian paintings, custom on-demand canvases, wall murals, and bridal mehndi bookings.',
+                'highlights' => [
+                    'Multi-currency storefront (USD / INR) & art catalogue',
+                    'Custom painting demand & wall mural quote flows',
+                    'Editorial storytelling with direct WhatsApp enquiry',
+                ],
+                'metrics'    => [],
+                'pages'      => [
+                    ['label' => 'Home', 'desktop' => "$imgDir/artannu-p0-d.jpg", 'mobile' => "$imgDir/artannu-p0-m.jpg"],
+                ],
+            ],
+            [
+                'slug'       => 'gpmanch',
+                'name'       => 'Gurjar Pragati Manch',
+                'category'   => 'Website',
+                'tech'       => 'Bilingual Portal',
+                'summary'    => 'Bilingual Hindi/English community and heritage digital platform featuring structured directories, historical archives, and social initiatives.',
+                'highlights' => [
+                    'Bilingual Hindi / English navigation & publishing',
+                    'Structured archives across history, awards & achievers',
+                    'Mentorship & community initiative landing sections',
+                ],
+                'metrics'    => [],
+                'pages'      => [
+                    ['label' => 'Home', 'desktop' => "$imgDir/gpmanch-p0-d.jpg", 'mobile' => "$imgDir/gpmanch-p0-m.jpg"],
+                ],
+            ],
+            [
+                'slug'       => 'upmuddamanch',
+                'name'       => 'UP Mudda Manch',
+                'category'   => 'Website',
+                'tech'       => 'Civic & News Portal',
+                'summary'    => 'Grassroots civic dialogue and regional news platform built for public participation across education, health, roads, water, and village issues.',
+                'highlights' => [
+                    'Regional news feed with city & topic navigation',
+                    'Public issue submission & volunteer onboarding flows',
+                    'Fast mobile-first Hindi editorial typography',
+                ],
+                'metrics'    => [],
+                'pages'      => [
+                    ['label' => 'Home', 'desktop' => "$imgDir/upmuddamanch-p0-d.jpg", 'mobile' => "$imgDir/upmuddamanch-p0-m.jpg"],
+                ],
+            ],
+            [
+                'slug'       => 'teraghar',
+                'name'       => 'Tera Ghar',
+                'category'   => 'Web app',
+                'tech'       => 'Real Estate',
+                'summary'    => 'Luxury real estate discovery portal for buying, selling, and renting properties with featured listings and direct site-visit booking.',
+                'highlights' => [
+                    'High-contrast dark luxury real estate visual system',
+                    'Property discovery & direct site-visit booking CTAs',
+                    'Integrated WhatsApp & property-listing lead flows',
+                ],
+                'metrics'    => [],
+                'pages'      => [
+                    ['label' => 'Home', 'desktop' => "$imgDir/teraghar-p0-d.jpg", 'mobile' => "$imgDir/teraghar-p0-m.jpg"],
+                ],
+            ],
+            [
+                'slug'       => 'prideandjustice',
+                'name'       => 'Pride & Justice',
+                'category'   => 'Website',
+                'tech'       => 'Law Firm',
+                'summary'    => 'Authoritative law firm website showcasing litigation, advisory, and corporate practice areas with structured team profiles and appointment booking.',
+                'highlights' => [
+                    'Clear practice-area architecture & case status access',
+                    'Credibility-first legal typography & team showcase',
+                    'Streamlined consultation & appointment booking',
+                ],
+                'metrics'    => [],
+                'pages'      => [
+                    ['label' => 'Home', 'desktop' => "$imgDir/prideandjustice-p0-d.jpg", 'mobile' => "$imgDir/prideandjustice-p0-m.jpg"],
+                ],
+            ],
         ];
     }
 }
@@ -244,18 +324,26 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
             <p class="cbd-work-subtitle"><?= $esc($subtitle) ?></p>
         </div>
 
-        <!-- Project Pill Selector -->
-        <div class="cbd-work-tabs" role="tablist" aria-label="Choose portfolio project">
-            <?php foreach ($projects as $idx => $proj): ?>
-            <button type="button"
-                    class="cbd-work-tab<?= $idx === $startIndex ? ' is-active' : '' ?>"
-                    role="tab"
-                    aria-selected="<?= $idx === $startIndex ? 'true' : 'false' ?>"
-                    data-cw-tab="<?= $idx ?>">
-                <span class="cbd-work-tab-progress" aria-hidden="true"></span>
-                <span><?= $esc($proj['name']) ?></span>
+        <!-- Project Pill Selector (Single-Line Horizontal Scroll with Arrows) -->
+        <div class="cbd-work-tabs-bar">
+            <button type="button" class="cbd-work-tabs-nav is-prev" data-cw-tabs-prev aria-label="Scroll projects left">
+                <i class="bi bi-chevron-left" aria-hidden="true"></i>
             </button>
-            <?php endforeach; ?>
+            <div class="cbd-work-tabs" data-cw-tabs-track role="tablist" aria-label="Choose portfolio project">
+                <?php foreach ($projects as $idx => $proj): ?>
+                <button type="button"
+                        class="cbd-work-tab<?= $idx === $startIndex ? ' is-active' : '' ?>"
+                        role="tab"
+                        aria-selected="<?= $idx === $startIndex ? 'true' : 'false' ?>"
+                        data-cw-tab="<?= $idx ?>">
+                    <span class="cbd-work-tab-progress" aria-hidden="true"></span>
+                    <span><?= $esc($proj['name']) ?></span>
+                </button>
+                <?php endforeach; ?>
+            </div>
+            <button type="button" class="cbd-work-tabs-nav is-next" data-cw-tabs-next aria-label="Scroll projects right">
+                <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
 
         <!-- Interactive Showcase Card -->

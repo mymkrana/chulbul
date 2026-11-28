@@ -54,6 +54,9 @@
         };
 
         var stage = root.querySelector('[data-cw-stage]');
+        var tabsTrack = root.querySelector('[data-cw-tabs-track]');
+        var tabsPrevBtn = root.querySelector('[data-cw-tabs-prev]');
+        var tabsNextBtn = root.querySelector('[data-cw-tabs-next]');
         var tabs = Array.prototype.slice.call(root.querySelectorAll('[data-cw-tab]'));
         var deviceCol = root.querySelector('[data-cw-device-col]');
         var desktopScreen = root.querySelector('[data-cw-desktop-screen]');
@@ -322,6 +325,29 @@
         }
 
         // Bind events
+        function updateTabsNav() {
+            if (!tabsTrack) return;
+            var maxScroll = Math.max(0, tabsTrack.scrollWidth - tabsTrack.clientWidth);
+            if (tabsPrevBtn) tabsPrevBtn.disabled = tabsTrack.scrollLeft <= 2;
+            if (tabsNextBtn) tabsNextBtn.disabled = tabsTrack.scrollLeft >= maxScroll - 2;
+        }
+
+        if (tabsTrack) {
+            if (tabsPrevBtn) {
+                tabsPrevBtn.addEventListener('click', function () {
+                    tabsTrack.scrollBy({ left: -320, behavior: 'smooth' });
+                });
+            }
+            if (tabsNextBtn) {
+                tabsNextBtn.addEventListener('click', function () {
+                    tabsTrack.scrollBy({ left: 320, behavior: 'smooth' });
+                });
+            }
+            tabsTrack.addEventListener('scroll', updateTabsNav, { passive: true });
+            window.addEventListener('resize', updateTabsNav, { passive: true });
+            requestAnimationFrame(updateTabsNav);
+        }
+
         tabs.forEach(function (tab, i) {
             tab.addEventListener('click', function () {
                 state.index = i;

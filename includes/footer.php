@@ -113,21 +113,76 @@
     </div>
 
     <!-- Bottom bar -->
+    <style>
+        .cbd-footer-bottom-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px 24px;
+        }
+        @media (min-width: 1024px) {
+            .cbd-footer-bottom-inner {
+                flex-direction: row;
+            }
+        }
+        .cbd-footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 8px 18px;
+        }
+        .cbd-footer-links a,
+        .cbd-footer-cookie-btn {
+            color: #6b7280;
+            font-size: 12.5px;
+            line-height: 1.5;
+            text-decoration: none;
+            transition: color .18s ease;
+            white-space: nowrap;
+        }
+        .cbd-footer-links a:hover,
+        .cbd-footer-cookie-btn:hover {
+            color: #EE483D;
+        }
+        .cbd-footer-cookie-btn {
+            background: transparent;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .cbd-footer-sep {
+            color: #d1d5db;
+            font-size: 12px;
+            user-select: none;
+        }
+    </style>
     <div class="border-t border-gray-200 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p class="text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 cbd-footer-bottom-inner">
+            <p class="text-gray-400 text-xs" style="margin:0;">
                 &copy; 2013&ndash;<?php echo date('Y'); ?> Chulbul Design LLP. All rights reserved.
             </p>
-            <div class="flex gap-4">
-                <a href="<?= $base ?>/about"      class="text-gray-400 hover:text-[#EE483D] text-xs transition">About</a>
-                <a href="<?= $base ?>/blog/"       class="text-gray-400 hover:text-[#EE483D] text-xs transition">Blog</a>
-                <a href="<?= $base ?>/contact-us" class="text-gray-400 hover:text-[#EE483D] text-xs transition">Contact</a>
-                <a href="<?= $base ?>/cities"     class="text-gray-400 hover:text-[#EE483D] text-xs transition">Cities</a>
-            </div>
+            <nav class="cbd-footer-links" aria-label="Footer legal and quick links">
+                <a href="<?= $base ?>/about">About</a>
+                <a href="<?= $base ?>/blog/">Blog</a>
+                <a href="<?= $base ?>/contact-us">Contact</a>
+                <a href="<?= $base ?>/cities">Cities</a>
+                <span class="cbd-footer-sep" aria-hidden="true">|</span>
+                <a href="<?= $base ?>/privacy-policy">Privacy Policy</a>
+                <a href="<?= $base ?>/terms-of-service">Terms of Service</a>
+                <a href="<?= $base ?>/cookie-policy">Cookie Policy</a>
+                <a href="<?= $base ?>/refund-cancellation-policy">Refund Policy</a>
+                <a href="<?= $base ?>/disclaimer">Disclaimer</a>
+                <button type="button" onclick="window.cbdOpenCookieSettings && window.cbdOpenCookieSettings()" class="cbd-footer-cookie-btn">Cookie Settings</button>
+            </nav>
         </div>
     </div>
 
 </footer>
+
+<?php require_once __DIR__ . '/cookie-consent.php'; ?>
 
 <script src="<?= $base ?>/assets/js/main.js" defer></script>
 <script src="<?= $base ?>/assets/js/site-analytics.js?v=<?= (int) (@filemtime(__DIR__ . '/../assets/js/site-analytics.js') ?: 1) ?>"
