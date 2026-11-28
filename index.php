@@ -245,8 +245,8 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
     <meta name="twitter:image:alt" content="Chulbul Design — global web design and development company showcase">
     <meta name="google-site-verification" content="66Yl1e0VD33TbRBSGdMcGfRYaTUguH0LyUovEsgh590">
 
-    <!-- Preload hero primary preview image for instant paint -->
-    <link rel="preload" as="image" type="image/webp" href="<?= htmlspecialchars($_hp_base . '/assets/images/portfolio-work/hero-ssf-d.webp', ENT_QUOTES, 'UTF-8') ?>" fetchpriority="high">
+    <!-- Preload hero primary preview image on desktop only so mobile gives 100% priority to CSS + H1 paint -->
+    <link rel="preload" as="image" type="image/webp" media="(min-width: 768px)" href="<?= htmlspecialchars($_hp_base . '/assets/images/portfolio-work/hero-ssf-d.webp', ENT_QUOTES, 'UTF-8') ?>">
 
     <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) — non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -426,7 +426,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                                      alt="<?= htmlspecialchars($showreelBuilds[0]['alt'], ENT_QUOTES, 'UTF-8') ?>"
                                      class="ht-reel-main-img"
                                      data-reel-main
-                                     width="720" height="450" fetchpriority="high" decoding="async">
+                                     width="720" height="450" decoding="async">
                             </div>
                         </div>
                     </div>
