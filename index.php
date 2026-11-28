@@ -7,7 +7,8 @@ require_once __DIR__ . '/includes/seo.php';
 require_once __DIR__ . '/includes/industry-catalog.php';
 
 $cbd_page_has_charset = true;
-$page_styles = ['/assets/css/home.css'];
+$cbd_defer_custom_css = true;
+$page_styles = ['/assets/css/home.min.css'];
 $page_robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
 
 // Latest blog posts for homepage section
@@ -244,6 +245,9 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
     <meta name="twitter:image:alt" content="Chulbul Design — global web design and development company showcase">
     <meta name="google-site-verification" content="66Yl1e0VD33TbRBSGdMcGfRYaTUguH0LyUovEsgh590">
 
+    <!-- Preload hero primary preview image for instant paint -->
+    <link rel="preload" as="image" type="image/webp" href="<?= htmlspecialchars($_hp_base . '/assets/images/portfolio-work/hero-ssf-d.webp', ENT_QUOTES, 'UTF-8') ?>" fetchpriority="high">
+
     <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) — non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -408,7 +412,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                         <!-- Floating 3D Mobile Frame Right -->
                         <div class="ht-chip-phone" aria-hidden="true">
                             <img src="<?= htmlspecialchars($base . $showreelBuilds[0]['mobile'], ENT_QUOTES, 'UTF-8') ?>"
-                                 alt="" width="240" height="420" loading="lazy" decoding="async" data-reel-mobile>
+                                 alt="" width="200" height="350" loading="lazy" decoding="async" data-reel-mobile>
                         </div>
 
                         <div class="ht-reel-browser">
@@ -422,7 +426,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                                      alt="<?= htmlspecialchars($showreelBuilds[0]['alt'], ENT_QUOTES, 'UTF-8') ?>"
                                      class="ht-reel-main-img"
                                      data-reel-main
-                                     width="960" height="600" fetchpriority="high" decoding="async">
+                                     width="720" height="450" fetchpriority="high" decoding="async">
                             </div>
                         </div>
                     </div>

@@ -148,7 +148,14 @@ $_menu_icons = [
     <!-- Tailwind CSS (compiled — no render-blocking JS) -->
     <link rel="stylesheet" href="<?= $base ?>/assets/css/tailwind.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?= $base ?>/assets/css/custom.css?v=<?= (int) (@filemtime(__DIR__ . '/../assets/css/custom.css') ?: 1) ?>">
+    <?php $_custom_css_href = $base . '/assets/css/custom.css?v=' . (int) (@filemtime(__DIR__ . '/../assets/css/custom.css') ?: 1); ?>
+    <?php if (!empty($cbd_defer_custom_css)): ?>
+    <link rel="preload" as="style" href="<?= $_custom_css_href ?>">
+    <link rel="stylesheet" href="<?= $_custom_css_href ?>" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?= $_custom_css_href ?>"></noscript>
+    <?php else: ?>
+    <link rel="stylesheet" href="<?= $_custom_css_href ?>">
+    <?php endif; ?>
     <?php foreach (($page_styles ?? []) as $_page_stylesheet):
         $_page_stylesheet = '/' . ltrim((string) $_page_stylesheet, '/');
         $_page_stylesheet_file = dirname(__DIR__) . $_page_stylesheet;
@@ -161,6 +168,7 @@ $_menu_icons = [
     <!-- Critical custom CSS (inlined) -->
     <style>
 [x-cloak]{display:none!important}
+#back-to-top{opacity:0;pointer-events:none}
 *{font-family:'Plus Jakarta Sans',Inter,sans-serif}
 h1,h2,h3,h4,h5,h6,h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family:'Denk One','Plus Jakarta Sans',sans-serif;font-weight:400;font-synthesis:none;letter-spacing:-0.01em}
 .typewrite>.wrap{border-right:.08em solid #EE483D}
