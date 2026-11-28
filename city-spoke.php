@@ -8,6 +8,10 @@ require_once __DIR__ . '/includes/location-repository.php';
 require_once __DIR__ . '/includes/http.php';
 
 $spokeResult = cbd_location_spoke_page($citySlug, $spokeSlug);
+if ($citySlug === 'sydney' && $spokeSlug === 'ecommerce-development') {
+    require __DIR__ . '/includes/city-sydney-ecommerce.php';
+    exit;
+}
 if (($spokeResult['status'] ?? '') === 'unavailable') {
     require __DIR__ . '/503.php';
     exit;
