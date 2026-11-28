@@ -244,10 +244,10 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
     <meta name="twitter:image:alt" content="Chulbul Design — global web design and development company showcase">
     <meta name="google-site-verification" content="66Yl1e0VD33TbRBSGdMcGfRYaTUguH0LyUovEsgh590">
 
-    <!-- Production Homepage Typography: Outfit (display), Inter (body), JetBrains Mono (labels) -->
+    <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Structured Data: ProfessionalService + WebSite + FAQPage (WebPage injected by header.php) -->
     <script type="application/ld+json"><?= json_encode([

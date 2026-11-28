@@ -162,7 +162,7 @@ $_menu_icons = [
     <style>
 [x-cloak]{display:none!important}
 *{font-family:'Plus Jakarta Sans',Inter,sans-serif}
-h1,h2,h3,h4,h5,h6{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.02em}
+h1,h2,h3,h4,h5,h6,h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family:'Denk One','Plus Jakarta Sans',sans-serif;font-weight:400;font-synthesis:none;letter-spacing:-0.01em}
 .typewrite>.wrap{border-right:.08em solid #EE483D}
 @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .hero-gradient{background:linear-gradient(-45deg,#1e1e5c,#49499A,#2d2d7a,#3b0f6e);background-size:400% 400%;animation:gradientShift 10s ease infinite}
@@ -182,9 +182,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.0
     <link rel="preload" as="font" type="font/woff2" crossorigin href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6">
 
     <!-- Google Fonts (non-blocking) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"></noscript>
 
     <!-- Bootstrap Icons (non-blocking) -->
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">

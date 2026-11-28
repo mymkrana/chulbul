@@ -19,7 +19,7 @@
   --ht-body: #475069;
   --ht-muted: #6c7693;
   --ht-border: rgba(23, 26, 74, 0.1);
-  --ht-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ht-display: 'Denk One', -apple-system, BlinkMacSystemFont, sans-serif;
   --ht-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --ht-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 }
@@ -65,6 +65,8 @@
 .ht-page .cbd-work-title,
 .ht-page .cbd-work-proj-title {
   font-family: var(--ht-display);
+  font-weight: 400;
+  font-synthesis: none;
 }
 
 .ht-page code,
