@@ -150,7 +150,6 @@ $_menu_icons = [
     <!-- Custom CSS -->
     <?php $_custom_css_href = $base . '/assets/css/custom.css?v=' . (int) (@filemtime(__DIR__ . '/../assets/css/custom.css') ?: 1); ?>
     <?php if (!empty($cbd_defer_custom_css)): ?>
-    <link rel="preload" as="style" href="<?= $_custom_css_href ?>">
     <link rel="stylesheet" href="<?= $_custom_css_href ?>" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="<?= $_custom_css_href ?>"></noscript>
     <?php else: ?>
@@ -186,16 +185,13 @@ h1,h2,h3,h4,h5,h6,h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family:'D
 .mobile-panel{position:fixed!important;top:0;left:0;height:100vh;width:18rem;max-width:85vw;background:#fff;z-index:50;display:flex;flex-direction:column;box-shadow:8px 0 30px rgba(0,0,0,.15);overflow-y:auto}
     </style>
 
-    <!-- Bootstrap Icons woff2 preload (critical for icon rendering) -->
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6">
-
+    <?php if (empty($cbd_skip_header_fonts)): ?>
     <!-- Google Fonts (non-blocking) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"></noscript>
+    <?php endif; ?>
 
-    <!-- Bootstrap Icons (non-blocking) -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Bootstrap Icons (non-blocking, does not compete with critical CSS on slow 4G) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"></noscript>
 

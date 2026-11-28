@@ -8,6 +8,7 @@ require_once __DIR__ . '/includes/industry-catalog.php';
 
 $cbd_page_has_charset = true;
 $cbd_defer_custom_css = true;
+$cbd_skip_header_fonts = true;
 $page_styles = ['/assets/css/home.min.css'];
 $page_robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
 
@@ -251,7 +252,6 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
     <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) — non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"></noscript>
 

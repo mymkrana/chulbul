@@ -310,7 +310,6 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
             $cssVer = (int)(@filemtime(__DIR__ . '/../assets/css/portfolio-showcase.css') ?: 1);
             $jsVer  = (int)(@filemtime(__DIR__ . '/../assets/js/portfolio-showcase.js') ?: 1);
             $cssHref = $esc($base . '/assets/css/portfolio-showcase.css?v=' . $cssVer);
-            echo '<link rel="preload" as="style" href="' . $cssHref . '">' . "\n";
             echo '<link rel="stylesheet" href="' . $cssHref . '" media="print" onload="this.media=\'all\'">' . "\n";
             echo '<noscript><link rel="stylesheet" href="' . $cssHref . '"></noscript>' . "\n";
             echo '<script src="' . $esc($base . '/assets/js/portfolio-showcase.js?v=' . $jsVer) . '" defer></script>' . "\n";
