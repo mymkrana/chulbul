@@ -50,21 +50,21 @@
 
             <!-- Col 2: Services -->
             <div>
-                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-400 mb-4">Our Services</h3>
+                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-600 mb-4">Our Services</h3>
                 <ul class="space-y-2.5">
-                    <li><a href="<?= $base ?>/web-design"                   class="text-gray-600 hover:text-[#EE483D] text-sm transition">Web Design</a></li>
-                    <li><a href="<?= $base ?>/web-development"              class="text-gray-600 hover:text-[#EE483D] text-sm transition">Web Development</a></li>
-                    <li><a href="<?= $base ?>/ecommerce-website-development"     class="text-gray-600 hover:text-[#EE483D] text-sm transition">E-Commerce Website</a></li>
-                    <li><a href="<?= $base ?>/wordpress-development"        class="text-gray-600 hover:text-[#EE483D] text-sm transition">WordPress Development</a></li>
-                    <li><a href="<?= $base ?>/android-app-development"      class="text-gray-600 hover:text-[#EE483D] text-sm transition">Mobile App Development</a></li>
-                    <li><a href="<?= $base ?>/local-seo-services"           class="text-gray-600 hover:text-[#EE483D] text-sm transition">Online Marketing</a></li>
+                    <li><a href="<?= $base ?>/web-design"                   class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">Web Design</a></li>
+                    <li><a href="<?= $base ?>/web-development"              class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">Web Development</a></li>
+                    <li><a href="<?= $base ?>/ecommerce-website-development"     class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">E-Commerce Website</a></li>
+                    <li><a href="<?= $base ?>/wordpress-development"        class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">WordPress Development</a></li>
+                    <li><a href="<?= $base ?>/android-app-development"      class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">Mobile App Development</a></li>
+                    <li><a href="<?= $base ?>/local-seo-services"           class="text-gray-600 hover:text-[#EE483D] text-sm transition inline-flex items-center min-h-[26px]">Online Marketing</a></li>
                 </ul>
             </div>
 
             <!-- Col 3: Cities -->
             <div>
-                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-400 mb-4">Cities We Serve</h3>
-                <div class="grid grid-cols-2 gap-x-2 gap-y-2">
+                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-600 mb-4">Cities We Serve</h3>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-2 cbd-footer-cities">
                     <a href="<?= $base ?>/city/gurgaon"   class="text-gray-600 hover:text-[#EE483D] text-sm transition">Gurgaon</a>
                     <a href="<?= $base ?>/city/delhi"      class="text-gray-600 hover:text-[#EE483D] text-sm transition">Delhi</a>
                     <a href="<?= $base ?>/city/noida"      class="text-gray-600 hover:text-[#EE483D] text-sm transition">Noida</a>
@@ -78,12 +78,12 @@
                     <a href="<?= $base ?>/city/dubai"      class="text-gray-600 hover:text-[#EE483D] text-sm transition">Dubai</a>
                     <a href="<?= $base ?>/city/toronto"    class="text-gray-600 hover:text-[#EE483D] text-sm transition">Toronto</a>
                 </div>
-                <a href="<?= $base ?>/cities" class="inline-block mt-3 text-xs text-[#EE483D] hover:underline font-semibold">View all 52 cities →</a>
+                <a href="<?= $base ?>/cities" class="inline-block mt-3 text-xs hover:underline font-semibold" style="color:#c8231a;min-height:28px;display:inline-flex;align-items:center;">View all 52 cities →</a>
             </div>
 
             <!-- Col 4: Contact -->
             <div>
-                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-400 mb-4">Get In Touch</h3>
+                <h3 class="text-xs font-extrabold uppercase tracking-widest text-gray-600 mb-4">Get In Touch</h3>
                 <ul class="space-y-3">
                     <li class="flex items-start gap-2.5">
                         <i class="bi bi-geo-alt text-[#EE483D] text-base mt-0.5 flex-shrink-0"></i>
@@ -104,7 +104,8 @@
                 </ul>
                 <!-- CTA -->
                 <a href="<?= $base ?>/contact-us"
-                   class="inline-flex items-center gap-2 mt-5 bg-[#EE483D] hover:bg-[#d43c31] text-white text-sm font-bold px-5 py-2.5 rounded-xl transition">
+                   class="inline-flex items-center gap-2 mt-5 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition"
+                   style="background:#c8231a;">
                     <i class="bi bi-chat-dots-fill text-xs"></i> Free Consultation
                 </a>
             </div>
@@ -114,6 +115,12 @@
 
     <!-- Bottom bar -->
     <style>
+        .cbd-footer-cities a,
+        footer ul li a {
+            min-height: 28px;
+            display: inline-flex;
+            align-items: center;
+        }
         .cbd-footer-bottom-inner {
             display: flex;
             flex-direction: column;
@@ -161,7 +168,7 @@
     </style>
     <div class="border-t border-gray-200 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 cbd-footer-bottom-inner">
-            <p class="text-gray-400 text-xs" style="margin:0;">
+            <p class="text-xs" style="margin:0;color:#4b5563;">
                 &copy; 2013&ndash;<?php echo date('Y'); ?> Chulbul Design LLP. All rights reserved.
             </p>
             <nav class="cbd-footer-links" aria-label="Footer legal and quick links">

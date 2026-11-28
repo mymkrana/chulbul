@@ -368,35 +368,36 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(85px);
-  opacity: 0.72;
+  opacity: 0.56;
   will-change: transform;
 }
 
 .ht-orb-1 {
-  width: 680px;
-  height: 680px;
-  top: -220px;
-  left: -120px;
+  width: 640px;
+  height: 640px;
+  top: -240px;
+  left: -130px;
   background: radial-gradient(circle, #6366f1 0%, #49499A 45%, transparent 72%);
   animation: htOrbFloat1 16s ease-in-out infinite alternate;
 }
 
 .ht-orb-2 {
-  width: 640px;
-  height: 640px;
-  top: -140px;
-  right: -120px;
-  background: radial-gradient(circle, #EE483D 0%, #f97316 45%, transparent 72%);
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  right: -135px;
+  opacity: 0.36;
+  background: radial-gradient(circle, #EE483D 0%, #f97316 42%, transparent 70%);
   animation: htOrbFloat2 18s ease-in-out infinite alternate;
 }
 
 .ht-orb-3 {
-  width: 720px;
-  height: 520px;
-  bottom: -180px;
+  width: 680px;
+  height: 480px;
+  bottom: -190px;
   left: 28%;
   background: radial-gradient(circle, #8b5cf6 0%, #06b6d4 50%, transparent 72%);
-  opacity: 0.5;
+  opacity: 0.42;
   animation: htOrbFloat3 20s ease-in-out infinite alternate;
 }
 
@@ -583,8 +584,8 @@
 }
 
 .ht-stage-pill.is-active small {
-  background: rgba(238, 72, 61, 0.14);
-  color: var(--ht-coral);
+  background: rgba(238, 72, 61, 0.12);
+  color: #b91c1c;
 }
 
 /* 3-Card Layered 3D Showcase Arena */
@@ -2085,8 +2086,16 @@
   .ht-bp-list { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 767px) {
+  .ht-mesh-orb { filter: blur(58px); animation: none !important; will-change: auto; }
+  .ht-orb-1 { width: 340px; height: 340px; top: -155px; left: -120px; opacity: 0.4; }
+  .ht-orb-2 { width: 300px; height: 300px; top: -155px; right: -95px; opacity: 0.28; }
+  .ht-orb-3 { display: none; }
+}
+
 @media (max-width: 600px) {
-  .ht-hero { min-height: auto; padding: 48px 0 64px; }
+  .ht-hero { min-height: auto; padding: 42px 0 60px; }
+  .ht-hero-chip { font-size: 11px; padding: 6px 14px; gap: 8px; }
   .ht-float-chip, .ht-chip-phone { display: none; }
   .ht-tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ht-ind-grid, .ht-why-grid, .ht-timeline { grid-template-columns: 1fr; }

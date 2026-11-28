@@ -18,8 +18,8 @@ $__cbd_cc_base = function_exists('cbd_base_path') ? cbd_base_path() : '';
 .cbd-cookie-text a{color:#ff9f94;text-decoration:underline;font-weight:700}
 .cbd-cookie-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .cbd-cookie-btn{appearance:none;border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .18s ease}
-.cbd-cookie-accept{background:#EE483D;color:#fff;border:1px solid #EE483D}
-.cbd-cookie-accept:hover{background:#d4372d}
+.cbd-cookie-accept{background:#c8231a;color:#fff;border:1px solid #c8231a}
+.cbd-cookie-accept:hover{background:#a91d15}
 .cbd-cookie-essential{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.24)}
 .cbd-cookie-essential:hover{background:rgba(255,255,255,.16)}
 @media(max-width:600px){.cbd-cookie-banner{left:12px;right:12px;bottom:84px;width:auto}}

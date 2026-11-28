@@ -309,7 +309,10 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
             $assetsPrinted = true;
             $cssVer = (int)(@filemtime(__DIR__ . '/../assets/css/portfolio-showcase.css') ?: 1);
             $jsVer  = (int)(@filemtime(__DIR__ . '/../assets/js/portfolio-showcase.js') ?: 1);
-            echo '<link rel="stylesheet" href="' . $esc($base . '/assets/css/portfolio-showcase.css?v=' . $cssVer) . '">' . "\n";
+            $cssHref = $esc($base . '/assets/css/portfolio-showcase.css?v=' . $cssVer);
+            echo '<link rel="preload" as="style" href="' . $cssHref . '">' . "\n";
+            echo '<link rel="stylesheet" href="' . $cssHref . '" media="print" onload="this.media=\'all\'">' . "\n";
+            echo '<noscript><link rel="stylesheet" href="' . $cssHref . '"></noscript>' . "\n";
             echo '<script src="' . $esc($base . '/assets/js/portfolio-showcase.js?v=' . $jsVer) . '" defer></script>' . "\n";
         }
         ?>
@@ -370,7 +373,8 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
                                          data-cw-desktop-img
                                          src="<?= $esc($firstPage['desktop']) ?>"
                                          alt="<?= $esc($first['name'] . ' — ' . $firstPage['label'] . ' desktop preview') ?>"
-                                         loading="lazy">
+                                         width="1100" height="720"
+                                         loading="lazy" decoding="async">
                                     <span class="cbd-work-pause-pill"><i class="bi bi-pause-fill" aria-hidden="true"></i> Paused</span>
                                 </div>
                             </div>
@@ -385,7 +389,8 @@ if (!function_exists('cbd_render_portfolio_showcase')) {
                                      data-cw-mobile-img
                                      src="<?= $esc($firstPage['mobile']) ?>"
                                      alt="<?= $esc($first['name'] . ' — ' . $firstPage['label'] . ' mobile preview') ?>"
-                                     loading="lazy">
+                                     width="440" height="780"
+                                     loading="lazy" decoding="async">
                                 <span class="cbd-work-pause-pill"><i class="bi bi-pause-fill" aria-hidden="true"></i> Paused</span>
                             </div>
                         </div>

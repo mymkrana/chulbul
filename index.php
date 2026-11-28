@@ -99,8 +99,8 @@ $showreelBuilds = [
         'chipTopSub' => 'Bilingual EN / FR Architecture',
         'chipBotTitle' => 'Full-Stack Build',
         'chipBotSub' => '26 Centers Directory · Fast SSR',
-        'desktop' => '/assets/images/portfolio-work/ssf-p0-d.jpg',
-        'mobile' => '/assets/images/portfolio-work/ssf-p0-m.jpg',
+        'desktop' => '/assets/images/portfolio-work/hero-ssf-d.webp',
+        'mobile' => '/assets/images/portfolio-work/hero-ssf-m.webp',
         'alt' => 'SSF Global bilingual Next.js website built by Chulbul Design',
     ],
     [
@@ -111,8 +111,8 @@ $showreelBuilds = [
         'chipTopSub' => 'Custom Subscription UX',
         'chipBotTitle' => 'Ecommerce Storefront',
         'chipBotSub' => 'Mobile-First Product Discovery',
-        'desktop' => '/assets/images/portfolio-work/brunswick-p0-d.jpg',
-        'mobile' => '/assets/images/portfolio-work/brunswick-p0-m.jpg',
+        'desktop' => '/assets/images/portfolio-work/hero-brunswick-d.webp',
+        'mobile' => '/assets/images/portfolio-work/hero-brunswick-m.webp',
         'alt' => 'Brunswick Fur Food custom Shopify ecommerce storefront design',
     ],
     [
@@ -123,8 +123,8 @@ $showreelBuilds = [
         'chipTopSub' => 'Automation & Shared Inbox',
         'chipBotTitle' => 'Product UI System',
         'chipBotSub' => 'Interactive Dashboard Experience',
-        'desktop' => '/assets/images/portfolio-work/sandeshsetu-p0-d.jpg',
-        'mobile' => '/assets/images/portfolio-work/sandeshsetu-p0-m.jpg',
+        'desktop' => '/assets/images/portfolio-work/hero-sandeshsetu-d.webp',
+        'mobile' => '/assets/images/portfolio-work/hero-sandeshsetu-m.webp',
         'alt' => 'SandeshSetu SaaS product website and dashboard interface',
     ],
 ];
@@ -244,10 +244,12 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
     <meta name="twitter:image:alt" content="Chulbul Design — global web design and development company showcase">
     <meta name="google-site-verification" content="66Yl1e0VD33TbRBSGdMcGfRYaTUguH0LyUovEsgh590">
 
-    <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) -->
+    <!-- Production Homepage Typography: Denk One (display), Inter (body), JetBrains Mono (labels) — non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"></noscript>
 
     <!-- Structured Data: ProfessionalService + WebSite + FAQPage (WebPage injected by header.php) -->
     <script type="application/ld+json"><?= json_encode([
@@ -406,7 +408,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                         <!-- Floating 3D Mobile Frame Right -->
                         <div class="ht-chip-phone" aria-hidden="true">
                             <img src="<?= htmlspecialchars($base . $showreelBuilds[0]['mobile'], ENT_QUOTES, 'UTF-8') ?>"
-                                 alt="" width="240" height="490" data-reel-mobile>
+                                 alt="" width="240" height="420" loading="lazy" decoding="async" data-reel-mobile>
                         </div>
 
                         <div class="ht-reel-browser">
@@ -420,7 +422,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                                      alt="<?= htmlspecialchars($showreelBuilds[0]['alt'], ENT_QUOTES, 'UTF-8') ?>"
                                      class="ht-reel-main-img"
                                      data-reel-main
-                                     width="960" height="600" fetchpriority="high">
+                                     width="960" height="600" fetchpriority="high" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -701,10 +703,10 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                 <h2 id="technologies-heading" class="ht-h2">Technologies We Use for <span class="ht-grad-text">Web Development</span></h2>
                 <p class="ht-lead">Proven, maintainable frameworks and platforms selected around your editing workflow, integrations, and long-term scale.</p>
                 <div class="ht-filter-bar" role="tablist" aria-label="Filter technologies by category" data-ht-tech-filter>
-                    <button type="button" class="ht-filter-btn is-active" data-cat="all">All Stack</button>
-                    <button type="button" class="ht-filter-btn" data-cat="apps">Apps &amp; Frameworks</button>
-                    <button type="button" class="ht-filter-btn" data-cat="cms">CMS</button>
-                    <button type="button" class="ht-filter-btn" data-cat="ecom">Ecommerce</button>
+                    <button type="button" class="ht-filter-btn is-active" role="tab" aria-selected="true" data-cat="all">All Stack</button>
+                    <button type="button" class="ht-filter-btn" role="tab" aria-selected="false" data-cat="apps">Apps &amp; Frameworks</button>
+                    <button type="button" class="ht-filter-btn" role="tab" aria-selected="false" data-cat="cms">CMS</button>
+                    <button type="button" class="ht-filter-btn" role="tab" aria-selected="false" data-cat="ecom">Ecommerce</button>
                 </div>
             </div>
 
@@ -833,7 +835,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                         <div>
                             <div class="ht-greviews-score-row">
                                 <span class="ht-greviews-num">4.8</span>
-                                <span class="ht-g-stars" aria-label="4.8 out of 5 stars on Google">
+                                <span class="ht-g-stars" role="img" aria-label="4.8 out of 5 stars on Google">
                                     <i class="bi bi-star-fill" aria-hidden="true"></i>
                                     <i class="bi bi-star-fill" aria-hidden="true"></i>
                                     <i class="bi bi-star-fill" aria-hidden="true"></i>
@@ -863,7 +865,7 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JS
                                 <div class="ht-greview-avatar" aria-hidden="true"><?= htmlspecialchars($rev['initial'], ENT_QUOTES, 'UTF-8') ?></div>
                                 <div>
                                     <div class="ht-greview-name"><?= htmlspecialchars($rev['name'], ENT_QUOTES, 'UTF-8') ?></div>
-                                    <div class="ht-g-stars" style="font-size:12px;margin-top:2px;" aria-label="5 out of 5 stars">
+                                    <div class="ht-g-stars" style="font-size:12px;margin-top:2px;" role="img" aria-label="5 out of 5 stars">
                                         <i class="bi bi-star-fill" aria-hidden="true"></i>
                                         <i class="bi bi-star-fill" aria-hidden="true"></i>
                                         <i class="bi bi-star-fill" aria-hidden="true"></i>
@@ -1308,8 +1310,9 @@ document.addEventListener('DOMContentLoaded', function () {
         fBtns.forEach(function (btn) {
             btn.addEventListener('click', function () {
                 var cat = btn.dataset.cat;
-                fBtns.forEach(function (b) { b.classList.remove('is-active'); });
+                fBtns.forEach(function (b) { b.classList.remove('is-active'); b.setAttribute('aria-selected', 'false'); });
                 btn.classList.add('is-active');
+                btn.setAttribute('aria-selected', 'true');
                 tItems.forEach(function (item) {
                     var match = cat === 'all' || item.dataset.techCat === cat;
                     item.classList.toggle('is-dim', !match);
